@@ -1,0 +1,17 @@
+.BtnPriDsa{
+    padding: 0.5rem 1rem;
+    border: solid 2px var(--colorAccentPrimary);
+    border-radius: 999px;
+    font-size: var(--fontTextAccent);
+    font-weight:  500;
+    background-color: var(--colorAccentPrimary);
+    color: var(--colorContrastDark);
+
+    &:hover{
+        background-color: var(--colorAccentPrimaryHover);
+    }
+
+    &:focus{
+        border: solid 2px var(--colorAccentSecondaryHover);
+    }
+}

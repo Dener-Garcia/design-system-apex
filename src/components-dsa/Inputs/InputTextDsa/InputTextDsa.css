@@ -1,0 +1,21 @@
+.inputTextDsa{
+    display: grid;
+
+    label{
+        font-size: var(--fontLabel);
+        color: var(--colorContrastLight);
+    }
+
+    input{
+        padding: 0.5rem;
+        font-size: var(--fontLabel);
+        border: solid 2px var(--colorNeutral400);
+        border-radius: 0.5rem;
+        background-color: var(--colorAccentSecondary);
+
+        &:focus{
+            background-color: var(--colorAccentSecondaryHover);
+            outline: solid 2px var(--colorNeutral400);
+        }
+    }
+}

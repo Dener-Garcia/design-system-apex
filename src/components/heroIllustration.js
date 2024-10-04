@@ -1,3 +1,4 @@
+import "./hero-illustration.css"
 const heroIllustration = document.querySelector(".heroIllustration")
 
 heroIllustration.innerHTML = `

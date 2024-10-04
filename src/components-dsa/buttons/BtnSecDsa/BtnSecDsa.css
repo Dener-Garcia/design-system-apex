@@ -1,0 +1,17 @@
+.BtnSecDsa{
+    padding: 0.5rem 1rem;
+    border: solid 2px var(--colorAccentPrimary);
+    border-radius: 999px;
+    font-size: var(--fontTextAccent);
+    font-weight:  500;
+    background-color: transparent;
+    color: var(--colorContrastLight);
+
+    &:hover{
+        background-color: var(--colorAccentSecondaryHover);
+    }
+
+    &:focus{
+        border: solid 2px var(--colorAccentSecondaryHover);
+    }
+}

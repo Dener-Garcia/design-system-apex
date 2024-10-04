@@ -3,7 +3,8 @@ import {
     Users,
     ChartSpline,
     MonitorCheck,
-    Puzzle 
+    Puzzle,
+    ChevronDown
 } from 'lucide';
 
 createIcons(
@@ -12,7 +13,8 @@ createIcons(
             Users,
             ChartSpline,
             MonitorCheck,
-            Puzzle 
+            Puzzle,
+            ChevronDown
         }
     }
 )

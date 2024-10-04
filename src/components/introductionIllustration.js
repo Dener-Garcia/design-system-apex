@@ -1,4 +1,7 @@
+import "./introduction-illustration.css"
+
 const introductionIllustration = document.querySelector(".introductionIllustration")
+
 
 introductionIllustration.innerHTML = `
 <svg width="816" height="286" viewBox="0 0 816 286" fill="none" xmlns="http://www.w3.org/2000/svg">

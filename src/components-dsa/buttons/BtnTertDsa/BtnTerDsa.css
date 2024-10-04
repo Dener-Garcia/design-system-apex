@@ -1,0 +1,18 @@
+.BtnTerDsa{
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: var(--fontTextAccent);
+    font-weight:  500;
+    background-color: transparent;
+    color: var(--colorAccentPrimary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    
+    &:hover{
+        color: var(--colorAccentPrimaryHover);
+    }
+
+    &:focus{
+        color: var(--colorAccentPrimary);
+    }
+}
