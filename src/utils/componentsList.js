@@ -15,6 +15,9 @@ import InputTextDsa from "../components-dsa/Inputs/InputTextDsa/InputTextDsa";
 import InputComboBoxDsa from "../components-dsa/Inputs/InputComboBoxDsa/InputComboBoxDsa";
 import InputCheckBoxHzDsa from "../components-dsa/Inputs/InputCheckBoxHzDsa/InputCheckBoxHzDsa";
 import InputDropdownDsa from "../components-dsa/Inputs/InputDropdownDsa/InputDropdownDsa";
+import InputDataPickerDsa from "../components-dsa/Inputs/InputDataPickerDsa/InputDataPickerDsa";
+import InputToggleDsa from "../components-dsa/Inputs/InputToggleDsa/InputToggleDsa";
+import InputRadioHzDsa from "../components-dsa/Inputs/InputRadioHzDsa/InputRadioHzDsa";
 
 
 export default {
@@ -34,5 +37,8 @@ export default {
     InputTextDsa,
     InputComboBoxDsa,
     InputCheckBoxHzDsa,
-    InputDropdownDsa
+    InputDropdownDsa,
+    InputDataPickerDsa,
+    InputRadioHzDsa,
+    InputToggleDsa
 }
