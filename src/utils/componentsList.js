@@ -19,6 +19,17 @@ import InputDataPickerDsa from "../components-dsa/Inputs/InputDataPickerDsa/Inpu
 import InputToggleDsa from "../components-dsa/Inputs/InputToggleDsa/InputToggleDsa";
 import InputRadioHzDsa from "../components-dsa/Inputs/InputRadioHzDsa/InputRadioHzDsa";
 
+//cards
+import PageTemplateDsa from "../components-dsa/page-template/PageTemplateDsa";
+import CardHzDsa from "../components-dsa/cards/CardHzDsa/CardHzDsa";
+import CardThumbDsa from "../components-dsa/cards/CardThumbDsa/CardThumbDsa";
+import CardSmDsa from "../components-dsa/cards/CardSmDsa/CardSmDsa";
+
+import ModalDsa from "../components-dsa/modal/ModalDsa";
+
+import ToastDsa from "../components-dsa/ToastDsa/ToastDsa";
+
+
 
 export default {
     //buttons
@@ -40,5 +51,16 @@ export default {
     InputDropdownDsa,
     InputDataPickerDsa,
     InputRadioHzDsa,
-    InputToggleDsa
+    InputToggleDsa,
+
+    //cards
+    CardHzDsa,
+    CardSmDsa,
+    CardThumbDsa,
+
+    ModalDsa,
+
+    ToastDsa,
+
+    PageTemplateDsa
 }

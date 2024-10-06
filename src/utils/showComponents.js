@@ -4,6 +4,8 @@ const outputComponent = document.querySelector(".output-component")
 
 const components = document.querySelectorAll(".component-selected")
 
+console.log(components)
+
 for (let i = 0; i < components.length; i++) {
     const component = components[i]
 
