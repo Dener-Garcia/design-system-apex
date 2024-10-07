@@ -1,199 +1,4 @@
-import"./lucide-PVHQ5pQH.js";const e=document.createElement("div"),F=`- BtnDangerDsa:
-    Control: Classic/Button
-    Properties:
-      BorderColor: =ColorValue(dsaTokens.colorFeedbackError)
-      Color: |-
-        =ColorValue(
-        dsaTokens.colorContrastDark
-        )
-      DisabledBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral300
-        )
-      DisabledColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral300
-        )
-      DisabledFill: |-
-        =ColorValue(
-        dsaTokens.colorAccentSecondary
-        )
-      Fill: |-
-        =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
-        )
-      FocusedBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral200
-        )
-      FocusedBorderThickness: '=2 '
-      HoverBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
-        )
-      HoverColor: |-
-        =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
-        )
-      HoverFill: =ColorValue(dsaTokens.colorFeedbackError)
-      PaddingBottom: =8
-      PaddingLeft: =16
-      PaddingRight: =16
-      PaddingTop: =8
-      PressedBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorFeedbackError
-        )
-      PressedColor: =ColorValue(dsaTokens.colorFeedbackErrorAccent)
-      PressedFill: =ColorValue(dsaTokens.colorFeedbackError)
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Size: =16
-      X: =1134
-      Y: =150`;e.setAttribute("data-code",F);e.innerHTML='<button class="BtnPriDsa">teste</button>';const t=document.createElement("div"),I=`- BtnSecDsa:
-    Control: Classic/Button
-    Properties:
-      BorderColor: |-
-        =ColorValue(
-        dsaTokens.colorAccentPrimary
-        )
-      Color: |-
-        =ColorValue(
-        dsaTokens.colorContrastLight
-        )
-      DisabledBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral300
-        )
-      DisabledColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral300
-        )
-      DisabledFill: |-
-        =ColorValue(
-        dsaTokens.colorAccentSecondary
-        )
-      Fill: |-
-        =ColorValue(
-        dsaTokens.colorAccentSecondary
-        )
-      FocusedBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral200
-        )
-      FocusedBorderThickness: '=2 '
-      HoverBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorAccentPrimary
-        )
-      HoverColor: |-
-        =ColorValue(
-        dsaTokens.colorContrastLight
-        )
-      HoverFill: '=ColorValue(dsaTokens.colorAccentSecondaryHover)   '
-      PaddingBottom: =8
-      PaddingLeft: =16
-      PaddingRight: =16
-      PaddingTop: =8
-      PressedBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorAccentSecondaryHover
-        )
-      PressedColor: |-
-        =ColorValue(
-        dsaTokens.colorContrastLight
-        )
-      PressedFill: |-
-        =ColorValue(
-        dsaTokens.colorAccentSecondary
-        )
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Size: =16
-      X: =315
-      Y: =150
-`;t.setAttribute("data-code",I);t.innerHTML='<button class="BtnSecDsa">teste</button>';const D=document.createElement("div");D.innerHTML='<button class="BtnTerDsa">teste</button>';const r=document.createElement("div"),W=`- BtnIcnLfDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
-    Properties:
-      DropShadow: =DropShadow.None
-      Height: =40
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Width: =160
-      X: =727
-      Y: =150
-    Children:
-    - btniconLt:
-        Control: Classic/Button
-        Properties:
-          BorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          Fill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          HoverColor: =ColorValue(dsaTokens.colorContrastDark)
-          HoverFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          PaddingBottom: =8
-          PaddingLeft: '=8   '
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: =ColorValue(dsaTokens.colorContrastDark)
-          PressedFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - btnIcnLt:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                btniconLt.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorContrastDark)
-            )
-          Height: =btniconLt.Size
-          Icon: =Icon.ChevronDown
-          Width: =btniconLt.Size
-          X: = Self.Width + 8
-          Y: =btniconLt.Height /2 - Self.Height /2
-`;r.setAttribute("data-code",W);const w='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';r.innerHTML=`
-
-<button class="BtnIcnLtDsa">${w}Teste</button>
-`;const a=document.createElement("div"),M=`- BtnIcnRtDsa:
+import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerDsa-CFQiL7vh.js";const t=document.createElement("div"),v=`- BtnIcnRtDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -275,304 +80,10 @@ import"./lucide-PVHQ5pQH.js";const e=document.createElement("div"),F=`- BtnDange
           X: = ButtonIconRight.Width - Self.Width - 16
           Y: =ButtonIconRight.Height /2 - Self.Height /2
 
-`;a.setAttribute("data-code",M);const x='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';a.innerHTML=`
+`;t.setAttribute("data-code",v);const I='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';t.innerHTML=`
 
-<button class="BtnIcnRtDsa">Teste${x}</button>
-`;const n=document.createElement("div"),N=`
-- BtnIcnPriDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
-    Properties:
-      DropShadow: =DropShadow.None
-      Height: =40
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Width: =40
-      X: =162
-      Y: =298
-    Children:
-    - BtnIcnPri:
-        Control: Classic/Button
-        Properties:
-          Text: =
-          Tooltip: =
-          BorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary)
-          BorderThickness: =0
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          DisabledColor: |-
-            =ColorValue(
-            dsaTokens.colorNeutral300
-            )
-          DisabledFill: |-
-            =ColorValue(
-            dsaTokens.colorNeutral400
-            )
-          Fill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          HoverColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          HoverFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          PaddingBottom: =8
-          PaddingLeft: =8
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          PressedFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - iconPriBtn:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                BtnIcnPri.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorContrastDark)
-            )
-          FocusedBorderThickness: =0
-          Height: =18
-          HoverColor: |-
-            =ColorValue(
-                dsaTokens.colorContrastDark
-            )
-          Icon: =Icon.AddDocument
-          Width: =18
-          X: =Parent.Width/2 - Self.Width/2
-          Y: =BtnIcnPri.Height /2 - Self.Height /2
-`;n.setAttribute("data-code",N);const z='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';n.innerHTML=`<button class="BtnIcnPriDsa">${z}</button>`;const i=document.createElement("div"),_=`
-- BtnIcnSecDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
-    Properties:
-      DropShadow: =DropShadow.None
-      Height: =40
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Width: =40
-      X: =370
-      Y: =298
-    Children:
-    - BtnIcnSec:
-        Control: Classic/Button
-        Properties:
-          Text: =
-          BorderColor: |-
-            =ColorValue(
-              dsaTokens.colorAccentPrimary)
-          BorderThickness: =0
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorContrastLight
-            )
-          DisabledColor: |-
-            =ColorValue(
-            dsaTokens.colorNeutral200
-            )
-          DisabledFill: |-
-            =ColorValue(
-            dsaTokens.colorNeutral400
-            )
-          Fill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondary
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          HoverColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          HoverFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PaddingBottom: =8
-          PaddingLeft: =8
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          PressedFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondary
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - IconSecBtn:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                BtnIcnSec.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorContrastLight)
-            )
-          FocusedBorderThickness: =0
-          Height: =18
-          HoverColor: |-
-            =ColorValue(
-                dsaTokens.colorNeutral100
-            )
-          Icon: =Icon.AddDocument
-          PressedColor: =ColorFade(Self.Color, -40%)
-          Width: =18
-          X: =Parent.Width/2 - Self.Width/2
-          Y: =BtnIcnSec.Height /2 - Self.Height /2
-`;i.setAttribute("data-code",_);const E='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';i.innerHTML=`<button class="BtnIcnSecDsa">${E}</button>`;const l=document.createElement("div"),G=`- BtnIcnTerDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
-    Properties:
-      DropShadow: =DropShadow.None
-      Height: =40
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Width: =40
-      X: =579
-      Y: =298
-    Children:
-    - BtnTerSec:
-        Control: Classic/Button
-        Properties:
-          Text: =
-          BorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary)
-          BorderThickness: =0
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          DisabledColor: |-
-            =ColorValue(
-            dsaTokens.colorNeutral200
-            )
-          DisabledFill: |-
-            =ColorValue(
-               "#ffffff00"
-            )
-          Fill: |-
-            =ColorValue(
-               "#ffffff00"
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          HoverColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          HoverFill: |-
-            =ColorValue(
-               "#ffffff00"
-            )
-          PaddingBottom: =8
-          PaddingLeft: =8
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          PressedFill: |-
-            =ColorValue(
-               "#ffffff00"
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - IconTerBtn:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                BtnTerSec.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorAccentPrimary)
-            )
-          FocusedBorderThickness: =0
-          Height: =18
-          HoverColor: |-
-            =ColorValue(
-                dsaTokens.colorAccentPrimary
-            )
-          HoverFill: |-
-            =   ColorValue(
-                "#ffffff00"
-               )
-          Icon: =Icon.AddDocument
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          Width: =18
-          X: =Parent.Width/2 - Self.Width/2
-          Y: =BtnTerSec.Height /2 - Self.Height /2
-`;l.setAttribute("data-code",G);const Y='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';l.innerHTML=`<button class="BtnIcnTerDsa">${Y}</button>`;const d=document.createElement("div"),X=`
+<button class="BtnIcnRtDsa">Teste${I}</button>
+`;const r=document.createElement("div"),W=`
 - BtnIconDangerDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
@@ -676,85 +187,7 @@ import"./lucide-PVHQ5pQH.js";const e=document.createElement("div"),F=`- BtnDange
           Width: =18
           X: =Parent.Width/2 - Self.Width/2
           Y: =btnIconPrimaryButton_1.Height /2 - Self.Height /2
-`;d.setAttribute("data-code",X);const $='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>';d.innerHTML=`<button class="BtnIcnDangerDsa">${$}</button>`;const s=document.createElement("div"),O=`- BtnIcnLfDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
-    Properties:
-      DropShadow: =DropShadow.None
-      Height: =40
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Width: =160
-      X: =727
-      Y: =150
-    Children:
-    - btniconLt:
-        Control: Classic/Button
-        Properties:
-          BorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          Fill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          HoverColor: "=ColorValue(
-dsaTokens.colorContrastDark
-)   "
-          HoverFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          PaddingBottom: =8
-          PaddingLeft: '=8   '
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: "=ColorValue(
-dsaTokens.colorContrastDark
-)   "
-          PressedFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - btnIcnLt:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                btniconLt.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorContrastDark)
-            )
-          Height: =btniconLt.Size
-          Icon: =Icon.ChevronDown
-          Width: =btniconLt.Size
-          X: = Self.Width + 8
-          Y: =btniconLt.Height /2 - Self.Height /2
-`;s.setAttribute("data-code",O);s.innerHTML='<button class="BtnDangerDsa">teste</button>';const c=document.createElement("div"),J=`- InputTextDsa:
+`;r.setAttribute("data-code",W);const w='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>';r.innerHTML=`<button class="BtnIcnDangerDsa">${w}</button>`;const a=document.createElement("div"),M=`- InputTextDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -849,12 +282,12 @@ dsaTokens.colorContrastDark
           Width: =Parent.Width
           X: =360
           Y: =462
-`;c.setAttribute("data-code",J);c.innerHTML=`
+`;a.setAttribute("data-code",M);a.innerHTML=`
 <div class="inputTextDsa">
     <label for="textInputDsa">Label</label>
     <input id="textInputDsa" type="text" placeholder="Placeholder">
 </div>
-`;const U="/design-system-apex/assets/components-preview/ComboBoxDsa.png",u=document.createElement("div"),Z=`- comboBoxDsa:
+`;const x="/design-system-apex/assets/components-preview/ComboBoxDsa.png",n=document.createElement("div"),N=`- comboBoxDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -988,9 +421,9 @@ dsaTokens.colorContrastDark
                 )
               Size: =dsaTokens.fontLabel
               Width: =Parent.Width
-`;u.setAttribute("data-code",Z);u.innerHTML=`
-<img src=${U} alt="Imagem combo box para power apps" />
-`;const j="/design-system-apex/assets/components-preview/CheckboxDsa.png",C=document.createElement("div"),q=`- InputCheckBoxHzDsa:
+`;n.setAttribute("data-code",N);n.innerHTML=`
+<img src=${x} alt="Imagem combo box para power apps" />
+`;const _="/design-system-apex/assets/components-preview/CheckboxDsa.png",i=document.createElement("div"),z=`- InputCheckBoxHzDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -1193,9 +626,9 @@ dsaTokens.colorContrastDark
               Width: =Parent.Width
               X: =10
 
-`;C.setAttribute("data-code",q);C.innerHTML=`
-<img src=${j} alt="Imagem combo box para power apps" />
-`;const K="/design-system-apex/assets/components-preview/DropdownDsa.png",h=document.createElement("div"),Q=`- InputDropdownDsa:
+`;i.setAttribute("data-code",z);i.innerHTML=`
+<img src=${_} alt="Imagem combo box para power apps" />
+`;const E="/design-system-apex/assets/components-preview/DropdownDsa.png",l=document.createElement("div"),G=`- InputDropdownDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -1331,9 +764,9 @@ dsaTokens.colorContrastDark
               Size: =dsaTokens.fontLabel
               Width: =Parent.Width
 
-`;h.setAttribute("data-code",Q);h.innerHTML=`
-<img src=${K} alt="Imagem combo box para power apps" />
-`;const oo="/design-system-apex/assets/components-preview/calendarDsa.png",g=document.createElement("div"),eo=`- DatePickerDsa:
+`;l.setAttribute("data-code",G);l.innerHTML=`
+<img src=${E} alt="Imagem combo box para power apps" />
+`;const Y="/design-system-apex/assets/components-preview/calendarDsa.png",d=document.createElement("div"),X=`- DatePickerDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -1427,9 +860,9 @@ dsaTokens.colorContrastDark
               PaddingRight: =0
               Size: =dsaTokens.fontLabel
               Width: =Parent.Width
-`;g.setAttribute("data-code",eo);g.innerHTML=`
-<img src=${oo} alt="Imagem combo box para power apps" />
-`;const to="/design-system-apex/assets/components-preview/ToggleDsa.png",p=document.createElement("div"),ro=`- InputToggleDsa:
+`;d.setAttribute("data-code",X);d.innerHTML=`
+<img src=${Y} alt="Imagem combo box para power apps" />
+`;const $="/design-system-apex/assets/components-preview/ToggleDsa.png",s=document.createElement("div"),O=`- InputToggleDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -1488,9 +921,9 @@ dsaTokens.colorContrastDark
           Width: =Parent.Width
           X: =1105
           Y: =359
-`;p.setAttribute("data-code",ro);p.innerHTML=`
-<img src=${to} alt="Imagem combo box para power apps" />
-`;const ao="/design-system-apex/assets/components-preview/RadioDsa.png",T=document.createElement("div"),no=`- InputRadioHzDsa:
+`;s.setAttribute("data-code",O);s.innerHTML=`
+<img src=${$} alt="Imagem combo box para power apps" />
+`;const J="/design-system-apex/assets/components-preview/RadioDsa.png",c=document.createElement("div"),U=`- InputRadioHzDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -1579,9 +1012,9 @@ dsaTokens.colorContrastDark
               Width: =Parent.Width
               X: =136
               Y: =364
-`;T.setAttribute("data-code",no);T.innerHTML=`
-<img src=${ao} alt="Imagem combo box para power apps" />
-`;const io="/design-system-apex/assets/components-preview/pageTemplate.png",P=document.createElement("div"),lo=`- mainContainer:
+`;c.setAttribute("data-code",U);c.innerHTML=`
+<img src=${J} alt="Imagem combo box para power apps" />
+`;const Z="/design-system-apex/assets/components-preview/pageTemplate.png",u=document.createElement("div"),q=`- mainContainer:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -2097,9 +1530,9 @@ dsaTokens.colorContrastDark
                               Width: '=32  '
                               X: '=0   '
                               Y: =Parent.Height- Self.Height
-`;P.setAttribute("data-code",lo);P.innerHTML=`
-<img class="ModalDsa" src=${io} alt="Imagem modal para power apps" />
-`;const so="/design-system-apex/assets/components-preview/CardHzDsa.png",f=document.createElement("div"),co=`
+`;u.setAttribute("data-code",q);u.innerHTML=`
+<img class="ModalDsa" src=${Z} alt="Imagem header e sidebar para para power apps" />
+`;const j="/design-system-apex/assets/components-preview/CardHzDsa.png",C=document.createElement("div"),K=`
 - CardHzDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
@@ -2610,9 +2043,9 @@ dsaTokens.colorContrastDark
           Height: '=2   '
           Width: =Parent.Width
 
-`;f.setAttribute("data-code",co);f.innerHTML=`
-<img class="CardHzDsa" src=${so} alt="Imagem Card para power apps" />
-`;const uo="/design-system-apex/assets/components-preview/CardThumbDsa.png",k=document.createElement("div"),Co=`
+`;C.setAttribute("data-code",K);C.innerHTML=`
+<img class="CardHzDsa" src=${j} alt="Imagem Card para power apps" />
+`;const Q="/design-system-apex/assets/components-preview/CardThumbDsa.png",h=document.createElement("div"),oo=`
 - CardThumbDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
@@ -2770,9 +2203,9 @@ dsaTokens.colorContrastDark
               X: =519
               Y: =150
 
-`;k.setAttribute("data-code",Co);k.innerHTML=`
-<img class="CardThumbDsa" src=${uo} alt="Imagem Card para power apps" />
-`;const ho="/design-system-apex/assets/components-preview/CardSmDsa.png",m=document.createElement("div"),go=`
+`;h.setAttribute("data-code",oo);h.innerHTML=`
+<img class="CardThumbDsa" src=${Q} alt="Imagem Card para power apps" />
+`;const eo="/design-system-apex/assets/components-preview/CardSmDsa.png",g=document.createElement("div"),to=`
 - CardSmDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
@@ -3147,9 +2580,9 @@ dsaTokens.colorContrastDark
                   Width: =18
                   X: =Parent.Width/2 - Self.Width/2
                   Y: =BtnTerSec_3.Height /2 - Self.Height /2
-`;m.setAttribute("data-code",go);m.innerHTML=`
-<img class="CardThumbDsa" src=${ho} alt="Imagem Card para power apps" />
-`;const po="/design-system-apex/assets/components-preview/modal.png",L=document.createElement("div"),To=`- ModalContainer:
+`;g.setAttribute("data-code",to);g.innerHTML=`
+<img class="CardThumbDsa" src=${eo} alt="Imagem Card para power apps" />
+`;const ro="/design-system-apex/assets/components-preview/modal.png",p=document.createElement("div"),ao=`- ModalContainer:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -3421,9 +2854,9 @@ dsaTokens.colorContrastDark
                   Width: =Parent.Width
                   X: =198
                   Y: =440
-`;L.setAttribute("data-code",To);L.innerHTML=`
-<img class="ModalDsa" src=${po} alt="Imagem combo box para power apps" />
-`;const Po="/design-system-apex/assets/components-preview/toastDsa.png",y=document.createElement("div"),fo=`- ToastDsa:
+`;p.setAttribute("data-code",ao);p.innerHTML=`
+<img class="ModalDsa" src=${ro} alt="Imagem combo box para power apps" />
+`;const no="/design-system-apex/assets/components-preview/toastDsa.png",o=document.createElement("div");o.classList.add("hasProperties");const io=`- ToastDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -3551,9 +2984,9 @@ dsaTokens.colorContrastDark
               Width: =24
               X: =636
               Y: =288
-`;y.setAttribute("data-code",fo);y.innerHTML=`
-<img class="ModalDsa" src=${Po} alt="Imagem modal para power apps" />
-`;const B=document.createElement("div"),ko=`
+`;o.setAttribute("data-code",io);o.innerHTML=`
+<img class="ModalDsa" src=${no} alt="Imagem modal para power apps" />
+`;const T=document.createElement("div"),lo=`
 // Design system tokens
     Set(dsaTokens,
         {
@@ -3588,7 +3021,50 @@ dsaTokens.colorContrastDark
             fontSmallLabel: 12
         }
     );
-    `;B.setAttribute("data-code",ko);B.innerHTML=`
+
+// Settings for headerDsa
+    ClearCollect(
+        constHeader,
+        {
+            logoScreen: Home,
+            appName: "App Name",
+            userData: User()
+        }
+    );
+
+// settings for nav menu
+    Set(constCurrentScreen, Home);
+    Set(widthMenuOpen, 200);
+    Set(widthMenuClosed, 44);
+    ClearCollect(
+        constNavMenu,
+        {
+            icon: Icon.Home,
+            linkName: "Inicio",
+            toScreen: Home
+        }
+    );
+
+// settings for Modal
+    Set(dsaModalShow, false);
+    Set(dsaModalType, "info");
+    Set(dsaModalMessage,  "Choose a modal type using Set at constTypeModal + 'info' or 'error' or 'warning' or 'success'. change this message using set at constMessageModal, change the icon with Set constModalIcon + icon name");
+    Set(dsaModalIcon, Icon.Check);
+
+// settings for Toast
+    Set(dsaToastShow, true);
+    Set(dsaToastType, "info");
+    Set(dsaToastMessage, "Your message here!");
+
+// settings for Badge
+   Set(dsaBadgeType, "error");
+   Set(dsaBadgeLabel, "Label");
+
+
+
+
+    
+    `;T.setAttribute("data-code",lo);T.innerHTML=`
 <pre>
 <code class="tokensDsa">
 // Tokens, copy into App.OnStart or OnVissible of home screen
@@ -3627,4 +3103,4 @@ dsaTokens.colorContrastDark
     );
     </code>
     </pre>
-`;const mo={TokensDsa:B,BtnPriDsa:e,BtnSecDsa:t,BtnTerDsa:D,BtnIcnLtDsa:r,BtnIcnRtDsa:a,BtnIcnPriDsa:n,BtnIcnSecDsa:i,BtnIcnTerDsa:l,BtnIcnDangerDsa:d,BtnDangerDsa:s,InputTextDsa:c,InputComboBoxDsa:u,InputCheckBoxHzDsa:C,InputDropdownDsa:h,InputDataPickerDsa:g,InputRadioHzDsa:T,InputToggleDsa:p,CardHzDsa:f,CardSmDsa:m,CardThumbDsa:k,ModalDsa:L,ToastDsa:y,PageTemplateDsa:P},Lo=document.querySelector(".copy-components"),R=document.querySelector(".output-component"),S=document.querySelectorAll(".component-selected");for(let o=0;o<S.length;o++){const V=S[o];V.addEventListener("click",()=>{Lo.classList.add("d-block");const A=V.dataset.component,H=mo[A];R.innerHTML="",R.appendChild(H);const b=document.querySelector(".get-code"),v=H.dataset.code;b.addEventListener("click",()=>{navigator.clipboard.writeText(v)})})}
+`;const so={TokensDsa:T,BtnPriDsa:V,BtnSecDsa:H,BtnTerDsa:S,BtnIcnLtDsa:R,BtnIcnRtDsa:t,BtnIcnPriDsa:A,BtnIcnSecDsa:D,BtnIcnTerDsa:F,BtnIcnDangerDsa:r,BtnDangerDsa:b,InputTextDsa:a,InputComboBoxDsa:n,InputCheckBoxHzDsa:i,InputDropdownDsa:l,InputDataPickerDsa:d,InputRadioHzDsa:c,InputToggleDsa:s,CardHzDsa:C,CardSmDsa:g,CardThumbDsa:h,ModalDsa:p,ToastDsa:o,PageTemplateDsa:u},co=document.querySelector(".copy-components"),y=document.querySelector(".output-component"),L=document.querySelectorAll(".component-selected");for(let e=0;e<L.length;e++){const P=L[e];P.addEventListener("click",()=>{co.classList.add("d-block");const m=P.dataset.component,f=so[m];y.innerHTML="",y.appendChild(f);const k=document.querySelector(".get-code"),B=f.dataset.code;k.addEventListener("click",()=>{navigator.clipboard.writeText(B)})})}
