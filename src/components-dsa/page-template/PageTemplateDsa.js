@@ -3,6 +3,7 @@ import preview from "/assets/components-preview/pageTemplate.png"
 
 const PageTemplateDsa = document.createElement("div")
 
+
 const codeSnippet = `- mainContainer:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
@@ -524,7 +525,7 @@ const codeSnippet = `- mainContainer:
 PageTemplateDsa.setAttribute("data-code", codeSnippet)
 
 PageTemplateDsa.innerHTML = `
-<img class="ModalDsa" src=${preview} alt="Imagem modal para power apps" />
+<img class="ModalDsa" src=${preview} alt="Imagem header e sidebar para para power apps" />
 `
 
 export default PageTemplateDsa

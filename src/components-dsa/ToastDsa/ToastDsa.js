@@ -2,6 +2,7 @@ import "./toastDsa.css"
 import preview from "/assets/components-preview/toastDsa.png"
 
 const ToastDsa = document.createElement("div")
+ToastDsa.classList.add("hasProperties")
 
 const codeSnippet = `- ToastDsa:
     Control: GroupContainer

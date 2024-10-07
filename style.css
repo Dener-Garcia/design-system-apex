@@ -45,6 +45,11 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
 }
 
 body {
@@ -238,12 +243,14 @@ flex-direction: column;
   font-size: var(--fontTextLarge);
 }
 
-.components-grid-example{
+.grid-components{
   margin-top: 2.5rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
+  gap: 1rem;
 }
 
-.components-grid-example .card-component{
+.grid-components .card-component{
   width: 12rem;
   height: 10rem;
   display: flex;
@@ -256,10 +263,29 @@ flex-direction: column;
 
 .components-section .btn-accent{
   margin: auto;
+  display: flex;
+  justify-content: center;
   margin-top: 1.5rem;
+  width: 12rem;
+  text-decoration: none;
 }
 
 /* ######################################### Show components page */
+
+.properties{
+  position: fixed;
+  right: 0;
+  width: 16rem;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorBgPrimary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transform: translateX(100%);
+  overflow-y: scroll;
+  transition: 0.2s;
+}
 
  .components-bar{
   position: fixed;
@@ -430,4 +456,14 @@ flex-direction: column;
   border: solid 2px var(--colorNeutral300);
   border-radius: 1rem;
   overflow: hidden;
+}
+
+/* ###########################  Class from js */
+
+.showProperties{
+  transform: translateX(0);
+}
+
+.d-none{
+  display: none;
 }

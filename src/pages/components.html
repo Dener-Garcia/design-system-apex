@@ -8,13 +8,14 @@
     <title>Design System Apex - Story book</title>
 </head>
 <body>
+    <aside class="properties"></aside>
       <aside class="components-bar">
         <a href="../../index.html" aria-label="Pagina home">
             <img src="/assets/illustrations/logoApexH.svg"
             alt="logo apex: quadrado com bordas arredondadas e duas montanhas em branco, escrito Apex e logo abaixo a frase building the future" />
         </a>
-          <h3>Começando</h3>
-          <h4>Tutorial: Lista de tarefas
+          <h3 class="d-none">Começando</h3>
+          <h4 class="d-none">Tutorial: Lista de tarefas
           <h3>Componentes</h3>
           <h4 class="component-selected" data-component="TokensDsa">Tokens</h4>
           <details name="components">
@@ -57,6 +58,8 @@
           <h4 class="component-selected" data-component="ToastDsa">Toast</h4>
           <h4 class="component-selected" data-component="PageTemplateDsa">Page Template</h4>
       </aside>
+
+
       <main class="wiki-dsa">
         
         <section class="components-container">
@@ -69,7 +72,7 @@
                 </button>
                 <section class="output-component"></section>
             </div>
-            <div class="tutorial-todo">
+            <div class="tutorial-todo d-none">
                 <div class="description">
                     <h5>Tutorial: <span>Criando um to-do-list</span></h5>
                     <p>Requisitos: <span>Conhecimento básico em Power Apps</span></p>
@@ -143,7 +146,32 @@
                             <p>Aguarde seu aplicativo ficar pronto, isso pode levar alguns minutos.</p>
                             <img src="" alt="pagina criar novo app Power Apps" />
                         </div>
-                        
+
+                        <div class="step-by-step">
+                            <p>Ao carregar seu aplicativo a primeira coisa que faremos é renomear a tela para "Home" (detalhe 1)</p>
+                            <img src="" alt="pagina home power apps" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Tokens de design</h5>
+                            <p>Tokens são variáveis criadas na etapa de design que servem para identificar e padronizar elementos de código, como cores, tamanho de fontes, espaçamento e outros elementos da interface.</p>
+                            <p>Na aba de componentes do nosso site "Design System Apex" procure por "tokens" (detalhe 2) e clique no botão "Copiar Código" (detalhe 3).</p>
+                            <img src="" alt="pagina criar novo app Power Apps" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <p>Retorne ao Power Apps e vá na propriedade "OnVisible" (detalhe 4) da nossa tela de home e vamos adicionar o códito que copiamos do nosso design system (detalhe 5).</p>
+                            <img src="" alt="página colando tokens no power apps " />
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Editando elementos por variáveis</h5>
+                            <p>Nossos componentes possuem certas configurações já feitas para você se preocupar com o que realmente importa, suas regras de negócio, o primeiro elemento que iremos  .</p>
+                            <p>Na aba de componentes do nosso site "Design System Apex" procure por "tokens" (detalhe 2) e clique no botão "Copiar Código" (detalhe 3).</p>
+                            <img src="" alt="pagina criar novo app Power Apps" />
+                        </div>
+                    
+
                     </article>
                 </div>
             </div>

@@ -37,6 +37,49 @@ const codeSnippet = `
             fontSmallLabel: 12
         }
     );
+
+// Settings for headerDsa
+    ClearCollect(
+        constHeader,
+        {
+            logoScreen: Home,
+            appName: "App Name",
+            userData: User()
+        }
+    );
+
+// settings for nav menu
+    Set(constCurrentScreen, Home);
+    Set(widthMenuOpen, 200);
+    Set(widthMenuClosed, 44);
+    ClearCollect(
+        constNavMenu,
+        {
+            icon: Icon.Home,
+            linkName: "Inicio",
+            toScreen: Home
+        }
+    );
+
+// settings for Modal
+    Set(dsaModalShow, false);
+    Set(dsaModalType, "info");
+    Set(dsaModalMessage,  "Choose a modal type using Set at constTypeModal + 'info' or 'error' or 'warning' or 'success'. change this message using set at constMessageModal, change the icon with Set constModalIcon + icon name");
+    Set(dsaModalIcon, Icon.Check);
+
+// settings for Toast
+    Set(dsaToastShow, true);
+    Set(dsaToastType, "info");
+    Set(dsaToastMessage, "Your message here!");
+
+// settings for Badge
+   Set(dsaBadgeType, "error");
+   Set(dsaBadgeLabel, "Label");
+
+
+
+
+    
     `
 
 TokensDsa.setAttribute("data-code", codeSnippet)

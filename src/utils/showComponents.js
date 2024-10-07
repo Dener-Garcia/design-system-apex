@@ -27,7 +27,8 @@ for (let i = 0; i < components.length; i++) {
 
         btnPower.addEventListener("click", () => {
             navigator.clipboard.writeText(code);
-
         })
+
     })
 }
+
