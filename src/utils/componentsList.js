@@ -28,10 +28,13 @@ import CardSmDsa from "../components-dsa/cards/CardSmDsa/CardSmDsa";
 import ModalDsa from "../components-dsa/modal/ModalDsa";
 
 import ToastDsa from "../components-dsa/ToastDsa/ToastDsa";
+import TokensDsa from "../components-dsa/tokens/TokensDsa";
 
 
 
 export default {
+    TokensDsa,
+
     //buttons
     BtnPriDsa, 
     BtnSecDsa, 

@@ -35,7 +35,9 @@
   --fontLabel: 0.875rem;
   --fontSmallLabel: 0.75rem;
 
-  --colorAccent: #AE51EC;
+  --colorAccent: #9381ff;
+  --colorAccentHover: #b8b8ff;
+  --colorAccentText: #5e2bff;
 }
 
 * {
@@ -52,12 +54,18 @@ body {
 
 .btn-accent {
   display: flex;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: var(--fontTextMedium);
   font-weight: 500;
   background-color: var(--colorAccent);
   border: solid 2px var(--colorAccent);
   border-radius: 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-accent:Hover{
+  background-color: var(--colorAccentHover);
 }
 
 .btn-outline {
@@ -67,6 +75,12 @@ body {
   border: solid 2px var(--colorAccent);
   border-radius: 0.5rem;
   background-color: transparent;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-outline:hover{
+  background-color: var(--colorAccentHover);
 }
 
 header{
@@ -247,39 +261,110 @@ flex-direction: column;
 
 /* ######################################### Show components page */
 
-.wiki-dsa{
-  max-width: 90rem;
-  padding: 2rem 9.75rem;
-  margin: auto;
-  display: flex;
-  gap: 4rem;
-}
-
-.wiki-dsa .components-bar{
-  min-width: 10rem;
+ .components-bar{
+  position: fixed;
+  width: 16rem;
+  height: 100dvh;
   background-color: var(--colorBgPrimary);
   padding: 1rem;
   border-radius: 0.5rem;
+  overflow-y: scroll;
 }
 
-.wiki-dsa .components-bar details summary{
+.components-bar img{
+  width: 10rem;
+}
+
+.components-bar h3{
+  margin-top: 1rem;
+  color: var(--colorNeutral100);
+  font-weight: 500;
   font-size: var(--fontTextMedium);
-  font-weight: var(--font-weight);
-  color: var(--colorAccentPrimary);
-  cursor: pointer;
 }
 
-.wiki-dsa .components-bar details ul li{
+.components-bar h4{
   margin-top: 0.5rem;
-  font-size: var(--colorNeutral200);
-  list-style: none;
+  font-size: var(--fontTextMedium);
+  font-weight: 400;
+  color: var(--colorNeutral200);
   cursor: pointer;
+  transition: 0.2s;
 }
 
-.wiki-dsa .components-bar details ul li:hover{
-  color: var(--colorAccentHover);
+.components-bar h4:hover,
+.components-bar h4:focus{
+  color: var(--colorAccent);
+}
+
+.components-bar details summary{
+  margin-top: 0.5rem;
+  list-style: none;
+  position: relative;
+  font-size: var(--fontTextMedium);
+  font-weight: 400;
+  color: var(--colorNeutral200);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.components-bar details summary::before{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  width: 1rem;
+  height: 0.125rem;
+  border-radius: 1rem;
+  background-color: var(--colorAccent);
+  transform: rotate(90deg);
+  transition: 0.2s;
+}
+
+.components-bar details summary::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  width: 1rem;
+  height: 0.125rem;
+  border-radius: 1rem;
+  background-color: var(--colorAccent);
+}
+
+.components-bar details summary:hover,
+.components-bar details summary:focus{
+  color: var(--colorAccent);
+}
+
+.components-bar details summary:focus::before{
+  transform: rotate(180deg);
+}
+
+.components-bar details ul li{
+  margin-top: 0.5rem;
+  font-size: var(--fontText);
+  list-style: none;
+  color: var(--colorNeutral100);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.components-bar details ul li:hover,
+.components-bar details ul li:focus{
+  color: var(--colorAccent);
+  font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
+}
+
+.wiki-dsa{
+  max-width: 90rem;
+  width: 100%;
+  padding: 2rem 2rem 2rem 18rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .wiki-dsa .components-container{
@@ -292,33 +377,57 @@ flex-direction: column;
   color: var(--colorNeutral200);
 }
 
-.wiki-dsa .components-container p{
+.wiki-dsa .components-container .copy-components p{
   font-size: var(--fontTextLarge);
   color: var(--colorNeutral200);
 }
 
-.wiki-dsa .components-container .get-code{
-  background-color: blue;
-  display: flex;
-  justify-content: end;
+.wiki-dsa .components-container .copy-components .get-code{
+  width: 44px;
+  height: 40px;
   margin: auto;
-  padding: 1rem;
-  border-radius: 999px;
+  margin-top: 1rem;
+  display: block;
+  padding: 0.5rem;
+  background-color: var(--colorAccent);
+  border: solid 2px var(--colorAccent);
+  border-radius: 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.wiki-dsa .components-container .output-component{
-  width: 80%;
-  min-height: 20rem;
-  height: 100%;
+.wiki-dsa .components-container .copy-components .get-code:hover{
+  background-color: var(--colorAccentHover);
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-wrap: nowrap;
+}
+
+.wiki-dsa .components-container .copy-components .get-code:focus{
+  background-color: var(--colorAccent);
+}
+
+
+.wiki-dsa .components-container .copy-components .get-code p{
+  color: var(--colorContrastLight);
+  font-size: var(--fontTextMedium);
+  font-weight: 500;
+}
+
+.wiki-dsa .components-container .copy-components .output-component{
+  width: 90%;
+  min-height: 16rem;
+  height: auto;
   margin: auto;
   margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px var(--colorNeutral200);
+  padding: 1rem;
+  border: solid 2px var(--colorNeutral300);
   border-radius: 1rem;
+  overflow: hidden;
 }
-
-
-
-

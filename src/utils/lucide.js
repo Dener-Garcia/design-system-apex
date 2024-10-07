@@ -4,7 +4,8 @@ import {
     ChartSpline,
     MonitorCheck,
     Puzzle,
-    ChevronDown
+    ChevronDown,
+    CodeXml
 } from 'lucide';
 
 createIcons(
@@ -14,7 +15,8 @@ createIcons(
             ChartSpline,
             MonitorCheck,
             Puzzle,
-            ChevronDown
+            ChevronDown,
+            CodeXml
         }
     }
 )
