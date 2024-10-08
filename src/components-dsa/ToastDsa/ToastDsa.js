@@ -134,6 +134,9 @@ const codeSnippet = `- ToastDsa:
               Y: =288
 `
 
+const properties = `<h2>nome var 1</h2><span>Set(dsaMessage, "toasto")</span>`
+ToastDsa.setAttribute("data-properties", properties)
+
 ToastDsa.setAttribute("data-code", codeSnippet)
 
 ToastDsa.innerHTML =
