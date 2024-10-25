@@ -2,10 +2,13 @@ import "./BtnPriDsa.css"
 
 const BtnPriDsa = document.createElement("div")
 
-const codeSnippet = `- BtnDangerDsa:
+const codeSnippet = `- BtnPriDsa:
     Control: Classic/Button
     Properties:
-      BorderColor: =ColorValue(dsaTokens.colorFeedbackError)
+      BorderColor: |-
+        =ColorValue(
+        dsaTokens.colorAccentPrimary
+        )
       Color: |-
         =ColorValue(
         dsaTokens.colorContrastDark
@@ -20,11 +23,11 @@ const codeSnippet = `- BtnDangerDsa:
         )
       DisabledFill: |-
         =ColorValue(
-        dsaTokens.colorAccentSecondary
+        dsaTokens.colorNeutral400
         )
       Fill: |-
         =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
+        dsaTokens.colorAccentPrimary
         )
       FocusedBorderColor: |-
         =ColorValue(
@@ -33,30 +36,37 @@ const codeSnippet = `- BtnDangerDsa:
       FocusedBorderThickness: '=2 '
       HoverBorderColor: |-
         =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
+        dsaTokens.colorAccentPrimary
         )
       HoverColor: |-
         =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
+        dsaTokens.colorContrastDark
         )
-      HoverFill: =ColorValue(dsaTokens.colorFeedbackError)
+      HoverFill: =ColorValue(dsaTokens.colorAccentPrimaryHover)
       PaddingBottom: =8
       PaddingLeft: =16
       PaddingRight: =16
       PaddingTop: =8
       PressedBorderColor: |-
         =ColorValue(
-        dsaTokens.colorFeedbackError
+        dsaTokens.colorAccentSecondaryHover
         )
-      PressedColor: =ColorValue(dsaTokens.colorFeedbackErrorAccent)
-      PressedFill: =ColorValue(dsaTokens.colorFeedbackError)
+      PressedColor: |-
+        =ColorValue(
+        dsaTokens.colorContrastDark
+        )
+      PressedFill: |-
+        =ColorValue(
+        dsaTokens.colorAccentPrimaryHover
+        )
       RadiusBottomLeft: =200
       RadiusBottomRight: =200
       RadiusTopLeft: =200
       RadiusTopRight: =200
-      Size: =16
-      X: =1134
-      Y: =150`
+      Size: =dsaTokens.fontText
+      X: =102
+      Y: =150
+`
 
 BtnPriDsa.setAttribute("data-code", codeSnippet)
 

@@ -72,7 +72,7 @@
                 </button>
                 <section class="output-component"></section>
             </div>
-            <div class="tutorial-todo d-none">
+            <div class="tutorial-todo">
                 <div class="description">
                     <h5>Tutorial: <span>Criando um to-do-list</span></h5>
                     <p>Requisitos: <span>Conhecimento básico em Power Apps</span></p>
@@ -84,15 +84,14 @@
                             <p>Para um aplicativo eficiente vamos utilizar o SharePoint como nosso "banco de dados".</p>
                             <caption>Dica: Evite usar excel como base de dados, seu aplicativo pode ficar instável.</caption>
                         </div>
-
                         <div class="step-by-step">
                             <p>Acesse seu SharePoint, na barra lateral esquerda clique em criar (detalhe 1) e escolha a opção de lista (detalhe 2), na página que se abre clique em lista em branco (detalhe 3).</p>
-                            <img src="" alt="pagina de home SharePoint" />
+                            <img src="/assets/tutorial-todolist/tutorial-1.jpg" alt="pagina de home SharePoint" />
                         </div>
 
                         <div class="step-by-step">
                             <p>Na página que se abre escolha um nome para sua lista (detalhe 4) e clique no botão de criar(detalhe 5) você será direcionado para sua lista nova.</p>
-                            <img src="" alt="pagina criar lista" />
+                            <img src="/assets/tutorial-todolist/tutorial-2.jpg" alt="pagina criar lista" />
                         </div>
 
                         <div class="step-by-step">
@@ -127,12 +126,12 @@
                                 </tbody>
                             </table>
                             <caption>Dica: Para escolher o tipo de dado da coluna use o menu de propriedades (detalhe 7).</caption>
-                            <img src="" alt="pagina lista do SharePoint" />
+                            <img src="/assets/tutorial-todolist/tutorial-3.jpg" alt="pagina lista do SharePoint" />
                         </div>
 
                         <div class="step-by-step">
                             <p>Sua lista deve estar como a imagem abaixo, agora iremos para o Power Apps.</p>
-                            <img src="" alt="pagina lista do Share Point" />
+                            <img src="/assets/tutorial-todolist/tutorial-4.jpg" alt="pagina lista do Share Point" />
                         </div>
 
                         <div class="step-by-step">
@@ -144,30 +143,31 @@
                          <div class="step-by-step">
                             <p>Abra seu Power Apps, na barra lateral esquerda, selecione a opção criar (detalhe 1), clique em criar app em branco (detalhe 2) e escolha o Aplicativo canvas em branco (detalhe 3). Finalmente escolha um nome para seu aplicativo e o formato de tablet.</p>
                             <p>Aguarde seu aplicativo ficar pronto, isso pode levar alguns minutos.</p>
-                            <img src="" alt="pagina criar novo app Power Apps" />
+                            <img src="/assets/tutorial-todolist/tutorial-5.jpg" alt="pagina criar novo app Power Apps" />
                         </div>
 
                         <div class="step-by-step">
                             <p>Ao carregar seu aplicativo a primeira coisa que faremos é renomear a tela para "Home" (detalhe 1)</p>
-                            <img src="" alt="pagina home power apps" />
+                            <img src="/assets/tutorial-todolist/tutorial-6.jpg" alt="pagina home power apps" />
                         </div>
 
                         <div class="step-by-step">
                             <h5>Tokens de design</h5>
                             <p>Tokens são variáveis criadas na etapa de design que servem para identificar e padronizar elementos de código, como cores, tamanho de fontes, espaçamento e outros elementos da interface.</p>
                             <p>Na aba de componentes do nosso site "Design System Apex" procure por "tokens" (detalhe 2) e clique no botão "Copiar Código" (detalhe 3).</p>
-                            <img src="" alt="pagina criar novo app Power Apps" />
+                            <img src="/assets/tutorial-todolist/tutorial-7.jpg" alt="pagina criar novo app Power Apps" />
                         </div>
 
                         <div class="step-by-step">
                             <p>Retorne ao Power Apps e vá na propriedade "OnVisible" (detalhe 4) da nossa tela de home e vamos adicionar o códito que copiamos do nosso design system (detalhe 5).</p>
-                            <img src="" alt="página colando tokens no power apps " />
+                            <img src="/assets/tutorial-todolist/tutorial-8.jpg" alt="página colando tokens no power apps " />
                         </div>
 
                         <div class="step-by-step">
-                            <h5>Editando elementos por variáveis</h5>
-                            <p>Nossos componentes possuem certas configurações já feitas para você se preocupar com o que realmente importa, suas regras de negócio, o primeiro elemento que iremos  .</p>
-                            <p>Na aba de componentes do nosso site "Design System Apex" procure por "tokens" (detalhe 2) e clique no botão "Copiar Código" (detalhe 3).</p>
+                            <h5>Template para página</h5>
+                            <p>Nossos componentes possuem certas configurações já feitas, dessa forma você pode se preocupar com o que realmente importa, suas regras de negócio, o primeiro elemento que vamos importar será um template para todas as páginas.</p>
+                            <p>Na aba de componentes do nosso site "Design System Apex" procure por "Page template" (detalhe 6) e clique no botão "Copiar Código" (detalhe 7).</p>
+                            <b>Faltar criar dados da barra lateral com as configuração do componente no site</b>
                             <img src="" alt="pagina criar novo app Power Apps" />
                         </div>
                     
