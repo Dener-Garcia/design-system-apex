@@ -541,7 +541,59 @@
   `
   PageTemplateDsa.setAttribute("data-code", codeSnippet)
 
-  const properties = `<h2>nome var 1</h2><span>Set(dsaMessage, "teste")</span>`
+  const properties = `
+  // settings for nav menu
+  <pre>
+    <code>
+Set(constCurrentScreen, Home);
+Set(widthMenuOpen, 200);
+Set(widthMenuClosed, 44);
+ClearCollect(
+  constNavMenu,
+  {
+    icon: Icon.Home,
+    linkName: "Inicio",
+    toScreen: Home
+  }
+);
+    </code>
+  </pre>
+
+  <section class="details">
+  <div class="code-details">
+  <h6>constCurrentScreen</h6>
+  <p>Efeito de focus para página de Home, você pode trocar para outra página quando estiver usando uma naveção de sub-níveis e precisar realçar no menu lateral o nome da página pai.</p>
+  </div>
+   <div class="code-details">
+  <h6>widthMenuOpen</h6>
+  <p>Largura da barra lateral aberto.</p>
+  </div>
+  <div class="code-details">
+  <h6>widthMenuClosed</h6>
+  <p>Largura da barra lateral fechada somente com os ícones.</p>
+  </div>
+  <div class="code-details">
+  <h6>icon: Icon.Home,</h6>
+  <p>Define o icone Home para o primeiro item do menu da barra lateral.</p>
+  </div>
+  <div class="code-details">
+  <h6>linkName: "Inicio",</h6>
+  <p>Define o nome para o primeiro item do menu da barra lateral.</p>
+  </div>
+  <div class="code-details">
+  <h6>toScreen: Home</h6>
+  <p>Define para qual tela o usuário vai ao clicar no primeiro item do menu da barra lateral.</p>
+  </div>
+  <div class="tips">
+    <p>Para criar mais links de navegação no seu app, basta adicionar mais um objeto a collection alterando as propriedades abaixo.</p>
+    <pre><code>  {
+    icon: Icon.Add,
+    linkName: "Adicionar Chamado",
+    toScreen: Support
+  }</code></pre>
+  </div>
+  </section>
+  `
   PageTemplateDsa.setAttribute("data-properties", properties)
 
   PageTemplateDsa.innerHTML = `
