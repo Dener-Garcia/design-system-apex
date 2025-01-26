@@ -590,7 +590,8 @@ ClearCollect(
     icon: Icon.Add,
     linkName: "Adicionar Chamado",
     toScreen: Support
-  }</code></pre>
+  }
+    </code></pre>
   </div>
   </section>
   `

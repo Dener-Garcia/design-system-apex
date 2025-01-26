@@ -9,8 +9,8 @@ const codeSnippet = `
     Variant: verticalAutoLayoutContainer
     Properties:
       DropShadow: =DropShadow.None
-      Height: |+
-        =Title.Height + Text.Height + cardHorizontalDivisor.Height + 40
+      Height: |
+        =Title_2.Height + Text.Height + cardHorizontalDivisor.Height + 40
       LayoutDirection: =LayoutDirection.Vertical
       LayoutGap: =8
       LayoutMode: =LayoutMode.Auto
@@ -18,9 +18,7 @@ const codeSnippet = `
       RadiusBottomRight: =0
       RadiusTopLeft: =0
       RadiusTopRight: =0
-      Width: =878
-      X: '=0   '
-      Y: =588
+      Width: =610
     Children:
     - TitleBadge:
         Control: GroupContainer
@@ -28,15 +26,15 @@ const codeSnippet = `
         Properties:
           DropShadow: =DropShadow.None
           FillPortions: =0
-          Height: |+
-            =Title.Height
+          Height: |
+            =Title_2.Height
           LayoutMode: =LayoutMode.Auto
           RadiusBottomLeft: =0
           RadiusBottomRight: =0
           RadiusTopLeft: =0
           RadiusTopRight: =0
         Children:
-        - Title:
+        - Title_2:
             Control: Label
             Properties:
               Text: ="Main Title"
@@ -115,7 +113,7 @@ const codeSnippet = `
           RadiusTopLeft: =0
           RadiusTopRight: =0
         Children:
-        - content:
+        - content_1:
             Control: GroupContainer
             Variant: horizontalAutoLayoutContainer
             Properties:
@@ -176,7 +174,6 @@ const codeSnippet = `
               DropShadow: =DropShadow.None
               FillPortions: =0
               Height: =Parent.Height
-              LayoutAlignItems: =LayoutAlignItems.End
               LayoutJustifyContent: =LayoutJustifyContent.End
               LayoutMinHeight: =0
               LayoutMinWidth: =0
@@ -191,10 +188,10 @@ const codeSnippet = `
                 Control: GroupContainer
                 Variant: horizontalAutoLayoutContainer
                 Properties:
-                  AlignInContainer: =AlignInContainer.Center
+                  AlignInContainer: =AlignInContainer.SetByContainer
                   DropShadow: =DropShadow.None
                   FillPortions: =0
-                  Height: =BtnIcnPriDsa.Height
+                  Height: =40
                   LayoutAlignItems: =LayoutAlignItems.Center
                   LayoutGap: =16
                   LayoutJustifyContent: =LayoutJustifyContent.End

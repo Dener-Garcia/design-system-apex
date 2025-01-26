@@ -59,7 +59,6 @@
           <h4 class="component-selected" data-component="PageTemplateDsa">Page Template</h4>
       </aside>
 
-
       <main class="wiki-dsa">
         
         <section class="components-container">
@@ -167,10 +166,128 @@
                             <h5>Template para página</h5>
                             <p>Nossos componentes possuem certas configurações já feitas, dessa forma você pode se preocupar com o que realmente importa, suas regras de negócio, o primeiro elemento que vamos importar será um template para todas as páginas.</p>
                             <p>Na aba de componentes do nosso site "Design System Apex" procure por "Page template" (detalhe 6) e clique no botão "Copiar Código" (detalhe 7).</p>
-                            <b>Faltar criar dados da barra lateral com as configuração do componente no site</b>
-                            <img src="" alt="pagina criar novo app Power Apps" />
+                            <p>Repare na aba lateral direita que seu abriu, ela contem os detalhes do componente e como usar cada propriedade dele, essa propriedades ja estão nosso app pois colamos ela no "OnVisible" da tela de home.</p>
+                            <img src="/assets/tutorial-todolist/tutorial-9.jpg" alt="Copiando um elemento do design system" />
                         </div>
                     
+                        <div class="step-by-step">
+                            <h5>Cole e crie</h5>
+                            <p>Volte ao seu power apps e tão fácil como colar um texto, agora basta clicar em qualquer parte em branco da nossa tela de "Home" com botão direito do mouse vá "Paste" > "Paste code" veja (detalhe 9)</p>
+                            <p>Repare que você já vai ter um header e um menu lateral para navegar pelo seu aplicativo.</p>
+                            <img src="/assets/tutorial-todolist/tutorial-10.jpg" alt="Copiando um elemento do design system" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Cole e crie</h5>
+                            <p>Na tela de home vamos adicionar um título e uma galeria do power apps visualizarmos as tarefas que vamos adicionar a nossa todo-list.</p>
+                            <p>Repare que você já vai ter um header e um menu lateral para navegar pelo seu aplicativo.</p>
+                            <p>Nosso workflow de trabalho vai ser basicamente esse pegando elementos da nossa biblioteca e colando nas páginas do Power Apps</p>
+                            <img src="/assets/tutorial-todolist/tutorial-10.jpg" alt="Copiando um elemento do design system" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Mostrando nossas tarefas</h5>
+                            <p>Na tela de home vamos adicionar um título e uma galeria do power apps visualizarmos as tarefas que vamos adicionar a nossa todo-list.</p>
+                            <p>Clique em qualquer parte branca da tela, e no menu "Insert" do Power Apps um "Container" e renomeio-o para "content", clique no simbolo de "+" e adicione uma "Label". Iremos alterar a propriedade "Text" dela para "Minhas tarefas" (detalhe 10). Se lembra dos nossos "Tokens"? Aqui já vamos utiliza-los, na propriedade "Font size" altera para "dsaTokens.fontTextLarge" (detalhe 11), na propriedade "Color" insira a formula com o valor do nosso token de cor "ColorValue(dsaTokens.colorAccentTertiary)" (detalhe 12), a principal vantagem de usa-los é que se você precisar alterar uma cor ou tamnho de fonte basta alterar no token e isso se refletira em todo o aplicativo, mesmo que ele tenha centenas de páginas ou elementos.</p>
+                            <p>Caso seu texto esteja desconfigurado basta ligar as chaves de "Auto height" e "Flexible width" veja o (detalhe 13)</p>
+                            <img src="/assets/tutorial-todolist/tutorial-11.jpg" alt="Alterando propriedades de elementos com design tokens" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <p>Adicione uma galeria vertical em branco apartir de menu "Insert" do Power Apps e renomei-a para "tasksGallery", posicione-a abaixo do seu titulo, na sua propriedade "Data" (detalhe 14) vamos apontar para nossa base de dados do Sharepoint que criamos no passo 1.</p>
+                            <p>Para isso em "Select a data source" na própria galeria, procure por SharePoint > seu usuário, e na barra lateral direita que se abre aponte para nossa tabela chamada "todolist" (detalhe 15).</p>
+                            <p>Como não temos nenhuma tarefa ainda não vai aparecer nada por enquanto, então já vamos resolver isso no próximo passo</p>
+                            <img src="/assets/tutorial-todolist/tutorial-12.jpg" alt="Adicionando base de dados na galeria" />
+                        </div>
+       
+                        <div class="step-by-step">
+                            <h5>Adicionando tarefas</h5>
+                            <p>Vamos começar adicionando uma nova página no nosso Power Apps, vá em "New screen" > "Blank" para adicionar uma página em branco, renomei-a para "AddTasks".</p>
+                            <p>Se lembra do nosso componente "Page template", utilize ele novamente aqui nessa página</p>
+                            <p>Para que nossa página de adicionar tarefas apareça no menu, vamos na propriedade "OnStart" do "App" na barra lateral esquerda. Procure pelas configurações de "settings for nav menu" repare que já existe um objeto que é nossa tela de Inicio, copie esse objeto e cole ele logo abaixo (detalhe 16), altere as propriedades de "Icon" para "Icon.Add", "linkName" para "Nova Tarefa", "toScreen" para "AddTasks" e por fim clique nos três pontinhos e vá em "Run OnStart" (detalhe 17) para as alterações que fizemos tenha efeito.</p>                        
+                            <img src="/assets/tutorial-todolist/tutorial-13.jpg" alt="Criando página nova e adicionando-a ao menu" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Criando inputs</h5>
+                            <p>Adicione um container e renomeio-o para "content", agora adicione um título assim como fizemos na tela da galeria, escreva algo como "Crie uma nova tarefa", dessa forma quem for acessar seu app sabe exatamente do que se trata essa tela, lembre-se de utilizar os tokens em "size" e "color" dessa forma nosso app se mantem consistente.</p>
+                            <p>Agora vamos adicionar as inputs necessárias para criar uma tarefa, vá na nossa galeria de componentes e procure pela sessão de "inputs" e selecione "Text input" veja (detalhe 18).</p>
+                            <p>Volte a nossa página de AddTasks no Power Apps e com botão direito do mouse vá em "Paste" > "Paste code" e sua input irá aparecer na tela. </p>
+                            <p>Na input que surgiu na tela altere as propriedades de "Label" para "Tarefa", na propriedade "Hint Text" da própria input altere para algo como "Título da tarefa" (detalhe 19)</p>
+                            <p>Adicione mais uma input do tipo "Text Input" e altere a "Label" para "Descrição", e no "Hint Text" altere para "Descrição da tarefa" mas dessa vez na barra lateral direita da input troque a propriedade "Mode" para "Multiline".</p>           
+                            <img src="/assets/tutorial-todolist/tutorial-14.jpg" alt="Criando página nova e adicionando-a ao menu" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <p>Nossas tarefas terão um campo de status onde vamos definir se elas ja foram concluidas, se estão em andamento ou se estão pendentes, para isso dessa vez vamos usar uma input do tipo "Dropdown Input", vá na nossa galeria de componentes e selecione-a e cole abaixo da input anterior.</p>
+                            <p>Na nova input adicionada, em "Label" altere para "Status da tarefa" veja (detalhe 20), agora dentro do "dropdown" crie os nossos status no seguinte formato ["Pendente", "Andamento", "Concluida"] veja (detalhe 21), dessa forma uma tarefa nova já fica pré selecionada como "Pendente".</p>
+                            <img src="/assets/tutorial-todolist/tutorial-15.jpg" alt="Criando página nova e adicionando-a ao menu" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <p>Vamos colocar um campo de data onde podemos dizer a data final da nossa tarefa.</p>
+                            <p>Selecione uma input de "Data Picker Input" apartir da nossa galeria de componentes e cole na tela do Power Apps conforme já fizemos anteriormente. Altere a propriedade de "Label" para "Prazo final".</p>
+                            <p>Por fim vamos colocar um botão do tipo primario com ícone a esquerda para quando o usuário clicar nele nós vamos salvar a tarefa na base do SharePoint.</p>
+                            <p>Na nossa galeria de compoentes vá em "Buttons" e selecione o botão "Button icon Left" veja (detalhe 22) e cole-o na nossa tela do Power Apps, altere o texto do botão para "Criar Tarefa" e troque o ícone do botão para o de uma página com um "+" veja (detalhe 23) dessa forma além do texto do botão ajudamos o usuário do nosso aplicativo a entsender que esse botão tem a função de criar uma nova tarefa.</p>
+                            <img src="/assets/tutorial-todolist/tutorial-16.jpg" alt="Criando página nova e adicionando-a ao menu" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Horá de codar</h5>
+                            <p>Vamos criar a funcionalidade de enviar a tarefa para nossa base do SharePoint, selecione o botão que acabamos de criar e na propriedade "OnSelect" vamos fazer nossa lógica.</p>
+                            <p>Basicamente iremos utilizar o Patch() veja (detalhe 24), para pegar os valores inseridos pelo usuário em cada uma das nossas inputs para atualizar nossa base de dados da maneira correta. Use a lógica abaixo:</p>
+                            <pre>
+                                <code>
+Patch(
+toDoList,
+Defaults(toDoList),
+{idTask: GUID()},
+{titleTask: textInput.Text},
+{descriptionTask: textInput_1.Text},
+{statusTask: dropdown.Selected.Value},
+{deadlineTask: datePickerInput.SelectedDate}
+);
+                                </code>
+                            </pre>
+                            <p>Repare que estamos pegando cada coluna que criamos no SharePoint e estamos pegando os valores das inputs que o usuário digitou para salvar nas suas respectivas colunas.</p>
+                            <p>Coloque seu aplicativo em modo de preview e teste seu formulário afim de verificar se nossas tarefas serão salvas na nossa base de dados.</p>
+                            <p>Para melhorar a usabilidade do nosso formulário podemos resetar as inputs para os valores default apoós o usuário criar uma tarefa, para isso utilize a função Reset(), logo abaixo da lógica que fizemos anteriormente.</p>
+                        <pre>
+                            <code>
+Reset(textInput);
+Reset(textInput_1);
+Reset(dropdown);
+Reset(datePickerInput);
+                            </code>
+                        </pre>
+                            <img src="/assets/tutorial-todolist/tutorial-17.jpg" alt="Criando página nova e adicionando-a ao menu" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Personalizando nossa galeria</h5>
+                            <p>Nós já fizemos o link da nossa galeria com a base de dados, vamos mostrar as tarefas agora.</p>
+                            <p>Apartir da nossa galeria de componentes em "Cards" escolha o "Card Horizontal" e cole na tela do Power Apps conforme já fizemos anteriormente, repare que o card está fora da galeria selecione o card que acabamos de colar (detalhe 25) e com o atalho de recortar <kbd>CTRL</kbd> + <kbd>x</kbd>, selecione a galeria e cole com <kbd>CTRL</kbd> + <kbd>v</kbd> dentro dela o card, repare que a própria galeria já vai replicar os cards.</p>
+                            <p>Por fim vamos ajustar a posição do card dentro galeria alterando as propriedades "X" e "Y" para 0.</p>
+                            <img src="/assets/tutorial-todolist/tutorial-18.jpg" alt="Criando página nova e adicionando-a ao menu" />
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Configurando a galeria</h5>
+                            <p>Vamos agora mostrar realmente as informações das tarefas que estão na nossa base de dados na galeria, para isso selecione o título do card atualmente chamado de "Main Title" e na propriedade "Text" altera para "ThisItem.titleTask" veja (detalhe 26).</p>
+                            <p>Agora no card em "Sub Title" altere a propriedade propriedade "Text" para "ThisItem.deadlineTask"</p>
+                            <p>Para mostrar o status das nossas tarefas selecione a "Label" e altere a propriedade "Text" para "ThisItem.statusTask"</p>
+                            <p>Para a descrição de cada tarefa selecione o texto longo que já veio no card altere a propriedade "Text" para "ThisItem.descriptionTask", sua galeria deve estar como na imagem abaixo, caso não tenha criado nenhuma tarefa nos passos anteriores, tente criar algumas para popular nossa galeria.</p>
+                            <img src="/assets/tutorial-todolist/tutorial-19.jpg" alt="Criando página nova e adicionando-a ao menu"/>
+                        </div>
+
+                        <div class="step-by-step">
+                            <h5>Configurando os botões da galeria</h5>
+                            <p>Nossa galeria tel três botões onde podemos criar ações para eles, repare que os botões tem uma hierarquia </p>
+                            <p>Agora no card em "Sub Title" altere a propriedade propriedade "Text" para "ThisItem.deadlineTask"</p>
+                            <p>Para mostrar o status das nossas tarefas selecione a "Label" e altere a propriedade "Text" para "ThisItem.statusTask"</p>
+                            <p>Para a descrição de cada tarefa selecione o texto longo que já veio no card altere a propriedade "Text" para "ThisItem.descriptionTask", sua galeria deve estar como na imagem abaixo, caso não tenha criado nenhuma tarefa nos passos anteriores, tente criar algumas para popular nossa galeria.</p>
+                            <img src="/assets/tutorial-todolist/tutorial-19.jpg" alt="Criando página nova e adicionando-a ao menu"/>
+                        </div>
 
                     </article>
                 </div>
