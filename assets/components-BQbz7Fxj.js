@@ -1,4 +1,4 @@
-import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerDsa-CFQiL7vh.js";const t=document.createElement("div"),v=`- BtnIcnRtDsa:
+import{B as H,a as R,b as S,d as D,e as A,f as b,g as F,c as v}from"./BtnDangerDsa-Bcdyop6d.js";const n=document.createElement("div"),I=`- BtnIcnRtDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -80,10 +80,10 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
           X: = ButtonIconRight.Width - Self.Width - 16
           Y: =ButtonIconRight.Height /2 - Self.Height /2
 
-`;t.setAttribute("data-code",v);const I='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';t.innerHTML=`
+`;n.setAttribute("data-code",I);const W='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';n.innerHTML=`
 
-<button class="BtnIcnRtDsa">Teste${I}</button>
-`;const r=document.createElement("div"),W=`
+<button class="BtnIcnRtDsa">Teste${W}</button>
+`;const i=document.createElement("div"),w=`
 - BtnIconDangerDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
@@ -187,7 +187,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
           Width: =18
           X: =Parent.Width/2 - Self.Width/2
           Y: =btnIconPrimaryButton_1.Height /2 - Self.Height /2
-`;r.setAttribute("data-code",W);const w='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>';r.innerHTML=`<button class="BtnIcnDangerDsa">${w}</button>`;const a=document.createElement("div"),M=`- InputTextDsa:
+`;i.setAttribute("data-code",w);const M='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>';i.innerHTML=`<button class="BtnIcnDangerDsa">${M}</button>`;const l=document.createElement("div"),x=`- InputTextDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -282,12 +282,12 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
           Width: =Parent.Width
           X: =360
           Y: =462
-`;a.setAttribute("data-code",M);a.innerHTML=`
+`;l.setAttribute("data-code",x);l.innerHTML=`
 <div class="inputTextDsa">
     <label for="textInputDsa">Label</label>
     <input id="textInputDsa" type="text" placeholder="Placeholder">
 </div>
-`;const x="/design-system-apex/assets/components-preview/ComboBoxDsa.png",n=document.createElement("div"),N=`- comboBoxDsa:
+`;const N="/design-system-apex/assets/components-preview/ComboBoxDsa.png",d=document.createElement("div"),_=`- comboBoxDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -421,9 +421,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                 )
               Size: =dsaTokens.fontLabel
               Width: =Parent.Width
-`;n.setAttribute("data-code",N);n.innerHTML=`
-<img src=${x} alt="Imagem combo box para power apps" />
-`;const _="/design-system-apex/assets/components-preview/CheckboxDsa.png",i=document.createElement("div"),z=`- InputCheckBoxHzDsa:
+`;d.setAttribute("data-code",_);d.innerHTML=`
+<img src=${N} alt="Imagem combo box para power apps" />
+`;const z="/design-system-apex/assets/components-preview/CheckboxDsa.png",s=document.createElement("div"),E=`- InputCheckBoxHzDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -626,9 +626,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
               Width: =Parent.Width
               X: =10
 
-`;i.setAttribute("data-code",z);i.innerHTML=`
-<img src=${_} alt="Imagem combo box para power apps" />
-`;const E="/design-system-apex/assets/components-preview/DropdownDsa.png",l=document.createElement("div"),G=`- InputDropdownDsa:
+`;s.setAttribute("data-code",E);s.innerHTML=`
+<img src=${z} alt="Imagem combo box para power apps" />
+`;const G="/design-system-apex/assets/components-preview/DropdownDsa.png",c=document.createElement("div"),Y=`- InputDropdownDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -764,9 +764,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
               Size: =dsaTokens.fontLabel
               Width: =Parent.Width
 
-`;l.setAttribute("data-code",G);l.innerHTML=`
-<img src=${E} alt="Imagem combo box para power apps" />
-`;const Y="/design-system-apex/assets/components-preview/calendarDsa.png",d=document.createElement("div"),X=`- DatePickerDsa:
+`;c.setAttribute("data-code",Y);c.innerHTML=`
+<img src=${G} alt="Imagem combo box para power apps" />
+`;const X="/design-system-apex/assets/components-preview/calendarDsa.png",u=document.createElement("div"),$=`- DatePickerDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -860,9 +860,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
               PaddingRight: =0
               Size: =dsaTokens.fontLabel
               Width: =Parent.Width
-`;d.setAttribute("data-code",X);d.innerHTML=`
-<img src=${Y} alt="Imagem combo box para power apps" />
-`;const $="/design-system-apex/assets/components-preview/ToggleDsa.png",s=document.createElement("div"),O=`- InputToggleDsa:
+`;u.setAttribute("data-code",$);u.innerHTML=`
+<img src=${X} alt="Imagem combo box para power apps" />
+`;const O="/design-system-apex/assets/components-preview/ToggleDsa.png",C=document.createElement("div"),J=`- InputToggleDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -921,9 +921,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
           Width: =Parent.Width
           X: =1105
           Y: =359
-`;s.setAttribute("data-code",O);s.innerHTML=`
-<img src=${$} alt="Imagem combo box para power apps" />
-`;const J="/design-system-apex/assets/components-preview/RadioDsa.png",c=document.createElement("div"),U=`- InputRadioHzDsa:
+`;C.setAttribute("data-code",J);C.innerHTML=`
+<img src=${O} alt="Imagem combo box para power apps" />
+`;const U="/design-system-apex/assets/components-preview/RadioDsa.png",h=document.createElement("div"),Z=`- InputRadioHzDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -1012,9 +1012,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
               Width: =Parent.Width
               X: =136
               Y: =364
-`;c.setAttribute("data-code",U);c.innerHTML=`
-<img src=${J} alt="Imagem combo box para power apps" />
-`;const Z="/design-system-apex/assets/components-preview/pageTemplate.png",u=document.createElement("div"),q=`- mainContainer:
+`;h.setAttribute("data-code",Z);h.innerHTML=`
+<img src=${U} alt="Imagem combo box para power apps" />
+`;const q="/design-system-apex/assets/components-preview/pageTemplate.png",t=document.createElement("div"),j=`- mainContainer:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
@@ -1027,23 +1027,31 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
       RadiusTopLeft: =0
       RadiusTopRight: =0
       Width: =Parent.Width
-      X: '=0   '
-      Y: '=0   '
     Children:
     - HeaderDsa:
         Control: GroupContainer
         Variant: manualLayoutContainer
         Properties:
+          DropShadow: =DropShadow.None
           FillPortions: =0
-          Height: |+
+          Height: |
             =40
+          RadiusBottomLeft: =0
+          RadiusBottomRight: =0
+          RadiusTopLeft: =0
+          RadiusTopRight: =0
         Children:
         - HeaderContainer:
             Control: GroupContainer
             Variant: manualLayoutContainer
             Properties:
+              DropShadow: =DropShadow.None
               Fill: =ColorValue(dsaTokens.colorBgPrimary)
               Height: =Parent.Height
+              RadiusBottomLeft: =0
+              RadiusBottomRight: =0
+              RadiusTopLeft: =0
+              RadiusTopRight: =0
               Width: =Parent.Width
             Children:
             - headerContent_1:
@@ -1056,7 +1064,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                   PaddingLeft: =
                   PaddingRight: '=8   '
                   Width: =Parent.Width
-                  Y: |+
+                  Y: |
                     =0
                 Children:
                 - logoContainer_1:
@@ -1072,31 +1080,30 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                       LayoutMinWidth: =80
                       LayoutMode: =LayoutMode.Auto
                       PaddingLeft: =4
-                      Width: |+
+                      RadiusBottomLeft: =0
+                      RadiusBottomRight: =0
+                      RadiusTopLeft: =0
+                      RadiusTopRight: =0
+                      Width: |
                         =
                     Children:
-                    - iconMenu_1:
-                        Control: Image
+                    - Icon2:
+                        Control: Classic/Icon
+                        Variant: Hamburger
                         Properties:
-                          OnSelect: |+
-                            =Set(constTrigger, !constTrigger)
-                          Image: |-
-                            ="data:image/svg+xml;utf8, " & EncodeUrl("
-                                <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='#26262C' viewBox='0 0 256 256'><path d='M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z'></path></svg>
-                            ")
-                          BorderColor: =RGBA(0, 18, 107, 1)
+                          OnSelect: =Set(constTrigger, !constTrigger)
+                          Color: =ColorValue(dsaTokens.colorNeutral100)
+                          FocusedBorderThickness: =0
                           Height: =40
-                          PaddingBottom: =4
-                          PaddingLeft: =4
-                          PaddingRight: =4
-                          PaddingTop: =4
-                          RadiusBottomLeft: =8
-                          RadiusBottomRight: =8
-                          RadiusTopLeft: =8
-                          RadiusTopRight: =8
-                          Width: '=40  '
-                          X: '=16  '
-                    - apexLogo_1:
+                          HoverBorderColor: =ColorValue(dsaTokens.colorNeutral400)
+                          HoverColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
+                          HoverFill: =ColorValue("#ffffff00")
+                          Icon: =If(!constTrigger, Icon.Hamburger, Icon.Cancel)
+                          PaddingLeft: =6
+                          PaddingRight: =6
+                          PressedColor: =ColorValue(dsaTokens.colorAccentPrimary)
+                          Width: =40
+                    - apex-logo:
                         Control: Image
                         Properties:
                           OnSelect: |-
@@ -1151,7 +1158,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                           Height: '=Parent.Height - 24  '
                           Width: '=2   '
                           Y: '=0   '
-                    - batLogo_1:
+                    - bat-logo:
                         Control: Image
                         Properties:
                           OnSelect: |-
@@ -1228,7 +1235,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                             =If(
                                 App.Width < 500, 40, 64 
                             )
-                - titleContainer_1:
+                - appName:
                     Control: GroupContainer
                     Variant: horizontalAutoLayoutContainer
                     Properties:
@@ -1241,6 +1248,10 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                       LayoutMode: =LayoutMode.Auto
                       PaddingBottom: =4
                       PaddingTop: =4
+                      RadiusBottomLeft: =0
+                      RadiusBottomRight: =0
+                      RadiusTopLeft: =0
+                      RadiusTopRight: =0
                       Width: =
                     Children:
                     - appTitle_1:
@@ -1264,7 +1275,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                           PaddingTop: =0
                           Size: |-
                             =If(
-                                App.Width < 768, 8, 18
+                                App.Width < 768, dsaTokens.fontSmallLabel, dsaTokens.fontTextMedium
                             )
                           Width: =Parent.Width
                 - userContainer_1:
@@ -1281,12 +1292,16 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                       LayoutMinHeight: =32
                       LayoutMinWidth: =80
                       LayoutMode: =LayoutMode.Auto
+                      RadiusBottomLeft: =0
+                      RadiusBottomRight: =0
+                      RadiusTopLeft: =0
+                      RadiusTopRight: =0
                       Width: =
                     Children:
                     - userName_1:
                         Control: Label
                         Properties:
-                          Text: |+
+                          Text: |
                             ="Olá, " &LookUp(constHeader,true).userData.FullName
                           Align: =Align.Right
                           Color: |-
@@ -1295,8 +1310,8 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                             )
                           FillPortions: =1
                           LayoutMinWidth: =40
-                          Size: =14
-                          Visible: =If(App.Width < 500, false, true)
+                          Size: =dsaTokens.fontLabel
+                          Visible: =If(App.Width < 768, false, true)
                           Width: |-
                             =
                             If(App.Width < 500, 0, Parent.Width - userImage_1.Width - Parent.LayoutGap)
@@ -1316,14 +1331,24 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
         Control: GroupContainer
         Variant: horizontalAutoLayoutContainer
         Properties:
+          DropShadow: =DropShadow.None
           LayoutMode: =LayoutMode.Auto
+          RadiusBottomLeft: =0
+          RadiusBottomRight: =0
+          RadiusTopLeft: =0
+          RadiusTopRight: =0
         Children:
         - navBarDsa:
             Control: GroupContainer
             Variant: manualLayoutContainer
             Properties:
+              DropShadow: =DropShadow.None
               Fill: =ColorValue(dsaTokens.colorBgPrimary)
               FillPortions: =0
+              RadiusBottomLeft: =0
+              RadiusBottomRight: =0
+              RadiusTopLeft: =0
+              RadiusTopRight: =0
               Width: |-
                 =If(constTrigger, 
                 widthMenuOpen, 
@@ -1341,6 +1366,10 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                   Height: =Parent.Height
                   LayoutDirection: =LayoutDirection.Vertical
                   LayoutMode: =LayoutMode.Auto
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
                   Width: =Parent.Width
                 Children:
                 - navLinks_2:
@@ -1365,7 +1394,6 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                         Properties:
                           Items: =constNavMenu
                           AlignInContainer: =AlignInContainer.SetByContainer
-                          BorderColor: =RGBA(0, 18, 107, 1)
                           DelayItemLoading: =true
                           Layout: =Layout.Vertical
                           LayoutMinHeight: =0
@@ -1374,6 +1402,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                           TemplateFill: =
                           TemplatePadding: =0
                           TemplateSize: =link_2.Height
+                          Transition: =Transition.Pop
                           Width: =Parent.Width
                         Children:
                         - link_2:
@@ -1385,27 +1414,22 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                                 Set(constTrigger, false)
                               Text: =ThisItem.linkName
                               Align: =Align.Left
-                              BorderColor: =ColorFade(Self.Fill, -15%)
                               BorderStyle: =BorderStyle.None
                               Color: |-
                                 =If(hoverEffect_2.Visible,
                                 ColorValue(dsaTokens.colorAccentPrimaryHover),
                                 ColorValue(dsaTokens.colorContrastLight)
                                 )
-                              DisabledBorderColor: =RGBA(166, 166, 166, 1)
                               Fill: =ColorValue("#ffffff00")
-                              Font: =Font.'Open Sans'
                               FontWeight: =FontWeight.Normal
-                              HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                               HoverColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
                               HoverFill: =ColorValue("#ffffff00")
                               PaddingBottom: =8
                               PaddingLeft: =56
                               PaddingRight: =8
                               PaddingTop: =8
-                              PressedBorderColor: =Self.Fill
                               PressedFill: =Self.Fill
-                              Size: =14
+                              Size: =dsaTokens.fontLabel
                               Width: =Parent.Width
                         - icon_2:
                             Control: Classic/Icon
@@ -1413,7 +1437,6 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                             Properties:
                               OnSelect: =Select(Parent)
                               AutoDisableOnSelect: =false
-                              BorderColor: =RGBA(0, 18, 107, 1)
                               Color: |-
                                 =If(hoverEffect_2.Visible,
                                 ColorValue(dsaTokens.colorAccentPrimaryHover),
@@ -1435,7 +1458,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                             Variant: manualLayoutContainer
                             Properties:
                               DropShadow: =DropShadow.None
-                              Fill: |+
+                              Fill: |
                                 =ColorValue(
                                 dsaTokens.colorBgSecondary
                                 )
@@ -1456,6 +1479,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                     Control: GroupContainer
                     Variant: verticalAutoLayoutContainer
                     Properties:
+                      DropShadow: =DropShadow.None
                       Height: =Parent.Height
                       LayoutDirection: =LayoutDirection.Vertical
                       LayoutJustifyContent: =LayoutJustifyContent.End
@@ -1503,23 +1527,18 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                               Text: ="Sair"
                               Align: =Align.Left
                               AlignInContainer: =AlignInContainer.End
-                              BorderColor: =ColorFade(Self.Fill, -15%)
                               BorderStyle: =BorderStyle.None
                               Color: =ColorValue(dsaTokens.colorContrastLight)
-                              DisabledBorderColor: =RGBA(166, 166, 166, 1)
                               Fill: =ColorValue("#ffffff00")
                               FillPortions: =1
-                              Font: =Font.'Open Sans'
                               FontWeight: =FontWeight.Normal
                               Height: =32
-                              HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
                               HoverColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
                               HoverFill: =ColorValue("#ffffff00")
                               PaddingBottom: =0
                               PaddingLeft: =24
                               PaddingRight: =0
                               PaddingTop: =0
-                              PressedBorderColor: =Self.Fill
                               PressedColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
                               PressedFill: =Self.Fill
                               RadiusBottomLeft: =0
@@ -1530,16 +1549,69 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                               Width: '=32  '
                               X: '=0   '
                               Y: =Parent.Height- Self.Height
-`;u.setAttribute("data-code",q);u.innerHTML=`
-<img class="ModalDsa" src=${Z} alt="Imagem header e sidebar para para power apps" />
-`;const j="/design-system-apex/assets/components-preview/CardHzDsa.png",C=document.createElement("div"),K=`
+  `;t.setAttribute("data-code",j);const K=`
+  // settings for nav menu
+  <pre>
+    <code>
+Set(constCurrentScreen, Home);
+Set(widthMenuOpen, 200);
+Set(widthMenuClosed, 44);
+ClearCollect(
+  constNavMenu,
+  {
+    icon: Icon.Home,
+    linkName: "Inicio",
+    toScreen: Home
+  }
+);
+    </code>
+  </pre>
+
+  <section class="details">
+  <div class="code-details">
+  <h6>constCurrentScreen</h6>
+  <p>Efeito de focus para página de Home, você pode trocar para outra página quando estiver usando uma naveção de sub-níveis e precisar realçar no menu lateral o nome da página pai.</p>
+  </div>
+   <div class="code-details">
+  <h6>widthMenuOpen</h6>
+  <p>Largura da barra lateral aberto.</p>
+  </div>
+  <div class="code-details">
+  <h6>widthMenuClosed</h6>
+  <p>Largura da barra lateral fechada somente com os ícones.</p>
+  </div>
+  <div class="code-details">
+  <h6>icon: Icon.Home,</h6>
+  <p>Define o icone Home para o primeiro item do menu da barra lateral.</p>
+  </div>
+  <div class="code-details">
+  <h6>linkName: "Inicio",</h6>
+  <p>Define o nome para o primeiro item do menu da barra lateral.</p>
+  </div>
+  <div class="code-details">
+  <h6>toScreen: Home</h6>
+  <p>Define para qual tela o usuário vai ao clicar no primeiro item do menu da barra lateral.</p>
+  </div>
+  <div class="tips">
+    <p>Para criar mais links de navegação no seu app, basta adicionar mais um objeto a collection alterando as propriedades abaixo.</p>
+    <pre><code>  {
+    icon: Icon.Add,
+    linkName: "Adicionar Chamado",
+    toScreen: Support
+  }
+    </code></pre>
+  </div>
+  </section>
+  `;t.setAttribute("data-properties",K);t.innerHTML=`
+  <img class="ModalDsa" src=${q} alt="Imagem header e sidebar para para power apps" />
+  `;const Q="/design-system-apex/assets/components-preview/CardHzDsa.png",g=document.createElement("div"),oo=`
 - CardHzDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
     Properties:
       DropShadow: =DropShadow.None
-      Height: |+
-        =Title.Height + Text.Height + cardHorizontalDivisor.Height + 40
+      Height: |
+        =Title_2.Height + Text.Height + cardHorizontalDivisor.Height + 40
       LayoutDirection: =LayoutDirection.Vertical
       LayoutGap: =8
       LayoutMode: =LayoutMode.Auto
@@ -1547,9 +1619,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
       RadiusBottomRight: =0
       RadiusTopLeft: =0
       RadiusTopRight: =0
-      Width: =878
-      X: '=0   '
-      Y: =588
+      Width: =610
     Children:
     - TitleBadge:
         Control: GroupContainer
@@ -1557,15 +1627,15 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
         Properties:
           DropShadow: =DropShadow.None
           FillPortions: =0
-          Height: |+
-            =Title.Height
+          Height: |
+            =Title_2.Height
           LayoutMode: =LayoutMode.Auto
           RadiusBottomLeft: =0
           RadiusBottomRight: =0
           RadiusTopLeft: =0
           RadiusTopRight: =0
         Children:
-        - Title:
+        - Title_2:
             Control: Label
             Properties:
               Text: ="Main Title"
@@ -1644,7 +1714,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
           RadiusTopLeft: =0
           RadiusTopRight: =0
         Children:
-        - content:
+        - content_1:
             Control: GroupContainer
             Variant: horizontalAutoLayoutContainer
             Properties:
@@ -1705,7 +1775,6 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
               DropShadow: =DropShadow.None
               FillPortions: =0
               Height: =Parent.Height
-              LayoutAlignItems: =LayoutAlignItems.End
               LayoutJustifyContent: =LayoutJustifyContent.End
               LayoutMinHeight: =0
               LayoutMinWidth: =0
@@ -1720,10 +1789,10 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                 Control: GroupContainer
                 Variant: horizontalAutoLayoutContainer
                 Properties:
-                  AlignInContainer: =AlignInContainer.Center
+                  AlignInContainer: =AlignInContainer.SetByContainer
                   DropShadow: =DropShadow.None
                   FillPortions: =0
-                  Height: =BtnIcnPriDsa.Height
+                  Height: =40
                   LayoutAlignItems: =LayoutAlignItems.Center
                   LayoutGap: =16
                   LayoutJustifyContent: =LayoutJustifyContent.End
@@ -2043,9 +2112,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
           Height: '=2   '
           Width: =Parent.Width
 
-`;C.setAttribute("data-code",K);C.innerHTML=`
-<img class="CardHzDsa" src=${j} alt="Imagem Card para power apps" />
-`;const Q="/design-system-apex/assets/components-preview/CardThumbDsa.png",h=document.createElement("div"),oo=`
+`;g.setAttribute("data-code",oo);g.innerHTML=`
+<img class="CardHzDsa" src=${Q} alt="Imagem Card para power apps" />
+`;const eo="/design-system-apex/assets/components-preview/CardThumbDsa.png",p=document.createElement("div"),to=`
 - CardThumbDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
@@ -2203,9 +2272,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
               X: =519
               Y: =150
 
-`;h.setAttribute("data-code",oo);h.innerHTML=`
-<img class="CardThumbDsa" src=${Q} alt="Imagem Card para power apps" />
-`;const eo="/design-system-apex/assets/components-preview/CardSmDsa.png",g=document.createElement("div"),to=`
+`;p.setAttribute("data-code",to);p.innerHTML=`
+<img class="CardThumbDsa" src=${eo} alt="Imagem Card para power apps" />
+`;const ro="/design-system-apex/assets/components-preview/CardSmDsa.png",T=document.createElement("div"),ao=`
 - CardSmDsa:
     Control: GroupContainer
     Variant: verticalAutoLayoutContainer
@@ -2580,9 +2649,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                   Width: =18
                   X: =Parent.Width/2 - Self.Width/2
                   Y: =BtnTerSec_3.Height /2 - Self.Height /2
-`;g.setAttribute("data-code",to);g.innerHTML=`
-<img class="CardThumbDsa" src=${eo} alt="Imagem Card para power apps" />
-`;const ro="/design-system-apex/assets/components-preview/modal.png",p=document.createElement("div"),ao=`- ModalContainer:
+`;T.setAttribute("data-code",ao);T.innerHTML=`
+<img class="CardThumbDsa" src=${ro} alt="Imagem Card para power apps" />
+`;const no="/design-system-apex/assets/components-preview/modal.png",f=document.createElement("div"),io=`- ModalContainer:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -2854,9 +2923,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
                   Width: =Parent.Width
                   X: =198
                   Y: =440
-`;p.setAttribute("data-code",ao);p.innerHTML=`
-<img class="ModalDsa" src=${ro} alt="Imagem combo box para power apps" />
-`;const no="/design-system-apex/assets/components-preview/toastDsa.png",o=document.createElement("div");o.classList.add("hasProperties");const io=`- ToastDsa:
+`;f.setAttribute("data-code",io);f.innerHTML=`
+<img class="ModalDsa" src=${no} alt="Imagem combo box para power apps" />
+`;const lo="/design-system-apex/assets/components-preview/toastDsa.png",o=document.createElement("div");o.classList.add("hasProperties");const so=`- ToastDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -2984,9 +3053,9 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
               Width: =24
               X: =636
               Y: =288
-`;o.setAttribute("data-code",io);o.innerHTML=`
-<img class="ModalDsa" src=${no} alt="Imagem modal para power apps" />
-`;const T=document.createElement("div"),lo=`
+`,co='<h2>nome var 1</h2><span>Set(dsaMessage, "toasto")</span>';o.setAttribute("data-properties",co);o.setAttribute("data-code",so);o.innerHTML=`
+<img class="ModalDsa" src=${lo} alt="Imagem modal para power apps" />
+`;const P=document.createElement("div"),uo=`
 // Design system tokens
     Set(dsaTokens,
         {
@@ -3064,7 +3133,7 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
 
 
     
-    `;T.setAttribute("data-code",lo);T.innerHTML=`
+    `;P.setAttribute("data-code",uo);P.innerHTML=`
 <pre>
 <code class="tokensDsa">
 // Tokens, copy into App.OnStart or OnVissible of home screen
@@ -3103,4 +3172,4 @@ import{B as V,a as H,b as S,d as R,e as A,f as D,g as F,c as b}from"./BtnDangerD
     );
     </code>
     </pre>
-`;const so={TokensDsa:T,BtnPriDsa:V,BtnSecDsa:H,BtnTerDsa:S,BtnIcnLtDsa:R,BtnIcnRtDsa:t,BtnIcnPriDsa:A,BtnIcnSecDsa:D,BtnIcnTerDsa:F,BtnIcnDangerDsa:r,BtnDangerDsa:b,InputTextDsa:a,InputComboBoxDsa:n,InputCheckBoxHzDsa:i,InputDropdownDsa:l,InputDataPickerDsa:d,InputRadioHzDsa:c,InputToggleDsa:s,CardHzDsa:C,CardSmDsa:g,CardThumbDsa:h,ModalDsa:p,ToastDsa:o,PageTemplateDsa:u},co=document.querySelector(".copy-components"),y=document.querySelector(".output-component"),L=document.querySelectorAll(".component-selected");for(let e=0;e<L.length;e++){const P=L[e];P.addEventListener("click",()=>{co.classList.add("d-block");const m=P.dataset.component,f=so[m];y.innerHTML="",y.appendChild(f);const k=document.querySelector(".get-code"),B=f.dataset.code;k.addEventListener("click",()=>{navigator.clipboard.writeText(B)})})}
+`;const Co={TokensDsa:P,BtnPriDsa:H,BtnSecDsa:R,BtnTerDsa:S,BtnIcnLtDsa:D,BtnIcnRtDsa:n,BtnIcnPriDsa:A,BtnIcnSecDsa:b,BtnIcnTerDsa:F,BtnIcnDangerDsa:i,BtnDangerDsa:v,InputTextDsa:l,InputComboBoxDsa:d,InputCheckBoxHzDsa:s,InputDropdownDsa:c,InputDataPickerDsa:u,InputRadioHzDsa:h,InputToggleDsa:C,CardHzDsa:g,CardSmDsa:T,CardThumbDsa:p,ModalDsa:f,ToastDsa:o,PageTemplateDsa:t},ho=document.querySelector(".copy-components"),y=document.querySelectorAll(".component-selected");for(let r=0;r<y.length;r++){const m=y[r];m.addEventListener("click",()=>{ho.classList.add("d-block");const k=m.dataset.component,e=Co[k],L=document.querySelector(".output-component");L.innerHTML="",L.appendChild(e);const a=document.querySelector(".properties");a.classList.remove("showProperties"),e.dataset.properties&&(a.classList.add("showProperties"),a.innerHTML=e.dataset.properties);const B=document.querySelector(".get-code"),V=e.dataset.code;B.addEventListener("click",()=>{navigator.clipboard.writeText(V)})})}
