@@ -3,12 +3,12 @@
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const h=(e,t,r=[])=>{const l=document.createElementNS("http://www.w3.org/2000/svg",e);return Object.keys(t).forEach(o=>{l.setAttribute(o,String(t[o]))}),r.length&&r.forEach(o=>{const a=h(...o);l.appendChild(a)}),l};var y=([e,t,r])=>h(e,t,r);/**
+ */const h=(e,t,r=[])=>{const l=document.createElementNS("http://www.w3.org/2000/svg",e);return Object.keys(t).forEach(o=>{l.setAttribute(o,String(t[o]))}),r.length&&r.forEach(o=>{const a=h(...o);l.appendChild(a)}),l};var H=([e,t,r])=>h(e,t,r);/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const H=e=>Array.from(e.attributes).reduce((t,r)=>(t[r.name]=r.value,t),{}),b=e=>typeof e=="string"?e:!e||!e.class?"":e.class&&typeof e.class=="string"?e.class.split(" "):e.class&&Array.isArray(e.class)?e.class:"",A=e=>e.flatMap(b).map(r=>r.trim()).filter(Boolean).filter((r,l,o)=>o.indexOf(r)===l).join(" "),R=e=>e.replace(/(\w)(\w*)(_|-|\s*)/g,(t,r,l)=>r.toUpperCase()+l.toLowerCase()),C=(e,{nameAttr:t,icons:r,attrs:l})=>{var u;const o=e.getAttribute(t);if(o==null)return;const a=R(o),s=r[a];if(!s)return console.warn(`${e.outerHTML} icon name was not found in the provided icons object.`);const c=H(e),[B,V,v]=s,d={...V,"data-lucide":o,...l,...c},i=A(["lucide",`lucide-${o}`,c,l]);i&&Object.assign(d,{class:i});const D=y([B,d,v]);return(u=e.parentNode)==null?void 0:u.replaceChild(D,e)};/**
+ */const A=e=>Array.from(e.attributes).reduce((t,r)=>(t[r.name]=r.value,t),{}),b=e=>typeof e=="string"?e:!e||!e.class?"":e.class&&typeof e.class=="string"?e.class.split(" "):e.class&&Array.isArray(e.class)?e.class:"",R=e=>e.flatMap(b).map(r=>r.trim()).filter(Boolean).filter((r,l,o)=>o.indexOf(r)===l).join(" "),S=e=>e.replace(/(\w)(\w*)(_|-|\s*)/g,(t,r,l)=>r.toUpperCase()+l.toLowerCase()),C=(e,{nameAttr:t,icons:r,attrs:l})=>{var u;const o=e.getAttribute(t);if(o==null)return;const a=S(o),s=r[a];if(!s)return console.warn(`${e.outerHTML} icon name was not found in the provided icons object.`);const d=A(e),[V,v,y]=s,c={...v,"data-lucide":o,...l,...d},i=R(["lucide",`lucide-${o}`,d,l]);i&&Object.assign(c,{class:i});const D=H([V,c,y]);return(u=e.parentNode)==null?void 0:u.replaceChild(D,e)};/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -23,35 +23,35 @@
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const S=["svg",n,[["path",{d:"m6 9 6 6 6-6"}]]];/**
+ */const L=["svg",n,[["path",{d:"m6 9 6 6 6-6"}]]];/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const L=["svg",n,[["path",{d:"m18 16 4-4-4-4"}],["path",{d:"m6 8-4 4 4 4"}],["path",{d:"m14.5 4-5 16"}]]];/**
+ */const F=["svg",n,[["path",{d:"m18 16 4-4-4-4"}],["path",{d:"m6 8-4 4 4 4"}],["path",{d:"m14.5 4-5 16"}]]];/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const F=["svg",n,[["path",{d:"m9 10 2 2 4-4"}],["rect",{width:"20",height:"14",x:"2",y:"3",rx:"2"}],["path",{d:"M12 17v4"}],["path",{d:"M8 21h8"}]]];/**
+ */const I=["svg",n,[["path",{d:"m9 10 2 2 4-4"}],["rect",{width:"20",height:"14",x:"2",y:"3",rx:"2"}],["path",{d:"M12 17v4"}],["path",{d:"M8 21h8"}]]];/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const I=["svg",n,[["path",{d:"M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z"}]]];/**
+ */const M=["svg",n,[["path",{d:"M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z"}]]];/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const M=["svg",n,[["path",{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"}],["circle",{cx:"9",cy:"7",r:"4"}],["path",{d:"M22 21v-2a4 4 0 0 0-3-3.87"}],["path",{d:"M16 3.13a4 4 0 0 1 0 7.75"}]]];/**
+ */const N=["svg",n,[["path",{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"}],["circle",{cx:"9",cy:"7",r:"4"}],["path",{d:"M22 21v-2a4 4 0 0 0-3-3.87"}],["path",{d:"M16 3.13a4 4 0 0 1 0 7.75"}]]];/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const N=({icons:e={},nameAttr:t="data-lucide",attrs:r={}}={})=>{if(!Object.values(e).length)throw new Error(`Please provide an icons object.
+ */const E=({icons:e={},nameAttr:t="data-lucide",attrs:r={}}={})=>{if(!Object.values(e).length)throw new Error(`Please provide an icons object.
 If you want to use all the icons you can import it like:
  \`import { createIcons, icons } from 'lucide';
-lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`createIcons()` only works in a browser environment.");const l=document.querySelectorAll(`[${t}]`);if(Array.from(l).forEach(o=>C(o,{nameAttr:t,icons:e,attrs:r})),t==="data-lucide"){const o=document.querySelectorAll("[icon-name]");o.length>0&&(console.warn("[Lucide] Some icons were found with the now deprecated icon-name attribute. These will still be replaced for backwards compatibility, but will no longer be supported in v1.0 and you should switch to data-lucide"),Array.from(o).forEach(a=>C(a,{nameAttr:"icon-name",icons:e,attrs:r})))}};N({icons:{Users:M,ChartSpline:w,MonitorCheck:F,Puzzle:I,ChevronDown:S,CodeXml:L}});const p=document.createElement("div"),E=`- BtnPriDsa:
+lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`createIcons()` only works in a browser environment.");const l=document.querySelectorAll(`[${t}]`);if(Array.from(l).forEach(o=>C(o,{nameAttr:t,icons:e,attrs:r})),t==="data-lucide"){const o=document.querySelectorAll("[icon-name]");o.length>0&&(console.warn("[Lucide] Some icons were found with the now deprecated icon-name attribute. These will still be replaced for backwards compatibility, but will no longer be supported in v1.0 and you should switch to data-lucide"),Array.from(o).forEach(a=>C(a,{nameAttr:"icon-name",icons:e,attrs:r})))}};E({icons:{Users:N,ChartSpline:w,MonitorCheck:I,Puzzle:M,ChevronDown:L,CodeXml:F}});const T=document.createElement("div"),W=`- BtnPriDsa:
     Control: Classic/Button
     Properties:
       BorderColor: |-
@@ -115,7 +115,7 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       Size: =dsaTokens.fontText
       X: =102
       Y: =150
-`;p.setAttribute("data-code",E);p.innerHTML='<button class="BtnPriDsa">teste</button>';const T=document.createElement("div"),W=`
+`;T.setAttribute("data-code",W);T.innerHTML='<button class="BtnPriDsa">teste</button>';const p=document.createElement("div"),x=`
 - BtnIcnPriDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
@@ -211,7 +211,7 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
           Width: =18
           X: =Parent.Width/2 - Self.Width/2
           Y: =BtnIcnPri.Height /2 - Self.Height /2
-`;T.setAttribute("data-code",W);const x='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';T.innerHTML=`<button class="BtnIcnPriDsa">${x}</button>`;const g=document.createElement("div"),$=`
+`;p.setAttribute("data-code",x);const $='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';p.innerHTML=`<button class="BtnIcnPriDsa">${$}</button>`;const k=document.createElement("div"),Y=`
 - BtnIcnSecDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
@@ -307,7 +307,7 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
           Width: =18
           X: =Parent.Width/2 - Self.Width/2
           Y: =BtnIcnSec.Height /2 - Self.Height /2
-`;g.setAttribute("data-code",$);const Y='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';g.innerHTML=`<button class="BtnIcnSecDsa">${Y}</button>`;const k=document.createElement("div"),X=`- BtnIcnTerDsa:
+`;k.setAttribute("data-code",Y);const X='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';k.innerHTML=`<button class="BtnIcnSecDsa">${X}</button>`;const g=document.createElement("div"),z=`- BtnIcnTerDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -409,7 +409,7 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
           Width: =18
           X: =Parent.Width/2 - Self.Width/2
           Y: =BtnTerSec.Height /2 - Self.Height /2
-`;k.setAttribute("data-code",X);const j='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';k.innerHTML=`<button class="BtnIcnTerDsa">${j}</button>`;const z=document.createElement("div");z.innerHTML='<button class="BtnTerDsa">teste</button>';const f=document.createElement("div"),O=`- BtnSecDsa:
+`;g.setAttribute("data-code",z);const j='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';g.innerHTML=`<button class="BtnIcnTerDsa">${j}</button>`;const f=document.createElement("div"),O=`- BtnSecDsa:
     Control: Classic/Button
     Properties:
       BorderColor: |-
@@ -473,7 +473,71 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       Size: =16
       X: =315
       Y: =150
-`;f.setAttribute("data-code",O);f.innerHTML='<button class="BtnSecDsa">teste</button>';const m=document.createElement("div"),G=`- BtnIcnLfDsa:
+`;f.setAttribute("data-code",O);f.innerHTML='<button class="BtnTerDsa">teste</button>';const m=document.createElement("div"),G=`- BtnSecDsa:
+    Control: Classic/Button
+    Properties:
+      BorderColor: |-
+        =ColorValue(
+        dsaTokens.colorAccentPrimary
+        )
+      Color: |-
+        =ColorValue(
+        dsaTokens.colorContrastLight
+        )
+      DisabledBorderColor: |-
+        =ColorValue(
+        dsaTokens.colorNeutral300
+        )
+      DisabledColor: |-
+        =ColorValue(
+        dsaTokens.colorNeutral300
+        )
+      DisabledFill: |-
+        =ColorValue(
+        dsaTokens.colorAccentSecondary
+        )
+      Fill: |-
+        =ColorValue(
+        dsaTokens.colorAccentSecondary
+        )
+      FocusedBorderColor: |-
+        =ColorValue(
+        dsaTokens.colorNeutral200
+        )
+      FocusedBorderThickness: '=2 '
+      HoverBorderColor: |-
+        =ColorValue(
+        dsaTokens.colorAccentPrimary
+        )
+      HoverColor: |-
+        =ColorValue(
+        dsaTokens.colorContrastLight
+        )
+      HoverFill: '=ColorValue(dsaTokens.colorAccentSecondaryHover)   '
+      PaddingBottom: =8
+      PaddingLeft: =16
+      PaddingRight: =16
+      PaddingTop: =8
+      PressedBorderColor: |-
+        =ColorValue(
+        dsaTokens.colorAccentSecondaryHover
+        )
+      PressedColor: |-
+        =ColorValue(
+        dsaTokens.colorContrastLight
+        )
+      PressedFill: |-
+        =ColorValue(
+        dsaTokens.colorAccentSecondary
+        )
+      RadiusBottomLeft: =200
+      RadiusBottomRight: =200
+      RadiusTopLeft: =200
+      RadiusTopRight: =200
+      Size: =16
+      X: =315
+      Y: =150
+`;m.setAttribute("data-code",G);m.innerHTML='<button class="BtnSecDsa">teste</button>';const P=document.createElement("div"),Z=`- BtnIcnLfDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -547,10 +611,10 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
           Width: =btniconLt.Size
           X: = Self.Width + 8
           Y: =btniconLt.Height /2 - Self.Height /2
-`;m.setAttribute("data-code",G);const Z='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';m.innerHTML=`
+`;P.setAttribute("data-code",Z);const q='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';P.innerHTML=`
 
-<button class="BtnIcnLtDsa">${Z}Teste</button>
-`;const P=document.createElement("div"),q=`- BtnDangerDsa:
+<button class="BtnIcnLtDsa">${q}Teste</button>
+`;const B=document.createElement("div"),U=`- BtnDangerDsa:
     Control: Classic/Button
     Properties:
       BorderColor: =ColorValue(dsaTokens.colorFeedbackError)
@@ -605,4 +669,4 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       Size: =dsaTokens.fontText
       X: =1089
       Y: =237
-`;P.setAttribute("data-code",q);P.innerHTML='<button class="BtnDangerDsa">teste</button>';export{p as B,f as a,z as b,P as c,m as d,T as e,g as f,k as g};
+`;B.setAttribute("data-code",U);B.innerHTML='<button class="BtnDangerDsa">teste</button>';export{T as B,m as a,f as b,B as c,P as d,p as e,k as f,g};
