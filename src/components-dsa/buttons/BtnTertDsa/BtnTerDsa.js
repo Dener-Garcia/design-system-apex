@@ -2,73 +2,79 @@ import "./BtnTerDsa.css"
 
 const BtnTerDsa = document.createElement("div")
 
-const codeSnippet = `- BtnSecDsa:
-    Control: Classic/Button
+const codeSnippet = `- BtnTerDsa:
+    Control: Classic/Button@2.2.0
     Properties:
       BorderColor: |-
         =ColorValue(
-        dsaTokens.colorAccentPrimary
+            "#ffffff00"
         )
+      BorderStyle: =BorderStyle.None
       Color: |-
         =ColorValue(
-        dsaTokens.colorContrastLight
+        dsaTokens.colorAccentPrimary
         )
       DisabledBorderColor: |-
         =ColorValue(
-        dsaTokens.colorNeutral300
+            "#ffffff00"
         )
       DisabledColor: |-
         =ColorValue(
-        dsaTokens.colorNeutral300
+         dsaTokens.colorNeutral300
         )
       DisabledFill: |-
         =ColorValue(
-        dsaTokens.colorAccentSecondary
+            "#ffffff00"
         )
       Fill: |-
         =ColorValue(
-        dsaTokens.colorAccentSecondary
+            "#ffffff00"
         )
       FocusedBorderColor: |-
         =ColorValue(
         dsaTokens.colorNeutral200
         )
       FocusedBorderThickness: '=2 '
+      Font: =Font.'Open Sans'
       HoverBorderColor: |-
         =ColorValue(
-        dsaTokens.colorAccentPrimary
+            "#ffffff00"
         )
       HoverColor: |-
         =ColorValue(
-        dsaTokens.colorContrastLight
+         dsaTokens.colorAccentPrimaryHover
         )
-      HoverFill: '=ColorValue(dsaTokens.colorAccentSecondaryHover)   '
+      HoverFill: |-
+        =ColorValue(
+            "#ffffff00"
+        )
       PaddingBottom: =8
       PaddingLeft: =16
       PaddingRight: =16
       PaddingTop: =8
       PressedBorderColor: |-
         =ColorValue(
-        dsaTokens.colorAccentSecondaryHover
+            "#ffffff00"
         )
       PressedColor: |-
         =ColorValue(
-        dsaTokens.colorContrastLight
+        dsaTokens.colorAccentPrimary
         )
       PressedFill: |-
         =ColorValue(
-        dsaTokens.colorAccentSecondary
+            "#ffffff00"
         )
       RadiusBottomLeft: =200
       RadiusBottomRight: =200
       RadiusTopLeft: =200
       RadiusTopRight: =200
-      Size: =16
-      X: =315
-      Y: =150
+      Size: =dsaTokens.fontText
+      Underline: =true
+      X: =458
+      Y: =237
 `
 BtnTerDsa.setAttribute("data-code", codeSnippet)
 
-BtnTerDsa.innerHTML = `<button class="BtnTerDsa">teste</button>`
+BtnTerDsa.innerHTML = `<button class="BtnTerDsa">Label</button>`
 
 export default BtnTerDsa
