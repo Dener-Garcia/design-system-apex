@@ -1,0 +1,9 @@
+.BadgeDsa{
+    padding: 0.5rem 1rem;
+    border: solid 2px var(--colorFeedbackErrorAccent);
+    border-radius: 999px;
+    font-size: var(--fontTextAccent);
+    font-weight:  500;
+    background-color: var(--colorFeedbackErrorAccent);
+    color: var(--colorContrastDark);
+}

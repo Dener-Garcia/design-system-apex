@@ -1,17 +1,15 @@
-import "./BtnTerDsa.css"
+import "./BadgeDsa.css"
 
-const BtnTerDsa = document.createElement("div")
 
-const codeSnippet = `- BtnSecDsa:
+const BadgeDsa = document.createElement("div")
+
+const codeSnippet = `- BtnDangerDsa:
     Control: Classic/Button
     Properties:
-      BorderColor: |-
-        =ColorValue(
-        dsaTokens.colorAccentPrimary
-        )
+      BorderColor: =ColorValue(dsaTokens.colorFeedbackError)
       Color: |-
         =ColorValue(
-        dsaTokens.colorContrastLight
+        dsaTokens.colorContrastDark
         )
       DisabledBorderColor: |-
         =ColorValue(
@@ -27,7 +25,7 @@ const codeSnippet = `- BtnSecDsa:
         )
       Fill: |-
         =ColorValue(
-        dsaTokens.colorAccentSecondary
+        dsaTokens.colorFeedbackErrorAccent
         )
       FocusedBorderColor: |-
         =ColorValue(
@@ -36,39 +34,34 @@ const codeSnippet = `- BtnSecDsa:
       FocusedBorderThickness: '=2 '
       HoverBorderColor: |-
         =ColorValue(
-        dsaTokens.colorAccentPrimary
+        dsaTokens.colorFeedbackErrorAccent
         )
       HoverColor: |-
         =ColorValue(
-        dsaTokens.colorContrastLight
+        dsaTokens.colorFeedbackErrorAccent
         )
-      HoverFill: '=ColorValue(dsaTokens.colorAccentSecondaryHover)   '
+      HoverFill: =ColorValue(dsaTokens.colorFeedbackError)
       PaddingBottom: =8
       PaddingLeft: =16
       PaddingRight: =16
       PaddingTop: =8
       PressedBorderColor: |-
         =ColorValue(
-        dsaTokens.colorAccentSecondaryHover
+        dsaTokens.colorFeedbackError
         )
-      PressedColor: |-
-        =ColorValue(
-        dsaTokens.colorContrastLight
-        )
-      PressedFill: |-
-        =ColorValue(
-        dsaTokens.colorAccentSecondary
-        )
+      PressedColor: =ColorValue(dsaTokens.colorFeedbackErrorAccent)
+      PressedFill: =ColorValue(dsaTokens.colorFeedbackError)
       RadiusBottomLeft: =200
       RadiusBottomRight: =200
       RadiusTopLeft: =200
       RadiusTopRight: =200
-      Size: =16
-      X: =315
-      Y: =150
+      Size: =dsaTokens.fontText
+      X: =1089
+      Y: =237
 `
-BtnTerDsa.setAttribute("data-code", codeSnippet)
 
-BtnTerDsa.innerHTML = `<button class="BtnTerDsa">teste</button>`
+BadgeDsa.setAttribute('data-code', codeSnippet)
 
-export default BtnTerDsa
+BadgeDsa.innerHTML = `<button class="BadgeDsa">Label</button>`
+
+export default BadgeDsa

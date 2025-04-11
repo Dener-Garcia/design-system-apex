@@ -30,6 +30,11 @@ import ModalDsa from "../components-dsa/modal/ModalDsa";
 import ToastDsa from "../components-dsa/ToastDsa/ToastDsa";
 import TokensDsa from "../components-dsa/tokens/TokensDsa";
 
+//loaders
+import LoaderApex from "../components-dsa/loaders/apexLoader/LoaderApex";
+import SplashApex from "../components-dsa/splash-screen-apex/splashScreenApex";
+import BadgeDsa from "../components-dsa/badge/BadgeDsa";
+
 export default {
     TokensDsa,
 
@@ -54,6 +59,9 @@ export default {
     InputRadioHzDsa,
     InputToggleDsa,
 
+    //badge
+    BadgeDsa,
+
     //cards
     CardHzDsa,
     CardSmDsa,
@@ -63,5 +71,11 @@ export default {
 
     ToastDsa,
 
-    PageTemplateDsa
+    PageTemplateDsa,
+
+    //loaders
+    LoaderApex,   
+    
+    //splash-screen
+    SplashApex
 }
