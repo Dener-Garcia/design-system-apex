@@ -5,7 +5,7 @@ const TokensDsa = document.createElement("div")
 const codeSnippet = `
 // Design system tokens
     Set(dsaTokens,
-        {
+       {
             colorBgPrimary: "#F3F3F6",
             colorBgSecondary: "#ffffff",
             colorAccentPrimary: "#2525D0",
@@ -34,7 +34,8 @@ const codeSnippet = `
             fontTextMedium: 20,
             fontText: 16,
             fontLabel: 14,
-            fontSmallLabel: 12
+            fontSmallLabel: 12,
+            fontSmallCaption: 8
         }
     );
 
@@ -58,6 +59,26 @@ const codeSnippet = `
             icon: Icon.Home,
             linkName: "Inicio",
             toScreen: Home
+        },
+        {
+            icon: Icon.Add,
+            linkName: "add",
+            toScreen: 'Components > Template Screen'
+        },
+        {
+            icon: Icon.AddLibrary,
+            linkName: "teste",
+            toScreen: 'Components > Buttons'
+        },
+        {
+            icon: Icon.Microphone,
+            linkName: "Inputs",
+            toScreen: 'Components > Inputs'
+        },
+        {
+            icon: Icon.Blocked,
+            linkName: "Modal",
+            toScreen: 'Components > Modal'
         }
     );
 
@@ -76,10 +97,37 @@ const codeSnippet = `
    Set(dsaBadgeType, "error");
    Set(dsaBadgeLabel, "Label");
 
-
-
-
-    
+// data sample for gallerys
+ClearCollect(StarWarsCharacters,
+    { Name: "Luke Skywalker" },
+    { Name: "Darth Vader" },
+    { Name: "Leia Organa" },
+    { Name: "Han Solo" },
+    { Name: "Obi-Wan Kenobi" },
+    { Name: "Yoda" },
+    { Name: "Anakin Skywalker" },
+    { Name: "Padmé Amidala" },
+    { Name: "Chewbacca" },
+    { Name: "R2-D2" },
+    { Name: "C-3PO" },
+    { Name: "Boba Fett" },
+    { Name: "Darth Maul" },
+    { Name: "Mace Windu" },
+    { Name: "Rey" },
+    { Name: "Kylo Ren" },
+    { Name: "Finn" },
+    { Name: "Poe Dameron" },
+    { Name: "Lando Calrissian" },
+    { Name: "Ahsoka Tano" },
+    { Name: "Luke Skywalker" },
+    { Name: "Darth Vader" },
+    { Name: "Leia Organa" },
+    { Name: "Han Solo" },
+    { Name: "Obi-Wan Kenobi" },
+    { Name: "Yoda" },
+    { Name: "Anakin Skywalker" },
+    { Name: "Padmé Amidala" }
+)
     `
 
 TokensDsa.setAttribute("data-code", codeSnippet)

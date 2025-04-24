@@ -35,6 +35,12 @@ import LoaderApex from "../components-dsa/loaders/apexLoader/LoaderApex";
 import SplashApex from "../components-dsa/splash-screen-apex/splashScreenApex";
 import BadgeDsa from "../components-dsa/badge/BadgeDsa";
 
+//gallerys
+import GalleryCardHzDsa from "../components-dsa/gallerys/gallery-card-hz/GalleryCardHz";
+import GalleryCardSmDsa from "../components-dsa/gallerys/gallery-card-sm/galleryCardSm";
+import GalleryCardSmBtnDsa from "../components-dsa/gallerys/gallery-card-sm-btn/galleryCardSmBtn";
+import GalleryCardThumbDsa from "../components-dsa/gallerys/gallery-card-thumb/galleryCardThumb";
+
 export default {
     TokensDsa,
 
@@ -77,5 +83,11 @@ export default {
     LoaderApex,   
     
     //splash-screen
-    SplashApex
+    SplashApex,
+
+    //Gallery
+    GalleryCardHzDsa,
+    GalleryCardSmDsa,
+    GalleryCardSmBtnDsa,
+    GalleryCardThumbDsa
 }

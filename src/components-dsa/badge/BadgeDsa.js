@@ -62,6 +62,6 @@ const codeSnippet = `- BtnDangerDsa:
 
 BadgeDsa.setAttribute('data-code', codeSnippet)
 
-BadgeDsa.innerHTML = `<button class="BadgeDsa">Label</button>`
+BadgeDsa.innerHTML = `<div class="BadgeDsa">Label</div>`
 
 export default BadgeDsa
