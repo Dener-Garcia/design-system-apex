@@ -24,6 +24,7 @@ import PageTemplateDsa from "../components-dsa/page-template/PageTemplateDsa";
 import CardHzDsa from "../components-dsa/cards/CardHzDsa/CardHzDsa";
 import CardThumbDsa from "../components-dsa/cards/CardThumbDsa/CardThumbDsa";
 import CardSmDsa from "../components-dsa/cards/CardSmDsa/CardSmDsa";
+import cardSmBtnDsa from "../components-dsa/cards/CardSmBtnDsa/cardSmBtnDsa";
 
 import ModalDsa from "../components-dsa/modal/ModalDsa";
 
@@ -72,6 +73,7 @@ export default {
     CardHzDsa,
     CardSmDsa,
     CardThumbDsa,
+    cardSmBtnDsa,
 
     ModalDsa,
 

@@ -1,14 +1,13 @@
 const LoaderApex = document.createElement("div")
 
-const codeSnippet = `
-- loaderApexContainer:
+const codeSnippet = `- loaderApexContainer:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
       AlignInContainer: =AlignInContainer.Center
       DropShadow: =DropShadow.None
       FillPortions: =0
-      Height: =If(App.Width < 768, 150, 240 )
+      Height: =If(App.Width < 768, 140, 200 )
       LayoutAlignItems: =LayoutAlignItems.Center
       LayoutDirection: =LayoutDirection.Horizontal
       LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -17,8 +16,9 @@ const codeSnippet = `
       RadiusBottomRight: =0
       RadiusTopLeft: =0
       RadiusTopRight: =0
-      Width: =If(App.Width < 768, 150, 240 )
-      Y: =40
+      Width: =If(App.Width < 768, 140, 200 )
+      X: =App.Width /2 - Self.Width /2
+      Y: =App.Height /2 - Self.Height /2
     Children:
       - loaderApex:
           Control: Image@2.2.3

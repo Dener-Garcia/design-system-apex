@@ -2,20 +2,19 @@ import preview from "/assets/components-preview/galleryCardThumbDsa.png"
 
 const GalleryCardThumbDsa = document.createElement("div")
 
-const codeSnipped = 
-`
-- GalleryCardThumbDsa:
+const codeSnipped = `- GalleryCardThumbDsa:
     Control: Gallery@2.15.0
     Variant: Vertical
     Properties:
-      AlignInContainer: =AlignInContainer.SetByContainer
       BorderColor: =RGBA(0, 18, 107, 1)
+      Height: =Parent.Height
       Items: =StarWarsCharacters
       LayoutMinHeight: =0
       LayoutMinWidth: =0
       ShowScrollbar: =false
       TemplatePadding: =0
       TemplateSize: =CardThumbDsa_1.Height + 24
+      Width: =Parent.Width
       WrapCount: |-
         =Switch(
             true,
@@ -31,7 +30,7 @@ const codeSnipped =
           Properties:
             DropShadow: =DropShadow.None
             Fill: =ColorValue(dsaTokens.colorBgPrimary)
-            Height: =thumbContainer_1.Height + cardThumbTitle_1.Height + cardThumbText_1.Height + BtnTerDsa_2.Height + cardThumbContent_1.PaddingBottom + cardThumbContent_1.PaddingBottom
+            Height: =dsaTokens.Height340
             LayoutDirection: =LayoutDirection.Vertical
             RadiusBottomLeft: =16
             RadiusBottomRight: =16
@@ -44,6 +43,7 @@ const codeSnipped =
                 Control: GroupContainer@1.3.0
                 Variant: ManualLayout
                 Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
                   DropShadow: =DropShadow.Regular
                   FillPortions: =0
                   Height: '=200 '
@@ -67,6 +67,7 @@ const codeSnipped =
                 Control: GroupContainer@1.3.0
                 Variant: AutoLayout
                 Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
                   DropShadow: =DropShadow.None
                   Height: '=0   '
                   LayoutDirection: =LayoutDirection.Vertical

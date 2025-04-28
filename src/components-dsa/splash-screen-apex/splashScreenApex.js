@@ -15,6 +15,8 @@ const codeSnippet = `- splashContainer:
       RadiusTopLeft: =0
       RadiusTopRight: =0
       Width: =If(App.Width < 768, 200, 400)
+      X: =App.Width /2 - Self.Width/2
+      Y: =App.Height /2 - Self.Height/2
     Children:
       - splash-apex:
           Control: Image@2.2.3
@@ -424,9 +426,7 @@ const codeSnippet = `- splashContainer:
                       </defs>
                       </svg>  ")
             Width: =Parent.Width
-            X: '=0   '
-            Y: =Parent.Height / 2 - Self.Height / 2
-
+    
 `
 
 SplashApex.setAttribute("data-code", codeSnippet)

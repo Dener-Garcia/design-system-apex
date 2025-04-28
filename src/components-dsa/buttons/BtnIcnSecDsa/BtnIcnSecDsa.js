@@ -1,10 +1,9 @@
 import "./BtnIcnSecDsa.css"
 const BtnIcnSecDsa = document.createElement("div")
 
-const codeSnippet = `
-- BtnIcnSecDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
+const codeSnippet = `- BtnIcnSecDsa:
+    Control: GroupContainer@1.3.0
+    Variant: ManualLayout
     Properties:
       DropShadow: =DropShadow.None
       Height: =40
@@ -13,90 +12,93 @@ const codeSnippet = `
       RadiusTopLeft: =200
       RadiusTopRight: =200
       Width: =40
-      X: =370
-      Y: =298
+      X: =312
+      Y: =422
     Children:
-    - BtnIcnSec:
-        Control: Classic/Button
-        Properties:
-          Text: =
-          BorderColor: |-
-            =ColorValue(
-              dsaTokens.colorAccentPrimary)
-          BorderThickness: =0
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorContrastLight
-            )
-          DisabledColor: |-
-            =ColorValue(
-            dsaTokens.colorNeutral200
-            )
-          DisabledFill: |-
-            =ColorValue(
-            dsaTokens.colorNeutral400
-            )
-          Fill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondary
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          HoverColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          HoverFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PaddingBottom: =8
-          PaddingLeft: =8
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          PressedFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondary
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - IconSecBtn:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                BtnIcnSec.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorContrastLight)
-            )
-          FocusedBorderThickness: =0
-          Height: =18
-          HoverColor: |-
-            =ColorValue(
-                dsaTokens.colorNeutral100
-            )
-          Icon: =Icon.AddDocument
-          PressedColor: =ColorFade(Self.Color, -40%)
-          Width: =18
-          X: =Parent.Width/2 - Self.Width/2
-          Y: =BtnIcnSec.Height /2 - Self.Height /2
+      - BtnIcnSec:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: |-
+              =ColorValue(
+                dsaTokens.colorAccentPrimary)
+            BorderThickness: =0
+            Color: |-
+              =ColorValue(
+              dsaTokens.colorContrastLight
+              )
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral200
+              )
+            DisabledFill: |-
+              =ColorValue(
+              dsaTokens.colorNeutral400
+              )
+            Fill: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondary
+              )
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            HoverColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            HoverFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            PressedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            PressedFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondary
+              )
+            RadiusBottomLeft: =200
+            RadiusBottomRight: =200
+            RadiusTopLeft: =200
+            RadiusTopRight: =200
+            Size: =16
+            Text: =
+            Width: =Parent.Width
+            Y: '=0   '
+      - IconSecBtn:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =If(
+                  BtnIcnSec.DisplayMode = DisplayMode.Disabled,
+                  ColorValue(dsaTokens.colorNeutral300),
+                  ColorValue(dsaTokens.colorContrastLight)
+              )
+            FocusedBorderThickness: =0
+            Height: =18
+            HoverColor: |-
+              =ColorValue(
+                  dsaTokens.colorNeutral100
+              )
+            Icon: =Icon.AddDocument
+            PressedColor: =ColorFade(Self.Color, -40%)
+            Width: =18
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =BtnIcnSec.Height /2 - Self.Height /2
+
 `
 
 BtnIcnSecDsa.setAttribute("data-code", codeSnippet)

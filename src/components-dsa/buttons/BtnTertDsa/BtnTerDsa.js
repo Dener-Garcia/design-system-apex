@@ -72,7 +72,10 @@ const codeSnippet = `- BtnTerDsa:
       Underline: =true
       X: =458
       Y: =237
+
+
 `
+
 BtnTerDsa.setAttribute("data-code", codeSnippet)
 
 BtnTerDsa.innerHTML = `<button class="BtnTerDsa">Label</button>`

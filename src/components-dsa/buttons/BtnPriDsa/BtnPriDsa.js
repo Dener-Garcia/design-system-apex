@@ -3,7 +3,7 @@ import "./BtnPriDsa.css"
 const BtnPriDsa = document.createElement("div")
 
 const codeSnippet = `- BtnPriDsa:
-    Control: Classic/Button
+    Control: Classic/Button@2.2.0
     Properties:
       BorderColor: |-
         =ColorValue(
@@ -34,6 +34,7 @@ const codeSnippet = `- BtnPriDsa:
         dsaTokens.colorNeutral200
         )
       FocusedBorderThickness: '=2 '
+      Font: =Font.'Open Sans'
       HoverBorderColor: |-
         =ColorValue(
         dsaTokens.colorAccentPrimary
@@ -64,9 +65,11 @@ const codeSnippet = `- BtnPriDsa:
       RadiusTopLeft: =200
       RadiusTopRight: =200
       Size: =dsaTokens.fontText
-      X: =102
-      Y: =150
+      X: =42
+      Y: =237
+
 `
+
 
 BtnPriDsa.setAttribute("data-code", codeSnippet)
 

@@ -8,13 +8,13 @@
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
-      Height: =Parent.Height
+      Height: =App.Height
       LayoutDirection: =LayoutDirection.Vertical
       RadiusBottomLeft: =0
       RadiusBottomRight: =0
       RadiusTopLeft: =0
       RadiusTopRight: =0
-      Width: =Parent.Width
+      Width: =App.Width
     Children:
       - HeaderDsa:
           Control: GroupContainer@1.3.0
@@ -421,6 +421,7 @@
                                           X: |-
                                             =
                                             0
+                                          Y: =2
                                     - icon_2:
                                         Control: Classic/Icon@2.5.0
                                         Properties:
@@ -559,7 +560,8 @@
                 Variant: AutoLayout
                 Properties:
                   LayoutDirection: =LayoutDirection.Vertical
-`
+
+  `
   PageTemplateDsa.setAttribute("data-code", codeSnippet)
 
   const properties = `

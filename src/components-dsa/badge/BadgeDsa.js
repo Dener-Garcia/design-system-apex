@@ -60,7 +60,24 @@ const codeSnippet = `- BtnDangerDsa:
       Y: =237
 `
 
+const properties = `
+// settings for nav menu
+<pre>
+  <code>
+  Set(dsaBadgeType, "info");
+  </code>
+</pre>
+
+<section class="details">
+  <div class="code-details">
+    <h6>dsaBadgeType</h6>
+    <p>Mude o tipo do Badge ao setar essa variavel para "info", "warning", "success" ou "error" conforme o tipo de mensagem que voce deseja mostrar para o usuario.</p>
+  </div>
+</section>
+`
+
 BadgeDsa.setAttribute('data-code', codeSnippet)
+BadgeDsa.setAttribute('data-properties', properties)
 
 BadgeDsa.innerHTML = `<div class="BadgeDsa">Label</div>`
 

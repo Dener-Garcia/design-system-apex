@@ -35,7 +35,8 @@ const codeSnippet = `
             fontText: 16,
             fontLabel: 14,
             fontSmallLabel: 12,
-            fontSmallCaption: 8
+            fontSmallCaption: 8,
+            Height340: 340
         }
     );
 
@@ -59,26 +60,6 @@ const codeSnippet = `
             icon: Icon.Home,
             linkName: "Inicio",
             toScreen: Home
-        },
-        {
-            icon: Icon.Add,
-            linkName: "add",
-            toScreen: 'Components > Template Screen'
-        },
-        {
-            icon: Icon.AddLibrary,
-            linkName: "teste",
-            toScreen: 'Components > Buttons'
-        },
-        {
-            icon: Icon.Microphone,
-            linkName: "Inputs",
-            toScreen: 'Components > Inputs'
-        },
-        {
-            icon: Icon.Blocked,
-            linkName: "Modal",
-            toScreen: 'Components > Modal'
         }
     );
 
@@ -128,7 +109,7 @@ ClearCollect(StarWarsCharacters,
     { Name: "Anakin Skywalker" },
     { Name: "Padmé Amidala" }
 )
-    `
+`
 
 TokensDsa.setAttribute("data-code", codeSnippet)
 

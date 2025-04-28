@@ -2,8 +2,7 @@ import preview from "/assets/components-preview/galleryCardHzDsa.png"
 
 const GalleryCardHzDsa = document.createElement("div")
 
-const codeSnipped = 
-`- GalleryCardHzDsa:
+const codeSnipped = `- GalleryCardHzDsa:
     Control: Gallery@2.15.0
     Variant: VariableHeight
     Properties:
