@@ -3,12 +3,12 @@
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const h=(e,t,r=[])=>{const a=document.createElementNS("http://www.w3.org/2000/svg",e);return Object.keys(t).forEach(o=>{a.setAttribute(o,String(t[o]))}),r.length&&r.forEach(o=>{const l=h(...o);a.appendChild(l)}),a};var H=([e,t,r])=>h(e,t,r);/**
+ */const f=(e,t,r=[])=>{const a=document.createElementNS("http://www.w3.org/2000/svg",e);return Object.keys(t).forEach(o=>{a.setAttribute(o,String(t[o]))}),r.length&&r.forEach(o=>{const l=f(...o);a.appendChild(l)}),a};var b=([e,t,r])=>f(e,t,r);/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const b=e=>Array.from(e.attributes).reduce((t,r)=>(t[r.name]=r.value,t),{}),R=e=>typeof e=="string"?e:!e||!e.class?"":e.class&&typeof e.class=="string"?e.class.split(" "):e.class&&Array.isArray(e.class)?e.class:"",A=e=>e.flatMap(R).map(r=>r.trim()).filter(Boolean).filter((r,a,o)=>o.indexOf(r)===a).join(" "),S=e=>e.replace(/(\w)(\w*)(_|-|\s*)/g,(t,r,a)=>r.toUpperCase()+a.toLowerCase()),C=(e,{nameAttr:t,icons:r,attrs:a})=>{var u;const o=e.getAttribute(t);if(o==null)return;const l=S(o),s=r[l];if(!s)return console.warn(`${e.outerHTML} icon name was not found in the provided icons object.`);const d=b(e),[V,v,D]=s,i={...v,"data-lucide":o,...a,...d},c=A(["lucide",`lucide-${o}`,d,a]);c&&Object.assign(i,{class:c});const y=H([V,i,D]);return(u=e.parentNode)==null?void 0:u.replaceChild(y,e)};/**
+ */const y=e=>Array.from(e.attributes).reduce((t,r)=>(t[r.name]=r.value,t),{}),H=e=>typeof e=="string"?e:!e||!e.class?"":e.class&&typeof e.class=="string"?e.class.split(" "):e.class&&Array.isArray(e.class)?e.class:"",A=e=>e.flatMap(H).map(r=>r.trim()).filter(Boolean).filter((r,a,o)=>o.indexOf(r)===a).join(" "),S=e=>e.replace(/(\w)(\w*)(_|-|\s*)/g,(t,r,a)=>r.toUpperCase()+a.toLowerCase()),C=(e,{nameAttr:t,icons:r,attrs:a})=>{var u;const o=e.getAttribute(t);if(o==null)return;const l=S(o),s=r[l];if(!s)return console.warn(`${e.outerHTML} icon name was not found in the provided icons object.`);const d=y(e),[V,v,D]=s,i={...v,"data-lucide":o,...a,...d},c=A(["lucide",`lucide-${o}`,d,a]);c&&Object.assign(i,{class:c});const R=b([V,i,D]);return(u=e.parentNode)==null?void 0:u.replaceChild(R,e)};/**
  * @license lucide v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -51,8 +51,8 @@
  */const E=({icons:e={},nameAttr:t="data-lucide",attrs:r={}}={})=>{if(!Object.values(e).length)throw new Error(`Please provide an icons object.
 If you want to use all the icons you can import it like:
  \`import { createIcons, icons } from 'lucide';
-lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`createIcons()` only works in a browser environment.");const a=document.querySelectorAll(`[${t}]`);if(Array.from(a).forEach(o=>C(o,{nameAttr:t,icons:e,attrs:r})),t==="data-lucide"){const o=document.querySelectorAll("[icon-name]");o.length>0&&(console.warn("[Lucide] Some icons were found with the now deprecated icon-name attribute. These will still be replaced for backwards compatibility, but will no longer be supported in v1.0 and you should switch to data-lucide"),Array.from(o).forEach(l=>C(l,{nameAttr:"icon-name",icons:e,attrs:r})))}};E({icons:{Users:N,ChartSpline:w,MonitorCheck:I,Puzzle:M,ChevronDown:L,CodeXml:F}});const f=document.createElement("div"),W=`- BtnPriDsa:
-    Control: Classic/Button
+lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`createIcons()` only works in a browser environment.");const a=document.querySelectorAll(`[${t}]`);if(Array.from(a).forEach(o=>C(o,{nameAttr:t,icons:e,attrs:r})),t==="data-lucide"){const o=document.querySelectorAll("[icon-name]");o.length>0&&(console.warn("[Lucide] Some icons were found with the now deprecated icon-name attribute. These will still be replaced for backwards compatibility, but will no longer be supported in v1.0 and you should switch to data-lucide"),Array.from(o).forEach(l=>C(l,{nameAttr:"icon-name",icons:e,attrs:r})))}};E({icons:{Users:N,ChartSpline:w,MonitorCheck:I,Puzzle:M,ChevronDown:L,CodeXml:F}});const h=document.createElement("div"),W=`- BtnPriDsa:
+    Control: Classic/Button@2.2.0
     Properties:
       BorderColor: |-
         =ColorValue(
@@ -83,6 +83,7 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
         dsaTokens.colorNeutral200
         )
       FocusedBorderThickness: '=2 '
+      Font: =Font.'Open Sans'
       HoverBorderColor: |-
         =ColorValue(
         dsaTokens.colorAccentPrimary
@@ -113,12 +114,12 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       RadiusTopLeft: =200
       RadiusTopRight: =200
       Size: =dsaTokens.fontText
-      X: =102
-      Y: =150
-`;f.setAttribute("data-code",W);f.innerHTML='<button class="BtnPriDsa">teste</button>';const p=document.createElement("div"),x=`
-- BtnIcnPriDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
+      X: =42
+      Y: =237
+
+`;h.setAttribute("data-code",W);h.innerHTML='<button class="BtnPriDsa">teste</button>';const p=document.createElement("div"),x=`- BtnIcnPriDsa:
+    Control: GroupContainer@1.3.0
+    Variant: ManualLayout
     Properties:
       DropShadow: =DropShadow.None
       Height: =40
@@ -127,189 +128,96 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       RadiusTopLeft: =200
       RadiusTopRight: =200
       Width: =40
-      X: =162
-      Y: =298
+      X: =111
+      Y: =422
     Children:
-    - BtnIcnPri:
-        Control: Classic/Button
-        Properties:
-          Text: =
-          Tooltip: =
-          BorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary)
-          BorderThickness: =0
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          DisabledColor: |-
-            =ColorValue(
-            dsaTokens.colorNeutral300
-            )
-          DisabledFill: |-
-            =ColorValue(
-            dsaTokens.colorNeutral400
-            )
-          Fill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          HoverColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          HoverFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          PaddingBottom: =8
-          PaddingLeft: =8
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          PressedFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - iconPriBtn:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                BtnIcnPri.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorContrastDark)
-            )
-          FocusedBorderThickness: =0
-          Height: =18
-          HoverColor: |-
-            =ColorValue(
-                dsaTokens.colorContrastDark
-            )
-          Icon: =Icon.AddDocument
-          Width: =18
-          X: =Parent.Width/2 - Self.Width/2
-          Y: =BtnIcnPri.Height /2 - Self.Height /2
-`;p.setAttribute("data-code",x);const $='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';p.innerHTML=`<button class="BtnIcnPriDsa">${$}</button>`;const T=document.createElement("div"),Y=`
-- BtnIcnSecDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
-    Properties:
-      DropShadow: =DropShadow.None
-      Height: =40
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Width: =40
-      X: =370
-      Y: =298
-    Children:
-    - BtnIcnSec:
-        Control: Classic/Button
-        Properties:
-          Text: =
-          BorderColor: |-
-            =ColorValue(
+      - BtnIcnPri:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: |-
+              =ColorValue(
               dsaTokens.colorAccentPrimary)
-          BorderThickness: =0
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorContrastLight
-            )
-          DisabledColor: |-
-            =ColorValue(
-            dsaTokens.colorNeutral200
-            )
-          DisabledFill: |-
-            =ColorValue(
-            dsaTokens.colorNeutral400
-            )
-          Fill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondary
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          HoverColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          HoverFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PaddingBottom: =8
-          PaddingLeft: =8
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          PressedFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondary
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - IconSecBtn:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                BtnIcnSec.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorContrastLight)
-            )
-          FocusedBorderThickness: =0
-          Height: =18
-          HoverColor: |-
-            =ColorValue(
-                dsaTokens.colorNeutral100
-            )
-          Icon: =Icon.AddDocument
-          PressedColor: =ColorFade(Self.Color, -40%)
-          Width: =18
-          X: =Parent.Width/2 - Self.Width/2
-          Y: =BtnIcnSec.Height /2 - Self.Height /2
-`;T.setAttribute("data-code",Y);const X='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';T.innerHTML=`<button class="BtnIcnSecDsa">${X}</button>`;const g=document.createElement("div"),z=`- BtnIcnTerDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
+            BorderThickness: =0
+            Color: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral300
+              )
+            DisabledFill: |-
+              =ColorValue(
+              dsaTokens.colorNeutral400
+              )
+            Fill: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            HoverColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            HoverFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            PressedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            PressedFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            RadiusBottomLeft: =200
+            RadiusBottomRight: =200
+            RadiusTopLeft: =200
+            RadiusTopRight: =200
+            Size: =16
+            Text: =
+            Tooltip: =
+            Width: =Parent.Width
+            Y: '=0   '
+      - iconPriBtn:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =If(
+                  BtnIcnPri.DisplayMode = DisplayMode.Disabled,
+                  ColorValue(dsaTokens.colorNeutral300),
+                  ColorValue(dsaTokens.colorContrastDark)
+              )
+            FocusedBorderThickness: =0
+            Height: =18
+            HoverColor: |-
+              =ColorValue(
+                  dsaTokens.colorContrastDark
+              )
+            Icon: =Icon.AddDocument
+            Width: =18
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =BtnIcnPri.Height /2 - Self.Height /2
+
+`;p.setAttribute("data-code",x);const $='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';p.innerHTML=`<button class="BtnIcnPriDsa">${$}</button>`;const T=document.createElement("div"),O=`- BtnIcnSecDsa:
+    Control: GroupContainer@1.3.0
+    Variant: ManualLayout
     Properties:
       DropShadow: =DropShadow.None
       Height: =40
@@ -318,98 +226,194 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       RadiusTopLeft: =200
       RadiusTopRight: =200
       Width: =40
-      X: =579
-      Y: =298
+      X: =312
+      Y: =422
     Children:
-    - BtnTerSec:
-        Control: Classic/Button
-        Properties:
-          Text: =
-          BorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary)
-          BorderThickness: =0
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          DisabledColor: |-
-            =ColorValue(
-            dsaTokens.colorNeutral200
-            )
-          DisabledFill: |-
-            =ColorValue(
-               "#ffffff00"
-            )
-          Fill: |-
-            =ColorValue(
-               "#ffffff00"
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          HoverColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          HoverFill: |-
-            =ColorValue(
-               "#ffffff00"
-            )
-          PaddingBottom: =8
-          PaddingLeft: =8
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          PressedFill: |-
-            =ColorValue(
-               "#ffffff00"
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - IconTerBtn:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                BtnTerSec.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorAccentPrimary)
-            )
-          FocusedBorderThickness: =0
-          Height: =18
-          HoverColor: |-
-            =ColorValue(
-                dsaTokens.colorAccentPrimary
-            )
-          HoverFill: |-
-            =   ColorValue(
-                "#ffffff00"
-               )
-          Icon: =Icon.AddDocument
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          Width: =18
-          X: =Parent.Width/2 - Self.Width/2
-          Y: =BtnTerSec.Height /2 - Self.Height /2
-`;g.setAttribute("data-code",z);const j='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';g.innerHTML=`<button class="BtnIcnTerDsa">${j}</button>`;const k=document.createElement("div"),O=`- BtnTerDsa:
+      - BtnIcnSec:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: |-
+              =ColorValue(
+                dsaTokens.colorAccentPrimary)
+            BorderThickness: =0
+            Color: |-
+              =ColorValue(
+              dsaTokens.colorContrastLight
+              )
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral200
+              )
+            DisabledFill: |-
+              =ColorValue(
+              dsaTokens.colorNeutral400
+              )
+            Fill: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondary
+              )
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            HoverColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            HoverFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            PressedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            PressedFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondary
+              )
+            RadiusBottomLeft: =200
+            RadiusBottomRight: =200
+            RadiusTopLeft: =200
+            RadiusTopRight: =200
+            Size: =16
+            Text: =
+            Width: =Parent.Width
+            Y: '=0   '
+      - IconSecBtn:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =If(
+                  BtnIcnSec.DisplayMode = DisplayMode.Disabled,
+                  ColorValue(dsaTokens.colorNeutral300),
+                  ColorValue(dsaTokens.colorContrastLight)
+              )
+            FocusedBorderThickness: =0
+            Height: =18
+            HoverColor: |-
+              =ColorValue(
+                  dsaTokens.colorNeutral100
+              )
+            Icon: =Icon.AddDocument
+            PressedColor: =ColorFade(Self.Color, -40%)
+            Width: =18
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =BtnIcnSec.Height /2 - Self.Height /2
+
+`;T.setAttribute("data-code",O);const Y='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';T.innerHTML=`<button class="BtnIcnSecDsa">${Y}</button>`;const g=document.createElement("div"),X=`- BtnIcnTerDsa:
+    Control: GroupContainer@1.3.0
+    Variant: ManualLayout
+    Properties:
+      DropShadow: =DropShadow.None
+      Height: =40
+      RadiusBottomLeft: =200
+      RadiusBottomRight: =200
+      RadiusTopLeft: =200
+      RadiusTopRight: =200
+      Width: =40
+      X: =527
+      Y: =422
+    Children:
+      - BtnTerSec:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorValue("#ffffff00")
+            BorderThickness: =0
+            Color: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral200
+              )
+            DisabledFill: |-
+              =ColorValue(
+                 "#ffffff00"
+              )
+            Fill: |-
+              =ColorValue(
+                 "#ffffff00"
+              )
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: =ColorValue("#ffffff00")
+            HoverColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            HoverFill: |-
+              =ColorValue(
+                 "#ffffff00"
+              )
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            PressedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            PressedFill: |-
+              =ColorValue(
+                 "#ffffff00"
+              )
+            RadiusBottomLeft: =200
+            RadiusBottomRight: =200
+            RadiusTopLeft: =200
+            RadiusTopRight: =200
+            Size: =16
+            Text: =
+            Width: =Parent.Width
+            Y: '=0   '
+      - IconTerBtn:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =If(
+                  BtnTerSec.DisplayMode = DisplayMode.Disabled,
+                  ColorValue(dsaTokens.colorNeutral300),
+                  ColorValue(dsaTokens.colorAccentPrimary)
+              )
+            FocusedBorderThickness: =0
+            Height: =18
+            HoverColor: |-
+              =ColorValue(
+                  dsaTokens.colorAccentPrimaryHover
+              )
+            HoverFill: |-
+              =   ColorValue(
+                  "#ffffff00"
+                 )
+            Icon: =Icon.AddDocument
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            Width: =18
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =BtnTerSec.Height /2 - Self.Height /2
+
+`;g.setAttribute("data-code",X);const z='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-plus"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 18v-6"/></svg>';g.innerHTML=`<button class="BtnIcnTerDsa">${z}</button>`;const k=document.createElement("div"),j=`- BtnTerDsa:
     Control: Classic/Button@2.2.0
     Properties:
       BorderColor: |-
@@ -479,8 +483,10 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       Underline: =true
       X: =458
       Y: =237
-`;k.setAttribute("data-code",O);k.innerHTML='<button class="BtnTerDsa">Label</button>';const m=document.createElement("div"),G=`- BtnSecDsa:
-    Control: Classic/Button
+
+
+`;k.setAttribute("data-code",j);k.innerHTML='<button class="BtnTerDsa">Label</button>';const B=document.createElement("div"),G=`- BtnSecDsa:
+    Control: Classic/Button@2.2.0
     Properties:
       BorderColor: |-
         =ColorValue(
@@ -511,6 +517,7 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
         dsaTokens.colorNeutral200
         )
       FocusedBorderThickness: '=2 '
+      Font: =Font.'Open Sans'
       HoverBorderColor: |-
         =ColorValue(
         dsaTokens.colorAccentPrimary
@@ -540,10 +547,11 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       RadiusBottomRight: =200
       RadiusTopLeft: =200
       RadiusTopRight: =200
-      Size: =16
-      X: =315
-      Y: =150
-`;m.setAttribute("data-code",G);m.innerHTML='<button class="BtnSecDsa">teste</button>';const P=document.createElement("div"),Z=`- BtnIcnLfDsa:
+      Size: =dsaTokens.fontText
+      X: =243
+      Y: =237
+
+`;B.setAttribute("data-code",G);B.innerHTML='<button class="BtnSecDsa">teste</button>';const m=document.createElement("div"),Z=`- BtnIcnLfDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -617,10 +625,10 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
           Width: =btniconLt.Size
           X: = Self.Width + 8
           Y: =btniconLt.Height /2 - Self.Height /2
-`;P.setAttribute("data-code",Z);const q='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';P.innerHTML=`
+`;m.setAttribute("data-code",Z);const q='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';m.innerHTML=`
 
 <button class="BtnIcnLtDsa">${q}Teste</button>
-`;const B=document.createElement("div"),U=`- BtnDangerDsa:
+`;const P=document.createElement("div"),U=`- BtnDangerDsa:
     Control: Classic/Button
     Properties:
       BorderColor: =ColorValue(dsaTokens.colorFeedbackError)
@@ -675,4 +683,4 @@ lucide.createIcons({icons});\``);if(typeof document>"u")throw new Error("`create
       Size: =dsaTokens.fontText
       X: =1089
       Y: =237
-`;B.setAttribute("data-code",U);B.innerHTML='<button class="BtnDangerDsa">teste</button>';export{f as B,m as a,k as b,B as c,P as d,p as e,T as f,g};
+`;P.setAttribute("data-code",U);P.innerHTML='<button class="BtnDangerDsa">teste</button>';export{h as B,B as a,k as b,P as c,m as d,p as e,T as f,g};
