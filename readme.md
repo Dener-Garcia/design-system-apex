@@ -1,11 +1,11 @@
-# 💡 Nome da Aplicação
+# 💡 DSA - Design System Apex
 
-Uma breve descrição do que se trata do seu projeto e o que ele faz e o link caso disponível para acessar em produção.
+Crie aplicações incriveis com Power Apps usando o design system by Apex.
 
-__Você pode ver esse projeto bem  [Aqui](https://www.seuSite.com.br)__
+__Você pode ver esse projeto bem [Aqui](https://dener-garcia.github.io/design-system-apex/)__
 
 
-🖥️ Pagina 1 Home                                        | 🖥️ Versão 2 Sobre                                        | 🖥️ Pagina 3 Serviços   
+🖥️ Home                                        | 🖥️ Componentes                                        | 🖥️ Componentes Figma   
 :----------:                                            | :--------------:                                        | :--------------: 
 <img src="../public/assets/screenshots/thumbnail1.png" />   | <img src="../public/assets/screenshots/thumbnail3.png" />   | <img src="../public/assets/screenshots/thumbnail4.png" /> 
 
