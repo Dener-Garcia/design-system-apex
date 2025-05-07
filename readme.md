@@ -5,9 +5,9 @@ Crie aplicações incriveis com Power Apps usando o design system by Apex.
 __Você pode ver esse projeto bem [Aqui](https://dener-garcia.github.io/design-system-apex/)__
 
 
-🖥️ Home                                        | 🖥️ Componentes Figma   
-:----------:                                            | :--------------: 
-<img src="./public/assets/screenshots/thumbnail1.png" />   | <img src="./public/assets/screenshots/thumbnail4.png" /> 
+🖥️ Home                                        | 🖥️ Componentes                                        | 🖥️ Componentes Figma   
+:----------:                                            | :--------------:                                        | :--------------: 
+<img src="/public/assets/screenshots/thumbnail2.png" />    | <img src="/public/assets/screenshots/thumbnail3.png" />   | <img src="/public/assets/screenshots/thumbnail4.png" /> 
 
 ## ⚙️ Funcionalidades
 
