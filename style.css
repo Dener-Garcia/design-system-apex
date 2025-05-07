@@ -74,6 +74,10 @@ body {
   background-color: var(--colorAccentHover);
 }
 
+.btn-accent:focus {
+  background-color: var(--colorAccent);
+}
+
 .btn-outline {
   padding: 0.5rem 1rem;
   font-size: var(--fontTextMedium);
@@ -88,6 +92,10 @@ body {
 
 .btn-outline:hover {
   background-color: var(--colorAccentHover);
+}
+
+.btn-outline:focus {
+  background-color: var(--colorAccent);
 }
 
 header {
