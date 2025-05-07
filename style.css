@@ -48,7 +48,7 @@
   scroll-behavior: smooth;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -62,6 +62,7 @@ body {
   padding: 0.5rem 1rem;
   font-size: var(--fontTextMedium);
   font-weight: 500;
+  color: var(--colorContrastLight);
   background-color: var(--colorAccent);
   border: solid 2px var(--colorAccent);
   border-radius: 0.5rem;
@@ -69,7 +70,7 @@ body {
   cursor: pointer;
 }
 
-.btn-accent:Hover{
+.btn-accent:Hover {
   background-color: var(--colorAccentHover);
 }
 
@@ -79,16 +80,17 @@ body {
   font-weight: 500;
   border: solid 2px var(--colorAccent);
   border-radius: 0.5rem;
+  color: var(--colorContrastLight);
   background-color: transparent;
   transition: 0.2s;
   cursor: pointer;
 }
 
-.btn-outline:hover{
+.btn-outline:hover {
   background-color: var(--colorAccentHover);
 }
 
-header{
+header {
   max-width: 90rem;
   padding: 2rem 9.75rem;
   margin: auto;
@@ -105,11 +107,11 @@ header{
   gap: 1rem;
 }
 
-.hero-content{
+.hero-content {
   width: 100%;
   min-width: 22rem;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-content h1 {
@@ -176,14 +178,14 @@ flex-direction: column;
   color: var(--colorNeutral200);
 }
 
-.foundation-content{
+.foundation-content {
   max-width: 90rem;
   margin: auto;
   margin-top: 5rem;
   display: flex;
 }
 
-.foundation-grid-cards{
+.foundation-grid-cards {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -194,7 +196,7 @@ flex-direction: column;
   width: 20rem;
 }
 
-.foundation-grid-cards .foundation-card p{
+.foundation-grid-cards .foundation-card p {
   font-size: var(--fontText);
 }
 
@@ -215,42 +217,42 @@ flex-direction: column;
   color: var(--colorAccentTertiary);
 }
 
-.foundation-content .foundation-description h3{
+.foundation-content .foundation-description h3 {
   font-size: var(--fontSubTitle);
   color: var(--colorContrastLight);
 }
 
-.foundation-content .foundation-description p{
+.foundation-content .foundation-description p {
   margin-top: 0.5rem;
   font-size: var(--fontText);
 }
 
-.components-section{
+.components-section {
   max-width: 90rem;
   padding: 5rem 9.75rem;
   margin: auto;
 }
 
-.components-section h3{
+.components-section h3 {
   text-align: center;
   color: var(--colorContrastLight);
   font-size: var(--fontSubTitle);
 }
 
-.components-section p{
+.components-section p {
   text-align: center;
   color: var(--colorNeutral200);
   font-size: var(--fontTextLarge);
 }
 
-.grid-components{
+.grid-components {
   margin-top: 2.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
   gap: 1rem;
 }
 
-.grid-components .card-component{
+.grid-components .card-component {
   width: 12rem;
   height: 10rem;
   display: flex;
@@ -261,7 +263,7 @@ flex-direction: column;
   border-radius: 0.5rem;
 }
 
-.components-section .btn-accent{
+.components-section .btn-accent {
   margin: auto;
   display: flex;
   justify-content: center;
@@ -272,7 +274,7 @@ flex-direction: column;
 
 /* ######################################### Show components page */
 
-.properties{
+.properties {
   position: fixed;
   right: 0;
   width: 20rem;
@@ -287,7 +289,7 @@ flex-direction: column;
   transition: 0.2s;
 }
 
-.properties section{
+.properties section {
   height: auto;
   display: flex;
   align-items: center;
@@ -295,11 +297,11 @@ flex-direction: column;
   gap: 1rem;
 }
 
-.properties section div{
+.properties section div {
   width: 100%;
 }
 
- .components-bar{
+.components-bar {
   position: fixed;
   width: 16rem;
   height: 100dvh;
@@ -309,19 +311,20 @@ flex-direction: column;
   overflow-y: scroll;
 }
 
-.components-bar img{
+.components-bar img {
   width: 10rem;
 }
 
-.components-bar h3{
+.components-bar h3 {
   margin-top: 1rem;
   color: var(--colorNeutral100);
   font-weight: 500;
   font-size: var(--fontTextMedium);
 }
 
-.components-bar h4{
+.components-bar h4 {
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
   font-size: var(--fontTextMedium);
   font-weight: 400;
   color: var(--colorNeutral200);
@@ -330,12 +333,13 @@ flex-direction: column;
 }
 
 .components-bar h4:hover,
-.components-bar h4:focus{
+.components-bar h4:focus {
   color: var(--colorAccent);
 }
 
-.components-bar details summary{
+.components-bar details summary {
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
   list-style: none;
   position: relative;
   font-size: var(--fontTextMedium);
@@ -345,7 +349,7 @@ flex-direction: column;
   transition: 0.2s;
 }
 
-.components-bar details summary::before{
+.components-bar details summary::before {
   content: "";
   position: absolute;
   right: 0;
@@ -358,7 +362,7 @@ flex-direction: column;
   transition: 0.2s;
 }
 
-.components-bar details summary::after{
+.components-bar details summary::after {
   content: "";
   position: absolute;
   right: 0;
@@ -370,16 +374,22 @@ flex-direction: column;
 }
 
 .components-bar details summary:hover,
-.components-bar details summary:focus{
+.components-bar details summary:focus {
   color: var(--colorAccent);
 }
 
-.components-bar details summary:focus::before{
+.components-bar details summary:focus::before {
   transform: rotate(180deg);
 }
 
-.components-bar details ul li{
+.components-bar details[open] summary::before  {
+  transform: rotate(180deg);
+
+}
+
+.components-bar details ul li {
   margin-top: 0.5rem;
+  margin-left: 1rem;
   font-size: var(--fontText);
   list-style: none;
   color: var(--colorNeutral100);
@@ -387,15 +397,22 @@ flex-direction: column;
   transition: 0.2s;
 }
 
-.components-bar details ul li:hover,
-.components-bar details ul li:focus{
+.components-bar details ul li:hover{
+  margin-left: 1.5rem;
   color: var(--colorAccent);
   font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
 
-.wiki-dsa{
+ul li.active {
+  color: var(--colorNeutral400);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.wiki-dsa {
   max-width: 90rem;
   width: 100%;
   padding: 2rem 2rem 2rem 18rem;
@@ -405,22 +422,22 @@ flex-direction: column;
   gap: 4rem;
 }
 
-.wiki-dsa .components-container{
+.wiki-dsa .components-container {
   width: 100%;
   height: 100%;
 }
 
-.wiki-dsa .components-container h1{
+.wiki-dsa .components-container h1 {
   font-size: var(--fontSubTitle);
   color: var(--colorNeutral200);
 }
 
-.wiki-dsa .components-container .copy-components p{
+.wiki-dsa .components-container .copy-components p {
   font-size: var(--fontTextLarge);
   color: var(--colorNeutral200);
 }
 
-.wiki-dsa .components-container .copy-components .get-code{
+.wiki-dsa .components-container .copy-components .get-code {
   width: 44px;
   height: 40px;
   margin: auto;
@@ -435,7 +452,7 @@ flex-direction: column;
   overflow: hidden;
 }
 
-.wiki-dsa .components-container .copy-components .get-code:hover{
+.wiki-dsa .components-container .copy-components .get-code:hover {
   background-color: var(--colorAccentHover);
   width: 12rem;
   display: flex;
@@ -444,18 +461,18 @@ flex-direction: column;
   text-wrap: nowrap;
 }
 
-.wiki-dsa .components-container .copy-components .get-code:focus{
+.wiki-dsa .components-container .copy-components .get-code:focus {
   background-color: var(--colorAccent);
 }
 
 
-.wiki-dsa .components-container .copy-components .get-code p{
+.wiki-dsa .components-container .copy-components .get-code p {
   color: var(--colorContrastLight);
   font-size: var(--fontTextMedium);
   font-weight: 500;
 }
 
-.wiki-dsa .components-container .copy-components .output-component{
+.wiki-dsa .components-container .copy-components .output-component {
   width: 90%;
   min-height: 16rem;
   height: auto;
@@ -472,10 +489,10 @@ flex-direction: column;
 
 /* ###########################  Class from js */
 
-.showProperties{
+.showProperties {
   transform: translateX(0);
 }
 
-.d-none{
+.d-none {
   display: none;
 }
