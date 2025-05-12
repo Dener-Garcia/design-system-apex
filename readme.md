@@ -7,7 +7,7 @@ __Você pode ver esse projeto bem [Aqui](https://dener-garcia.github.io/design-s
 
 🖥️ Home                                        | 🖥️ Componentes                                        | 🖥️ Componentes Figma   
 :----------:                                            | :--------------:                                        | :--------------: 
-<img src="/public/assets/screenshots/thumbnail2.png" />    | <img src="/public/assets/screenshots/thumbnail3.png" />   | <img src="/public/assets/screenshots/thumbnail4.png" /> 
+<img src="/public/assets/screenshots/thumbnail2.png" width="100" />    | <img src="/public/assets/screenshots/thumbnail3.png" width="100" />   | <img src="/public/assets/screenshots/thumbnail4.png" width="100" /> 
 
 ## ⚙️ Funcionalidades
 
