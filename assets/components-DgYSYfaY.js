@@ -1,4 +1,4 @@
-import{B as b,a as w,b as F,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerDsa-mZ1jmG2L.js";const l=document.createElement("div"),E=`- BtnIcnRtDsa:
+import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerDsa-mZ1jmG2L.js";const l=document.createElement("div"),E=`- BtnIcnRtDsa:
     Control: GroupContainer
     Variant: manualLayoutContainer
     Properties:
@@ -4885,62 +4885,152 @@ ClearCollect(StarWarsCharacters,
         </linearGradient>
         </defs>
         </svg> 
-`;const a=document.createElement("div"),L1=`- BtnDangerDsa:
-    Control: Classic/Button
+`;const a=document.createElement("div"),S1=`- ToastDsa:
+    Control: GroupContainer@1.3.0
+    Variant: ManualLayout
     Properties:
-      BorderColor: =ColorValue(dsaTokens.colorFeedbackError)
-      Color: |-
-        =ColorValue(
-        dsaTokens.colorContrastDark
-        )
-      DisabledBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral300
-        )
-      DisabledColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral300
-        )
-      DisabledFill: |-
-        =ColorValue(
-        dsaTokens.colorAccentSecondary
-        )
-      Fill: |-
-        =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
-        )
-      FocusedBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorNeutral200
-        )
-      FocusedBorderThickness: '=2 '
-      HoverBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
-        )
-      HoverColor: |-
-        =ColorValue(
-        dsaTokens.colorFeedbackErrorAccent
-        )
-      HoverFill: =ColorValue(dsaTokens.colorFeedbackError)
-      PaddingBottom: =8
-      PaddingLeft: =16
-      PaddingRight: =16
-      PaddingTop: =8
-      PressedBorderColor: |-
-        =ColorValue(
-        dsaTokens.colorFeedbackError
-        )
-      PressedColor: =ColorValue(dsaTokens.colorFeedbackErrorAccent)
-      PressedFill: =ColorValue(dsaTokens.colorFeedbackError)
-      RadiusBottomLeft: =200
-      RadiusBottomRight: =200
-      RadiusTopLeft: =200
-      RadiusTopRight: =200
-      Size: =dsaTokens.fontText
-      X: =1089
-      Y: =237
-`,S1=`
+      DropShadow: =DropShadow.None
+      Height: =If(dsaToastShow, 120, 0)
+      RadiusBottomLeft: =0
+      RadiusBottomRight: =0
+      RadiusTopLeft: =0
+      RadiusTopRight: =0
+      Width: =316
+      X: =If(App.Width < 768, App.Width/2 - Self.Width/2, App.Width - Self.Width - 16)
+      Y: =48
+    Children:
+      - toastContainer_4:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: |
+              =ColorValue(
+                  If(dsaToastType = "info", dsaTokens.colorFeedbackInfo,
+                   dsaToastType = "error", dsaTokens.colorFeedbackError,
+                   dsaToastType = "warning", dsaTokens.colorFeedbackWarning,
+                   dsaToastType = "success", dsaTokens.colorFeedbackSuccess
+                   )
+              )
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Horizontal
+            RadiusBottomLeft: =12
+            RadiusBottomRight: =12
+            RadiusTopLeft: =12
+            RadiusTopRight: =12
+            Visible: =dsaToastShow
+            Width: =Parent.Width
+          Children:
+            - toastRectangle_3:
+                Control: Rectangle@2.3.0
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Fill: |-
+                    =ColorValue(
+                        If( dsaToastType = "info", dsaTokens.colorFeedbackInfoAccent,
+                         dsaToastType = "error", dsaTokens.colorFeedbackErrorAccent,
+                         dsaToastType = "warning", dsaTokens.colorFeedbackWarningAccent,
+                         dsaToastType = "success", dsaTokens.colorFeedbackSuccessAccent
+                         )
+                    )
+                  Height: =Parent.Height
+                  Width: '=8   '
+            - toastContainer_5:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  Height: =Parent.Height
+                  LayoutDirection: =LayoutDirection.Vertical
+                  PaddingLeft: =8
+                  PaddingTop: =8
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                  - titleToast_3:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorNeutral200)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =16
+                        Text: =dsaToastType
+                        Width: =Parent.Width - 8
+                  - messageToast_3:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorContrastLight)
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height - titleToast_3.Height
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =dsaToastMessage
+                        Width: =Parent.Width   - 8
+            - Icon1_3:
+                Control: Classic/Icon@2.5.0
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: |-
+                    =ColorValue(
+                    dsaTokens.colorFeedbackErrorAccent
+                    )
+                  Fill: =ColorValue("#ffffff00")
+                  Height: '=44  '
+                  Icon: =Icon.CancelBadge
+                  OnSelect: =Set(dsaToastShow, !dsaToastShow)
+                  PaddingBottom: =8
+                  PaddingLeft: =8
+                  PaddingRight: =8
+                  PaddingTop: =8
+                  Width: '=44  '
+            - timerToast_3:
+                Control: Timer@2.1.0
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  BorderStyle: =BorderStyle.None
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =ColorFade(Self.BorderColor, 70%)
+                  DisabledColor: =ColorFade(Self.Fill, 90%)
+                  DisabledFill: =ColorFade(Self.Fill, 70%)
+                  DisplayMode: =DisplayMode.Disabled
+                  Duration: =5000
+                  Fill: =RGBA(56, 96, 178, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Lighter
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                  OnTimerEnd: =Set(dsaToastShow, false)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Size: =8
+                  Start: =dsaToastShow
+                  Visible: =false
+                  Width: =24
+                  X: =636
+                  Y: =288
+`,L1=`
 // settings for nav menu
 <pre>
   <code>
@@ -4954,7 +5044,7 @@ ClearCollect(StarWarsCharacters,
     <p>Mude o tipo do Badge ao setar essa variavel para "info", "warning", "success" ou "error" conforme o tipo de mensagem que voce deseja mostrar para o usuario.</p>
   </div>
 </section>
-`;a.setAttribute("data-code",L1);a.setAttribute("data-properties",S1);a.innerHTML='<div class="BadgeDsa">Label</div>';const H1="/design-system-apex/assets/components-preview/galleryCardHzDsa.png",V=document.createElement("div"),A1=`- GalleryCardHzDsa:
+`;a.setAttribute("data-code",S1);a.setAttribute("data-properties",L1);a.innerHTML='<div class="BadgeDsa">Label</div>';const H1="/design-system-apex/assets/components-preview/galleryCardHzDsa.png",V=document.createElement("div"),A1=`- GalleryCardHzDsa:
     Control: Gallery@2.15.0
     Variant: VariableHeight
     Properties:
@@ -5502,7 +5592,7 @@ ClearCollect(StarWarsCharacters,
 
 `;V.setAttribute("data-code",A1);V.innerHTML=`
 <img style="width: 100%" src=${H1} alt="Galeria com cards horozintal design system">
-`;const k1="/design-system-apex/assets/components-preview/galleryCardSmallDsa.png",L=document.createElement("div"),R1=`- GalleryCardSmDsa:
+`;const k1="/design-system-apex/assets/components-preview/galleryCardSmallDsa.png",S=document.createElement("div"),R1=`- GalleryCardSmDsa:
     Control: Gallery@2.15.0
     Variant: Vertical
     Properties:
@@ -5900,9 +5990,9 @@ ClearCollect(StarWarsCharacters,
                               X: =Parent.Width/2 - Self.Width/2
                               Y: =BtnTerSec_5.Height /2 - Self.Height /2
 
-`;L.setAttribute("data-code",R1);L.innerHTML=`
+`;S.setAttribute("data-code",R1);S.innerHTML=`
 <img style="width: 100%" src=${k1} alt="Galeria com cards horozintal design system">
-`;const v1="/design-system-apex/assets/components-preview/galleryCardBtnDsa.png",S=document.createElement("div"),D1=`---
+`;const v1="/design-system-apex/assets/components-preview/galleryCardBtnDsa.png",L=document.createElement("div"),D1=`---
 - GalleryCardSmBtnDsa:
     Control: Gallery@2.15.0
     Variant: Vertical
@@ -6078,9 +6168,9 @@ ClearCollect(StarWarsCharacters,
                               Width: =ButtonIconRight_2.Size
                               X: = ButtonIconRight_2.Width - Self.Width - 16
                               Y: =ButtonIconRight_2.Height /2 - Self.Height /2
-`;S.setAttribute("data-code",D1);S.innerHTML=`
+`;L.setAttribute("data-code",D1);L.innerHTML=`
 <img style="width: 100%" src=${v1} alt="Galeria com cards horozintal design system">
-`;const x1="/design-system-apex/assets/components-preview/galleryCardThumbDsa.png",H=document.createElement("div"),b1=`- GalleryCardThumbDsa:
+`;const F1="/design-system-apex/assets/components-preview/galleryCardThumbDsa.png",H=document.createElement("div"),w1=`- GalleryCardThumbDsa:
     Control: Gallery@2.15.0
     Variant: Vertical
     Properties:
@@ -6269,6 +6359,6 @@ ClearCollect(StarWarsCharacters,
                         X: =519
                         Y: =150
 
-`;H.setAttribute("data-code",b1);H.innerHTML=`
-<img style="width: 100%" src=${x1} alt="Galeria com cards horozintal design system">
-`;const w1={TokensDsa:T,BtnPriDsa:b,BtnSecDsa:w,BtnTerDsa:F,BtnIcnLtDsa:G,BtnIcnRtDsa:l,BtnIcnPriDsa:I,BtnIcnSecDsa:M,BtnIcnTerDsa:W,BtnIcnDangerDsa:d,BtnDangerDsa:U,InputTextDsa:s,InputComboBoxDsa:C,InputCheckBoxHzDsa:c,InputDropdownDsa:p,InputDataPickerDsa:u,InputRadioHzDsa:f,InputToggleDsa:h,BadgeDsa:a,CardHzDsa:g,CardSmDsa:y,CardThumbDsa:_,cardSmBtnDsa:B,ModalDsa:r,ToastDsa:o,PageTemplateDsa:t,LoaderApex:m,SplashApex:P,GalleryCardHzDsa:V,GalleryCardSmDsa:L,GalleryCardSmBtnDsa:S,GalleryCardThumbDsa:H},F1=document.querySelector(".copy-components"),R=document.querySelectorAll(".component-selected");for(let i=0;i<R.length;i++){const A=R[i];A.addEventListener("click",()=>{F1.classList.add("d-block");const v=A.dataset.component,e=w1[v],k=document.querySelector(".output-component");k.innerHTML="",k.appendChild(e);const n=document.querySelector(".properties");n.classList.remove("showProperties"),e.dataset.properties&&(n.classList.add("showProperties"),n.innerHTML=e.dataset.properties);const D=document.querySelector(".get-code"),x=e.dataset.code;D.addEventListener("click",()=>{navigator.clipboard.writeText(x)})})}
+`;H.setAttribute("data-code",w1);H.innerHTML=`
+<img style="width: 100%" src=${F1} alt="Galeria com cards horozintal design system">
+`;const b1={TokensDsa:T,BtnPriDsa:w,BtnSecDsa:b,BtnTerDsa:x,BtnIcnLtDsa:G,BtnIcnRtDsa:l,BtnIcnPriDsa:I,BtnIcnSecDsa:M,BtnIcnTerDsa:W,BtnIcnDangerDsa:d,BtnDangerDsa:U,InputTextDsa:s,InputComboBoxDsa:C,InputCheckBoxHzDsa:c,InputDropdownDsa:p,InputDataPickerDsa:u,InputRadioHzDsa:f,InputToggleDsa:h,BadgeDsa:a,CardHzDsa:g,CardSmDsa:y,CardThumbDsa:_,cardSmBtnDsa:B,ModalDsa:r,ToastDsa:o,PageTemplateDsa:t,LoaderApex:m,SplashApex:P,GalleryCardHzDsa:V,GalleryCardSmDsa:S,GalleryCardSmBtnDsa:L,GalleryCardThumbDsa:H},x1=document.querySelector(".copy-components"),R=document.querySelectorAll(".component-selected");for(let i=0;i<R.length;i++){const A=R[i];A.addEventListener("click",()=>{x1.classList.add("d-block");const v=A.dataset.component,e=b1[v],k=document.querySelector(".output-component");k.innerHTML="",k.appendChild(e);const n=document.querySelector(".properties");n.classList.remove("showProperties"),e.dataset.properties&&(n.classList.add("showProperties"),n.innerHTML=e.dataset.properties);const D=document.querySelector(".get-code"),F=e.dataset.code;D.addEventListener("click",()=>{navigator.clipboard.writeText(F)})})}
