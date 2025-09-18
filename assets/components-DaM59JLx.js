@@ -1,6 +1,6 @@
-import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerDsa-mZ1jmG2L.js";const l=document.createElement("div"),E=`- BtnIcnRtDsa:
-    Control: GroupContainer
-    Variant: manualLayoutContainer
+import{B as N,a as O,b as E,d as z,e as Z,f as Y,g as X,c as $}from"./BtnDangerDsa-mH_VDDVf.js";const d=document.createElement("div"),J=`- BtnIcnRtDsa:
+    Control: GroupContainer@1.3.0
+    Variant: ManualLayout
     Properties:
       DropShadow: =DropShadow.None
       Height: =40
@@ -9,81 +9,83 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
       RadiusTopLeft: =200
       RadiusTopRight: =200
       Width: =160
-      X: =942
-      Y: =150
+      X: =873
+      Y: =237
     Children:
-    - ButtonIconRight:
-        Control: Classic/Button
-        Properties:
-          OnSelect: =
-          BorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          Color: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          Fill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          Height: =Parent.Height
-          HoverBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimary
-            )
-          HoverColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          HoverFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          PaddingBottom: =8
-          PaddingLeft: =8
-          PaddingRight: =8
-          PaddingTop: =8
-          PressedBorderColor: |-
-            =ColorValue(
-            dsaTokens.colorAccentSecondaryHover
-            )
-          PressedColor: |-
-            =ColorValue(
-            dsaTokens.colorContrastDark
-            )
-          PressedFill: |-
-            =ColorValue(
-            dsaTokens.colorAccentPrimaryHover
-            )
-          RadiusBottomLeft: =200
-          RadiusBottomRight: =200
-          RadiusTopLeft: =200
-          RadiusTopRight: =200
-          Size: =16
-          Width: =Parent.Width
-          Y: '=0   '
-    - btnIcnRt:
-        Control: Classic/Icon
-        Variant: Add
-        Properties:
-          Color: |-
-            =If(
-                ButtonIconRight.DisplayMode = DisplayMode.Disabled,
-                ColorValue(dsaTokens.colorNeutral300),
-                ColorValue(dsaTokens.colorContrastDark)
-            )
-          Height: =ButtonIconRight.Size
-          Icon: =Icon.ChevronDown
-          Width: =ButtonIconRight.Size
-          X: = ButtonIconRight.Width - Self.Width - 16
-          Y: =ButtonIconRight.Height /2 - Self.Height /2
+      - ButtonIconRight:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            Color: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            HoverColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            HoverFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            PressedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            PressedFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            RadiusBottomLeft: =200
+            RadiusBottomRight: =200
+            RadiusTopLeft: =200
+            RadiusTopRight: =200
+            Size: =dsaTokens.fontText
+            Width: =Parent.Width
+            Y: '=0   '
+      - btnIcnRt:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =If(
+                  ButtonIconRight.DisplayMode = DisplayMode.Disabled,
+                  ColorValue(dsaTokens.colorNeutral300),
+                  ColorValue(dsaTokens.colorContrastDark)
+              )
+            DisplayMode: =DisplayMode.View
+            Height: =ButtonIconRight.Size
+            Icon: =Icon.ChevronDown
+            Width: =ButtonIconRight.Size
+            X: = ButtonIconRight.Width - Self.Width - 16
+            Y: =ButtonIconRight.Height /2 - Self.Height /2
+`;d.setAttribute("data-code",J);const q='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';d.innerHTML=`
 
-`;l.setAttribute("data-code",E);const O='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>';l.innerHTML=`
-
-<button class="BtnIcnRtDsa">Teste${O}</button>
-`;const d=document.createElement("div"),N=`- BtnIconDangerDsa:
+<button class="BtnIcnRtDsa">Teste${q}</button>
+`;const s=document.createElement("div"),j=`- BtnIconDangerDsa:
     Control: GroupContainer@1.3.0
     Variant: ManualLayout
     Properties:
@@ -97,7 +99,7 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
       X: =1158
       Y: =422
     Children:
-      - btnIconPrimaryButton_1:
+      - btnIconDanger:
           Control: Classic/Button@2.2.0
           Properties:
             BorderColor: |-
@@ -149,7 +151,7 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
               )
             PressedFill: |-
               =ColorValue(
-              dsaTokens.colorFeedbackError
+              "#ffffff00"
               )
             RadiusBottomLeft: =200
             RadiusBottomRight: =200
@@ -160,16 +162,19 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
             Tooltip: =
             Width: =Parent.Width
             Y: '=0   '
-      - btnIconPrimaryIcon_1:
+      - iconDanger:
           Control: Classic/Icon@2.5.0
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: |-
-              =If(
-                  BtnIconDangerDsa.DisplayMode = DisplayMode.Disabled,
-                  ColorValue(dsaTokens.colorNeutral300),
-                  ColorValue(dsaTokens.colorNeutral400)
+              =ColorValue(
+                  If(
+                      btnIconDanger.Pressed,
+                      dsaTokens.colorNeutral100,
+                      dsaTokens.colorContrastDark
+                  )
               )
+            DisplayMode: =DisplayMode.View
             FocusedBorderThickness: =0
             Height: =18
             HoverColor: |-
@@ -187,9 +192,379 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
               )
             Width: =18
             X: =Parent.Width/2 - Self.Width/2
-            Y: =btnIconPrimaryButton_1.Height /2 - Self.Height /2
+            Y: =btnIconDanger.Height /2 - Self.Height /2
+`;s.setAttribute("data-code",j);const K='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>';s.innerHTML=`<button class="BtnIcnDangerDsa">${K}</button>`;const Q="/design-system-apex/assets/components-preview/BtnXlIconDsa.png",C=document.createElement("div"),oo=`- btnXlIconDsa:
+    Control: GroupContainer@1.3.0
+    Variant: ManualLayout
+    Properties:
+      BorderColor: =ColorValue(dsaTokens.colorAccentSecondaryHover)
+      BorderStyle: =BorderStyle.None
+      DropShadow: =DropShadow.None
+      Height: =80
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      Width: =120
+      X: =71
+      Y: =536
+    Children:
+      - buttonXlDsa:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            Color: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: |-
+              =ColorValue(
+              dsaTokens.colorBgPrimary
+              )
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            HoverColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            HoverFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            PressedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            PressedFill: =ColorValue(dsaTokens.colorAccentSecondary)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =dsaTokens.fontSmallLabel
+            Text: ="Button label"
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: '=Parent.Width -1 '
+            Y: '=0   '
+      - IconXlDsa:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =If(
+                  buttonXlDsa.DisplayMode = DisplayMode.Disabled,
+                  ColorValue(dsaTokens.colorNeutral300),
+                  ColorValue(dsaTokens.colorAccentPrimary)
+              )
+            DisplayMode: =DisplayMode.View
+            Height: =24
+            Icon: =Icon.ChevronDown
+            Width: '=24  '
+            X: = buttonXlDsa.Width/2 - Self.Width/2
+            Y: =Self.Height - Self.Height /2
+`;C.setAttribute("data-code",oo);C.innerHTML=`
+<img class="BtnXlIconDsa" src=${Q} alt="Imagem botao grande com icone para power apps" />
+`;const eo="/design-system-apex/assets/components-preview/BtnImgDsa.png",c=document.createElement("div"),to=`- BtnImgDsa:
+    Control: GroupContainer@1.3.0
+    Variant: ManualLayout
+    Properties:
+      BorderColor: =ColorValue(dsaTokens.colorAccentPrimary)
+      BorderThickness: =2
+      DropShadow: =DropShadow.None
+      Fill: |-
+        =ColorValue(
+        If(
+           BtnAction.Pressed, dsaTokens.colorAccentSecondaryHover, dsaTokens.colorBgPrimary
+        )
+        )
+      Height: =imgForBtn.Height + 16
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      Width: =imgForBtn.Width + 180
+      X: =289
+      Y: =546
+    Children:
+      - btnImgContent:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            PaddingBottom: =8
+            PaddingTop: =8
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width - imgForBtn.Width - 24
+            X: =imgForBtn.Width + 24
+          Children:
+            - labelBtn:
+                Control: Label@2.5.1
+                Properties:
+                  AlignInContainer: =AlignInContainer.Start
+                  AutoHeight: =true
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  FillPortions: =1
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  LineHeight: =1
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontText
+                  Width: =Parent.Width
+                  X: =imgForBtn.Width + Parent.PaddingLeft + 16
+                  Y: =8
+            - supportTxtBtn:
+                Control: Label@2.5.1
+                Properties:
+                  AlignInContainer: =AlignInContainer.Stretch
+                  AutoHeight: =true
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =ColorValue(dsaTokens.colorNeutral200)
+                  FillPortions: =1
+                  Font: =Font.'Segoe UI'
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  LineHeight: =1
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontSmallLabel
+                  Width: =156
+                  X: =imgForBtn.Width + Parent.PaddingLeft + 16
+                  Y: =labelBtn.Height + Self.Height / 2
+      - imgForBtn:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =44
+            OnSelect: =
+            Width: =58
+            X: =8
+            Y: =8
+      - BtnAction:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =Self.Fill
+            HoverFill: =Self.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Fill
+            Text: =
+            Width: =Parent.Width
+            X: '=0   '
+`;c.setAttribute("data-code",to);c.innerHTML=`
+<img class="BtnImgDsa" src=${eo} alt="Imagem botao com image para power apps" />
+`;const ro="/design-system-apex/assets/components-preview/BtnSelectorDsa.png",p=document.createElement("div"),ao=`- BtnSelectorDsa:
+    Control: GroupContainer@1.3.0
+    Variant: AutoLayout
+    Properties:
+      DropShadow: =DropShadow.None
+      Height: =32
+      LayoutDirection: =LayoutDirection.Horizontal
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      Width: =320
+      X: =640
+      Y: =560
+    Children:
+      - BtnSelectorLeft:
+          Control: Classic/Button@2.2.0
+          Properties:
+            AlignInContainer: =AlignInContainer.Stretch
+            BorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: |-
+              =ColorValue(
+              selectorLeftColorText
+              )
+            DisabledBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral300
+              )
+            DisabledColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral300
+              )
+            DisabledFill: |-
+              =ColorValue(
+              dsaTokens.colorNeutral400
+              )
+            Fill: |-
+              =ColorValue(
+              selectorLeftBgFocus
+              )
+            FillPortions: =1
+            FocusedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral200
+              )
+            FocusedBorderThickness: '=2 '
+            Font: =Font.'Open Sans'
+            HoverBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            HoverColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            HoverFill: =ColorValue(dsaTokens.colorAccentPrimary)
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            OnSelect: |-
+              =Set(selectorLeftBgFocus, dsaTokens.colorAccentPrimaryHover);
+              Set(selectorRightBgDefault, dsaTokens.colorAccentSecondaryHover);
+              Set(selectorLeftColorText, dsaTokens.colorContrastDark);
+              Set(selectorRightColorText, dsaTokens.colorContrastLight);
 
-`;d.setAttribute("data-code",N);const Z='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>';d.innerHTML=`<button class="BtnIcnDangerDsa">${Z}</button>`;const s=document.createElement("div"),z=`- InputTextDsa:
+              // type your code bellow
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            PressedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            PressedFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =If(App.Width < 768, dsaTokens.fontSmallLabel,dsaTokens.fontLabel)
+            Text: ="Selector Left"
+            X: =42
+            Y: =237
+      - BtnSelectorRight:
+          Control: Classic/Button@2.2.0
+          Properties:
+            AlignInContainer: =AlignInContainer.Stretch
+            BorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Color: |-
+              =ColorValue(
+              selectorRightColorText
+              )
+            DisabledBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral300
+              )
+            DisabledColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral300
+              )
+            DisabledFill: |-
+              =ColorValue(
+              dsaTokens.colorNeutral400
+              )
+            Fill: =ColorValue(selectorRightBgDefault)
+            FillPortions: =1
+            FocusedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorNeutral200
+              )
+            FocusedBorderThickness: '=2 '
+            Font: =Font.'Open Sans'
+            Height: =0
+            HoverBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimary
+              )
+            HoverColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            HoverFill: =ColorValue(dsaTokens.colorAccentPrimary)
+            LayoutMinHeight: =0
+            OnSelect: |
+              =Set(selectorRightBgDefault, dsaTokens.colorAccentPrimaryHover);
+              Set(selectorLeftBgFocus, dsaTokens.colorAccentSecondaryHover);
+              Set(selectorLeftColorText, dsaTokens.colorContrastLight);
+              Set(selectorRightColorText, dsaTokens.colorContrastDark);
+
+              // type your code bellow
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            PressedBorderColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentSecondaryHover
+              )
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorContrastDark
+              )
+            PressedFill: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =If(App.Width < 768, dsaTokens.fontSmallLabel,dsaTokens.fontLabel)
+            Text: ="Selector Right"
+            X: =42
+            Y: =237
+`;p.setAttribute("data-code",ao);p.innerHTML=`
+<img class="BtnSelectorDsa" src=${ro} alt="Imagem combo box para power apps" />
+`;const u=document.createElement("div"),io=`- InputTextDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
@@ -286,18 +661,17 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
             Width: =Parent.Width
             X: =360
             Y: =462
-
-`;s.setAttribute("data-code",z);s.innerHTML=`
+`;u.setAttribute("data-code",io);u.innerHTML=`
 <div class="inputTextDsa">
     <label for="textInputDsa">Label</label>
     <input id="textInputDsa" type="text" placeholder="Placeholder">
 </div>
-`;const Y="/design-system-apex/assets/components-preview/ComboBoxDsa.png",C=document.createElement("div"),X=`- comboBoxDsa:
+`;const no="/design-system-apex/assets/components-preview/ComboBoxDsa.png",h=document.createElement("div"),lo=`- comboBoxDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
-      Height: '=labelComboBoxDsa.Height + 40   '
+      Height: =labelComboBoxDsa.Height + 40
       LayoutDirection: =LayoutDirection.Vertical
       LayoutJustifyContent: =LayoutJustifyContent.Center
       RadiusBottomLeft: =8
@@ -428,10 +802,9 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                     )
                   Size: =dsaTokens.fontLabel
                   Width: =Parent.Width
-
-`;C.setAttribute("data-code",X);C.innerHTML=`
-<img src=${Y} alt="Imagem combo box para power apps" />
-`;const $="/design-system-apex/assets/components-preview/CheckboxDsa.png",c=document.createElement("div"),J=`- InputCheckBoxHzDsa:
+`;h.setAttribute("data-code",lo);h.innerHTML=`
+<img src=${no} alt="Imagem combo box para power apps" />
+`;const so="/design-system-apex/assets/components-preview/CheckboxDsa.png",g=document.createElement("div"),Co=`- InputCheckBoxHzDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
@@ -637,10 +1010,9 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                   Text: ="Option 3"
                   Width: =Parent.Width
                   X: =10
-
-`;c.setAttribute("data-code",J);c.innerHTML=`
-<img src=${$} alt="Imagem combo box para power apps" />
-`;const j="/design-system-apex/assets/components-preview/DropdownDsa.png",p=document.createElement("div"),q=`- InputDropdownDsa:
+`;g.setAttribute("data-code",Co);g.innerHTML=`
+<img src=${so} alt="Imagem combo box para power apps" />
+`;const co="/design-system-apex/assets/components-preview/DropdownDsa.png",f=document.createElement("div"),po=`- InputDropdownDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
@@ -777,10 +1149,9 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                     )
                   Size: =dsaTokens.fontLabel
                   Width: =Parent.Width
-
-`;p.setAttribute("data-code",q);p.innerHTML=`
-<img src=${j} alt="Imagem combo box para power apps" />
-`;const K="/design-system-apex/assets/components-preview/calendarDsa.png",u=document.createElement("div"),Q=`- DatePickerDsa:
+`;f.setAttribute("data-code",po);f.innerHTML=`
+<img src=${co} alt="Imagem combo box para power apps" />
+`;const uo="/design-system-apex/assets/components-preview/calendarDsa.png",T=document.createElement("div"),ho=`- DatePickerDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
@@ -877,10 +1248,9 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                   PaddingRight: =0
                   Size: =dsaTokens.fontLabel
                   Width: =Parent.Width
-
-`;u.setAttribute("data-code",Q);u.innerHTML=`
-<img src=${K} alt="Imagem combo box para power apps" />
-`;const o1="/design-system-apex/assets/components-preview/ToggleDsa.png",h=document.createElement("div"),e1=`- InputToggleDsa:
+`;T.setAttribute("data-code",ho);T.innerHTML=`
+<img src=${uo} alt="Imagem combo box para power apps" />
+`;const go="/design-system-apex/assets/components-preview/ToggleDsa.png",B=document.createElement("div"),fo=`- InputToggleDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
@@ -944,16 +1314,14 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
             Width: =Parent.Width
             X: =1105
             Y: =359
-
-`;h.setAttribute("data-code",e1);h.innerHTML=`
-<img src=${o1} alt="Imagem combo box para power apps" />
-`;const t1="/design-system-apex/assets/components-preview/RadioDsa.png",f=document.createElement("div"),r1=`- InputRadioHzDsa:
+`;B.setAttribute("data-code",fo);B.innerHTML=`
+<img src=${go} alt="Imagem combo box para power apps" />
+`;const To="/design-system-apex/assets/components-preview/RadioDsa.png",y=document.createElement("div"),Bo=`- InputRadioHzDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
-      Height: |
-        =80
+      Height: =labelRadio.Height + 44
       LayoutDirection: =LayoutDirection.Vertical
       RadiusBottomLeft: =8
       RadiusBottomRight: =8
@@ -1005,6 +1373,18 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                     dsaTokens.colorContrastLight
                     )
                   Default: ="Option 1"
+                  DisabledBorderColor: |-
+                    =ColorValue(
+                    "#ffffff00"
+                    )
+                  DisabledColor: |-
+                    =ColorValue(
+                    dsaTokens.colorNeutral400
+                    )
+                  DisabledFill: |-
+                    =ColorValue(
+                    "#ffffff00"
+                    )
                   FillPortions: =1
                   Font: =Font.'Open Sans'
                   Height: =Parent.Height
@@ -1039,10 +1419,119 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                   Width: =Parent.Width
                   X: =136
                   Y: =364
+`;y.setAttribute("data-code",Bo);y.innerHTML=`
+<img src=${To} alt="Imagem combo box para power apps" />
+`;const yo="/design-system-apex/assets/components-preview/InputAttachmentsDsa.png",m=document.createElement("div"),mo=`- InputAttachmentsDsa:
+    Control: GroupContainer@1.3.0
+    Variant: AutoLayout
+    Properties:
+      DropShadow: =DropShadow.None
+      Height: '=labelAttachments.Height + 80    '
+      LayoutDirection: =LayoutDirection.Vertical
+      LayoutJustifyContent: =LayoutJustifyContent.Center
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      Width: =347
+      X: =933
+      Y: =488
+    Children:
+      - labelAttachments:
+          Control: Label@2.5.1
+          Properties:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =ColorValue(
+              dsaTokens.colorContrastLight
+              )
+            Font: =Font.'Open Sans'
+            Height: =0
+            PaddingBottom: =4
+            PaddingLeft: =8
+            PaddingRight: =0
+            PaddingTop: =4
+            Size: =dsaTokens.fontLabel
+            Text: ="Label"
+            Width: =Parent.Width
+      - attachmentContainer:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height - labelAttachments.Height
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            PaddingBottom: =2
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =2
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =Parent.Width
+            X: =220
+            Y: =330
+          Children:
+            - inputAttachment:
+                Control: Attachments@2.3.0
+                Properties:
+                  BorderColor: =Self.Color
+                  BorderStyle: =BorderStyle.None
+                  BorderThickness: =0
+                  Color: |-
+                    =ColorValue(
+                    dsaTokens.colorContrastLight
+                    )
+                  DisabledBorderColor: |-
+                    =ColorValue(
+                    "#ffffff00"
+                    )
+                  DisabledColor: |-
+                    =ColorValue(
+                    dsaTokens.colorNeutral300
+                    )
+                  DisabledFill: |-
+                    =ColorValue(
+                    dsaTokens.colorNeutral500
+                    )
+                  DisplayMode: =Parent.DisplayMode
+                  Fill: |-
+                    =ColorValue(
+                    dsaTokens.colorAccentSecondary
+                    )
+                  Font: =Font.'Open Sans'
+                  Height: '=Parent.Height '
+                  HoverColor: |-
+                    =ColorValue(
+                    dsaTokens.colorContrastLight
+                    )
+                  HoverFill: |-
+                    =ColorValue(
+                    dsaTokens.colorAccentSecondaryHover
+                    )
+                  ItemColor: =RGBA(255, 255, 255, 1)
+                  ItemFill: =RGBA(56, 96, 178, 1)
+                  ItemHoverFill: =RGBA(186, 202, 226, 1)
+                  PressedColor: |-
+                    =ColorValue(
+                    dsaTokens.colorAccentPrimaryHover
+                    )
+                  PressedFill: |-
+                    =ColorValue(
+                    dsaTokens.colorAccentPrimaryHover
+                    )
+                  Size: =dsaTokens.fontSmallLabel
+                  Tooltip: ="anexar arquivos"
+                  Width: =Parent.Width
 
-`;f.setAttribute("data-code",r1);f.innerHTML=`
-<img src=${t1} alt="Imagem combo box para power apps" />
-`;const a1="/design-system-apex/assets/components-preview/pageTemplate.png",t=document.createElement("div"),i1=`- mainContainer:
+`;m.setAttribute("data-code",mo);m.innerHTML=`
+<img class="inputAttachmentsDsa" src=${yo} alt="Imagem input attachment para power apps" />
+`;const Po="/design-system-apex/assets/components-preview/pageTemplate.png",t=document.createElement("div"),Lo=`- mainContainer:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
@@ -1305,7 +1794,7 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                                     PaddingTop: =0
                                     Size: |-
                                       =If(
-                                          App.Width < 768, dsaTokens.fontSmallLabel, dsaTokens.fontTextMedium
+                                          App.Width < 768, dsaTokens.fontSmallCaption, dsaTokens.fontLabel
                                       )
                                     Text: |+
                                       =LookUp(constHeader,true).appName
@@ -1510,7 +1999,7 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                                           PaddingRight: =8
                                           PaddingTop: =8
                                           PressedBorderColor: =Self.Fill
-                                          PressedColor: =Self.Fill
+                                          PressedColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
                                           PressedFill: =Self.Fill
                                           Size: =dsaTokens.fontLabel
                                           Text: =ThisItem.linkName
@@ -1598,10 +2087,9 @@ import{B as w,a as b,b as x,d as G,e as I,f as M,g as W,c as U}from"./BtnDangerD
                 Control: GroupContainer@1.3.0
                 Variant: AutoLayout
                 Properties:
-                  LayoutDirection: =LayoutDirection.Vertical
-
-  `;t.setAttribute("data-code",i1);const n1=`
-  // settings for nav menu
+                  LayoutDirection: =If(App.Width < 768, LayoutDirection.Vertical, LayoutDirection.Horizontal)
+  `;t.setAttribute("data-code",Lo);const _o=`
+  // settings for page template
   <pre>
     <code>
 Set(constCurrentScreen, Home);
@@ -1653,14 +2141,13 @@ ClearCollect(
     </code></pre>
   </div>
   </section>
-  `;t.setAttribute("data-properties",n1);t.innerHTML=`
-  <img class="ModalDsa" src=${a1} alt="Imagem header e sidebar para para power apps" />
-  `;const l1="/design-system-apex/assets/components-preview/CardHzDsa.png",g=document.createElement("div"),d1=`- CardHzDsa:
+  `;t.setAttribute("data-properties",_o);t.innerHTML=`
+  <img class="ModalDsa" src=${Po} alt="Imagem header e sidebar para para power apps" />
+  `;const Vo="/design-system-apex/assets/components-preview/CardHzDsa.png",P=document.createElement("div"),Ho=`- CardHzDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
-      FillPortions: =0
       Height: |
         =Title.Height + Text.Height + cardHorizontalDivisor.Height + 40
       LayoutDirection: =LayoutDirection.Vertical
@@ -1670,8 +2157,8 @@ ClearCollect(
       RadiusTopLeft: =0
       RadiusTopRight: =0
       Width: =878
-      X: '=0   '
-      Y: =588
+      X: =436
+      Y: =104
     Children:
       - TitleBadge:
           Control: GroupContainer@1.3.0
@@ -1679,8 +2166,7 @@ ClearCollect(
           Properties:
             DropShadow: =DropShadow.None
             FillPortions: =0
-            Height: |
-              =Title.Height
+            Height: =Title.Height + 4
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Horizontal
             PaddingRight: =2
@@ -1840,7 +2326,7 @@ ClearCollect(
                         PaddingRight: =8
                         PaddingTop: =0
                         Size: =dsaTokens.fontSmallLabel
-                        Text: ="Text description for your long textText description for your long textText description for your long textText description for your long text"
+                        Text: ="Text description for your long textText description for your long."
                         Width: =Parent.Width
             - action:
                 Control: GroupContainer@1.3.0
@@ -1858,13 +2344,13 @@ ClearCollect(
                   RadiusBottomRight: =0
                   RadiusTopLeft: =0
                   RadiusTopRight: =0
-                  Width: =BtnIcnPriDsa_2.Width + BtnIcnSecDsa_2.Width + BtnIcnTerDsa_2.Width + actionCardHzContainer.LayoutGap * 3
+                  Width: =BtnIcnPriDsa_2.Width + BtnIcnSecDsa_2.Width + BtnIcnTerDsa_2.Width + actionCardHzContainer.LayoutGap * 2
                 Children:
                   - actionCardHzContainer:
                       Control: GroupContainer@1.3.0
                       Variant: AutoLayout
                       Properties:
-                        AlignInContainer: =AlignInContainer.Center
+                        AlignInContainer: =AlignInContainer.Start
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =40
@@ -1882,11 +2368,11 @@ ClearCollect(
                         X: =300
                         Y: =468
                       Children:
-                        - BtnIcnPriDsa_2:
+                        - BtnIcnTerDsa_2:
                             Control: GroupContainer@1.3.0
                             Variant: ManualLayout
                             Properties:
-                              AlignInContainer: =AlignInContainer.Start
+                              AlignInContainer: =AlignInContainer.Center
                               DropShadow: =DropShadow.None
                               FillPortions: =0
                               Height: =40
@@ -1895,8 +2381,209 @@ ClearCollect(
                               RadiusTopLeft: =200
                               RadiusTopRight: =200
                               Width: =40
-                              X: =162
-                              Y: =298
+                              X: =416
+                              Y: =422
+                            Children:
+                              - IconTerBtn_2:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Color: |-
+                                      =If(
+                                          BtnTerSec_2.DisplayMode = DisplayMode.Disabled,
+                                          ColorValue(dsaTokens.colorNeutral300),
+                                          ColorValue(dsaTokens.colorAccentPrimary)
+                                      )
+                                    FocusedBorderThickness: =0
+                                    Height: =18
+                                    HoverColor: |-
+                                      =ColorValue(
+                                          dsaTokens.colorAccentPrimaryHover
+                                      )
+                                    HoverFill: |-
+                                      =   ColorValue(
+                                          "#ffffff00"
+                                         )
+                                    Icon: =Icon.AddDocument
+                                    PressedColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentPrimaryHover
+                                      )
+                                    Width: =18
+                                    X: =Parent.Width/2 - Self.Width/2
+                                    Y: =BtnTerSec_2.Height /2 - Self.Height /2
+                              - BtnTerSec_2:
+                                  Control: Classic/Button@2.2.0
+                                  Properties:
+                                    BorderColor: =ColorValue("#ffffff00")
+                                    BorderThickness: =0
+                                    Color: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentPrimary
+                                      )
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorNeutral200
+                                      )
+                                    DisabledFill: |-
+                                      =ColorValue(
+                                         "#ffffff00"
+                                      )
+                                    Fill: |-
+                                      =ColorValue(
+                                         "#ffffff00"
+                                      )
+                                    Font: =Font.'Open Sans'
+                                    Height: =Parent.Height
+                                    HoverBorderColor: =ColorValue("#ffffff00")
+                                    HoverColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorContrastDark
+                                      )
+                                    HoverFill: |-
+                                      =ColorValue(
+                                         "#ffffff00"
+                                      )
+                                    PaddingBottom: =8
+                                    PaddingLeft: =8
+                                    PaddingRight: =8
+                                    PaddingTop: =8
+                                    PressedBorderColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentSecondaryHover
+                                      )
+                                    PressedColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorContrastDark
+                                      )
+                                    PressedFill: |-
+                                      =ColorValue(
+                                         "#ffffff00"
+                                      )
+                                    RadiusBottomLeft: =200
+                                    RadiusBottomRight: =200
+                                    RadiusTopLeft: =200
+                                    RadiusTopRight: =200
+                                    Size: =16
+                                    Text: =
+                                    Width: =Parent.Width
+                                    Y: '=0   '
+                        - BtnIcnSecDsa_2:
+                            Control: GroupContainer@1.3.0
+                            Variant: ManualLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =0
+                              Height: =40
+                              RadiusBottomLeft: =200
+                              RadiusBottomRight: =200
+                              RadiusTopLeft: =200
+                              RadiusTopRight: =200
+                              Width: =40
+                              X: =201
+                              Y: =422
+                            Children:
+                              - IconSecBtn_2:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Color: |-
+                                      =If(
+                                          BtnIcnSec_2.DisplayMode = DisplayMode.Disabled,
+                                          ColorValue(dsaTokens.colorNeutral300),
+                                          ColorValue(dsaTokens.colorContrastLight)
+                                      )
+                                    DisplayMode: =DisplayMode.View
+                                    FocusedBorderThickness: =0
+                                    Height: =18
+                                    HoverColor: |-
+                                      =ColorValue(
+                                          dsaTokens.colorNeutral100
+                                      )
+                                    Icon: =Icon.AddDocument
+                                    PressedColor: =ColorFade(Self.Color, -40%)
+                                    Width: =18
+                                    X: =Parent.Width/2 - Self.Width/2
+                                    Y: =BtnIcnSec_2.Height /2 - Self.Height /2
+                              - BtnIcnSec_2:
+                                  Control: Classic/Button@2.2.0
+                                  Properties:
+                                    BorderColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentPrimary
+                                      )
+                                    Color: |-
+                                      =ColorValue(
+                                      dsaTokens.colorContrastLight
+                                      )
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorNeutral200
+                                      )
+                                    DisabledFill: |-
+                                      =ColorValue(
+                                      dsaTokens.colorNeutral400
+                                      )
+                                    Fill: |-
+                                      =ColorValue(
+                                      "#ffffff00"
+                                      )
+                                    Font: =Font.'Open Sans'
+                                    Height: =Parent.Height
+                                    HoverBorderColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentPrimary
+                                      )
+                                    HoverColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorContrastDark
+                                      )
+                                    HoverFill: |-
+                                      =ColorValue(
+                                      "#ffffff00"
+                                      )
+                                    PaddingBottom: =8
+                                    PaddingLeft: =8
+                                    PaddingRight: =8
+                                    PaddingTop: =8
+                                    PressedBorderColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentSecondaryHover
+                                      )
+                                    PressedColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorContrastDark
+                                      )
+                                    PressedFill: |-
+                                      =ColorValue(
+                                      "#ffffff00"
+                                      )
+                                    RadiusBottomLeft: =200
+                                    RadiusBottomRight: =200
+                                    RadiusTopLeft: =200
+                                    RadiusTopRight: =200
+                                    Size: =16
+                                    Text: =
+                                    Width: =Parent.Width
+                                    Y: '=0   '
+                        - BtnIcnPriDsa_2:
+                            Control: GroupContainer@1.3.0
+                            Variant: ManualLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =0
+                              Height: =40
+                              RadiusBottomLeft: =200
+                              RadiusBottomRight: =200
+                              RadiusTopLeft: =200
+                              RadiusTopRight: =200
+                              Width: =40
+                              X: =111
+                              Y: =422
                             Children:
                               - BtnIcnPri_2:
                                   Control: Classic/Button@2.2.0
@@ -1971,243 +2658,41 @@ ClearCollect(
                                           ColorValue(dsaTokens.colorNeutral300),
                                           ColorValue(dsaTokens.colorContrastDark)
                                       )
+                                    DisplayMode: =DisplayMode.View
                                     FocusedBorderThickness: =0
                                     Height: =18
                                     HoverColor: |-
                                       =ColorValue(
                                           dsaTokens.colorContrastDark
                                       )
-                                    Icon: =Icon.Search
+                                    Icon: =Icon.AddDocument
                                     Width: =18
                                     X: =Parent.Width/2 - Self.Width/2
                                     Y: =BtnIcnPri_2.Height /2 - Self.Height /2
-                        - BtnIcnSecDsa_2:
-                            Control: GroupContainer@1.3.0
-                            Variant: ManualLayout
-                            Properties:
-                              AlignInContainer: =AlignInContainer.Start
-                              DropShadow: =DropShadow.None
-                              FillPortions: =0
-                              Height: =40
-                              RadiusBottomLeft: =200
-                              RadiusBottomRight: =200
-                              RadiusTopLeft: =200
-                              RadiusTopRight: =200
-                              Width: =40
-                              X: =208
-                              Y: =298
-                            Children:
-                              - BtnIcnSec_2:
-                                  Control: Classic/Button@2.2.0
-                                  Properties:
-                                    BorderColor: |-
-                                      =ColorValue(
-                                        dsaTokens.colorAccentPrimary)
-                                    BorderThickness: =0
-                                    Color: |-
-                                      =ColorValue(
-                                      dsaTokens.colorContrastLight
-                                      )
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorNeutral200
-                                      )
-                                    DisabledFill: |-
-                                      =ColorValue(
-                                      dsaTokens.colorNeutral400
-                                      )
-                                    Fill: |-
-                                      =ColorValue(
-                                      dsaTokens.colorAccentSecondary
-                                      )
-                                    Font: =Font.'Open Sans'
-                                    Height: =Parent.Height
-                                    HoverBorderColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorAccentSecondaryHover
-                                      )
-                                    HoverColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorContrastDark
-                                      )
-                                    HoverFill: |-
-                                      =ColorValue(
-                                      dsaTokens.colorAccentSecondaryHover
-                                      )
-                                    PaddingBottom: =8
-                                    PaddingLeft: =8
-                                    PaddingRight: =8
-                                    PaddingTop: =8
-                                    PressedBorderColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorAccentSecondaryHover
-                                      )
-                                    PressedColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorContrastDark
-                                      )
-                                    PressedFill: |-
-                                      =ColorValue(
-                                      dsaTokens.colorAccentSecondary
-                                      )
-                                    RadiusBottomLeft: =200
-                                    RadiusBottomRight: =200
-                                    RadiusTopLeft: =200
-                                    RadiusTopRight: =200
-                                    Size: =16
-                                    Text: =
-                                    Width: =Parent.Width
-                                    Y: '=0   '
-                              - IconSecBtn_2:
-                                  Control: Classic/Icon@2.5.0
-                                  Properties:
-                                    BorderColor: =RGBA(0, 18, 107, 1)
-                                    Color: |-
-                                      =If(
-                                          BtnIcnSec_2.DisplayMode = DisplayMode.Disabled,
-                                          ColorValue(dsaTokens.colorNeutral300),
-                                          ColorValue(dsaTokens.colorContrastLight)
-                                      )
-                                    FocusedBorderThickness: =0
-                                    Height: =18
-                                    HoverColor: |-
-                                      =ColorValue(
-                                          dsaTokens.colorNeutral100
-                                      )
-                                    Icon: =Icon.Edit
-                                    PressedColor: =ColorFade(Self.Color, -40%)
-                                    Width: =18
-                                    X: =Parent.Width/2 - Self.Width/2
-                                    Y: =BtnIcnSec_2.Height /2 - Self.Height /2
-                        - BtnIcnTerDsa_2:
-                            Control: GroupContainer@1.3.0
-                            Variant: ManualLayout
-                            Properties:
-                              AlignInContainer: =AlignInContainer.Start
-                              DropShadow: =DropShadow.None
-                              FillPortions: =0
-                              Height: =40
-                              RadiusBottomLeft: =200
-                              RadiusBottomRight: =200
-                              RadiusTopLeft: =200
-                              RadiusTopRight: =200
-                              Width: =40
-                              X: =417
-                              Y: =298
-                            Children:
-                              - BtnTerSec_2:
-                                  Control: Classic/Button@2.2.0
-                                  Properties:
-                                    BorderColor: =ColorValue("#ffffff00")
-                                    BorderThickness: =0
-                                    Color: |-
-                                      =ColorValue(
-                                      dsaTokens.colorAccentPrimary
-                                      )
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorNeutral200
-                                      )
-                                    DisabledFill: |-
-                                      =ColorValue(
-                                         "#ffffff00"
-                                      )
-                                    Fill: |-
-                                      =ColorValue(
-                                         "#ffffff00"
-                                      )
-                                    Font: =Font.'Open Sans'
-                                    Height: =Parent.Height
-                                    HoverBorderColor: =ColorValue("#ffffff00")
-                                    HoverColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorContrastDark
-                                      )
-                                    HoverFill: |-
-                                      =ColorValue(
-                                         "#ffffff00"
-                                      )
-                                    PaddingBottom: =8
-                                    PaddingLeft: =8
-                                    PaddingRight: =8
-                                    PaddingTop: =8
-                                    PressedBorderColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorAccentSecondaryHover
-                                      )
-                                    PressedColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorContrastDark
-                                      )
-                                    PressedFill: |-
-                                      =ColorValue(
-                                         "#ffffff00"
-                                      )
-                                    RadiusBottomLeft: =200
-                                    RadiusBottomRight: =200
-                                    RadiusTopLeft: =200
-                                    RadiusTopRight: =200
-                                    Size: =16
-                                    Text: =
-                                    Width: =Parent.Width
-                                    Y: '=0   '
-                              - IconTerBtn_2:
-                                  Control: Classic/Icon@2.5.0
-                                  Properties:
-                                    BorderColor: =RGBA(0, 18, 107, 1)
-                                    Color: |-
-                                      =If(
-                                          BtnTerSec_2.DisplayMode = DisplayMode.Disabled,
-                                          ColorValue(dsaTokens.colorNeutral300),
-                                          ColorValue(dsaTokens.colorAccentPrimary)
-                                      )
-                                    FocusedBorderThickness: =0
-                                    Height: =18
-                                    HoverColor: |-
-                                      =ColorValue(
-                                          dsaTokens.colorAccentPrimary
-                                      )
-                                    HoverFill: |-
-                                      =   ColorValue(
-                                          "#ffffff00"
-                                         )
-                                    Icon: =Icon.Trash
-                                    PressedColor: |-
-                                      =ColorValue(
-                                      dsaTokens.colorAccentPrimaryHover
-                                      )
-                                    Width: =18
-                                    X: =Parent.Width/2 - Self.Width/2
-                                    Y: =BtnTerSec_2.Height /2 - Self.Height /2
       - cardHorizontalDivisor:
           Control: Rectangle@2.3.0
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
             Fill: =ColorValue(dsaTokens.colorNeutral400)
-            Height: '=2   '
+            Height: '=2'
             Width: =Parent.Width
-
-`;g.setAttribute("data-code",d1);g.innerHTML=`
-<img class="CardHzDsa" src=${l1} alt="Imagem Card para power apps" />
-`;const s1="/design-system-apex/assets/components-preview/CardThumbDsa.png",_=document.createElement("div"),C1=`- CardThumbDsa:
+`;P.setAttribute("data-code",Ho);P.innerHTML=`
+<img class="CardHzDsa" src=${Vo} alt="Imagem Card para power apps" />
+`;const So="/design-system-apex/assets/components-preview/CardThumbDsa.png",L=document.createElement("div"),Ro=`- CardThumbDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
       Fill: =ColorValue(dsaTokens.colorBgPrimary)
-      FillPortions: =0
       Height: =thumbContainer.Height + cardThumbTitle.Height + cardThumbText.Height + 40 + cardThumbContent.PaddingBottom + cardThumbContent.PaddingBottom + 24
       LayoutDirection: =LayoutDirection.Vertical
-      LayoutMinHeight: =0
       RadiusBottomLeft: =16
       RadiusBottomRight: =16
       RadiusTopLeft: =16
       RadiusTopRight: =16
       Width: =240
-      X: =959
-      Y: =392
+      X: =868
+      Y: =362
     Children:
       - thumbContainer:
           Control: GroupContainer@1.3.0
@@ -2215,7 +2700,7 @@ ClearCollect(
           Properties:
             DropShadow: =DropShadow.Regular
             FillPortions: =0
-            Height: '=200 '
+            Height: =100
             LayoutMinHeight: =0
             LayoutMinWidth: =0
             RadiusBottomLeft: =16
@@ -2243,8 +2728,8 @@ ClearCollect(
             LayoutMinHeight: =0
             LayoutMinWidth: =0
             PaddingBottom: =8
-            PaddingLeft: =16
-            PaddingRight: =16
+            PaddingLeft: =8
+            PaddingRight: =4
             PaddingTop: =8
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
@@ -2267,7 +2752,7 @@ ClearCollect(
                   PaddingRight: =0
                   PaddingTop: =0
                   Size: =dsaTokens.fontText
-                  Text: ="Title"
+                  Text: ="Title card"
                   Width: =Parent.Width - 32
             - cardThumbText:
                 Control: Label@2.5.1
@@ -2282,7 +2767,8 @@ ClearCollect(
                   PaddingTop: =0
                   Size: =dsaTokens.fontLabel
                   Text: |-
-                    ="Text description for your long text.
+                    ="Text description for your long text. 
+
                     "
                   Width: =Parent.Width - 32
             - BtnTerDsa_1:
@@ -2358,31 +2844,29 @@ ClearCollect(
                   Underline: =true
                   X: =519
                   Y: =150
-
-`;_.setAttribute("data-code",C1);_.innerHTML=`
-<img class="CardThumbDsa" src=${s1} alt="Imagem Card para power apps" />
-`;const c1="/design-system-apex/assets/components-preview/CardSmDsa.png",y=document.createElement("div"),p1=`- CardSmDsa:
+`;L.setAttribute("data-code",Ro);L.innerHTML=`
+<img class="CardThumbDsa" src=${So} alt="Imagem Card para power apps" />
+`;const Ao="/design-system-apex/assets/components-preview/CardSmDsa.png",_=document.createElement("div"),ko=`- CardSmDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
       Fill: =ColorValue(dsaTokens.colorBgPrimary)
-      FillPortions: =0
-      Height: = cardSmtext.Height + cardSmAction.Height + cardSmTtitleAccent.Height + Self.PaddingBottom + Self.PaddingTop + Self.LayoutGap
+      Height: = cardSmtext.Height + cardSmAction.Height + cardSmTtitleAccent.Height + Self.PaddingBottom + Self.PaddingTop + Self.LayoutGap * 2
       LayoutDirection: =LayoutDirection.Vertical
       LayoutGap: =8
-      PaddingBottom: =16
-      PaddingLeft: =16
-      PaddingRight: =16
-      PaddingTop: =16
+      PaddingBottom: =8
+      PaddingLeft: =8
+      PaddingRight: =8
+      PaddingTop: =8
       RadiusBottomLeft: =8
       RadiusBottomRight: =8
       RadiusTopLeft: =8
       RadiusTopRight: =8
       Width: |
         =If(App.Width < 768, Parent.Width, 200)
-      X: =60
-      Y: =395
+      X: =42
+      Y: =362
     Children:
       - cardSmTtitleAccent:
           Control: Label@2.5.1
@@ -2412,7 +2896,7 @@ ClearCollect(
             PaddingTop: =0
             Size: =dsaTokens.fontLabel
             Text: |-
-              ="18/10/24
+              ="Text description for your long text. 
               "
             Width: =Parent.Width - 32
       - cardSmAction:
@@ -2436,6 +2920,207 @@ ClearCollect(
             X: =300
             Y: =468
           Children:
+            - BtnIcnTerDsa_3:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.Center
+                  DropShadow: =DropShadow.None
+                  FillPortions: =0
+                  Height: =40
+                  RadiusBottomLeft: =200
+                  RadiusBottomRight: =200
+                  RadiusTopLeft: =200
+                  RadiusTopRight: =200
+                  Width: =40
+                  X: =416
+                  Y: =422
+                Children:
+                  - IconTerBtn_3:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: |-
+                          =If(
+                              BtnTerSec_3.DisplayMode = DisplayMode.Disabled,
+                              ColorValue(dsaTokens.colorNeutral300),
+                              ColorValue(dsaTokens.colorAccentPrimary)
+                          )
+                        FocusedBorderThickness: =0
+                        Height: =18
+                        HoverColor: |-
+                          =ColorValue(
+                              dsaTokens.colorAccentPrimaryHover
+                          )
+                        HoverFill: |-
+                          =   ColorValue(
+                              "#ffffff00"
+                             )
+                        Icon: =Icon.Trash
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimaryHover
+                          )
+                        Width: =18
+                        X: =Parent.Width/2 - Self.Width/2
+                        Y: =BtnTerSec_3.Height /2 - Self.Height /2
+                  - BtnTerSec_3:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorValue("#ffffff00")
+                        BorderThickness: =0
+                        Color: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral200
+                          )
+                        DisabledFill: |-
+                          =ColorValue(
+                             "#ffffff00"
+                          )
+                        Fill: |-
+                          =ColorValue(
+                             "#ffffff00"
+                          )
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height
+                        HoverBorderColor: =ColorValue("#ffffff00")
+                        HoverColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        HoverFill: |-
+                          =ColorValue(
+                             "#ffffff00"
+                          )
+                        PaddingBottom: =8
+                        PaddingLeft: =8
+                        PaddingRight: =8
+                        PaddingTop: =8
+                        PressedBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentSecondaryHover
+                          )
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        PressedFill: |-
+                          =ColorValue(
+                             "#ffffff00"
+                          )
+                        RadiusBottomLeft: =200
+                        RadiusBottomRight: =200
+                        RadiusTopLeft: =200
+                        RadiusTopRight: =200
+                        Size: =16
+                        Text: =
+                        Width: =Parent.Width
+                        Y: '=0   '
+            - BtnIcnSecDsa_3:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.Center
+                  DropShadow: =DropShadow.None
+                  FillPortions: =0
+                  Height: =40
+                  RadiusBottomLeft: =200
+                  RadiusBottomRight: =200
+                  RadiusTopLeft: =200
+                  RadiusTopRight: =200
+                  Width: =40
+                  X: =201
+                  Y: =422
+                Children:
+                  - IconSecBtn_3:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: |-
+                          =If(
+                              BtnIcnSec_3.DisplayMode = DisplayMode.Disabled,
+                              ColorValue(dsaTokens.colorNeutral300),
+                              ColorValue(dsaTokens.colorContrastLight)
+                          )
+                        DisplayMode: =DisplayMode.View
+                        FocusedBorderThickness: =0
+                        Height: =18
+                        HoverColor: |-
+                          =ColorValue(
+                              dsaTokens.colorNeutral100
+                          )
+                        Icon: =Icon.Edit
+                        PressedColor: =ColorFade(Self.Color, -40%)
+                        Width: =18
+                        X: =Parent.Width/2 - Self.Width/2
+                        Y: =BtnIcnSec_3.Height /2 - Self.Height /2
+                  - BtnIcnSec_3:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        Color: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastLight
+                          )
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral200
+                          )
+                        DisabledFill: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral400
+                          )
+                        Fill: |-
+                          =ColorValue(
+                          "#ffffff00"
+                          )
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height
+                        HoverBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        HoverColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        HoverFill: |-
+                          =ColorValue(
+                          "#ffffff00"
+                          )
+                        PaddingBottom: =8
+                        PaddingLeft: =8
+                        PaddingRight: =8
+                        PaddingTop: =8
+                        PressedBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentSecondaryHover
+                          )
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        PressedFill: |-
+                          =ColorValue(
+                          "#ffffff00"
+                          )
+                        RadiusBottomLeft: =200
+                        RadiusBottomRight: =200
+                        RadiusTopLeft: =200
+                        RadiusTopRight: =200
+                        Size: =16
+                        Text: =
+                        Width: =Parent.Width
+                        Y: '=0   '
             - BtnIcnPriDsa_3:
                 Control: GroupContainer@1.3.0
                 Variant: ManualLayout
@@ -2449,8 +3134,8 @@ ClearCollect(
                   RadiusTopLeft: =200
                   RadiusTopRight: =200
                   Width: =40
-                  X: =644
-                  Y: =293
+                  X: =111
+                  Y: =422
                 Children:
                   - BtnIcnPri_3:
                       Control: Classic/Button@2.2.0
@@ -2525,240 +3210,41 @@ ClearCollect(
                               ColorValue(dsaTokens.colorNeutral300),
                               ColorValue(dsaTokens.colorContrastDark)
                           )
+                        DisplayMode: =DisplayMode.View
                         FocusedBorderThickness: =0
                         Height: =18
                         HoverColor: |-
                           =ColorValue(
                               dsaTokens.colorContrastDark
                           )
-                        Icon: =Icon.Add
+                        Icon: =Icon.Search
                         Width: =18
                         X: =Parent.Width/2 - Self.Width/2
                         Y: =BtnIcnPri_3.Height /2 - Self.Height /2
-            - BtnIcnSecDsa_3:
-                Control: GroupContainer@1.3.0
-                Variant: ManualLayout
-                Properties:
-                  AlignInContainer: =AlignInContainer.Center
-                  DropShadow: =DropShadow.None
-                  FillPortions: =0
-                  Height: =40
-                  RadiusBottomLeft: =200
-                  RadiusBottomRight: =200
-                  RadiusTopLeft: =200
-                  RadiusTopRight: =200
-                  Width: =40
-                  X: =852
-                  Y: =293
-                Children:
-                  - BtnIcnSec_3:
-                      Control: Classic/Button@2.2.0
-                      Properties:
-                        BorderColor: =ColorValue("#ffffff00")
-                        BorderThickness: =0
-                        Color: |-
-                          =ColorValue(
-                          dsaTokens.colorContrastLight
-                          )
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: |-
-                          =ColorValue(
-                          dsaTokens.colorNeutral200
-                          )
-                        DisabledFill: |-
-                          =ColorValue(
-                          dsaTokens.colorNeutral400
-                          )
-                        Fill: |-
-                          =ColorValue(
-                          dsaTokens.colorAccentSecondary
-                          )
-                        Font: =Font.'Open Sans'
-                        Height: =Parent.Height
-                        HoverBorderColor: |-
-                          =ColorValue(
-                          dsaTokens.colorAccentSecondaryHover
-                          )
-                        HoverColor: |-
-                          =ColorValue(
-                          dsaTokens.colorContrastDark
-                          )
-                        HoverFill: |-
-                          =ColorValue(
-                          dsaTokens.colorAccentSecondaryHover
-                          )
-                        PaddingBottom: =8
-                        PaddingLeft: =8
-                        PaddingRight: =8
-                        PaddingTop: =8
-                        PressedBorderColor: |-
-                          =ColorValue(
-                          dsaTokens.colorAccentSecondaryHover
-                          )
-                        PressedColor: |-
-                          =ColorValue(
-                          dsaTokens.colorContrastDark
-                          )
-                        PressedFill: |-
-                          =ColorValue(
-                          dsaTokens.colorAccentSecondary
-                          )
-                        RadiusBottomLeft: =200
-                        RadiusBottomRight: =200
-                        RadiusTopLeft: =200
-                        RadiusTopRight: =200
-                        Size: =16
-                        Text: =
-                        Width: =Parent.Width
-                        Y: '=0   '
-                  - IconSecBtn_3:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: |-
-                          =If(
-                              BtnIcnSec_3.DisplayMode = DisplayMode.Disabled,
-                              ColorValue(dsaTokens.colorNeutral300),
-                              ColorValue(dsaTokens.colorContrastLight)
-                          )
-                        FocusedBorderThickness: =0
-                        Height: =18
-                        HoverColor: |-
-                          =ColorValue(
-                              dsaTokens.colorNeutral100
-                          )
-                        Icon: =Icon.Search
-                        PressedColor: =ColorFade(Self.Color, -40%)
-                        Width: =18
-                        X: =Parent.Width/2 - Self.Width/2
-                        Y: =BtnIcnSec_3.Height /2 - Self.Height /2
-            - BtnIcnTerDsa_3:
-                Control: GroupContainer@1.3.0
-                Variant: ManualLayout
-                Properties:
-                  AlignInContainer: =AlignInContainer.Center
-                  DropShadow: =DropShadow.None
-                  FillPortions: =0
-                  Height: =40
-                  RadiusBottomLeft: =200
-                  RadiusBottomRight: =200
-                  RadiusTopLeft: =200
-                  RadiusTopRight: =200
-                  Width: =40
-                  X: =988
-                  Y: =293
-                Children:
-                  - BtnTerSec_3:
-                      Control: Classic/Button@2.2.0
-                      Properties:
-                        BorderColor: =ColorValue("#ffffff00")
-                        BorderThickness: =0
-                        Color: |-
-                          =ColorValue(
-                          dsaTokens.colorAccentPrimary
-                          )
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: |-
-                          =ColorValue(
-                          dsaTokens.colorNeutral200
-                          )
-                        DisabledFill: |-
-                          =ColorValue(
-                             "#ffffff00"
-                          )
-                        Fill: |-
-                          =ColorValue(
-                             "#ffffff00"
-                          )
-                        Font: =Font.'Open Sans'
-                        Height: =Parent.Height
-                        HoverBorderColor: =ColorValue("#ffffff00")
-                        HoverColor: |-
-                          =ColorValue(
-                          dsaTokens.colorContrastDark
-                          )
-                        HoverFill: |-
-                          =ColorValue(
-                             "#ffffff00"
-                          )
-                        PaddingBottom: =8
-                        PaddingLeft: =8
-                        PaddingRight: =8
-                        PaddingTop: =8
-                        PressedBorderColor: |-
-                          =ColorValue(
-                          dsaTokens.colorAccentSecondaryHover
-                          )
-                        PressedColor: |-
-                          =ColorValue(
-                          dsaTokens.colorContrastDark
-                          )
-                        PressedFill: |-
-                          =ColorValue(
-                             "#ffffff00"
-                          )
-                        RadiusBottomLeft: =200
-                        RadiusBottomRight: =200
-                        RadiusTopLeft: =200
-                        RadiusTopRight: =200
-                        Size: =16
-                        Text: =
-                        Width: =Parent.Width
-                        Y: '=0   '
-                  - IconTerBtn_3:
-                      Control: Classic/Icon@2.5.0
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: |-
-                          =If(
-                              BtnTerSec_3.DisplayMode = DisplayMode.Disabled,
-                              ColorValue(dsaTokens.colorNeutral300),
-                              ColorValue(dsaTokens.colorAccentPrimary)
-                          )
-                        FocusedBorderThickness: =0
-                        Height: =18
-                        HoverColor: |-
-                          =ColorValue(
-                              dsaTokens.colorAccentPrimary
-                          )
-                        HoverFill: |-
-                          =   ColorValue(
-                              "#ffffff00"
-                             )
-                        Icon: =Icon.Trash
-                        PressedColor: |-
-                          =ColorValue(
-                          dsaTokens.colorAccentPrimaryHover
-                          )
-                        Width: =18
-                        X: =Parent.Width/2 - Self.Width/2
-                        Y: =BtnTerSec_3.Height /2 - Self.Height /2
-
-`;y.setAttribute("data-code",p1);y.innerHTML=`
-<img class="CardThumbDsa" src=${c1} alt="Imagem Card para power apps" />
-`;const u1="/design-system-apex/assets/components-preview/cardSmallBtnDsa.png",B=document.createElement("div"),h1=`- CardSmBtnDsa:
+`;_.setAttribute("data-code",ko);_.innerHTML=`
+<img class="CardThumbDsa" src=${Ao} alt="Imagem Card para power apps" />
+`;const Do="/design-system-apex/assets/components-preview/cardSmallBtnDsa.png",V=document.createElement("div"),vo=`- CardSmBtnDsa:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
       Fill: =ColorValue(dsaTokens.colorBgPrimary)
-      FillPortions: =0
       Height: |
-        = cardSmBtntext.Height + cardBtnAction.Height + cardSmBtnTtitleAccent.Height + Self.PaddingBottom + Self.PaddingTop + Self.LayoutGap
+        = cardSmBtntext.Height + cardBtnAction.Height + cardSmBtnTtitleAccent.Height + Self.PaddingBottom + Self.PaddingTop + Self.LayoutGap * 2
       LayoutDirection: =LayoutDirection.Vertical
       LayoutGap: =8
-      PaddingBottom: =16
-      PaddingLeft: =16
-      PaddingRight: =16
-      PaddingTop: =16
+      PaddingBottom: =8
+      PaddingLeft: =8
+      PaddingRight: =8
+      PaddingTop: =8
       RadiusBottomLeft: =8
       RadiusBottomRight: =8
       RadiusTopLeft: =8
       RadiusTopRight: =8
-      Width: |+
+      Width: |
         =If(App.Width < 768, Parent.Width, 256)
-      X: =428
-      Y: =71
+      X: =306
+      Y: =362
     Children:
       - cardSmBtnTtitleAccent:
           Control: Label@2.5.1
@@ -2788,7 +3274,7 @@ ClearCollect(
             PaddingTop: =0
             Size: =dsaTokens.fontLabel
             Text: |-
-              ="Text description for your long text
+              ="Text description for your long text card or information details
               "
             Width: =Parent.Width - 32
       - cardBtnAction:
@@ -2890,15 +3376,16 @@ ClearCollect(
                               ColorValue(dsaTokens.colorNeutral300),
                               ColorValue(dsaTokens.colorContrastDark)
                           )
+                        DisplayMode: =DisplayMode.View
                         Height: =ButtonIconRight_1.Size
                         Icon: =Icon.Search
                         Width: =ButtonIconRight_1.Size
                         X: = ButtonIconRight_1.Width - Self.Width - 16
                         Y: =ButtonIconRight_1.Height /2 - Self.Height /2
-
-`;B.setAttribute("data-code",h1);B.innerHTML=`
-<img class="CardThumbDsa" src=${u1} alt="Imagem Card para power apps" />
-`;const f1="/design-system-apex/assets/components-preview/modal.png",r=document.createElement("div"),g1=`- ModalContainer:
+`;V.setAttribute("data-code",vo);V.innerHTML=`
+<img class="CardThumbDsa" src=${Do} alt="Imagem Card para power apps" />
+`;const Fo="/design-system-apex/assets/components-preview/modal.png",r=document.createElement("div"),wo=`
+- ModalContainer:
     Control: GroupContainer@1.3.0
     Variant: ManualLayout
     Properties:
@@ -2977,7 +3464,6 @@ ClearCollect(
                                )
                           )
                         DisplayMode: =DisplayMode.View
-                        FillPortions: =1
                         Height: =52
                         Icon: |-
                           =Switch(true, 
@@ -2986,6 +3472,8 @@ ClearCollect(
                           dsaModalType = "error", Icon.Warning,
                           dsaModalType = "success", Icon.Check
                           )
+                        LayoutMinWidth: =0
+                        Width: =52
             - messageModal:
                 Control: Label@2.5.1
                 Properties:
@@ -2999,7 +3487,7 @@ ClearCollect(
                   PaddingLeft: =0
                   PaddingRight: =0
                   PaddingTop: =0
-                  Size: |+
+                  Size: |
                     =dsaTokens.fontLabel
                   Text: =dsaModalMessage
                   Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
@@ -3164,17 +3652,15 @@ ClearCollect(
                         RadiusTopLeft: =200
                         RadiusTopRight: =200
                         Size: =dsaTokens.fontText
-                        Text: ="Execute"
+                        Text: ="Main action"
                         X: =42
                         Y: =237
-
-`,_1=`
+`,bo=`
 // settings for modal
 <pre>
   <code>
 Set(dsaModalShow, true);
 Set(dsaModalType, "success");
-Set(dsaModalIcon, Icon.Add);
 Set(dsaModalMessage, "Your message here!")
   </code>
 </pre>
@@ -3189,22 +3675,18 @@ Set(dsaModalMessage, "Your message here!")
     <p>Mude o tipo do Modal ao setar essa variavel para "info", "warning", "success" ou "error" conforme o tipo de mensagem que voce deseja mostrar para o usuário.</p>
   </div>
   <div class="code-details">
-    <h6>dsaModalIcon</h6>
-    <p>Icone personalizavel de acordo com o tipo do model, você pode alterar para outro ícone se desejar.</p>
-  </div>
-  <div class="code-details">
     <h6>dsaModalMessage</h6>
     <p>Use essa variável para escrever a mensagem que voce deseja mostrar para o usuário, ex. "Projeto adicionado com sucesso".</p>
   </div>
 </section>
-`;r.setAttribute("data-code",g1);r.setAttribute("data-properties",_1);r.innerHTML=`
-<img class="ModalDsa" src=${f1} alt="Imagem combo box para power apps" />
-`;const y1="/design-system-apex/assets/components-preview/toastDsa.png",o=document.createElement("div");o.classList.add("hasProperties");const B1=`- ToastDsa:
+`;r.setAttribute("data-code",wo);r.setAttribute("data-properties",bo);r.innerHTML=`
+<img class="ModalDsa" src=${Fo} alt="Imagem combo box para power apps" />
+`;const Io="/design-system-apex/assets/components-preview/toastDsa.png",o=document.createElement("div");o.classList.add("hasProperties");const xo=`- ToastDsa:
     Control: GroupContainer@1.3.0
     Variant: ManualLayout
     Properties:
       DropShadow: =DropShadow.None
-      Height: =If(dsaToastShow, 120, 0)
+      Height: =If(dsaToastShow, 80, 0)
       RadiusBottomLeft: =0
       RadiusBottomRight: =0
       RadiusTopLeft: =0
@@ -3266,6 +3748,7 @@ Set(dsaModalMessage, "Your message here!")
                   - titleToast_3:
                       Control: Label@2.5.1
                       Properties:
+                        AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =ColorValue(dsaTokens.colorNeutral200)
                         Font: =Font.'Open Sans'
@@ -3274,7 +3757,7 @@ Set(dsaModalMessage, "Your message here!")
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =16
+                        Size: =dsaTokens.fontSmallCaption
                         Text: =dsaToastType
                         Width: =Parent.Width - 8
                   - messageToast_3:
@@ -3284,12 +3767,12 @@ Set(dsaModalMessage, "Your message here!")
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =ColorValue(dsaTokens.colorContrastLight)
                         Font: =Font.'Open Sans'
-                        Height: =Parent.Height - titleToast_3.Height
+                        Height: =toastRectangle_3.Height - titleToast_3.Height - 8
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =14
+                        Size: =dsaTokens.fontSmallLabel
                         Text: =dsaToastMessage
                         Width: =Parent.Width   - 8
             - Icon1_3:
@@ -3345,8 +3828,8 @@ Set(dsaModalMessage, "Your message here!")
                   X: =636
                   Y: =288
 
-`,T1=`
-// settings for nav menu
+`,Go=`
+// settings for toast
 <pre>
   <code>
 Set(dsaToastShow, true);
@@ -3369,11 +3852,10 @@ Set(dsaToastMessage, "Your message!");
     <p>Use essa variavel para escrever a mensagem que voce deseja mostrar para o usuario, ex. "Projeto adicionado com sucess".</p>
   </div>
 </section>
-`;o.setAttribute("data-properties",T1);o.setAttribute("data-code",B1);o.innerHTML=`
-<img class="ModalDsa" src=${y1} alt="Imagem modal para power apps" />
-`;const T=document.createElement("div"),m1=`
-// Design system tokens
-    Set(dsaTokens,
+`;o.setAttribute("data-properties",Go);o.setAttribute("data-code",xo);o.innerHTML=`
+<img class="ModalDsa" src=${Io} alt="Imagem modal para power apps" />
+`;const H=document.createElement("div"),Wo=`// Design system tokens
+ Set(dsaTokens,
        {
             colorBgPrimary: "#F3F3F6",
             colorBgSecondary: "#ffffff",
@@ -3381,14 +3863,14 @@ Set(dsaToastMessage, "Your message!");
             colorAccentPrimaryHover: "#2929A3",
             colorAccentSecondary: "#F8F8FC",
             colorAccentSecondaryHover: "#EAEAF6",
-            colorAccentTertiary: "#BC5AED",
+            colorAccentTertiary: "#5A328A",
             colorFeedbackInfo: "#EEF2FC",
             colorFeedbackInfoAccent: "#A8BDF0",
             colorFeedbackError: "#FDEDF2",
-            colorFeedbackErrorAccent: "#ED5A8B",
-            colorFeedbackWarning: "#F8FAD1",
+            colorFeedbackErrorAccent: "#ED5A7A",
+            colorFeedbackWarning: "#FBFCE3",
             colorFeedbackWarningAccent: "#E9C534",
-            colorFeedbackSuccess: "#BCF0D6",
+            colorFeedbackSuccess: "#DEF8EB",
             colorFeedbackSuccessAccent: "#16CA52",
             colorContrastDark: "#F4F4F6",
             colorContrastLight: "#26262C",
@@ -3397,13 +3879,13 @@ Set(dsaToastMessage, "Your message!");
             colorNeutral300: "#9C9CAB",
             colorNeutral400: "#D8D8DE",
             colorNeutral500: "#E9E9EC",
-            fontTitleHero: 48,
-            fontSubTitle: 32,
-            fontTextLarge: 24,
-            fontTextMedium: 20,
-            fontText: 16,
-            fontLabel: 14,
-            fontSmallLabel: 12,
+            fontTitleHero: 28,
+            fontSubTitle: 22,
+            fontTextLarge: 18,
+            fontTextMedium: 16,
+            fontText: 14,
+            fontLabel: 12,
+            fontSmallLabel: 10,
             fontSmallCaption: 8,
             Height340: 340
         }
@@ -3422,7 +3904,7 @@ Set(dsaToastMessage, "Your message!");
 // settings for nav menu
     Set(constCurrentScreen, Home);
     Set(widthMenuOpen, 200);
-    Set(widthMenuClosed, 44);
+    Set(widthMenuClosed, 48);
     ClearCollect(
         constNavMenu,
         {
@@ -3443,8 +3925,14 @@ Set(dsaToastMessage, "Your message!");
     Set(dsaToastType, "info");
     Set(dsaToastMessage, "Your message here!");
 
+// settings for selector
+Set(selectorRightBgDefault, dsaTokens.colorAccentSecondaryHover);
+Set(selectorLeftBgFocus, dsaTokens.colorAccentPrimaryHover);
+Set(selectorLeftColorText, dsaTokens.colorContrastDark);
+Set(selectorRightColorText, dsaTokens.colorContrastLight);
+
 // settings for Badge
-   Set(dsaBadgeType, "error");
+   Set(dsaBadgeType, "info");
    Set(dsaBadgeLabel, "Label");
 
 // data sample for gallerys
@@ -3478,7 +3966,7 @@ ClearCollect(StarWarsCharacters,
     { Name: "Anakin Skywalker" },
     { Name: "Padmé Amidala" }
 )
-`;T.setAttribute("data-code",m1);T.innerHTML=`
+`;H.setAttribute("data-code",Wo);H.innerHTML=`
 <pre>
 <code class="tokensDsa">
 // Tokens, copy into App.OnStart or OnVissible of home screen
@@ -3517,32 +4005,25 @@ ClearCollect(StarWarsCharacters,
     );
     </code>
     </pre>
-`;const m=document.createElement("div"),P1=`- loaderApexContainer:
+`;const a=document.createElement("div"),Mo=`
+- loaderContainer:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
-      AlignInContainer: =AlignInContainer.Center
-      DropShadow: =DropShadow.None
-      FillPortions: =0
-      Height: =If(App.Width < 768, 140, 200 )
+      Fill: =RGBA(255,255,255, 0.8)
+      Height: =Parent.Height
       LayoutAlignItems: =LayoutAlignItems.Center
       LayoutDirection: =LayoutDirection.Horizontal
       LayoutJustifyContent: =LayoutJustifyContent.Center
-      LayoutMinHeight: =0
-      RadiusBottomLeft: =0
-      RadiusBottomRight: =0
-      RadiusTopLeft: =0
-      RadiusTopRight: =0
-      Width: =If(App.Width < 768, 140, 200 )
-      X: =App.Width /2 - Self.Width /2
-      Y: =App.Height /2 - Self.Height /2
+      Visible: =dsaShowLoader
+      Width: =Parent.Width
     Children:
       - loaderApex:
           Control: Image@2.2.3
           Properties:
+            AlignInContainer: =AlignInContainer.Center
             BorderColor: =RGBA(0, 18, 107, 1)
-            Height: |
-              =Parent.Height
+            Height: =Self.Width
             Image: |-
               ="data:image/svg+xml;utf8, " & EncodeUrl("
               <svg width='157' height='157' viewBox='0 0 157 157' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -3799,11 +4280,21 @@ ClearCollect(StarWarsCharacters,
                   </defs>
               </svg>
               ")
-            Width: =Parent.Width
-            X: '=0   '
-            Y: '=0   '
+            Width: =200
+`,Uo=`
+// settings for loader
+<pre>
+  <code>
+Set(dsaShowLoader, true);
+  </code>
+</pre>
 
-`;m.setAttribute("data-code",P1);m.innerHTML=`
+<section class="details">
+  <div class="code-details">
+    <h6>dsaShowLoader</h6>
+    <p>Ao setar para "true" o Loader aparece na tela, utilize essa função em patch por exemplo.</p>
+</section>
+`;a.setAttribute("data-code",Mo);a.setAttribute("data-properties",Uo);a.innerHTML=`
 <svg width='157' height='157' viewBox='0 0 157 157' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <style>
             @keyframes showBlock {
@@ -4057,23 +4548,17 @@ ClearCollect(StarWarsCharacters,
         </linearGradient>
         </defs>
         </svg>
-`;const P=document.createElement("div"),V1=`- splashContainer:
+`;const S=document.createElement("div"),No=`
+- splashScreenContainer:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
-      AlignInContainer: =AlignInContainer.Center
-      DropShadow: =DropShadow.None
-      FillPortions: =0
-      Height: '=130 '
-      LayoutDirection: =LayoutDirection.Vertical
-      LayoutGap: =24
-      RadiusBottomLeft: =0
-      RadiusBottomRight: =0
-      RadiusTopLeft: =0
-      RadiusTopRight: =0
-      Width: =If(App.Width < 768, 200, 400)
-      X: =App.Width /2 - Self.Width/2
-      Y: =App.Height /2 - Self.Height/2
+      Fill: =RGBA(255,255,255, 0.8)
+      Height: =Parent.Height
+      LayoutAlignItems: =LayoutAlignItems.Center
+      LayoutDirection: =LayoutDirection.Horizontal
+      LayoutJustifyContent: =LayoutJustifyContent.Center
+      Width: =Parent.Width
     Children:
       - splash-apex:
           Control: Image@2.2.3
@@ -4482,9 +4967,8 @@ ClearCollect(StarWarsCharacters,
                       </linearGradient>
                       </defs>
                       </svg>  ")
-            Width: =Parent.Width
-    
-`;P.setAttribute("data-code",V1);P.innerHTML=`
+            Width: =If(App.Width < 768, 320, 400)
+`;S.setAttribute("data-code",No);S.innerHTML=`
 <svg width='497' height='162' viewBox='0 0 497 162' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <style>
             @keyframes showBlock {
@@ -4885,153 +5369,82 @@ ClearCollect(StarWarsCharacters,
         </linearGradient>
         </defs>
         </svg> 
-`;const a=document.createElement("div"),S1=`- ToastDsa:
+`;const i=document.createElement("div"),Oo=`- BadgeDsa:
     Control: GroupContainer@1.3.0
     Variant: ManualLayout
     Properties:
+      BorderColor: |-
+        =ColorValue(
+            If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfoAccent,
+             dsaBadgeType = "error", dsaTokens.colorFeedbackErrorAccent,
+             dsaBadgeType = "warning", dsaTokens.colorFeedbackWarningAccent,
+             dsaBadgeType = "success", dsaTokens.colorFeedbackSuccessAccent
+             )
+        )
+      BorderThickness: =2
       DropShadow: =DropShadow.None
-      Height: =If(dsaToastShow, 120, 0)
-      RadiusBottomLeft: =0
-      RadiusBottomRight: =0
-      RadiusTopLeft: =0
-      RadiusTopRight: =0
-      Width: =316
-      X: =If(App.Width < 768, App.Width/2 - Self.Width/2, App.Width - Self.Width - 16)
-      Y: =48
+      Fill: |-
+        =ColorValue(
+            If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfo,
+             dsaBadgeType = "error", dsaTokens.colorFeedbackError,
+             dsaBadgeType = "warning", dsaTokens.colorFeedbackWarning,
+             dsaBadgeType = "success", dsaTokens.colorFeedbackSuccess
+             )
+        )
+      Height: =28
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      Width: =140
+      X: =42
+      Y: =160
     Children:
-      - toastContainer_4:
-          Control: GroupContainer@1.3.0
-          Variant: AutoLayout
+      - LabelBadge:
+          Control: Label@2.5.1
           Properties:
-            DropShadow: =DropShadow.None
-            Fill: |
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
               =ColorValue(
-                  If(dsaToastType = "info", dsaTokens.colorFeedbackInfo,
-                   dsaToastType = "error", dsaTokens.colorFeedbackError,
-                   dsaToastType = "warning", dsaTokens.colorFeedbackWarning,
-                   dsaToastType = "success", dsaTokens.colorFeedbackSuccess
-                   )
+              dsaTokens.colorNeutral100
               )
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Open Sans'
             Height: =Parent.Height
-            LayoutDirection: =LayoutDirection.Horizontal
-            RadiusBottomLeft: =12
-            RadiusBottomRight: =12
-            RadiusTopLeft: =12
-            RadiusTopRight: =12
-            Visible: =dsaToastShow
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =dsaTokens.fontSmallLabel
+            Text: =dsaBadgeLabel
             Width: =Parent.Width
-          Children:
-            - toastRectangle_3:
-                Control: Rectangle@2.3.0
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Fill: |-
-                    =ColorValue(
-                        If( dsaToastType = "info", dsaTokens.colorFeedbackInfoAccent,
-                         dsaToastType = "error", dsaTokens.colorFeedbackErrorAccent,
-                         dsaToastType = "warning", dsaTokens.colorFeedbackWarningAccent,
-                         dsaToastType = "success", dsaTokens.colorFeedbackSuccessAccent
-                         )
-                    )
-                  Height: =Parent.Height
-                  Width: '=8   '
-            - toastContainer_5:
-                Control: GroupContainer@1.3.0
-                Variant: AutoLayout
-                Properties:
-                  DropShadow: =DropShadow.None
-                  Height: =Parent.Height
-                  LayoutDirection: =LayoutDirection.Vertical
-                  PaddingLeft: =8
-                  PaddingTop: =8
-                  RadiusBottomLeft: =0
-                  RadiusBottomRight: =0
-                  RadiusTopLeft: =0
-                  RadiusTopRight: =0
-                Children:
-                  - titleToast_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =ColorValue(dsaTokens.colorNeutral200)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =16
-                        Text: =dsaToastType
-                        Width: =Parent.Width - 8
-                  - messageToast_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =ColorValue(dsaTokens.colorContrastLight)
-                        Font: =Font.'Open Sans'
-                        Height: =Parent.Height - titleToast_3.Height
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =14
-                        Text: =dsaToastMessage
-                        Width: =Parent.Width   - 8
-            - Icon1_3:
-                Control: Classic/Icon@2.5.0
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Color: |-
-                    =ColorValue(
-                    dsaTokens.colorFeedbackErrorAccent
-                    )
-                  Fill: =ColorValue("#ffffff00")
-                  Height: '=44  '
-                  Icon: =Icon.CancelBadge
-                  OnSelect: =Set(dsaToastShow, !dsaToastShow)
-                  PaddingBottom: =8
-                  PaddingLeft: =8
-                  PaddingRight: =8
-                  PaddingTop: =8
-                  Width: '=44  '
-            - timerToast_3:
-                Control: Timer@2.1.0
-                Properties:
-                  BorderColor: =ColorFade(Self.Fill, -15%)
-                  BorderStyle: =BorderStyle.None
-                  Color: =RGBA(255, 255, 255, 1)
-                  DisabledBorderColor: =ColorFade(Self.BorderColor, 70%)
-                  DisabledColor: =ColorFade(Self.Fill, 90%)
-                  DisabledFill: =ColorFade(Self.Fill, 70%)
-                  DisplayMode: =DisplayMode.Disabled
-                  Duration: =5000
-                  Fill: =RGBA(56, 96, 178, 1)
-                  Font: =Font.'Open Sans'
-                  FontWeight: =FontWeight.Lighter
-                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
-                  HoverColor: =RGBA(255, 255, 255, 1)
-                  HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
-                  OnTimerEnd: =Set(dsaToastShow, false)
-                  PaddingBottom: =0
-                  PaddingLeft: =0
-                  PaddingRight: =0
-                  PaddingTop: =0
-                  PressedBorderColor: =Self.Fill
-                  PressedColor: =Self.Fill
-                  PressedFill: =Self.Color
-                  RadiusBottomLeft: =0
-                  RadiusBottomRight: =0
-                  RadiusTopLeft: =0
-                  RadiusTopRight: =0
-                  Size: =8
-                  Start: =dsaToastShow
-                  Visible: =false
-                  Width: =24
-                  X: =636
-                  Y: =288
-`,L1=`
-// settings for nav menu
+            Wrap: =false
+      - BadgeAction:
+          Control: Classic/Button@2.2.0
+          Properties:
+            AutoDisableOnSelect: =false
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =Self.Color
+            OnSelect: =
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =
+            Width: =Parent.Width
+`,Eo=`
+// settings for badge
 <pre>
   <code>
   Set(dsaBadgeType, "info");
@@ -5043,1134 +5456,1400 @@ ClearCollect(StarWarsCharacters,
     <h6>dsaBadgeType</h6>
     <p>Mude o tipo do Badge ao setar essa variavel para "info", "warning", "success" ou "error" conforme o tipo de mensagem que voce deseja mostrar para o usuario.</p>
   </div>
+    <div class="code-details">
+    <h6>dsaBadgeLabel</h6>
+    <p>Altere o texto manipulando essa variavel com um Set(dsaBadgeLabel, "novo texto") ou utilize o seu texto.</p>
+  </div>
 </section>
-`;a.setAttribute("data-code",S1);a.setAttribute("data-properties",L1);a.innerHTML='<div class="BadgeDsa">Label</div>';const H1="/design-system-apex/assets/components-preview/galleryCardHzDsa.png",V=document.createElement("div"),A1=`- GalleryCardHzDsa:
-    Control: Gallery@2.15.0
-    Variant: VariableHeight
+
+Set(dsaBadgeLabel, "Label badge warning")
+`;i.setAttribute("data-code",Oo);i.setAttribute("data-properties",Eo);i.innerHTML='<div class="BadgeDsa">Label</div>';const zo="/design-system-apex/assets/components-preview/AvatarTitleDescription.png",R=document.createElement("div"),Zo=`- AvatarTitleDescription:
+    Control: GroupContainer@1.3.0
+    Variant: AutoLayout
     Properties:
-      BorderColor: =RGBA(0, 18, 107, 1)
-      Items: =StarWarsCharacters
-      ShowScrollbar: =false
-      TemplatePadding: =8
+      DropShadow: =DropShadow.None
+      Height: =If(avatar.Height > AvatarDescription.Height, avatar.Height + Self.PaddingBottom * 2, AvatarDescription.Height+ Self.PaddingBottom * 2)
+      LayoutDirection: =LayoutDirection.Horizontal
+      LayoutGap: =8
+      PaddingBottom: =4
+      PaddingLeft: =4
+      PaddingRight: =4
+      PaddingTop: =4
+      RadiusBottomLeft: =0
+      RadiusBottomRight: =0
+      RadiusTopLeft: =0
+      RadiusTopRight: =0
+      Width: =200
+      X: =42
+      Y: =144
     Children:
-      - CardHzDsa_1:
+      - avatar:
+          Control: Image@2.2.3
+          Properties:
+            AlignInContainer: =AlignInContainer.Start
+            BorderColor: =ColorValue(dsaTokens.colorBgPrimary)
+            BorderThickness: =1
+            Height: =40
+            ImagePosition: =ImagePosition.Fill
+            RadiusBottomLeft: =200
+            RadiusBottomRight: =200
+            RadiusTopLeft: =200
+            RadiusTopRight: =200
+            Width: =40
+            X: =40
+            Y: =40
+      - AvatarDescription:
           Control: GroupContainer@1.3.0
           Variant: AutoLayout
           Properties:
+            AlignInContainer: =AlignInContainer.Start
             DropShadow: =DropShadow.None
-            Height: |
-              =Title_1.Height + Text_1.Height + cardHorizontalDivisor_1.Height + 40
+            Height: =avatarName.Height + avatarSubtitle.Height
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =8
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Width: =Parent.Width - Parent.TemplatePadding * 3
-            X: '=0   '
+            Width: |
+              =Parent.Width - avatar.Height - Parent.LayoutGap
+            X: =394
+            Y: =150
           Children:
-            - TitleBadge_1:
+            - avatarName:
+                Control: Label@2.5.1
+                Properties:
+                  AutoHeight: =true
+                  Color: =ColorValue(dsaTokens.colorContrastLight)
+                  Height: =false
+                  LineHeight: =1
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontLabel
+                  Width: =Parent.Width
+                  X: =330
+                  Y: =129
+            - avatarSubtitle:
+                Control: Label@2.5.1
+                Properties:
+                  AutoHeight: =true
+                  Color: =ColorValue(dsaTokens.colorNeutral200)
+                  Height: =false
+                  LineHeight: =1
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontSmallLabel
+                  Text: ="Sub title your avatar"
+                  Width: =Parent.Width
+`;R.setAttribute("data-code",Zo);R.innerHTML=`
+<img class="AvatarTitleDescription" src=${zo} alt="Imagem input attachment para power apps" />
+`;const Yo="/design-system-apex/assets/components-preview/GroupTeamAvatar.png",A=document.createElement("div"),Xo=`- GroupTeamAvatar:
+    Control: GroupContainer@1.3.0
+    Variant: AutoLayout
+    Properties:
+      DropShadow: =DropShadow.None
+      Height: =75
+      LayoutAlignItems: =LayoutAlignItems.Stretch
+      LayoutDirection: =LayoutDirection.Vertical
+      RadiusBottomLeft: =0
+      RadiusBottomRight: =0
+      RadiusTopLeft: =0
+      RadiusTopRight: =0
+      Width: =120
+      X: =42
+      Y: =215
+    Children:
+      - LabelGroup:
+          Control: Label@2.5.1
+          Properties:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =ColorValue(dsaTokens.colorNeutral200)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            LayoutMinWidth: =0
+            Size: =dsaTokens.fontLabel
+            Text: ="Team Group"
+            Width: =Parent.Width
+      - AvatarGroupContainer:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height- LabelGroup.Height
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: '=Parent.Width '
+          Children:
+            - avatarsgallery:
+                Control: Gallery@2.15.0
+                Variant: Horizontal
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Height: =Parent.Height
+                  ShowScrollbar: =false
+                  TemplatePadding: =0
+                  TemplateSize: =AvatarDsa.Width - AvatarDsa.Width /3
+                  Width: =Parent.Width
+                Children:
+                  - AvatarDsa:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =ColorValue(dsaTokens.colorBgPrimary)
+                        BorderThickness: =1
+                        Height: =35
+                        Image: '=SampleImage '
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =200
+                        RadiusBottomRight: =200
+                        RadiusTopLeft: =200
+                        RadiusTopRight: =200
+                        Width: =40
+`;A.setAttribute("data-code",Xo);A.innerHTML=`
+<img class="GroupTeamAvatar" src=${Yo} alt="Imagem combo box para power apps" />
+`;const $o="/design-system-apex/assets/components-preview/galleryCardHzDsa.png",k=document.createElement("div"),Jo=`- mainContainer_2:
+    Control: GroupContainer@1.3.0
+    Variant: AutoLayout
+    Properties:
+      DropShadow: =DropShadow.None
+      Height: =App.Height
+      LayoutDirection: =LayoutDirection.Vertical
+      RadiusBottomLeft: =0
+      RadiusBottomRight: =0
+      RadiusTopLeft: =0
+      RadiusTopRight: =0
+      Width: =Parent.Width
+    Children:
+      - HeaderDsa_2:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: |
+              =40
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+          Children:
+            - HeaderContainer_2:
                 Control: GroupContainer@1.3.0
-                Variant: AutoLayout
+                Variant: ManualLayout
                 Properties:
                   DropShadow: =DropShadow.None
-                  FillPortions: =0
-                  Height: |
-                    =Title_1.Height
-                  LayoutAlignItems: =LayoutAlignItems.Center
-                  LayoutDirection: =LayoutDirection.Horizontal
-                  PaddingRight: =2
+                  Fill: =ColorValue(dsaTokens.colorBgPrimary)
+                  Height: =Parent.Height
                   RadiusBottomLeft: =0
                   RadiusBottomRight: =0
                   RadiusTopLeft: =0
                   RadiusTopRight: =0
+                  Width: =Parent.Width
                 Children:
-                  - Title_1:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =ColorValue(dsaTokens.colorAccentPrimaryHover)
-                        FillPortions: =1
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        LayoutMinWidth: =0
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =dsaTokens.fontText
-                        Text: ="Main Title"
-                        Width: =Parent.Width
-                        Wrap: =false
-                  - BadgeDsa_3:
+                  - headerContent_3:
                       Control: GroupContainer@1.3.0
                       Variant: AutoLayout
                       Properties:
-                        AlignInContainer: =AlignInContainer.Center
-                        BorderColor: |-
-                          =ColorValue(
-                              If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfoAccent,
-                               dsaBadgeType = "error", dsaTokens.colorFeedbackErrorAccent,
-                               dsaBadgeType = "warning", dsaTokens.colorFeedbackWarningAccent,
-                               dsaBadgeType = "success", dsaTokens.colorFeedbackSuccessAccent
-                               )
-                          )
-                        BorderThickness: =2
-                        DropShadow: =DropShadow.None
-                        Fill: |-
-                          =ColorValue(
-                              If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfo,
-                               dsaBadgeType = "error", dsaTokens.colorFeedbackError,
-                               dsaBadgeType = "warning", dsaTokens.colorFeedbackWarning,
-                               dsaBadgeType = "success", dsaTokens.colorFeedbackSuccess
-                               )
-                          )
-                        FillPortions: =0
-                        Height: =26
-                        LayoutAlignItems: =LayoutAlignItems.Center
-                        LayoutDirection: =LayoutDirection.Horizontal
-                        LayoutJustifyContent: =LayoutJustifyContent.Center
-                        LayoutMinHeight: =0
-                        LayoutMinWidth: =180
-                        RadiusBottomLeft: =8
-                        RadiusBottomRight: =8
-                        RadiusTopLeft: =8
-                        RadiusTopRight: =8
-                        Width: =actionCardHzContainer_1.Width
-                        X: =583
-                        Y: =344
-                      Children:
-                        - LabelBadge_5:
-                            Control: Label@2.5.1
-                            Properties:
-                              Align: =Align.Center
-                              BorderColor: =RGBA(0, 18, 107, 1)
-                              Color: |-
-                                =ColorValue(
-                                dsaTokens.colorNeutral100
-                                )
-                              DisplayMode: =DisplayMode.View
-                              Font: =Font.'Open Sans'
-                              Height: =Parent.Height
-                              PaddingBottom: =0
-                              PaddingLeft: =0
-                              PaddingRight: =0
-                              PaddingTop: =0
-                              Size: =dsaTokens.fontSmallLabel
-                              Text: =dsaBadgeLabel
-                              Width: =Parent.Width
-                              Wrap: =false
-            - content-container_1:
-                Control: GroupContainer@1.3.0
-                Variant: AutoLayout
-                Properties:
-                  DropShadow: =DropShadow.None
-                  Height: |+
-                    =200
-
-
-                  LayoutDirection: =LayoutDirection.Horizontal
-                  LayoutMinHeight: =0
-                  LayoutMinWidth: =0
-                  RadiusBottomLeft: =0
-                  RadiusBottomRight: =0
-                  RadiusTopLeft: =0
-                  RadiusTopRight: =0
-                Children:
-                  - content_1:
-                      Control: GroupContainer@1.3.0
-                      Variant: AutoLayout
-                      Properties:
-                        AlignInContainer: =AlignInContainer.Start
                         DropShadow: =DropShadow.None
                         Height: =Parent.Height
                         LayoutDirection: =LayoutDirection.Horizontal
-                        LayoutMinHeight: =0
-                        LayoutMinWidth: =0
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Visible: =If(App.Width < 578, false, true)
+                        PaddingLeft: =
+                        PaddingRight: '=8   '
                         Width: =Parent.Width
+                        Y: |
+                          =0
                       Children:
-                        - SubTitle_1:
-                            Control: Label@2.5.1
-                            Properties:
-                              AlignInContainer: =AlignInContainer.Start
-                              BorderColor: =RGBA(0, 18, 107, 1)
-                              FillPortions: =1
-                              Font: =Font.'Open Sans'
-                              Height: =Parent.Height
-                              LayoutMinWidth: =0
-                              PaddingBottom: =0
-                              PaddingLeft: =0
-                              PaddingRight: =8
-                              PaddingTop: =0
-                              Size: =dsaTokens.fontLabel
-                              Text: ="Sub Title"
-                              VerticalAlign: =VerticalAlign.Top
-                              Width: =Parent.Width
-                        - cardDivisor_1:
-                            Control: Rectangle@2.3.0
-                            Properties:
-                              AlignInContainer: =AlignInContainer.Center
-                              BorderColor: =RGBA(0, 18, 107, 1)
-                              DisplayMode: =DisplayMode.View
-                              Fill: =RGBA(56, 96, 178, 1)
-                              Height: =16
-                              Width: '=2   '
-                        - Text_1:
-                            Control: Label@2.5.1
-                            Properties:
-                              AlignInContainer: =AlignInContainer.Start
-                              AutoHeight: =true
-                              BorderColor: =RGBA(0, 18, 107, 1)
-                              FillPortions: =1
-                              Font: =Font.'Open Sans'
-                              Height: =Parent.Height
-                              LayoutMinWidth: =0
-                              PaddingBottom: =0
-                              PaddingLeft: =16
-                              PaddingRight: =8
-                              PaddingTop: =0
-                              Size: =dsaTokens.fontSmallLabel
-                              Text: ="Text description for your long textText description for your long textText description for your long textText description for your long text"
-                              Width: =Parent.Width
-                  - action_1:
-                      Control: GroupContainer@1.3.0
-                      Variant: AutoLayout
-                      Properties:
-                        DropShadow: =DropShadow.None
-                        FillPortions: =0
-                        Height: =Parent.Height
-                        LayoutAlignItems: =LayoutAlignItems.End
-                        LayoutDirection: =LayoutDirection.Horizontal
-                        LayoutJustifyContent: =LayoutJustifyContent.End
-                        LayoutMinHeight: =0
-                        LayoutMinWidth: =0
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Width: =BtnIcnPriDsa_4.Width + BtnIcnSecDsa_4.Width + BtnIcnTerDsa_4.Width + actionCardHzContainer_1.LayoutGap * 3
-                      Children:
-                        - actionCardHzContainer_1:
+                        - logoContainer_3:
                             Control: GroupContainer@1.3.0
                             Variant: AutoLayout
                             Properties:
-                              AlignInContainer: =AlignInContainer.Center
+                              AlignInContainer: =AlignInContainer.SetByContainer
                               DropShadow: =DropShadow.None
-                              FillPortions: =0
-                              Height: =40
+                              Fill: =ColorValue("#ffffff00")
+                              Height: =Parent.Height
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              LayoutGap: =4
+                              LayoutMinHeight: =32
+                              LayoutMinWidth: =80
+                              PaddingLeft: =4
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: |
+                                =
+                            Children:
+                              - Icon2_2:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Color: =ColorValue(dsaTokens.colorNeutral100)
+                                    FocusedBorderThickness: =0
+                                    Height: =40
+                                    HoverBorderColor: =ColorValue(dsaTokens.colorNeutral400)
+                                    HoverColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
+                                    HoverFill: =ColorValue("#ffffff00")
+                                    Icon: =If(!constTrigger, Icon.Hamburger, Icon.Cancel)
+                                    OnSelect: =Set(constTrigger, !constTrigger)
+                                    PaddingLeft: =6
+                                    PaddingRight: =6
+                                    PressedColor: =ColorValue(dsaTokens.colorAccentPrimary)
+                                    Width: =40
+                              - apex-logo_2:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Height: =Parent.Height
+                                    Image: |-
+                                      ="data:image/svg+xml;utf8, " & EncodeUrl("
+                                          <svg width='303' height='303' viewBox='0 0 303 303' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                      <g clip-path='url(#clip0_3_10)'>
+                                      <path d='M265.474 0H36.8881C16.5153 0 -6.10352e-05 16.5154 -6.10352e-05 36.8881V265.474C-6.10352e-05 285.847 16.5153 302.362 36.8881 302.362H265.474C285.847 302.362 302.362 285.847 302.362 265.474V36.8881C302.362 16.5154 285.847 0 265.474 0Z' fill='url(#paint0_linear_3_10)'/>
+                                      <path d='M34.0644 195.906C33.1227 194.012 57.2763 152.466 71.4265 140.368C75.2612 137.09 85.0643 130.015 93.2199 129.869C102.721 129.699 111.101 137.853 111.101 137.853L126.51 152.146C126.51 152.146 138.681 158.232 149.301 154.55C159.922 150.868 168.64 137.295 168.64 137.295L183.282 115.875C183.282 115.875 190.951 102.504 200.26 101.454C207.979 100.583 217.876 111.382 217.876 111.382C247.538 142.489 268.267 198.015 268.324 200.742C268.381 203.469 236.132 179.521 236.132 179.521L210.18 160.795C200.671 156.999 194.987 155.964 185.102 164.95L172.001 178.596C172.001 178.596 163.647 188.073 157.593 188.826C151.539 189.578 131.015 176.262 131.015 176.262L106.396 162.342C106.396 162.342 99.6995 157.227 89.3149 157.265C78.9304 157.303 72.7883 162.139 72.7883 162.139L39.503 194.686C39.503 194.686 34.8914 197.57 34.0644 195.906Z' fill='url(#paint1_linear_3_10)'/>
+                                      <path d='M34.0644 195.906C33.1227 194.012 57.2763 152.466 71.4265 140.368C75.2612 137.09 85.0643 130.015 93.2199 129.869C102.721 129.699 111.101 137.853 111.101 137.853L123.299 149.431C123.299 149.431 127.599 153.358 134.81 154.838C137.179 155.324 140.379 155.964 143.161 155.818C146.623 155.636 149.478 154.451 149.478 154.451C149.478 154.451 143.99 158.428 137.463 160.617C131.726 162.54 127.404 163.443 122.313 163.796C114.037 164.371 106.396 162.342 106.396 162.342C106.396 162.342 99.6995 157.227 89.3149 157.265C78.9304 157.303 69.2187 165.55 69.2187 165.55L39.503 194.686C39.503 194.686 34.8914 197.57 34.0644 195.906Z' fill='url(#paint2_linear_3_10)'/>
+                                      <path d='M207.493 135.789C207.493 135.789 211.614 131.496 220.982 131.501C233.105 131.509 239.168 139.799 239.168 139.799C247.656 149.948 268.267 198.015 268.324 200.742C268.381 203.469 236.132 179.521 236.132 179.521L210.18 160.795C200.671 156.999 195.063 155.597 183.754 166.285C185.288 161.356 200.494 141.323 207.493 135.789Z' fill='url(#paint3_linear_3_10)'/>
+                                      </g>
+                                      <defs>
+                                      <linearGradient id='paint0_linear_3_10' x1='-8.63149e-05' y1='151.181' x2='302.362' y2='151.181' gradientUnits='userSpaceOnUse'>
+                                      <stop stop-color='#01B7F1'/>
+                                      <stop offset='0.892881' stop-color='#563F9A'/>
+                                      </linearGradient>
+                                      <linearGradient id='paint1_linear_3_10' x1='34.0377' y1='151.206' x2='268.324' y2='151.206' gradientUnits='userSpaceOnUse'>
+                                      <stop offset='0.301908' stop-color='#B1BFBA'/>
+                                      <stop offset='1' stop-color='#F9FFFF'/>
+                                      </linearGradient>
+                                      <linearGradient id='paint2_linear_3_10' x1='34.0377' y1='163.145' x2='149.478' y2='163.145' gradientUnits='userSpaceOnUse'>
+                                      <stop offset='0.213502' stop-color='#B1BFBA'/>
+                                      <stop offset='0.872725' stop-color='#F9FFFF'/>
+                                      </linearGradient>
+                                      <linearGradient id='paint3_linear_3_10' x1='185.211' y1='166.23' x2='268.324' y2='166.23' gradientUnits='userSpaceOnUse'>
+                                      <stop offset='0.166348' stop-color='#B1BFBA'/>
+                                      <stop offset='1' stop-color='#F9FFFF'/>
+                                      </linearGradient>
+                                      <clipPath id='clip0_3_10'>
+                                      <rect width='302.362' height='302.362' fill='white'/>
+                                      </clipPath>
+                                      </defs>
+                                      </svg>
+                                      ")
+                                    OnSelect: |-
+                                      =Navigate(
+                                          LookUp(constHeader,true).logoScreen,
+                                              ScreenTransition.Fade
+                                      );
+                                      Set(constCurrentScreen, LookUp(constHeader,true).logoScreen)
+                                    PaddingBottom: =8
+                                    PaddingTop: =8
+                                    Width: |-
+                                      =If(
+                                          App.Width < 500, 32 , 40 
+                                      )
+                              - bat-logo_2:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Height: =Parent.Height
+                                    Image: |-
+                                      ="data:image/svg+xml;utf8, " & EncodeUrl("
+                                          <svg
+                                         version='1.1'
+                                         id='svg1'
+                                         width='335.49332'
+                                         height='141.38667'
+                                         viewBox='0 0 335.49332 141.38667'
+                                         sodipodi:docname='bat.svg'
+                                         inkscape:version='1.3.2 (091e20ef0f, 2023-11-25, custom)'
+                                         xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape'
+                                         xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd'
+                                         xmlns='http://www.w3.org/2000/svg'
+                                         xmlns:svg='http://www.w3.org/2000/svg'>
+                                        <defs
+                                           id='defs1' />
+                                        <sodipodi:namedview
+                                           id='namedview1'
+                                           pagecolor='#505050'
+                                           bordercolor='#eeeeee'
+                                           borderopacity='1'
+                                           inkscape:showpageshadow='0'
+                                           inkscape:pageopacity='0'
+                                           inkscape:pagecheckerboard='0'
+                                           inkscape:deskcolor='#505050'
+                                           inkscape:zoom='1.2146293'
+                                           inkscape:cx='190.59313'
+                                           inkscape:cy='125.96436'
+                                           inkscape:window-width='1920'
+                                           inkscape:window-height='1043'
+                                           inkscape:window-x='0'
+                                           inkscape:window-y='0'
+                                           inkscape:window-maximized='1'
+                                           inkscape:current-layer='g1'>
+                                          <inkscape:page
+                                             x='0'
+                                             y='0'
+                                             inkscape:label='1'
+                                             id='page1'
+                                             width='335.49332'
+                                             height='141.38667'
+                                             margin='0'
+                                             bleed='0' />
+                                        </sodipodi:namedview>
+                                        <g
+                                           id='g1'
+                                           inkscape:groupmode='layer'
+                                           inkscape:label='1'>
+                                          <g
+                                             id='group-R5'>
+                                            <path
+                                               id='path2'
+                                               d='m 923.02,425.949 101.01,133.313 270.69,-357.278 h 131.17 L 1024.04,732.387 622.152,201.984 h 131.172 l 90.477,119.426 h 285.829 l -79.22,104.539 z m 664.69,-223.965 h 104.55 v 336.282 h -104.55 z m -260.7,395.871 h 625.94 V 702.406 H 1327.01 Z M 491.117,494.301 c 7.153,17.566 11.129,36.758 11.129,56.867 0,83.387 -67.848,151.238 -151.242,151.238 H 0 V 563.961 h 104.551 v 33.894 h 246.453 c 25.789,0 46.691,-20.91 46.691,-46.687 0,-25.793 -20.902,-46.691 -46.691,-46.691 L 0,504.469 V 399.914 h 436.699 c 25.785,0 46.688,-20.898 46.688,-46.687 0,-25.782 -20.903,-46.692 -46.688,-46.692 H 104.551 v 33.899 H 0 v -138.45 0 h 436.699 c 83.399,0 151.242,67.856 151.242,151.243 0,64.218 -40.246,119.179 -96.824,141.074 z M 2081.75,1019.38 c 74.75,-3.05 150.81,-10.5 219.95,-40.997 56.96,-25.125 107.65,-71.758 119.38,-135.305 7.96,-43.074 1.19,-89.297 -14.28,-130.035 -0.4,-1.066 1.01,-1.887 1.75,-1.02 2.35,2.778 4.69,5.559 7,8.364 37.3,45.027 72.49,95.172 90.55,151.375 9.29,28.918 13.96,60.722 6.28,90.566 -11.75,45.662 -55.32,68.552 -97.79,80.552 -17.04,4.82 -34.44,8.3 -51.96,10.8 -78,11.13 -159.02,6.62 -236.83,-0.88 -45.23,-4.37 -90.31,-10.37 -135.17,-17.58 -28.19,-4.54 -56.32,-9.53 -84.32,-15.19 -1.23,-0.25 -0.98,-2.08 0.28,-2.02 58.33,2.62 116.8,3.75 175.16,1.37 z m -541.02,-94.525 c -1.26,-0.117 -1.58,1.704 -0.35,2.012 4.06,1.02 8.12,2.024 12.18,3.012 37.51,9.109 75.33,16.441 113.35,23.086 38.3,6.687 77.02,11.531 115.72,15.211 40.11,3.801 80.37,5.976 120.64,6.504 79.25,1.047 158.95,-4.551 236.38,-22.176 44.45,-10.051 88.27,-24.113 128.15,-46.492 59.89,-33.606 107.67,-95.469 101.46,-166.996 -3.33,-38.297 -22.29,-74.879 -44.77,-105.371 -62.78,-85.125 -155.45,-149.239 -242.97,-206.434 -1.1,-0.723 -2.22,0.859 -1.16,1.66 109.76,83.508 168.53,177.891 152.45,266.727 -30.89,170.668 -327.52,263.664 -691.08,229.257 z M 1391.13,44.8789 v 27.5469 h 28.82 c 10.63,0 14.6,-6.336 14.6,-13.6758 0,-7.4414 -3.97,-13.8711 -14.6,-13.8711 z m 53.06,13.8711 c 0,16.5586 -12.28,24.3281 -23.13,24.3281 h -40 V 4.10938 h 10.07 V 34.3203 h 21.84 l 20.6,-30.10155 h 12.17 l -20.59,30.42965 c 9.63,1.7813 19.04,9.5508 19.04,24.1016 z M 1285.67,44.8789 v 27.5469 h 28.82 c 10.62,0 14.61,-6.336 14.61,-13.6758 0,-7.4414 -3.99,-13.8711 -14.61,-13.8711 z m 53.05,13.8711 c 0,16.5586 -12.28,24.3281 -23.12,24.3281 h -40 V 4.10938 h 10.07 V 34.3203 h 21.84 L 1328.1,4.21875 h 12.18 l -20.59,30.42965 c 9.63,1.7813 19.03,9.5508 19.03,24.1016 z M 1190.88,12.6602 c -17.16,0 -30.77,13.7695 -30.77,31 0,17.2109 13.61,30.9804 30.77,30.9804 17.16,0 30.88,-13.7695 30.88,-30.9804 0,-17.2305 -13.72,-31 -30.88,-31 z m 0,72.3125 c -22.14,0 -40.07,-18.5508 -40.07,-41.4336 0,-22.7696 17.93,-41.21097 40.07,-41.21097 22.25,0 40.18,18.44137 40.18,41.21097 0,22.8828 -17.93,41.4336 -40.18,41.4336 z M 1068.9,32.5391 1110.96,87.6406 V 4.10938 h -10.18 V 57.4297 L 1068.9,15.2188 1037.25,57.4297 V 4.10938 h -10.29 V 87.6406 Z m 451.55,-19.8789 c -17.16,0 -30.77,13.7695 -30.77,31 0,17.2109 13.61,30.9804 30.77,30.9804 17.15,0 30.88,-13.7695 30.88,-30.9804 0,-17.2305 -13.73,-31 -30.88,-31 z m 0,72.3125 c -22.14,0 -40.07,-18.5508 -40.07,-41.4336 0,-22.7696 17.93,-41.21097 40.07,-41.21097 22.25,0 40.18,18.44137 40.18,41.21097 0,22.8828 -17.93,41.4336 -40.18,41.4336 z M 948.02,12.6602 c -17.145,0 -30.77,13.7695 -30.77,31 0,17.2109 13.625,30.9804 30.77,30.9804 17.16,0 30.878,-13.7695 30.878,-30.9804 0,-17.2305 -13.718,-31 -30.878,-31 z m 0,72.3125 c -22.137,0 -40.055,-18.5508 -40.055,-41.4336 0,-22.7696 17.918,-41.21097 40.055,-41.21097 22.246,0 40.187,18.44137 40.187,41.21097 0,22.8828 -17.941,41.4336 -40.187,41.4336 z m 734.27,-1.8946 h 9.96 L 1659.82,0 1637.57,60.1992 1615.33,0 1583.01,83.0781 h 11.17 l 21.81,-56.3086 21.58,60.8711 22.25,-61.2109 z m -1319.231,0 h 65.523 V 73.4219 H 400.91 V 4.10938 H 390.727 V 73.4219 h -27.668 z m 447.265,0 h 65.528 V 73.4219 H 848.176 V 4.10938 H 837.992 V 73.4219 h -27.668 z m -348.011,0 h 65.523 V 73.4219 H 500.164 V 4.10938 h -10.18 V 73.4219 H 462.313 Z M 200.805,14.7695 h -26.004 v 23.7696 h 26.336 c 6.422,0 14.168,-1.3282 14.168,-11 0,-10.6602 -8.297,-12.7696 -14.5,-12.7696 z m -26.004,57.6563 h 19.918 c 5.976,0 15.051,-0.2266 15.051,-10.6719 0,-8.7734 -7.747,-12.6523 -12.836,-12.6523 h -22.133 z m 37.074,-27.0039 c 2.988,2.5586 7.527,7.1094 7.527,16.4453 0,18.2148 -13.836,21.2109 -24.574,21.2109 H 164.727 V 4.10938 h 36.3 c 10.848,0 23.907,6.87892 23.907,23.76172 0,11.1172 -6.969,15.1094 -13.059,17.5508 z m 56.43,37.6562 h 53.793 V 73.3047 H 278.379 V 50.4219 h 35.75 V 40.6484 H 278.266 V 13.9883 h 43.832 V 4.10938 H 268.305 Z M 24.2383,32.3203 39.1836,64.9727 54.125,32.4414 Z M 0,4.10938 H 11.0664 L 19.8125,22.6602 58.5469,22.5391 67.293,4.10938 H 78.25 L 39.1836,87.1914 Z M 568.797,83.0781 h 53.797 V 73.3047 H 578.871 V 50.4219 h 35.75 V 40.6484 H 578.758 V 13.9883 h 43.836 V 4.10938 H 568.797 Z M 673.621,44.8789 v 27.5469 h 28.82 c 10.625,0 14.61,-6.336 14.61,-13.6758 0,-7.4414 -3.985,-13.8711 -14.61,-13.8711 z M 726.684,58.75 c 0,16.5586 -12.289,24.3281 -23.133,24.3281 h -40 V 4.10938 h 10.07 V 34.3203 h 21.848 L 716.055,4.21875 h 12.172 L 707.641,34.6484 c 9.632,1.7813 19.043,9.5508 19.043,24.1016'
+                                               style='fill:#222e5f;fill-opacity:1;fill-rule:nonzero;stroke:none'
+                                               transform='matrix(0.13333333,0,0,-0.13333333,0,141.38667)' />
+                                          </g>
+                                        </g>
+                                      </svg>
+                                      ")
+                                    LayoutMinWidth: =0
+                                    OnSelect: |-
+                                      =Navigate(
+                                          LookUp(constHeader,true).logoScreen,
+                                              ScreenTransition.Fade
+                                      );
+                                      Set(constCurrentScreen, LookUp(constHeader,true).logoScreen)
+                                    PaddingBottom: =8
+                                    PaddingLeft: =4
+                                    PaddingTop: =8
+                                    Width: |-
+                                      =If(
+                                          App.Width < 500, 40, 64 
+                                      )
+                              - divisor_3:
+                                  Control: Rectangle@2.3.0
+                                  Properties:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Fill: =RGBA(56, 96, 178, 1)
+                                    Height: '=Parent.Height - 24  '
+                                    Width: '=2   '
+                                    Y: '=0   '
+                        - appName_2:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.SetByContainer
+                              DropShadow: =DropShadow.None
+                              Height: =Parent.Height
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              LayoutMinHeight: =32
+                              LayoutMinWidth: =100
+                              PaddingBottom: =4
+                              PaddingTop: =4
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =
+                            Children:
+                              - appTitle_3:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Color: |-
+                                      =ColorValue(
+                                      dsaTokens.colorNeutral200
+                                      )
+                                    FillPortions: =1
+                                    Font: =Font.'Open Sans'
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =Parent.Height
+                                    LayoutMinWidth: =80
+                                    PaddingBottom: =0
+                                    PaddingLeft: =16
+                                    PaddingRight: =16
+                                    PaddingTop: =0
+                                    Size: |-
+                                      =If(
+                                          App.Width < 768, dsaTokens.fontSmallCaption, dsaTokens.fontLabel
+                                      )
+                                    Text: |+
+                                      =LookUp(constHeader,true).appName
+
+                                    Width: =Parent.Width
+                        - userContainer_3:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.SetByContainer
+                              DropShadow: =DropShadow.None
+                              Fill: =ColorValue("#ffffff00")
+                              Height: =Parent.Height
                               LayoutAlignItems: =LayoutAlignItems.Center
                               LayoutDirection: =LayoutDirection.Horizontal
                               LayoutGap: =16
                               LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinHeight: =32
+                              LayoutMinWidth: =80
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =
+                            Children:
+                              - userName_3:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Align: =Align.Right
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Color: |-
+                                      =ColorValue(
+                                      dsaTokens.colorContrastLight
+                                      )
+                                    FillPortions: =1
+                                    Font: =Font.'Open Sans'
+                                    LayoutMinWidth: =40
+                                    Size: =dsaTokens.fontLabel
+                                    Text: |
+                                      ="Olá, " &LookUp(constHeader,true).userData.FullName
+                                    Visible: =If(App.Width < 768, false, true)
+                                    Width: |-
+                                      =
+                                      If(App.Width < 500, 0, Parent.Width - userImage_3.Width - Parent.LayoutGap)
+                                    Wrap: =false
+                              - userImage_3:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Height: =Parent.Height - 8
+                                    Image: =LookUp(constHeader,true).userData.Image
+                                    RadiusBottomLeft: =Parent.Height /2
+                                    RadiusBottomRight: =Parent.Height /2
+                                    RadiusTopLeft: =Parent.Height /2
+                                    RadiusTopRight: =Parent.Height /2
+                                    Width: '=Parent.Height - 8   '
+                                    Y: '=0   '
+      - container_2:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            LayoutDirection: =LayoutDirection.Horizontal
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+          Children:
+            - navBarDsa_2:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  Fill: =ColorValue(dsaTokens.colorBgPrimary)
+                  FillPortions: =0
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Width: |-
+                    =If(constTrigger, 
+                    widthMenuOpen, 
+                    widthMenuClosed,
+                    If(
+                        App.Width < 500, 0 , widthMenuClosed > 0, widthMenuClosed 
+                    )
+                    )
+                Children:
+                  - navBar_2:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        DropShadow: =DropShadow.None
+                        Height: =Parent.Height
+                        LayoutDirection: =LayoutDirection.Vertical
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Width: =Parent.Width
+                      Children:
+                        - navLinks_4:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.SetByContainer
+                              DropShadow: =DropShadow.None
+                              FillPortions: =3
+                              LayoutDirection: =LayoutDirection.Vertical
                               LayoutMinHeight: =0
-                              LayoutMinWidth: =0
                               RadiusBottomLeft: =0
                               RadiusBottomRight: =0
                               RadiusTopLeft: =0
                               RadiusTopRight: =0
                               Width: =Parent.Width
-                              X: =300
-                              Y: =468
                             Children:
-                              - BtnIcnPriDsa_4:
-                                  Control: GroupContainer@1.3.0
-                                  Variant: ManualLayout
+                              - appSettings_4:
+                                  Control: Gallery@2.15.0
+                                  Variant: BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0
                                   Properties:
-                                    AlignInContainer: =AlignInContainer.Start
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =40
-                                    RadiusBottomLeft: =200
-                                    RadiusBottomRight: =200
-                                    RadiusTopLeft: =200
-                                    RadiusTopRight: =200
-                                    Width: =40
-                                    X: =162
-                                    Y: =298
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Items: =constNavMenu
+                                    LayoutMinHeight: =0
+                                    ShowScrollbar: =If(App.Height < 500, true, false)
+                                    TemplateFill: =
+                                    TemplateSize: =link_4.Height
+                                    Transition: =Transition.Pop
+                                    Width: =Parent.Width
                                   Children:
-                                    - BtnIcnPri_4:
+                                    - hoverEffect_4:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: ManualLayout
+                                        Properties:
+                                          BorderColor: =ColorValue(dsaTokens.colorAccentPrimary)
+                                          BorderThickness: '=2   '
+                                          DropShadow: =DropShadow.None
+                                          Fill: |
+                                            =ColorValue(
+                                            dsaTokens.colorBgSecondary
+                                            )
+                                          Height: =40
+                                          RadiusBottomLeft: '=0   '
+                                          RadiusBottomRight: '=link_4.Height '
+                                          RadiusTopLeft: '=0   '
+                                          RadiusTopRight: '=link_4.Height '
+                                          Visible: =If(ThisItem.toScreen = constCurrentScreen, true, false)
+                                          Width: |-
+                                            =If(
+                                                constTrigger, Parent.Width - 16, widthMenuClosed - 4
+                                            )
+                                          X: |-
+                                            =
+                                            0
+                                    - link_4:
                                         Control: Classic/Button@2.2.0
                                         Properties:
-                                          BorderColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentPrimary)
-                                          BorderThickness: =0
+                                          Align: =Align.Left
+                                          BorderColor: =ColorFade(Self.Fill, -15%)
+                                          BorderStyle: =BorderStyle.None
                                           Color: |-
-                                            =ColorValue(
-                                            dsaTokens.colorContrastDark
+                                            =If(hoverEffect_4.Visible,
+                                            ColorValue(dsaTokens.colorAccentPrimaryHover),
+                                            ColorValue(dsaTokens.colorContrastLight)
                                             )
                                           DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                          DisabledColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorNeutral300
-                                            )
-                                          DisabledFill: |-
-                                            =ColorValue(
-                                            dsaTokens.colorNeutral400
-                                            )
-                                          Fill: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentPrimary
-                                            )
+                                          Fill: =ColorValue("#ffffff00")
                                           Font: =Font.'Open Sans'
-                                          Height: =Parent.Height
-                                          HoverBorderColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentPrimaryHover
-                                            )
-                                          HoverColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorContrastDark
-                                            )
-                                          HoverFill: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentPrimaryHover
-                                            )
+                                          FontWeight: =FontWeight.Normal
+                                          HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                                          HoverColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
+                                          HoverFill: =ColorValue("#ffffff00")
+                                          OnSelect: |-
+                                            =Set(constCurrentScreen, ThisItem.toScreen);
+                                            Navigate(ThisItem.toScreen,ScreenTransition.Fade);
+                                            Set(constTrigger, false)
                                           PaddingBottom: =8
-                                          PaddingLeft: =8
+                                          PaddingLeft: =56
                                           PaddingRight: =8
                                           PaddingTop: =8
-                                          PressedBorderColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentSecondaryHover
-                                            )
-                                          PressedColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorContrastDark
-                                            )
-                                          PressedFill: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentPrimaryHover
-                                            )
-                                          RadiusBottomLeft: =200
-                                          RadiusBottomRight: =200
-                                          RadiusTopLeft: =200
-                                          RadiusTopRight: =200
-                                          Size: =16
-                                          Text: =
-                                          Tooltip: =
+                                          PressedBorderColor: =Self.Fill
+                                          PressedColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
+                                          PressedFill: =Self.Fill
+                                          Size: =dsaTokens.fontLabel
+                                          Text: =ThisItem.linkName
                                           Width: =Parent.Width
-                                          Y: '=0   '
-                                    - iconPriBtn_4:
+                                    - icon_4:
                                         Control: Classic/Icon@2.5.0
                                         Properties:
+                                          AutoDisableOnSelect: =false
                                           BorderColor: =RGBA(0, 18, 107, 1)
                                           Color: |-
-                                            =If(
-                                                BtnIcnPri_4.DisplayMode = DisplayMode.Disabled,
-                                                ColorValue(dsaTokens.colorNeutral300),
-                                                ColorValue(dsaTokens.colorContrastDark)
+                                            =If(hoverEffect_4.Visible,
+                                            ColorValue(dsaTokens.colorAccentPrimaryHover),
+                                            ColorValue(dsaTokens.colorContrastLight)
                                             )
-                                          FocusedBorderThickness: =0
-                                          Height: =18
-                                          HoverColor: |-
-                                            =ColorValue(
-                                                dsaTokens.colorContrastDark
+                                          DisplayMode: =DisplayMode.View
+                                          Height: =28
+                                          HoverColor: =ColorValue("#ffffff00")
+                                          Icon: =ThisItem.icon
+                                          OnSelect: =Select(Parent)
+                                          Width: =20
+                                          X: |-
+                                            =If(constTrigger,
+                                            12,
+                                            Parent.Width/2 - Self.Width/2
                                             )
-                                          Icon: =Icon.Search
-                                          Width: =18
-                                          X: =Parent.Width/2 - Self.Width/2
-                                          Y: =BtnIcnPri_4.Height /2 - Self.Height /2
-                              - BtnIcnSecDsa_4:
+                                          Y: =link_4.Height/2 - Self.Height/2
+                        - menuSettings_4:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              Height: =Parent.Height
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinHeight: =80
+                              LayoutMinWidth: =56
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - exitContainer_5:
                                   Control: GroupContainer@1.3.0
-                                  Variant: ManualLayout
+                                  Variant: AutoLayout
                                   Properties:
-                                    AlignInContainer: =AlignInContainer.Start
                                     DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =40
-                                    RadiusBottomLeft: =200
-                                    RadiusBottomRight: =200
-                                    RadiusTopLeft: =200
-                                    RadiusTopRight: =200
-                                    Width: =40
-                                    X: =208
-                                    Y: =298
+                                    Height: =Parent.Height
+                                    LayoutAlignItems: =LayoutAlignItems.End
+                                    LayoutDirection: =LayoutDirection.Horizontal
+                                    LayoutMinWidth: =0
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                    Width: =Parent.Width
                                   Children:
-                                    - BtnIcnSec_4:
+                                    - exitIcon_6:
+                                        Control: Image@2.2.3
+                                        Properties:
+                                          BorderColor: =RGBA(0, 18, 107, 1)
+                                          Height: '=32  '
+                                          Image: |-
+                                            ="data:image/svg+xml;utf8, " & EncodeUrl("
+                                                <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='#26262C' viewBox='0 0 256 256'><path d='M120,216a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h64a8,8,0,0,1,0,16H56V208h56A8,8,0,0,1,120,216Zm109.66-93.66-40-40a8,8,0,0,0-11.32,11.32L204.69,120H112a8,8,0,0,0,0,16h92.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,229.66,122.34Z'></path></svg>
+                                            ")
+                                          OnSelect: =Exit()
+                                          PaddingBottom: =2
+                                          PaddingTop: =2
+                                          Width: '=32  '
+                                          Y: '=Parent.Height- Self.Height - 8  '
+                                    - link_7:
                                         Control: Classic/Button@2.2.0
                                         Properties:
-                                          BorderColor: |-
-                                            =ColorValue(
-                                              dsaTokens.colorAccentPrimary)
-                                          BorderThickness: =0
-                                          Color: |-
-                                            =ColorValue(
-                                            dsaTokens.colorContrastLight
-                                            )
+                                          Align: =Align.Left
+                                          AlignInContainer: =AlignInContainer.End
+                                          BorderColor: =ColorFade(Self.Fill, -15%)
+                                          BorderStyle: =BorderStyle.None
+                                          Color: =ColorValue(dsaTokens.colorContrastLight)
                                           DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                          DisabledColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorNeutral200
-                                            )
-                                          DisabledFill: |-
-                                            =ColorValue(
-                                            dsaTokens.colorNeutral400
-                                            )
-                                          Fill: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentSecondary
-                                            )
+                                          Fill: =ColorValue("#ffffff00")
+                                          FillPortions: =1
                                           Font: =Font.'Open Sans'
-                                          Height: =Parent.Height
-                                          HoverBorderColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentSecondaryHover
-                                            )
-                                          HoverColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorContrastDark
-                                            )
-                                          HoverFill: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentSecondaryHover
-                                            )
-                                          PaddingBottom: =8
-                                          PaddingLeft: =8
-                                          PaddingRight: =8
-                                          PaddingTop: =8
-                                          PressedBorderColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentSecondaryHover
-                                            )
-                                          PressedColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorContrastDark
-                                            )
-                                          PressedFill: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentSecondary
-                                            )
-                                          RadiusBottomLeft: =200
-                                          RadiusBottomRight: =200
-                                          RadiusTopLeft: =200
-                                          RadiusTopRight: =200
+                                          FontWeight: =FontWeight.Normal
+                                          Height: =32
+                                          HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                                          HoverColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
+                                          HoverFill: =ColorValue("#ffffff00")
+                                          OnSelect: =Exit()
+                                          PaddingBottom: =0
+                                          PaddingLeft: =24
+                                          PaddingRight: =0
+                                          PaddingTop: =0
+                                          PressedBorderColor: =Self.Fill
+                                          PressedColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
+                                          PressedFill: =Self.Fill
+                                          RadiusBottomLeft: =0
+                                          RadiusBottomRight: =0
+                                          RadiusTopLeft: =0
+                                          RadiusTopRight: =0
                                           Size: =16
-                                          Text: =
-                                          Width: =Parent.Width
-                                          Y: '=0   '
-                                    - IconSecBtn_4:
-                                        Control: Classic/Icon@2.5.0
-                                        Properties:
-                                          BorderColor: =RGBA(0, 18, 107, 1)
-                                          Color: |-
-                                            =If(
-                                                BtnIcnSec_4.DisplayMode = DisplayMode.Disabled,
-                                                ColorValue(dsaTokens.colorNeutral300),
-                                                ColorValue(dsaTokens.colorContrastLight)
-                                            )
-                                          FocusedBorderThickness: =0
-                                          Height: =18
-                                          HoverColor: |-
-                                            =ColorValue(
-                                                dsaTokens.colorNeutral100
-                                            )
-                                          Icon: =Icon.Edit
-                                          PressedColor: =ColorFade(Self.Color, -40%)
-                                          Width: =18
-                                          X: =Parent.Width/2 - Self.Width/2
-                                          Y: =BtnIcnSec_4.Height /2 - Self.Height /2
-                              - BtnIcnTerDsa_4:
-                                  Control: GroupContainer@1.3.0
-                                  Variant: ManualLayout
-                                  Properties:
-                                    AlignInContainer: =AlignInContainer.Start
-                                    DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =40
-                                    RadiusBottomLeft: =200
-                                    RadiusBottomRight: =200
-                                    RadiusTopLeft: =200
-                                    RadiusTopRight: =200
-                                    Width: =40
-                                    X: =417
-                                    Y: =298
-                                  Children:
-                                    - BtnTerSec_4:
-                                        Control: Classic/Button@2.2.0
-                                        Properties:
-                                          BorderColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentPrimary)
-                                          BorderThickness: =0
-                                          Color: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentPrimary
-                                            )
-                                          DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                          DisabledColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorNeutral200
-                                            )
-                                          DisabledFill: |-
-                                            =ColorValue(
-                                               "#ffffff00"
-                                            )
-                                          Fill: |-
-                                            =ColorValue(
-                                               "#ffffff00"
-                                            )
-                                          Font: =Font.'Open Sans'
-                                          Height: =Parent.Height
-                                          HoverBorderColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentSecondaryHover
-                                            )
-                                          HoverColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorContrastDark
-                                            )
-                                          HoverFill: |-
-                                            =ColorValue(
-                                               "#ffffff00"
-                                            )
-                                          PaddingBottom: =8
-                                          PaddingLeft: =8
-                                          PaddingRight: =8
-                                          PaddingTop: =8
-                                          PressedBorderColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentSecondaryHover
-                                            )
-                                          PressedColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorContrastDark
-                                            )
-                                          PressedFill: |-
-                                            =ColorValue(
-                                               "#ffffff00"
-                                            )
-                                          RadiusBottomLeft: =200
-                                          RadiusBottomRight: =200
-                                          RadiusTopLeft: =200
-                                          RadiusTopRight: =200
-                                          Size: =16
-                                          Text: =
-                                          Width: =Parent.Width
-                                          Y: '=0   '
-                                    - IconTerBtn_4:
-                                        Control: Classic/Icon@2.5.0
-                                        Properties:
-                                          BorderColor: =RGBA(0, 18, 107, 1)
-                                          Color: |-
-                                            =If(
-                                                BtnTerSec_4.DisplayMode = DisplayMode.Disabled,
-                                                ColorValue(dsaTokens.colorNeutral300),
-                                                ColorValue(dsaTokens.colorAccentPrimary)
-                                            )
-                                          FocusedBorderThickness: =0
-                                          Height: =18
-                                          HoverColor: |-
-                                            =ColorValue(
-                                                dsaTokens.colorAccentPrimary
-                                            )
-                                          HoverFill: |-
-                                            =   ColorValue(
-                                                "#ffffff00"
-                                               )
-                                          Icon: =Icon.Trash
-                                          PressedColor: |-
-                                            =ColorValue(
-                                            dsaTokens.colorAccentPrimaryHover
-                                            )
-                                          Width: =18
-                                          X: =Parent.Width/2 - Self.Width/2
-                                          Y: =BtnTerSec_4.Height /2 - Self.Height /2
-            - cardHorizontalDivisor_1:
-                Control: Rectangle@2.3.0
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Fill: =ColorValue(dsaTokens.colorNeutral400)
-                  Height: '=2   '
-                  Width: =Parent.Width
-
-`;V.setAttribute("data-code",A1);V.innerHTML=`
-<img style="width: 100%" src=${H1} alt="Galeria com cards horozintal design system">
-`;const k1="/design-system-apex/assets/components-preview/galleryCardSmallDsa.png",S=document.createElement("div"),R1=`- GalleryCardSmDsa:
-    Control: Gallery@2.15.0
-    Variant: Vertical
-    Properties:
-      BorderColor: =RGBA(0, 18, 107, 1)
-      Items: =StarWarsCharacters
-      LayoutMinHeight: =0
-      LayoutMinWidth: =0
-      ShowScrollbar: =false
-      TemplatePadding: =0
-      TemplateSize: =CardSmDsa_1.Height + 24
-      WrapCount: |-
-        =Switch(
-            true,
-            App.Width < 768, 1,
-            App.Width < 1280, 3,     
-            App.Width < 1600, 5,
-            App.Width > 1600, 8  
-        )
-    Children:
-      - CardSmDsa_1:
-          Control: GroupContainer@1.3.0
-          Variant: AutoLayout
-          Properties:
-            DropShadow: =DropShadow.None
-            Fill: =ColorValue(dsaTokens.colorBgPrimary)
-            Height: = cardSmtext_1.Height + cardSmAction_1.Height + cardSmTtitleAccent_1.Height + Self.PaddingBottom + Self.PaddingTop + Self.LayoutGap
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =8
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: |
-              =If(App.Width < 768, Parent.Width, 200)
-            X: '=0 '
-          Children:
-            - cardSmTtitleAccent_1:
-                Control: Label@2.5.1
-                Properties:
-                  AutoHeight: =true
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Color: =ColorValue(dsaTokens.colorNeutral100)
-                  Font: =Font.'Open Sans'
-                  FontWeight: =FontWeight.Semibold
-                  PaddingBottom: =0
-                  PaddingLeft: =0
-                  PaddingRight: =0
-                  PaddingTop: =0
-                  Size: =dsaTokens.fontText
-                  Text: ="Title"
-                  Width: =Parent.Width - 32
-            - cardSmtext_1:
-                Control: Label@2.5.1
-                Properties:
-                  AutoHeight: =true
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Color: =ColorValue(dsaTokens.colorNeutral200)
-                  Font: =Font.'Open Sans'
-                  PaddingBottom: =0
-                  PaddingLeft: =0
-                  PaddingRight: =0
-                  PaddingTop: =0
-                  Size: =dsaTokens.fontLabel
-                  Text: |-
-                    ="18/10/24
-                    "
-                  Width: =Parent.Width - 32
-            - cardSmAction_1:
+                                          Text: ="Sair"
+                                          Width: '=32  '
+                                          X: '=0   '
+                                          Y: =Parent.Height- Self.Height
+            - Container8_2:
                 Control: GroupContainer@1.3.0
                 Variant: AutoLayout
                 Properties:
-                  DropShadow: =DropShadow.None
-                  FillPortions: =0
-                  Height: |
-                    =40
-                  LayoutAlignItems: =LayoutAlignItems.Center
-                  LayoutDirection: =LayoutDirection.Horizontal
-                  LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutGap: =16
                   LayoutMinHeight: =0
-                  LayoutMinWidth: =0
-                  RadiusBottomLeft: =0
-                  RadiusBottomRight: =0
-                  RadiusTopLeft: =0
-                  RadiusTopRight: =0
-                  Width: =Parent.Width
-                  X: =300
-                  Y: =468
                 Children:
-                  - BtnIcnPriDsa_5:
-                      Control: GroupContainer@1.3.0
-                      Variant: ManualLayout
+                  - Gallery2:
+                      Control: Gallery@2.15.0
+                      Variant: Vertical
                       Properties:
-                        AlignInContainer: =AlignInContainer.Center
-                        DropShadow: =DropShadow.None
-                        FillPortions: =0
-                        Height: =40
-                        RadiusBottomLeft: =200
-                        RadiusBottomRight: =200
-                        RadiusTopLeft: =200
-                        RadiusTopRight: =200
-                        Width: =40
-                        X: =644
-                        Y: =293
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Items: =StarWarsCharacters
+                        TemplateSize: =CardHzDsa_1.Height + 16
+                        Width: =Parent.Width
                       Children:
-                        - BtnIcnPri_5:
-                            Control: Classic/Button@2.2.0
+                        - CardHzDsa_1:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
                             Properties:
-                              BorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimary)
-                              BorderThickness: =0
-                              Color: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                              DisabledColor: |-
-                                =ColorValue(
-                                dsaTokens.colorNeutral300
-                                )
-                              DisabledFill: |-
-                                =ColorValue(
-                                dsaTokens.colorNeutral400
-                                )
-                              Fill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimary
-                                )
-                              Font: =Font.'Open Sans'
-                              Height: =Parent.Height
-                              HoverBorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimaryHover
-                                )
-                              HoverColor: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              HoverFill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimaryHover
-                                )
-                              PaddingBottom: =8
-                              PaddingLeft: =8
-                              PaddingRight: =8
-                              PaddingTop: =8
-                              PressedBorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondaryHover
-                                )
-                              PressedColor: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              PressedFill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimaryHover
-                                )
-                              RadiusBottomLeft: =200
-                              RadiusBottomRight: =200
-                              RadiusTopLeft: =200
-                              RadiusTopRight: =200
-                              Size: =16
-                              Text: =
-                              Tooltip: =
-                              Width: =Parent.Width
-                              Y: '=0   '
-                        - iconPriBtn_5:
-                            Control: Classic/Icon@2.5.0
-                            Properties:
-                              BorderColor: =RGBA(0, 18, 107, 1)
-                              Color: |-
-                                =If(
-                                    BtnIcnPri_5.DisplayMode = DisplayMode.Disabled,
-                                    ColorValue(dsaTokens.colorNeutral300),
-                                    ColorValue(dsaTokens.colorContrastDark)
-                                )
-                              FocusedBorderThickness: =0
-                              Height: =18
-                              HoverColor: |-
-                                =ColorValue(
-                                    dsaTokens.colorContrastDark
-                                )
-                              Icon: =Icon.Add
-                              Width: =18
-                              X: =Parent.Width/2 - Self.Width/2
-                              Y: =BtnIcnPri_5.Height /2 - Self.Height /2
-                  - BtnIcnSecDsa_5:
-                      Control: GroupContainer@1.3.0
-                      Variant: ManualLayout
-                      Properties:
-                        AlignInContainer: =AlignInContainer.Center
-                        DropShadow: =DropShadow.None
-                        FillPortions: =0
-                        Height: =40
-                        RadiusBottomLeft: =200
-                        RadiusBottomRight: =200
-                        RadiusTopLeft: =200
-                        RadiusTopRight: =200
-                        Width: =40
-                        X: =852
-                        Y: =293
-                      Children:
-                        - BtnIcnSec_5:
-                            Control: Classic/Button@2.2.0
-                            Properties:
-                              BorderColor: |-
-                                =ColorValue(
-                                  dsaTokens.colorAccentPrimary)
-                              BorderThickness: =0
-                              Color: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastLight
-                                )
-                              DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                              DisabledColor: |-
-                                =ColorValue(
-                                dsaTokens.colorNeutral200
-                                )
-                              DisabledFill: |-
-                                =ColorValue(
-                                dsaTokens.colorNeutral400
-                                )
-                              Fill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondary
-                                )
-                              Font: =Font.'Open Sans'
-                              Height: =Parent.Height
-                              HoverBorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondaryHover
-                                )
-                              HoverColor: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              HoverFill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondaryHover
-                                )
-                              PaddingBottom: =8
-                              PaddingLeft: =8
-                              PaddingRight: =8
-                              PaddingTop: =8
-                              PressedBorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondaryHover
-                                )
-                              PressedColor: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              PressedFill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondary
-                                )
-                              RadiusBottomLeft: =200
-                              RadiusBottomRight: =200
-                              RadiusTopLeft: =200
-                              RadiusTopRight: =200
-                              Size: =16
-                              Text: =
-                              Width: =Parent.Width
-                              Y: '=0   '
-                        - IconSecBtn_5:
-                            Control: Classic/Icon@2.5.0
-                            Properties:
-                              BorderColor: =RGBA(0, 18, 107, 1)
-                              Color: |-
-                                =If(
-                                    BtnIcnSec_5.DisplayMode = DisplayMode.Disabled,
-                                    ColorValue(dsaTokens.colorNeutral300),
-                                    ColorValue(dsaTokens.colorContrastLight)
-                                )
-                              FocusedBorderThickness: =0
-                              Height: =18
-                              HoverColor: |-
-                                =ColorValue(
-                                    dsaTokens.colorNeutral100
-                                )
-                              Icon: =Icon.Search
-                              PressedColor: =ColorFade(Self.Color, -40%)
-                              Width: =18
-                              X: =Parent.Width/2 - Self.Width/2
-                              Y: =BtnIcnSec_5.Height /2 - Self.Height /2
-                  - BtnIcnTerDsa_5:
-                      Control: GroupContainer@1.3.0
-                      Variant: ManualLayout
-                      Properties:
-                        AlignInContainer: =AlignInContainer.Center
-                        DropShadow: =DropShadow.None
-                        FillPortions: =0
-                        Height: =40
-                        RadiusBottomLeft: =200
-                        RadiusBottomRight: =200
-                        RadiusTopLeft: =200
-                        RadiusTopRight: =200
-                        Width: =40
-                        X: =988
-                        Y: =293
-                      Children:
-                        - BtnTerSec_5:
-                            Control: Classic/Button@2.2.0
-                            Properties:
-                              BorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimary)
-                              BorderThickness: =0
-                              Color: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimary
-                                )
-                              DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                              DisabledColor: |-
-                                =ColorValue(
-                                dsaTokens.colorNeutral200
-                                )
-                              DisabledFill: |-
-                                =ColorValue(
-                                   "#ffffff00"
-                                )
-                              Fill: |-
-                                =ColorValue(
-                                   "#ffffff00"
-                                )
-                              Font: =Font.'Open Sans'
-                              Height: =Parent.Height
-                              HoverBorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondaryHover
-                                )
-                              HoverColor: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              HoverFill: |-
-                                =ColorValue(
-                                   "#ffffff00"
-                                )
-                              PaddingBottom: =8
-                              PaddingLeft: =8
-                              PaddingRight: =8
-                              PaddingTop: =8
-                              PressedBorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondaryHover
-                                )
-                              PressedColor: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              PressedFill: |-
-                                =ColorValue(
-                                   "#ffffff00"
-                                )
-                              RadiusBottomLeft: =200
-                              RadiusBottomRight: =200
-                              RadiusTopLeft: =200
-                              RadiusTopRight: =200
-                              Size: =16
-                              Text: =
-                              Width: =Parent.Width
-                              Y: '=0   '
-                        - IconTerBtn_5:
-                            Control: Classic/Icon@2.5.0
-                            Properties:
-                              BorderColor: =RGBA(0, 18, 107, 1)
-                              Color: |-
-                                =If(
-                                    BtnTerSec_5.DisplayMode = DisplayMode.Disabled,
-                                    ColorValue(dsaTokens.colorNeutral300),
-                                    ColorValue(dsaTokens.colorAccentPrimary)
-                                )
-                              FocusedBorderThickness: =0
-                              Height: =18
-                              HoverColor: |-
-                                =ColorValue(
-                                    dsaTokens.colorAccentPrimary
-                                )
-                              HoverFill: |-
-                                =   ColorValue(
-                                    "#ffffff00"
-                                   )
-                              Icon: =Icon.Trash
-                              PressedColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimaryHover
-                                )
-                              Width: =18
-                              X: =Parent.Width/2 - Self.Width/2
-                              Y: =BtnTerSec_5.Height /2 - Self.Height /2
+                              DropShadow: =DropShadow.None
+                              Height: =Title_1.Height + Text_1.Height + cardHorizontalDivisor_1.Height + 44
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =8
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width - 16
+                            Children:
+                              - TitleBadge_1:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Title_1.Height + 4
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Horizontal
+                                    PaddingRight: =2
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                  Children:
+                                    - Title_1:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AutoHeight: =true
+                                          BorderColor: =RGBA(0, 18, 107, 1)
+                                          Color: =ColorValue(dsaTokens.colorAccentPrimaryHover)
+                                          FillPortions: =1
+                                          Font: =Font.'Open Sans'
+                                          FontWeight: =FontWeight.Semibold
+                                          LayoutMinWidth: =0
+                                          PaddingBottom: =0
+                                          PaddingLeft: =0
+                                          PaddingRight: =0
+                                          PaddingTop: =0
+                                          Size: =dsaTokens.fontText
+                                          Text: ="Main Title"
+                                          Width: =Parent.Width
+                                          Wrap: =false
+                                    - BadgeDsa_3:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: AutoLayout
+                                        Properties:
+                                          AlignInContainer: =AlignInContainer.Center
+                                          BorderColor: |-
+                                            =ColorValue(
+                                                If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfoAccent,
+                                                 dsaBadgeType = "error", dsaTokens.colorFeedbackErrorAccent,
+                                                 dsaBadgeType = "warning", dsaTokens.colorFeedbackWarningAccent,
+                                                 dsaBadgeType = "success", dsaTokens.colorFeedbackSuccessAccent
+                                                 )
+                                            )
+                                          BorderThickness: =2
+                                          DropShadow: =DropShadow.None
+                                          Fill: |-
+                                            =ColorValue(
+                                                If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfo,
+                                                 dsaBadgeType = "error", dsaTokens.colorFeedbackError,
+                                                 dsaBadgeType = "warning", dsaTokens.colorFeedbackWarning,
+                                                 dsaBadgeType = "success", dsaTokens.colorFeedbackSuccess
+                                                 )
+                                            )
+                                          FillPortions: =0
+                                          Height: =26
+                                          LayoutAlignItems: =LayoutAlignItems.Center
+                                          LayoutDirection: =LayoutDirection.Horizontal
+                                          LayoutJustifyContent: =LayoutJustifyContent.Center
+                                          LayoutMinHeight: =0
+                                          LayoutMinWidth: =180
+                                          RadiusBottomLeft: =8
+                                          RadiusBottomRight: =8
+                                          RadiusTopLeft: =8
+                                          RadiusTopRight: =8
+                                          Width: =actionCardHzContainer_1.Width
+                                          X: =583
+                                          Y: =344
+                                        Children:
+                                          - LabelBadge_4:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 18, 107, 1)
+                                                Color: |-
+                                                  =ColorValue(
+                                                  dsaTokens.colorNeutral100
+                                                  )
+                                                DisplayMode: =DisplayMode.View
+                                                Font: =Font.'Open Sans'
+                                                Height: =Parent.Height
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =dsaTokens.fontSmallLabel
+                                                Text: =dsaBadgeLabel
+                                                Width: =Parent.Width
+                                                Wrap: =false
+                              - content-container_1:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    DropShadow: =DropShadow.None
+                                    Height: |+
+                                      =200
 
-`;S.setAttribute("data-code",R1);S.innerHTML=`
-<img style="width: 100%" src=${k1} alt="Galeria com cards horozintal design system">
-`;const v1="/design-system-apex/assets/components-preview/galleryCardBtnDsa.png",L=document.createElement("div"),D1=`---
-- GalleryCardSmBtnDsa:
-    Control: Gallery@2.15.0
-    Variant: Vertical
-    Properties:
-      BorderColor: =RGBA(0, 18, 107, 1)
-      Items: =StarWarsCharacters
-      LayoutMinHeight: =0
-      LayoutMinWidth: =0
-      ShowScrollbar: =false
-      TemplatePadding: =0
-      TemplateSize: =CardSmBtnDsa_1.Height + 24
-      WrapCount: |-
-        =Switch(
-            true,
-            App.Width < 768, 1,
-            App.Width < 1280, 2,     
-            App.Width < 1600, 4,
-            App.Width > 1600, 6  
-        )
-    Children:
-      - CardSmBtnDsa_1:
-          Control: GroupContainer@1.3.0
-          Variant: AutoLayout
-          Properties:
-            DropShadow: =DropShadow.None
-            Fill: =ColorValue(dsaTokens.colorBgPrimary)
-            Height: = cardSmBtntext_1.Height + cardBtnAction_1.Height +
-              cardSmBtnTtitleAccent_1.Height + Self.PaddingBottom +
-              Self.PaddingTop + Self.LayoutGap
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =8
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =If(App.Width < 768, Parent.Width, 256)
-          Children:
-            - cardSmBtnTtitleAccent_1:
-                Control: Label@2.5.1
-                Properties:
-                  AutoHeight: =true
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Color: =ColorValue(dsaTokens.colorNeutral100)
-                  Font: =Font.'Open Sans'
-                  FontWeight: =FontWeight.Semibold
-                  PaddingBottom: =0
-                  PaddingLeft: =0
-                  PaddingRight: =0
-                  PaddingTop: =0
-                  Size: =dsaTokens.fontText
-                  Text: ="Title"
-                  Width: =Parent.Width - 32
-            - cardSmBtntext_1:
-                Control: Label@2.5.1
-                Properties:
-                  AutoHeight: =true
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Color: =ColorValue(dsaTokens.colorNeutral200)
-                  Font: =Font.'Open Sans'
-                  PaddingBottom: =0
-                  PaddingLeft: =0
-                  PaddingRight: =0
-                  PaddingTop: =0
-                  Size: =dsaTokens.fontLabel
-                  Text: ="Text description for your long text for your long text for your long
-                    text"
-                  Width: =Parent.Width - 32
-            - cardBtnAction_1:
-                Control: GroupContainer@1.3.0
-                Variant: AutoLayout
-                Properties:
-                  DropShadow: =DropShadow.None
-                  FillPortions: =0
-                  Height: |
-                    =40
-                  LayoutAlignItems: =LayoutAlignItems.Center
-                  LayoutDirection: =LayoutDirection.Horizontal
-                  LayoutJustifyContent: =LayoutJustifyContent.End
-                  LayoutMinHeight: =0
-                  LayoutMinWidth: =0
-                  RadiusBottomLeft: =0
-                  RadiusBottomRight: =0
-                  RadiusTopLeft: =0
-                  RadiusTopRight: =0
-                  Width: =Parent.Width
-                  X: =300
-                  Y: =468
-                Children:
-                  - BtnIconRightDsa_2:
+
+                                    LayoutDirection: =LayoutDirection.Horizontal
+                                    LayoutMinHeight: =0
+                                    LayoutMinWidth: =0
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                  Children:
+                                    - content_1:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: AutoLayout
+                                        Properties:
+                                          AlignInContainer: =AlignInContainer.Start
+                                          DropShadow: =DropShadow.None
+                                          Height: =Parent.Height
+                                          LayoutDirection: =LayoutDirection.Horizontal
+                                          LayoutMinHeight: =0
+                                          LayoutMinWidth: =0
+                                          RadiusBottomLeft: =0
+                                          RadiusBottomRight: =0
+                                          RadiusTopLeft: =0
+                                          RadiusTopRight: =0
+                                          Visible: =If(App.Width < 578, false, true)
+                                          Width: =Parent.Width
+                                        Children:
+                                          - SubTitle_1:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                AlignInContainer: =AlignInContainer.Start
+                                                BorderColor: =RGBA(0, 18, 107, 1)
+                                                FillPortions: =1
+                                                Font: =Font.'Open Sans'
+                                                Height: =Parent.Height
+                                                LayoutMinWidth: =0
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =8
+                                                PaddingTop: =0
+                                                Size: =dsaTokens.fontLabel
+                                                Text: ="Sub Title"
+                                                VerticalAlign: =VerticalAlign.Top
+                                                Width: =Parent.Width
+                                          - cardDivisor_1:
+                                              Control: Rectangle@2.3.0
+                                              Properties:
+                                                AlignInContainer: =AlignInContainer.Center
+                                                BorderColor: =RGBA(0, 18, 107, 1)
+                                                DisplayMode: =DisplayMode.View
+                                                Fill: =RGBA(56, 96, 178, 1)
+                                                Height: =16
+                                                Width: '=2   '
+                                          - Text_1:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                AlignInContainer: =AlignInContainer.Start
+                                                AutoHeight: =true
+                                                BorderColor: =RGBA(0, 18, 107, 1)
+                                                FillPortions: =1
+                                                Font: =Font.'Open Sans'
+                                                Height: =Parent.Height
+                                                LayoutMinWidth: =0
+                                                PaddingBottom: =0
+                                                PaddingLeft: =16
+                                                PaddingRight: =8
+                                                PaddingTop: =0
+                                                Size: =dsaTokens.fontSmallLabel
+                                                Text: ="Text description for your long textText description for your long."
+                                                Width: =Parent.Width
+                                    - action_1:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: AutoLayout
+                                        Properties:
+                                          DropShadow: =DropShadow.None
+                                          FillPortions: =0
+                                          Height: =Parent.Height
+                                          LayoutAlignItems: =LayoutAlignItems.End
+                                          LayoutDirection: =LayoutDirection.Horizontal
+                                          LayoutJustifyContent: =LayoutJustifyContent.End
+                                          LayoutMinHeight: =0
+                                          LayoutMinWidth: =0
+                                          RadiusBottomLeft: =0
+                                          RadiusBottomRight: =0
+                                          RadiusTopLeft: =0
+                                          RadiusTopRight: =0
+                                          Width: =BtnIcnPriDsa_5.Width + BtnIcnSecDsa_5.Width + BtnIcnTerDsa_7.Width + actionCardHzContainer_1.LayoutGap * 2
+                                        Children:
+                                          - actionCardHzContainer_1:
+                                              Control: GroupContainer@1.3.0
+                                              Variant: AutoLayout
+                                              Properties:
+                                                AlignInContainer: =AlignInContainer.Start
+                                                DropShadow: =DropShadow.None
+                                                FillPortions: =0
+                                                Height: =40
+                                                LayoutAlignItems: =LayoutAlignItems.Center
+                                                LayoutDirection: =LayoutDirection.Horizontal
+                                                LayoutGap: =16
+                                                LayoutJustifyContent: =LayoutJustifyContent.End
+                                                LayoutMinHeight: =0
+                                                LayoutMinWidth: =0
+                                                RadiusBottomLeft: =0
+                                                RadiusBottomRight: =0
+                                                RadiusTopLeft: =0
+                                                RadiusTopRight: =0
+                                                Width: =Parent.Width
+                                                X: =300
+                                                Y: =468
+                                              Children:
+                                                - BtnIcnTerDsa_7:
+                                                    Control: GroupContainer@1.3.0
+                                                    Variant: ManualLayout
+                                                    Properties:
+                                                      AlignInContainer: =AlignInContainer.Center
+                                                      DropShadow: =DropShadow.None
+                                                      FillPortions: =0
+                                                      Height: =40
+                                                      RadiusBottomLeft: =200
+                                                      RadiusBottomRight: =200
+                                                      RadiusTopLeft: =200
+                                                      RadiusTopRight: =200
+                                                      Width: =40
+                                                      X: =416
+                                                      Y: =422
+                                                    Children:
+                                                      - IconTerBtn_7:
+                                                          Control: Classic/Icon@2.5.0
+                                                          Properties:
+                                                            BorderColor: =RGBA(0, 18, 107, 1)
+                                                            Color: |-
+                                                              =If(
+                                                                  BtnTerSec_7.DisplayMode = DisplayMode.Disabled,
+                                                                  ColorValue(dsaTokens.colorNeutral300),
+                                                                  ColorValue(dsaTokens.colorAccentPrimary)
+                                                              )
+                                                            FocusedBorderThickness: =0
+                                                            Height: =18
+                                                            HoverColor: |-
+                                                              =ColorValue(
+                                                                  dsaTokens.colorAccentPrimaryHover
+                                                              )
+                                                            HoverFill: |-
+                                                              =   ColorValue(
+                                                                  "#ffffff00"
+                                                                 )
+                                                            Icon: =Icon.AddDocument
+                                                            PressedColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimaryHover
+                                                              )
+                                                            Width: =18
+                                                            X: =Parent.Width/2 - Self.Width/2
+                                                            Y: =BtnTerSec_7.Height /2 - Self.Height /2
+                                                      - BtnTerSec_7:
+                                                          Control: Classic/Button@2.2.0
+                                                          Properties:
+                                                            BorderColor: =ColorValue("#ffffff00")
+                                                            BorderThickness: =0
+                                                            Color: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimary
+                                                              )
+                                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                                            DisabledColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorNeutral200
+                                                              )
+                                                            DisabledFill: |-
+                                                              =ColorValue(
+                                                                 "#ffffff00"
+                                                              )
+                                                            Fill: |-
+                                                              =ColorValue(
+                                                                 "#ffffff00"
+                                                              )
+                                                            Font: =Font.'Open Sans'
+                                                            Height: =Parent.Height
+                                                            HoverBorderColor: =ColorValue("#ffffff00")
+                                                            HoverColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorContrastDark
+                                                              )
+                                                            HoverFill: |-
+                                                              =ColorValue(
+                                                                 "#ffffff00"
+                                                              )
+                                                            PaddingBottom: =8
+                                                            PaddingLeft: =8
+                                                            PaddingRight: =8
+                                                            PaddingTop: =8
+                                                            PressedBorderColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentSecondaryHover
+                                                              )
+                                                            PressedColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorContrastDark
+                                                              )
+                                                            PressedFill: |-
+                                                              =ColorValue(
+                                                                 "#ffffff00"
+                                                              )
+                                                            RadiusBottomLeft: =200
+                                                            RadiusBottomRight: =200
+                                                            RadiusTopLeft: =200
+                                                            RadiusTopRight: =200
+                                                            Size: =16
+                                                            Text: =
+                                                            Width: =Parent.Width
+                                                            Y: '=0   '
+                                                - BtnIcnSecDsa_5:
+                                                    Control: GroupContainer@1.3.0
+                                                    Variant: ManualLayout
+                                                    Properties:
+                                                      AlignInContainer: =AlignInContainer.Center
+                                                      DropShadow: =DropShadow.None
+                                                      FillPortions: =0
+                                                      Height: =40
+                                                      RadiusBottomLeft: =200
+                                                      RadiusBottomRight: =200
+                                                      RadiusTopLeft: =200
+                                                      RadiusTopRight: =200
+                                                      Width: =40
+                                                      X: =201
+                                                      Y: =422
+                                                    Children:
+                                                      - IconSecBtn_5:
+                                                          Control: Classic/Icon@2.5.0
+                                                          Properties:
+                                                            BorderColor: =RGBA(0, 18, 107, 1)
+                                                            Color: |-
+                                                              =If(
+                                                                  BtnIcnSec_5.DisplayMode = DisplayMode.Disabled,
+                                                                  ColorValue(dsaTokens.colorNeutral300),
+                                                                  ColorValue(dsaTokens.colorContrastLight)
+                                                              )
+                                                            DisplayMode: =DisplayMode.View
+                                                            FocusedBorderThickness: =0
+                                                            Height: =18
+                                                            HoverColor: |-
+                                                              =ColorValue(
+                                                                  dsaTokens.colorNeutral100
+                                                              )
+                                                            Icon: =Icon.AddDocument
+                                                            PressedColor: =ColorFade(Self.Color, -40%)
+                                                            Width: =18
+                                                            X: =Parent.Width/2 - Self.Width/2
+                                                            Y: =BtnIcnSec_5.Height /2 - Self.Height /2
+                                                      - BtnIcnSec_5:
+                                                          Control: Classic/Button@2.2.0
+                                                          Properties:
+                                                            BorderColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimary
+                                                              )
+                                                            Color: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorContrastLight
+                                                              )
+                                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                                            DisabledColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorNeutral200
+                                                              )
+                                                            DisabledFill: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorNeutral400
+                                                              )
+                                                            Fill: |-
+                                                              =ColorValue(
+                                                              "#ffffff00"
+                                                              )
+                                                            Font: =Font.'Open Sans'
+                                                            Height: =Parent.Height
+                                                            HoverBorderColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimary
+                                                              )
+                                                            HoverColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorContrastDark
+                                                              )
+                                                            HoverFill: |-
+                                                              =ColorValue(
+                                                              "#ffffff00"
+                                                              )
+                                                            PaddingBottom: =8
+                                                            PaddingLeft: =8
+                                                            PaddingRight: =8
+                                                            PaddingTop: =8
+                                                            PressedBorderColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentSecondaryHover
+                                                              )
+                                                            PressedColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorContrastDark
+                                                              )
+                                                            PressedFill: |-
+                                                              =ColorValue(
+                                                              "#ffffff00"
+                                                              )
+                                                            RadiusBottomLeft: =200
+                                                            RadiusBottomRight: =200
+                                                            RadiusTopLeft: =200
+                                                            RadiusTopRight: =200
+                                                            Size: =16
+                                                            Text: =
+                                                            Width: =Parent.Width
+                                                            Y: '=0   '
+                                                - BtnIcnPriDsa_5:
+                                                    Control: GroupContainer@1.3.0
+                                                    Variant: ManualLayout
+                                                    Properties:
+                                                      AlignInContainer: =AlignInContainer.Center
+                                                      DropShadow: =DropShadow.None
+                                                      FillPortions: =0
+                                                      Height: =40
+                                                      RadiusBottomLeft: =200
+                                                      RadiusBottomRight: =200
+                                                      RadiusTopLeft: =200
+                                                      RadiusTopRight: =200
+                                                      Width: =40
+                                                      X: =111
+                                                      Y: =422
+                                                    Children:
+                                                      - BtnIcnPri_5:
+                                                          Control: Classic/Button@2.2.0
+                                                          Properties:
+                                                            BorderColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimary)
+                                                            BorderThickness: =0
+                                                            Color: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorContrastDark
+                                                              )
+                                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                                            DisabledColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorNeutral300
+                                                              )
+                                                            DisabledFill: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorNeutral400
+                                                              )
+                                                            Fill: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimary
+                                                              )
+                                                            Font: =Font.'Open Sans'
+                                                            Height: =Parent.Height
+                                                            HoverBorderColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimaryHover
+                                                              )
+                                                            HoverColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorContrastDark
+                                                              )
+                                                            HoverFill: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimaryHover
+                                                              )
+                                                            PaddingBottom: =8
+                                                            PaddingLeft: =8
+                                                            PaddingRight: =8
+                                                            PaddingTop: =8
+                                                            PressedBorderColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentSecondaryHover
+                                                              )
+                                                            PressedColor: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorContrastDark
+                                                              )
+                                                            PressedFill: |-
+                                                              =ColorValue(
+                                                              dsaTokens.colorAccentPrimaryHover
+                                                              )
+                                                            RadiusBottomLeft: =200
+                                                            RadiusBottomRight: =200
+                                                            RadiusTopLeft: =200
+                                                            RadiusTopRight: =200
+                                                            Size: =16
+                                                            Text: =
+                                                            Tooltip: =
+                                                            Width: =Parent.Width
+                                                            Y: '=0   '
+                                                      - iconPriBtn_5:
+                                                          Control: Classic/Icon@2.5.0
+                                                          Properties:
+                                                            BorderColor: =RGBA(0, 18, 107, 1)
+                                                            Color: |-
+                                                              =If(
+                                                                  BtnIcnPri_5.DisplayMode = DisplayMode.Disabled,
+                                                                  ColorValue(dsaTokens.colorNeutral300),
+                                                                  ColorValue(dsaTokens.colorContrastDark)
+                                                              )
+                                                            DisplayMode: =DisplayMode.View
+                                                            FocusedBorderThickness: =0
+                                                            Height: =18
+                                                            HoverColor: |-
+                                                              =ColorValue(
+                                                                  dsaTokens.colorContrastDark
+                                                              )
+                                                            Icon: =Icon.AddDocument
+                                                            Width: =18
+                                                            X: =Parent.Width/2 - Self.Width/2
+                                                            Y: =BtnIcnPri_5.Height /2 - Self.Height /2
+                              - cardHorizontalDivisor_1:
+                                  Control: Rectangle@2.3.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Fill: =ColorValue(dsaTokens.colorNeutral400)
+                                    Height: =2
+                                    Width: =Parent.Width
+                  - headerTitle_1:
                       Control: GroupContainer@1.3.0
-                      Variant: ManualLayout
+                      Variant: AutoLayout
                       Properties:
+                        AlignInContainer: =AlignInContainer.Start
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =40
-                        LayoutMinHeight: =0
-                        RadiusBottomLeft: =200
-                        RadiusBottomRight: =200
-                        RadiusTopLeft: =200
-                        RadiusTopRight: =200
-                        Width: =160
-                        X: =942
-                        Y: =150
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Horizontal
+                        LayoutGap: =24
+                        PaddingLeft: =16
+                        PaddingRight: =16
+                        Width: =Parent.Width
                       Children:
-                        - ButtonIconRight_2:
-                            Control: Classic/Button@2.2.0
+                        - BtnIcnTerDsa_6:
+                            Control: GroupContainer@1.3.0
+                            Variant: ManualLayout
                             Properties:
-                              BorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimary
-                                )
-                              Color: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                              Fill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimary
-                                )
-                              Font: =Font.'Open Sans'
-                              Height: =Parent.Height
-                              HoverBorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimary
-                                )
-                              HoverColor: |-
-                                =ColorValue(
-                                dsaTokens.colorContrastDark
-                                )
-                              HoverFill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimaryHover
-                                )
-                              OnSelect: =
-                              PaddingBottom: =8
-                              PaddingLeft: =8
-                              PaddingRight: =8
-                              PaddingTop: =8
-                              PressedBorderColor: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentSecondaryHover
-                                )
-                              PressedColor: =ColorValue(dsaTokens.colorContrastDark)
-                              PressedFill: |-
-                                =ColorValue(
-                                dsaTokens.colorAccentPrimaryHover
-                                )
+                              AlignInContainer: =AlignInContainer.SetByContainer
+                              DropShadow: =DropShadow.None
+                              FillPortions: =0
+                              Height: =40
                               RadiusBottomLeft: =200
                               RadiusBottomRight: =200
                               RadiusTopLeft: =200
                               RadiusTopRight: =200
-                              Size: =16
-                              Text: ="Explore"
-                              Width: =Parent.Width
-                              Y: "=0   "
-                        - IconRightBtn_2:
-                            Control: Classic/Icon@2.5.0
+                              Width: =40
+                              X: =527
+                              Y: =422
+                            Children:
+                              - BtnTerSec_6:
+                                  Control: Classic/Button@2.2.0
+                                  Properties:
+                                    BorderColor: =ColorValue("#ffffff00")
+                                    BorderThickness: =0
+                                    Color: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentPrimary
+                                      )
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorNeutral200
+                                      )
+                                    DisabledFill: |-
+                                      =ColorValue(
+                                         "#ffffff00"
+                                      )
+                                    Fill: |-
+                                      =ColorValue(
+                                         "#ffffff00"
+                                      )
+                                    Font: =Font.'Open Sans'
+                                    Height: =Parent.Height
+                                    HoverBorderColor: =ColorValue("#ffffff00")
+                                    HoverColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorContrastDark
+                                      )
+                                    HoverFill: |-
+                                      =ColorValue(
+                                         "#ffffff00"
+                                      )
+                                    PaddingBottom: =8
+                                    PaddingLeft: =8
+                                    PaddingRight: =8
+                                    PaddingTop: =8
+                                    PressedBorderColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentSecondaryHover
+                                      )
+                                    PressedColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorContrastDark
+                                      )
+                                    PressedFill: |-
+                                      =ColorValue(
+                                         "#ffffff00"
+                                      )
+                                    RadiusBottomLeft: =200
+                                    RadiusBottomRight: =200
+                                    RadiusTopLeft: =200
+                                    RadiusTopRight: =200
+                                    Size: =16
+                                    Text: =
+                                    Width: =Parent.Width
+                              - IconTerBtn_6:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 18, 107, 1)
+                                    Color: |-
+                                      =If(
+                                          BtnTerSec_6.DisplayMode = DisplayMode.Disabled,
+                                          ColorValue(dsaTokens.colorNeutral300),
+                                          ColorValue(dsaTokens.colorAccentPrimary)
+                                      )
+                                    FocusedBorderThickness: =0
+                                    Height: =18
+                                    HoverColor: |-
+                                      =ColorValue(
+                                          dsaTokens.colorAccentPrimaryHover
+                                      )
+                                    HoverFill: |-
+                                      =   ColorValue(
+                                          "#ffffff00"
+                                         )
+                                    Icon: =Icon.ArrowLeft
+                                    PressedColor: |-
+                                      =ColorValue(
+                                      dsaTokens.colorAccentPrimaryHover
+                                      )
+                                    Width: =18
+                                    X: =Parent.Width/2 - Self.Width/2
+                                    Y: =BtnTerSec_6.Height /2 - Self.Height /2
+                        - Label2_26:
+                            Control: Label@2.5.1
                             Properties:
+                              AutoHeight: =true
                               BorderColor: =RGBA(0, 18, 107, 1)
-                              Color: >-
-                                =If(
-                                    ButtonIconRight_2.DisplayMode = DisplayMode.Disabled,
-                                    ColorValue(dsaTokens.colorNeutral300),
-                                    ColorValue(dsaTokens.colorContrastDark)
-                                )
-                              Height: =ButtonIconRight_2.Size
-                              Icon: =Icon.Search
-                              Width: =ButtonIconRight_2.Size
-                              X: = ButtonIconRight_2.Width - Self.Width - 16
-                              Y: =ButtonIconRight_2.Height /2 - Self.Height /2
-`;L.setAttribute("data-code",D1);L.innerHTML=`
-<img style="width: 100%" src=${v1} alt="Galeria com cards horozintal design system">
-`;const F1="/design-system-apex/assets/components-preview/galleryCardThumbDsa.png",H=document.createElement("div"),w1=`- GalleryCardThumbDsa:
+                              Color: =ColorValue(dsaTokens.colorAccentTertiary)
+                              Font: =Font.'Open Sans'
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =If(App.Width < 768, dsaTokens.fontLabel,dsaTokens.fontTextMedium)
+                              Text: ="Pagina com galeria"
+                              Width: =310
+                              X: =42
+                              Y: =46
+`;k.setAttribute("data-code",Jo);k.innerHTML=`
+<img style="width: 100%" src=${$o} alt="Galeria com cards horozintal design system">
+`;const qo="/design-system-apex/assets/components-preview/galleryCardBtnDsa.png",D=document.createElement("div"),jo=`- GalleryCardThumbDsa:
     Control: Gallery@2.15.0
     Variant: Vertical
     Properties:
@@ -6358,7 +7037,1148 @@ ClearCollect(StarWarsCharacters,
                         Underline: =true
                         X: =519
                         Y: =150
+`;D.setAttribute("data-code",jo);D.innerHTML=`
+<img style="width: 100%" src=${qo} alt="Galeria com cards horozintal design system">
+`;const Ko="/design-system-apex/assets/components-preview/galleryCardSmallDsa.png",v=document.createElement("div"),Qo=`- GalleryCardThumbDsa:
+    Control: Gallery@2.15.0
+    Variant: Vertical
+    Properties:
+      BorderColor: =RGBA(0, 18, 107, 1)
+      Height: =Parent.Height
+      Items: =StarWarsCharacters
+      LayoutMinHeight: =0
+      LayoutMinWidth: =0
+      ShowScrollbar: =false
+      TemplatePadding: =0
+      TemplateSize: =CardThumbDsa_1.Height + 24
+      Width: =Parent.Width
+      WrapCount: |-
+        =Switch(
+            true,
+            App.Width < 768, 1,
+            App.Width < 1280, 2,     
+            App.Width < 1600, 5,
+            App.Width > 1600, 8  
+        )
+    Children:
+      - CardThumbDsa_1:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: =ColorValue(dsaTokens.colorBgPrimary)
+            Height: =dsaTokens.Height340
+            LayoutDirection: =LayoutDirection.Vertical
+            RadiusBottomLeft: =16
+            RadiusBottomRight: =16
+            RadiusTopLeft: =16
+            RadiusTopRight: =16
+            Width: =If(App.Width < 768, Parent.Width, 240)
+            X: '=0   '
+          Children:
+            - thumbContainer_1:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  DropShadow: =DropShadow.Regular
+                  FillPortions: =0
+                  Height: '=200 '
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  RadiusBottomLeft: =16
+                  RadiusBottomRight: =16
+                  RadiusTopLeft: =16
+                  RadiusTopRight: =16
+                  Width: =Parent.Width
+                Children:
+                  - thumb_1:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =Parent.Height
+                        ImagePosition: =ImagePosition.Fill
+                        Width: =Parent.Width
+            - cardThumbContent_1:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  DropShadow: =DropShadow.None
+                  Height: '=0   '
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutGap: =4
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =8
+                  PaddingLeft: =16
+                  PaddingRight: =16
+                  PaddingTop: =8
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Width: =Parent.Width
+                  X: =300
+                  Y: =468
+                Children:
+                  - cardThumbTitle_1:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorNeutral100)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontText
+                        Text: ="Title"
+                        Width: =Parent.Width - 32
+                  - cardThumbText_1:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorNeutral200)
+                        Font: =Font.'Open Sans'
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontLabel
+                        Text: |-
+                          ="Text description for your long text.
+                          "
+                        Width: =Parent.Width - 32
+                  - BtnTerDsa_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        Align: =Align.Right
+                        AlignInContainer: =AlignInContainer.End
+                        BorderColor: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        BorderStyle: =BorderStyle.None
+                        Color: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        DisabledBorderColor: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        DisabledColor: |-
+                          =ColorValue(
+                           dsaTokens.colorNeutral300
+                          )
+                        DisabledFill: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        Fill: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        FocusedBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral200
+                          )
+                        FocusedBorderThickness: '=2 '
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        HoverColor: |-
+                          =ColorValue(
+                           dsaTokens.colorAccentPrimaryHover
+                          )
+                        HoverFill: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        PaddingBottom: =8
+                        PaddingLeft: =16
+                        PaddingRight: =16
+                        PaddingTop: =8
+                        PressedBorderColor: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        PressedFill: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        RadiusBottomLeft: =200
+                        RadiusBottomRight: =200
+                        RadiusTopLeft: =200
+                        RadiusTopRight: =200
+                        Size: =16
+                        Text: ="More ..."
+                        Underline: =true
+                        X: =519
+                        Y: =150
+`;v.setAttribute("data-code",Qo);v.innerHTML=`
+<img style="width: 100%" src=${Ko} alt="Galeria com cards horozintal design system">
+`;const o1="/design-system-apex/assets/components-preview/galleryCardThumbDsa.png",F=document.createElement("div"),e1=`- GalleryCardThumbDsa:
+    Control: Gallery@2.15.0
+    Variant: Vertical
+    Properties:
+      BorderColor: =RGBA(0, 18, 107, 1)
+      Height: =Parent.Height
+      Items: =StarWarsCharacters
+      LayoutMinHeight: =0
+      LayoutMinWidth: =0
+      ShowScrollbar: =false
+      TemplatePadding: =0
+      TemplateSize: =CardThumbDsa_1.Height + 24
+      Width: =Parent.Width
+      WrapCount: |-
+        =Switch(
+            true,
+            App.Width < 768, 1,
+            App.Width < 1280, 2,     
+            App.Width < 1600, 5,
+            App.Width > 1600, 8  
+        )
+    Children:
+      - CardThumbDsa_1:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: =ColorValue(dsaTokens.colorBgPrimary)
+            Height: =dsaTokens.Height340
+            LayoutDirection: =LayoutDirection.Vertical
+            RadiusBottomLeft: =16
+            RadiusBottomRight: =16
+            RadiusTopLeft: =16
+            RadiusTopRight: =16
+            Width: =If(App.Width < 768, Parent.Width, 240)
+            X: '=0   '
+          Children:
+            - thumbContainer_1:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  DropShadow: =DropShadow.Regular
+                  FillPortions: =0
+                  Height: '=200 '
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  RadiusBottomLeft: =16
+                  RadiusBottomRight: =16
+                  RadiusTopLeft: =16
+                  RadiusTopRight: =16
+                  Width: =Parent.Width
+                Children:
+                  - thumb_1:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =Parent.Height
+                        ImagePosition: =ImagePosition.Fill
+                        Width: =Parent.Width
+            - cardThumbContent_1:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  DropShadow: =DropShadow.None
+                  Height: '=0   '
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutGap: =4
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =8
+                  PaddingLeft: =16
+                  PaddingRight: =16
+                  PaddingTop: =8
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Width: =Parent.Width
+                  X: =300
+                  Y: =468
+                Children:
+                  - cardThumbTitle_1:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorNeutral100)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontText
+                        Text: ="Title"
+                        Width: =Parent.Width - 32
+                  - cardThumbText_1:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorNeutral200)
+                        Font: =Font.'Open Sans'
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontLabel
+                        Text: |-
+                          ="Text description for your long text.
+                          "
+                        Width: =Parent.Width - 32
+                  - BtnTerDsa_2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        Align: =Align.Right
+                        AlignInContainer: =AlignInContainer.End
+                        BorderColor: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        BorderStyle: =BorderStyle.None
+                        Color: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        DisabledBorderColor: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        DisabledColor: |-
+                          =ColorValue(
+                           dsaTokens.colorNeutral300
+                          )
+                        DisabledFill: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        Fill: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        FocusedBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral200
+                          )
+                        FocusedBorderThickness: '=2 '
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        HoverColor: |-
+                          =ColorValue(
+                           dsaTokens.colorAccentPrimaryHover
+                          )
+                        HoverFill: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        PaddingBottom: =8
+                        PaddingLeft: =16
+                        PaddingRight: =16
+                        PaddingTop: =8
+                        PressedBorderColor: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        PressedFill: |-
+                          =ColorValue(
+                              "#ffffff00"
+                          )
+                        RadiusBottomLeft: =200
+                        RadiusBottomRight: =200
+                        RadiusTopLeft: =200
+                        RadiusTopRight: =200
+                        Size: =16
+                        Text: ="More ..."
+                        Underline: =true
+                        X: =519
+                        Y: =150
+`;F.setAttribute("data-code",e1);F.innerHTML=`
+<img style="width: 100%" src=${o1} alt="Galeria com cards horozintal design system">
+`;const t1="/design-system-apex/assets/components-preview/CardTwoCollumnDsa.png",w=document.createElement("div"),r1=`- CardTwoCollumnDsa:
+    Control: GroupContainer@1.3.0
+    Variant: AutoLayout
+    Properties:
+      DropShadow: =DropShadow.None
+      Fill: =ColorValue(dsaTokens.colorBgPrimary)
+      Height: =cardhTwoColHeaderContainer.Height+horizontalContent.Height+helperContent.Height+cardTwoColSmAction.Height+Self.LayoutGap*3+Self.PaddingBottom*2
+      LayoutDirection: =LayoutDirection.Vertical
+      LayoutGap: =8
+      PaddingBottom: =8
+      PaddingLeft: =8
+      PaddingRight: =8
+      PaddingTop: =8
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      Width: |
+        =If(App.Width < 768, Parent.Width, 350   )
+      X: =42
+      Y: =104
+    Children:
+      - cardhTwoColHeaderContainer:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: |-
+              =If(cardSmTtitleAccent_5.Height > badgeCardTwoCollumn_3.Height,
+              cardSmTtitleAccent_5.Height, badgeCardTwoCollumn_3.Height + 4)
+            LayoutDirection: =LayoutDirection.Horizontal
+            LayoutGap: =16
+            LayoutMinHeight: =cardSmTtitleAccent_5.Height + 4
+            PaddingBottom: =2
+            PaddingRight: =2
+            PaddingTop: =2
+          Children:
+            - cardSmTtitleAccent_5:
+                Control: Label@2.5.1
+                Properties:
+                  AutoHeight: =true
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =ColorValue(dsaTokens.colorNeutral100)
+                  FillPortions: =1
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =0
+                  LayoutMinHeight: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontText
+                  Text: ="Title card Title"
+                  Width: =Parent.Width - 32
+            - badgeCardTwoCollumn_3:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  BorderColor: |-
+                    =ColorValue(
+                        If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfoAccent,
+                         dsaBadgeType = "error", dsaTokens.colorFeedbackErrorAccent,
+                         dsaBadgeType = "warning", dsaTokens.colorFeedbackWarningAccent,
+                         dsaBadgeType = "success", dsaTokens.colorFeedbackSuccessAccent
+                         )
+                    )
+                  BorderThickness: =2
+                  DropShadow: =DropShadow.None
+                  Fill: |-
+                    =ColorValue(
+                        If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfo,
+                         dsaBadgeType = "error", dsaTokens.colorFeedbackError,
+                         dsaBadgeType = "warning", dsaTokens.colorFeedbackWarning,
+                         dsaBadgeType = "success", dsaTokens.colorFeedbackSuccess
+                         )
+                    )
+                  FillPortions: =0
+                  Height: '=28  '
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  LayoutJustifyContent: =LayoutJustifyContent.Center
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =180
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                  Width: =120
+                  X: =583
+                  Y: =344
+                Children:
+                  - LabelBadge_15:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral100
+                          )
+                        DisplayMode: =DisplayMode.View
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontSmallLabel
+                        Text: =dsaBadgeLabel
+                        Width: =Parent.Width
+                        Wrap: =false
+      - horizontalContent:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =If(hzContentLabel2_3.Height > hzSecContentLabel2_3.Height,hzContentLabel1_3.Height + hzContentLabel2_3.Height + 4,hzSecContentLabel1_3.Height + hzSecContentLabel2_3.Height + 4)
+            LayoutDirection: =LayoutDirection.Horizontal
+            LayoutGap: =16
+            LayoutMinHeight: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+          Children:
+            - firstHzContent_3:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  LayoutAlignItems: =LayoutAlignItems.Stretch
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutGap: =4
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                  - hzContentLabel1_3:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorContrastLight)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =0
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontSmallLabel
+                        Text: ="Label Left"
+                  - hzContentLabel2_3:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorNeutral200)
+                        Font: =Font.'Open Sans'
+                        Height: =0
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontLabel
+                        Text: ="short text left."
+            - secondtHzContent_3:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  LayoutAlignItems: =LayoutAlignItems.Stretch
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutGap: =4
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                  - hzSecContentLabel1_3:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorContrastLight)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =0
+                        LayoutMinHeight: =0
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontSmallLabel
+                        Text: ="Label Right"
+                  - hzSecContentLabel2_3:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: =ColorValue(dsaTokens.colorNeutral200)
+                        Font: =Font.'Open Sans'
+                        Height: =0
+                        LayoutMinHeight: =0
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =dsaTokens.fontLabel
+                        Text: ="short text left."
+      - helperContent:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =helperText1_3.Height + helperText2_3.Height + Self.LayoutGap
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =4
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+          Children:
+            - helperText1_3:
+                Control: Label@2.5.1
+                Properties:
+                  AutoHeight: =true
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =ColorValue(dsaTokens.colorContrastLight)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontSmallLabel
+                  Text: ="label Accent"
+            - helperText2_3:
+                Control: Label@2.5.1
+                Properties:
+                  AutoHeight: =true
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =ColorValue(dsaTokens.colorNeutral200)
+                  Font: =Font.'Open Sans'
+                  Height: =0
+                  LayoutMinWidth: =0
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontLabel
+                  Text: ="Long text for your card with helper."
+      - cardTwoColSmAction:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: |
+              =40
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Horizontal
+            LayoutGap: =24
+            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+            X: =300
+            Y: =468
+          Children:
+            - BtnIcnTerDsa_1:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.Center
+                  DropShadow: =DropShadow.None
+                  FillPortions: =0
+                  Height: =40
+                  RadiusBottomLeft: =200
+                  RadiusBottomRight: =200
+                  RadiusTopLeft: =200
+                  RadiusTopRight: =200
+                  Width: =40
+                  X: =527
+                  Y: =422
+                Children:
+                  - IconTerBtn_1:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: |-
+                          =If(
+                              BtnTerSec_1.DisplayMode = DisplayMode.Disabled,
+                              ColorValue(dsaTokens.colorNeutral300),
+                              ColorValue(dsaTokens.colorAccentPrimary)
+                          )
+                        FocusedBorderThickness: =0
+                        Height: =18
+                        HoverColor: |-
+                          =ColorValue(
+                              dsaTokens.colorAccentPrimaryHover
+                          )
+                        HoverFill: |-
+                          =   ColorValue(
+                              "#ffffff00"
+                             )
+                        Icon: =Icon.Trash
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimaryHover
+                          )
+                        Width: =18
+                        X: =Parent.Width/2 - Self.Width/2
+                        Y: =BtnTerSec_1.Height /2 - Self.Height /2
+                  - BtnTerSec_1:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =ColorValue("#ffffff00")
+                        BorderThickness: =0
+                        Color: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral200
+                          )
+                        DisabledFill: |-
+                          =ColorValue(
+                             "#ffffff00"
+                          )
+                        Fill: |-
+                          =ColorValue(
+                             "#ffffff00"
+                          )
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height
+                        HoverBorderColor: =ColorValue("#ffffff00")
+                        HoverColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        HoverFill: |-
+                          =ColorValue(
+                             "#ffffff00"
+                          )
+                        PaddingBottom: =8
+                        PaddingLeft: =8
+                        PaddingRight: =8
+                        PaddingTop: =8
+                        PressedBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentSecondaryHover
+                          )
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        PressedFill: |-
+                          =ColorValue(
+                             "#ffffff00"
+                          )
+                        RadiusBottomLeft: =200
+                        RadiusBottomRight: =200
+                        RadiusTopLeft: =200
+                        RadiusTopRight: =200
+                        Size: =16
+                        Text: =
+                        Width: =Parent.Width
+                        Y: '=0   '
+            - BtnIcnSecDsa_1:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.Center
+                  DropShadow: =DropShadow.None
+                  FillPortions: =0
+                  Height: =40
+                  RadiusBottomLeft: =200
+                  RadiusBottomRight: =200
+                  RadiusTopLeft: =200
+                  RadiusTopRight: =200
+                  Width: =40
+                  X: =312
+                  Y: =422
+                Children:
+                  - IconSecBtn_1:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: |-
+                          =If(
+                              BtnIcnSec_1.DisplayMode = DisplayMode.Disabled,
+                              ColorValue(dsaTokens.colorNeutral300),
+                              ColorValue(dsaTokens.colorContrastLight)
+                          )
+                        DisplayMode: =DisplayMode.View
+                        FocusedBorderThickness: =0
+                        Height: =18
+                        HoverColor: |-
+                          =ColorValue(
+                              dsaTokens.colorNeutral100
+                          )
+                        Icon: =Icon.Edit
+                        PressedColor: =ColorFade(Self.Color, -40%)
+                        Width: =18
+                        X: =Parent.Width/2 - Self.Width/2
+                        Y: =BtnIcnSec_1.Height /2 - Self.Height /2
+                  - BtnIcnSec_1:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        Color: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastLight
+                          )
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral200
+                          )
+                        DisabledFill: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral400
+                          )
+                        Fill: |-
+                          =ColorValue(
+                          "#ffffff00"
+                          )
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height
+                        HoverBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        HoverColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        HoverFill: |-
+                          =ColorValue(
+                          "#ffffff00"
+                          )
+                        PaddingBottom: =8
+                        PaddingLeft: =8
+                        PaddingRight: =8
+                        PaddingTop: =8
+                        PressedBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentSecondaryHover
+                          )
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        PressedFill: |-
+                          =ColorValue(
+                          "#ffffff00"
+                          )
+                        RadiusBottomLeft: =200
+                        RadiusBottomRight: =200
+                        RadiusTopLeft: =200
+                        RadiusTopRight: =200
+                        Size: =16
+                        Text: =
+                        Width: =Parent.Width
+                        Y: '=0   '
+            - BtnIcnPriDsa_1:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.Center
+                  DropShadow: =DropShadow.None
+                  FillPortions: =0
+                  Height: =40
+                  RadiusBottomLeft: =200
+                  RadiusBottomRight: =200
+                  RadiusTopLeft: =200
+                  RadiusTopRight: =200
+                  Width: =40
+                  X: =111
+                  Y: =422
+                Children:
+                  - BtnIcnPri_1:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary)
+                        BorderThickness: =0
+                        Color: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral300
+                          )
+                        DisabledFill: |-
+                          =ColorValue(
+                          dsaTokens.colorNeutral400
+                          )
+                        Fill: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimary
+                          )
+                        Font: =Font.'Open Sans'
+                        Height: =Parent.Height
+                        HoverBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimaryHover
+                          )
+                        HoverColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        HoverFill: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimaryHover
+                          )
+                        PaddingBottom: =8
+                        PaddingLeft: =8
+                        PaddingRight: =8
+                        PaddingTop: =8
+                        PressedBorderColor: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentSecondaryHover
+                          )
+                        PressedColor: |-
+                          =ColorValue(
+                          dsaTokens.colorContrastDark
+                          )
+                        PressedFill: |-
+                          =ColorValue(
+                          dsaTokens.colorAccentPrimaryHover
+                          )
+                        RadiusBottomLeft: =200
+                        RadiusBottomRight: =200
+                        RadiusTopLeft: =200
+                        RadiusTopRight: =200
+                        Size: =16
+                        Text: =
+                        Tooltip: =
+                        Width: =Parent.Width
+                        Y: '=0   '
+                  - iconPriBtn_1:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        Color: |-
+                          =If(
+                              BtnIcnPri_1.DisplayMode = DisplayMode.Disabled,
+                              ColorValue(dsaTokens.colorNeutral300),
+                              ColorValue(dsaTokens.colorContrastDark)
+                          )
+                        DisplayMode: =DisplayMode.View
+                        FocusedBorderThickness: =0
+                        Height: =18
+                        HoverColor: |-
+                          =ColorValue(
+                              dsaTokens.colorContrastDark
+                          )
+                        Icon: =Icon.Search
+                        Width: =18
+                        X: =Parent.Width/2 - Self.Width/2
+                        Y: =BtnIcnPri_1.Height /2 - Self.Height /2
 
-`;H.setAttribute("data-code",w1);H.innerHTML=`
-<img style="width: 100%" src=${F1} alt="Galeria com cards horozintal design system">
-`;const b1={TokensDsa:T,BtnPriDsa:w,BtnSecDsa:b,BtnTerDsa:x,BtnIcnLtDsa:G,BtnIcnRtDsa:l,BtnIcnPriDsa:I,BtnIcnSecDsa:M,BtnIcnTerDsa:W,BtnIcnDangerDsa:d,BtnDangerDsa:U,InputTextDsa:s,InputComboBoxDsa:C,InputCheckBoxHzDsa:c,InputDropdownDsa:p,InputDataPickerDsa:u,InputRadioHzDsa:f,InputToggleDsa:h,BadgeDsa:a,CardHzDsa:g,CardSmDsa:y,CardThumbDsa:_,cardSmBtnDsa:B,ModalDsa:r,ToastDsa:o,PageTemplateDsa:t,LoaderApex:m,SplashApex:P,GalleryCardHzDsa:V,GalleryCardSmDsa:S,GalleryCardSmBtnDsa:L,GalleryCardThumbDsa:H},x1=document.querySelector(".copy-components"),R=document.querySelectorAll(".component-selected");for(let i=0;i<R.length;i++){const A=R[i];A.addEventListener("click",()=>{x1.classList.add("d-block");const v=A.dataset.component,e=b1[v],k=document.querySelector(".output-component");k.innerHTML="",k.appendChild(e);const n=document.querySelector(".properties");n.classList.remove("showProperties"),e.dataset.properties&&(n.classList.add("showProperties"),n.innerHTML=e.dataset.properties);const D=document.querySelector(".get-code"),F=e.dataset.code;D.addEventListener("click",()=>{navigator.clipboard.writeText(F)})})}
+`;w.setAttribute("data-code",r1);w.innerHTML=`
+<img class="CardTwoCollumnDsa" src=${t1} alt="Imagem Card para power apps" />
+`;const a1="/design-system-apex/assets/components-preview/CardAvatarDsa.png",b=document.createElement("div"),i1=`- CardAvatarDsa:
+    Control: GroupContainer@1.3.0
+    Variant: AutoLayout
+    Properties:
+      DropShadow: =DropShadow.None
+      Fill: =ColorValue(dsaTokens.colorBgSecondary)
+      Height: =avatarContianer.Height + cardThumbTitle_9.Height + cardThumbText_9.Height + BtnTerDsa_10.Height + cardAvatarContent.PaddingBottom + cardAvatarContent.PaddingBottom + Self.PaddingTop + Self.LayoutGap * 2
+      LayoutDirection: =LayoutDirection.Vertical
+      LayoutGap: =8
+      PaddingBottom: =8
+      PaddingTop: =8
+      RadiusBottomLeft: =16
+      RadiusBottomRight: =16
+      RadiusTopLeft: =16
+      RadiusTopRight: =16
+      Width: =If(Parent.Width < 768, Parent.Width, 224)
+      X: =600
+      Y: =362
+    Children:
+      - avatarContianer:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            AlignInContainer: =AlignInContainer.Start
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Self.Width
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            RadiusBottomLeft: =9999
+            RadiusBottomRight: =9999
+            RadiusTopLeft: =9999
+            RadiusTopRight: =9999
+            Width: =If(App.Width < 768, 60, 80)
+          Children:
+            - thumb_9:
+                Control: Image@2.2.3
+                Properties:
+                  DisplayMode: =DisplayMode.View
+                  Height: =Parent.Height
+                  ImagePosition: =ImagePosition.Fill
+                  Width: =Parent.Width
+      - cardAvatarContent:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: =ColorValue(dsaTokens.colorBgSecondary)
+            Height: '=0   '
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =4
+            LayoutMinWidth: =0
+            PaddingBottom: =4
+            PaddingLeft: =8
+            PaddingRight: =4
+            PaddingTop: =8
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+            X: =300
+            Y: =468
+          Children:
+            - cardThumbTitle_9:
+                Control: Label@2.5.1
+                Properties:
+                  AutoHeight: =true
+                  Color: =ColorValue(dsaTokens.colorNeutral100)
+                  FontWeight: =FontWeight.Semibold
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontText
+                  Text: ="Title"
+                  Width: =Parent.Width - 32
+            - cardThumbText_9:
+                Control: Label@2.5.1
+                Properties:
+                  AutoHeight: =true
+                  Color: =ColorValue(dsaTokens.colorNeutral200)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =dsaTokens.fontLabel
+                  Text: |-
+                    ="Text description for your long text.
+                    "
+                  Width: =Parent.Width - 32
+            - BtnTerDsa_10:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  Align: =Align.Right
+                  AlignInContainer: =AlignInContainer.End
+                  BorderColor: |-
+                    =ColorValue(
+                        "#ffffff00"
+                    )
+                  BorderStyle: =BorderStyle.None
+                  Color: |-
+                    =ColorValue(
+                    dsaTokens.colorAccentPrimary
+                    )
+                  DisabledBorderColor: |-
+                    =ColorValue(
+                        "#ffffff00"
+                    )
+                  DisabledColor: |-
+                    =ColorValue(
+                     dsaTokens.colorNeutral300
+                    )
+                  DisabledFill: |-
+                    =ColorValue(
+                        "#ffffff00"
+                    )
+                  Fill: |-
+                    =ColorValue(
+                        "#ffffff00"
+                    )
+                  FocusedBorderColor: |-
+                    =ColorValue(
+                    dsaTokens.colorNeutral200
+                    )
+                  FocusedBorderThickness: '=2 '
+                  HoverBorderColor: |-
+                    =ColorValue(
+                        "#ffffff00"
+                    )
+                  HoverColor: |-
+                    =ColorValue(
+                     dsaTokens.colorAccentPrimaryHover
+                    )
+                  HoverFill: |-
+                    =ColorValue(
+                        "#ffffff00"
+                    )
+                  PaddingBottom: =8
+                  PaddingLeft: =16
+                  PaddingRight: =16
+                  PaddingTop: =8
+                  PressedBorderColor: |-
+                    =ColorValue(
+                        "#ffffff00"
+                    )
+                  PressedColor: |-
+                    =ColorValue(
+                    dsaTokens.colorAccentPrimary
+                    )
+                  PressedFill: |-
+                    =ColorValue(
+                        "#ffffff00"
+                    )
+                  RadiusBottomLeft: =200
+                  RadiusBottomRight: =200
+                  RadiusTopLeft: =200
+                  RadiusTopRight: =200
+                  Size: =16
+                  Text: ="More ..."
+                  Underline: =true
+                  X: =519
+                  Y: =150
+`;b.setAttribute("data-code",i1);b.innerHTML=`
+<img class="CardAvatarDsa" src=${a1} alt="Imagem Card para power apps" />
+`;const n1={TokensDsa:H,BtnPriDsa:N,BtnSecDsa:O,BtnTerDsa:E,BtnIcnLtDsa:z,BtnIcnRtDsa:d,BtnIcnPriDsa:Z,BtnIcnSecDsa:Y,BtnIcnTerDsa:X,BtnIcnDangerDsa:s,BtnDangerDsa:$,BtnXlIconDsa:C,BtnImgDsa:c,BtnSelectorDsa:p,InputTextDsa:u,InputComboBoxDsa:h,InputCheckBoxHzDsa:g,InputDropdownDsa:f,InputDataPickerDsa:T,InputRadioHzDsa:y,InputToggleDsa:B,InputAttachmentsDsa:m,BadgeDsa:i,CardHzDsa:P,CardTwoCollumnDsa:w,CardSmDsa:_,CardThumbDsa:L,cardSmBtnDsa:V,CardAvatarDsa:b,ModalDsa:r,ToastDsa:o,PageTemplateDsa:t,LoaderApex:a,SplashApex:S,AvatarTitleDescription:R,GroupTeamAvatar:A,GalleryCardHzDsa:k,GalleryCardSmDsa:D,GalleryCardSmBtnDsa:v,GalleryCardThumbDsa:F},l1=document.querySelector(".copy-components"),G=document.querySelectorAll(".component-selected");for(let n=0;n<G.length;n++){const I=G[n];I.addEventListener("click",()=>{l1.classList.add("d-block");const W=I.dataset.component,e=n1[W],x=document.querySelector(".output-component");x.innerHTML="",x.appendChild(e);const l=document.querySelector(".properties");l.classList.remove("showProperties"),e.dataset.properties&&(l.classList.add("showProperties"),l.innerHTML=e.dataset.properties);const M=document.querySelector(".get-code"),U=e.dataset.code;M.addEventListener("click",()=>{navigator.clipboard.writeText(U)})})}
