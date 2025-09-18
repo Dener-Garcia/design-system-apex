@@ -140,7 +140,6 @@ const codeSnippet = `- InputDropdownDsa:
                     )
                   Size: =dsaTokens.fontLabel
                   Width: =Parent.Width
-
 `
 
 InputDropdownDsa.setAttribute("data-code", codeSnippet)

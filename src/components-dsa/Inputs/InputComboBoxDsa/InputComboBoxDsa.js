@@ -8,7 +8,7 @@ const codeSnippet = `- comboBoxDsa:
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
-      Height: '=labelComboBoxDsa.Height + 40   '
+      Height: =labelComboBoxDsa.Height + 40
       LayoutDirection: =LayoutDirection.Vertical
       LayoutJustifyContent: =LayoutJustifyContent.Center
       RadiusBottomLeft: =8
@@ -139,7 +139,6 @@ const codeSnippet = `- comboBoxDsa:
                     )
                   Size: =dsaTokens.fontLabel
                   Width: =Parent.Width
-
 `
 
 InputComboBoxDsa.setAttribute("data-code", codeSnippet)

@@ -15,6 +15,34 @@ const codeSnippet = `- BtnIcnTerDsa:
       X: =527
       Y: =422
     Children:
+      - IconTerBtn:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =If(
+                  BtnTerSec.DisplayMode = DisplayMode.Disabled,
+                  ColorValue(dsaTokens.colorNeutral300),
+                  ColorValue(dsaTokens.colorAccentPrimary)
+              )
+            FocusedBorderThickness: =0
+            Height: =18
+            HoverColor: |-
+              =ColorValue(
+                  dsaTokens.colorAccentPrimaryHover
+              )
+            HoverFill: |-
+              =   ColorValue(
+                  "#ffffff00"
+                 )
+            Icon: =Icon.AddDocument
+            PressedColor: |-
+              =ColorValue(
+              dsaTokens.colorAccentPrimaryHover
+              )
+            Width: =18
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =BtnTerSec.Height /2 - Self.Height /2
       - BtnTerSec:
           Control: Classic/Button@2.2.0
           Properties:
@@ -71,36 +99,7 @@ const codeSnippet = `- BtnIcnTerDsa:
             Size: =16
             Text: =
             Width: =Parent.Width
-            Y: '=0   '
-      - IconTerBtn:
-          Control: Classic/Icon@2.5.0
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: |-
-              =If(
-                  BtnTerSec.DisplayMode = DisplayMode.Disabled,
-                  ColorValue(dsaTokens.colorNeutral300),
-                  ColorValue(dsaTokens.colorAccentPrimary)
-              )
-            FocusedBorderThickness: =0
-            Height: =18
-            HoverColor: |-
-              =ColorValue(
-                  dsaTokens.colorAccentPrimaryHover
-              )
-            HoverFill: |-
-              =   ColorValue(
-                  "#ffffff00"
-                 )
-            Icon: =Icon.AddDocument
-            PressedColor: |-
-              =ColorValue(
-              dsaTokens.colorAccentPrimaryHover
-              )
-            Width: =18
-            X: =Parent.Width/2 - Self.Width/2
-            Y: =BtnTerSec.Height /2 - Self.Height /2
-
+            Y: '=0'
 `
 
 BtnIcnTerDsa.setAttribute("data-code", codeSnippet)

@@ -1,22 +1,16 @@
 const SplashApex = document.createElement("div")
 
-const codeSnippet = `- splashContainer:
+const codeSnippet = `
+- splashScreenContainer:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
-      AlignInContainer: =AlignInContainer.Center
-      DropShadow: =DropShadow.None
-      FillPortions: =0
-      Height: '=130 '
-      LayoutDirection: =LayoutDirection.Vertical
-      LayoutGap: =24
-      RadiusBottomLeft: =0
-      RadiusBottomRight: =0
-      RadiusTopLeft: =0
-      RadiusTopRight: =0
-      Width: =If(App.Width < 768, 200, 400)
-      X: =App.Width /2 - Self.Width/2
-      Y: =App.Height /2 - Self.Height/2
+      Fill: =RGBA(255,255,255, 0.8)
+      Height: =Parent.Height
+      LayoutAlignItems: =LayoutAlignItems.Center
+      LayoutDirection: =LayoutDirection.Horizontal
+      LayoutJustifyContent: =LayoutJustifyContent.Center
+      Width: =Parent.Width
     Children:
       - splash-apex:
           Control: Image@2.2.3
@@ -425,8 +419,7 @@ const codeSnippet = `- splashContainer:
                       </linearGradient>
                       </defs>
                       </svg>  ")
-            Width: =Parent.Width
-    
+            Width: =If(App.Width < 768, 320, 400)
 `
 
 SplashApex.setAttribute("data-code", codeSnippet)

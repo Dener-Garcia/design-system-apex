@@ -88,6 +88,7 @@ const codeSnippet = `- BtnIcnPriDsa:
                   ColorValue(dsaTokens.colorNeutral300),
                   ColorValue(dsaTokens.colorContrastDark)
               )
+            DisplayMode: =DisplayMode.View
             FocusedBorderThickness: =0
             Height: =18
             HoverColor: |-
@@ -98,7 +99,6 @@ const codeSnippet = `- BtnIcnPriDsa:
             Width: =18
             X: =Parent.Width/2 - Self.Width/2
             Y: =BtnIcnPri.Height /2 - Self.Height /2
-
 `
 
 BtnIcnPriDsa.setAttribute("data-code", codeSnippet)

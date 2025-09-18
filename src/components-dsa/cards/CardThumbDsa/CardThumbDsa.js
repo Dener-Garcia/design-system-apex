@@ -9,17 +9,15 @@ const codeSnippet = `- CardThumbDsa:
     Properties:
       DropShadow: =DropShadow.None
       Fill: =ColorValue(dsaTokens.colorBgPrimary)
-      FillPortions: =0
       Height: =thumbContainer.Height + cardThumbTitle.Height + cardThumbText.Height + 40 + cardThumbContent.PaddingBottom + cardThumbContent.PaddingBottom + 24
       LayoutDirection: =LayoutDirection.Vertical
-      LayoutMinHeight: =0
       RadiusBottomLeft: =16
       RadiusBottomRight: =16
       RadiusTopLeft: =16
       RadiusTopRight: =16
       Width: =240
-      X: =959
-      Y: =392
+      X: =868
+      Y: =362
     Children:
       - thumbContainer:
           Control: GroupContainer@1.3.0
@@ -27,7 +25,7 @@ const codeSnippet = `- CardThumbDsa:
           Properties:
             DropShadow: =DropShadow.Regular
             FillPortions: =0
-            Height: '=200 '
+            Height: =100
             LayoutMinHeight: =0
             LayoutMinWidth: =0
             RadiusBottomLeft: =16
@@ -55,8 +53,8 @@ const codeSnippet = `- CardThumbDsa:
             LayoutMinHeight: =0
             LayoutMinWidth: =0
             PaddingBottom: =8
-            PaddingLeft: =16
-            PaddingRight: =16
+            PaddingLeft: =8
+            PaddingRight: =4
             PaddingTop: =8
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
@@ -79,7 +77,7 @@ const codeSnippet = `- CardThumbDsa:
                   PaddingRight: =0
                   PaddingTop: =0
                   Size: =dsaTokens.fontText
-                  Text: ="Title"
+                  Text: ="Title card"
                   Width: =Parent.Width - 32
             - cardThumbText:
                 Control: Label@2.5.1
@@ -94,7 +92,8 @@ const codeSnippet = `- CardThumbDsa:
                   PaddingTop: =0
                   Size: =dsaTokens.fontLabel
                   Text: |-
-                    ="Text description for your long text.
+                    ="Text description for your long text. 
+
                     "
                   Width: =Parent.Width - 32
             - BtnTerDsa_1:
@@ -170,7 +169,6 @@ const codeSnippet = `- CardThumbDsa:
                   Underline: =true
                   X: =519
                   Y: =150
-
 `
 
 CardThumbDsa.setAttribute("data-code", codeSnippet)

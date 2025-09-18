@@ -3,154 +3,83 @@ import "./BadgeDsa.css"
 
 const BadgeDsa = document.createElement("div")
 
-const codeSnippet = `- ToastDsa:
+const codeSnippet = `- BadgeDsa:
     Control: GroupContainer@1.3.0
     Variant: ManualLayout
     Properties:
+      BorderColor: |-
+        =ColorValue(
+            If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfoAccent,
+             dsaBadgeType = "error", dsaTokens.colorFeedbackErrorAccent,
+             dsaBadgeType = "warning", dsaTokens.colorFeedbackWarningAccent,
+             dsaBadgeType = "success", dsaTokens.colorFeedbackSuccessAccent
+             )
+        )
+      BorderThickness: =2
       DropShadow: =DropShadow.None
-      Height: =If(dsaToastShow, 120, 0)
-      RadiusBottomLeft: =0
-      RadiusBottomRight: =0
-      RadiusTopLeft: =0
-      RadiusTopRight: =0
-      Width: =316
-      X: =If(App.Width < 768, App.Width/2 - Self.Width/2, App.Width - Self.Width - 16)
-      Y: =48
+      Fill: |-
+        =ColorValue(
+            If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfo,
+             dsaBadgeType = "error", dsaTokens.colorFeedbackError,
+             dsaBadgeType = "warning", dsaTokens.colorFeedbackWarning,
+             dsaBadgeType = "success", dsaTokens.colorFeedbackSuccess
+             )
+        )
+      Height: =28
+      RadiusBottomLeft: =8
+      RadiusBottomRight: =8
+      RadiusTopLeft: =8
+      RadiusTopRight: =8
+      Width: =140
+      X: =42
+      Y: =160
     Children:
-      - toastContainer_4:
-          Control: GroupContainer@1.3.0
-          Variant: AutoLayout
+      - LabelBadge:
+          Control: Label@2.5.1
           Properties:
-            DropShadow: =DropShadow.None
-            Fill: |
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
               =ColorValue(
-                  If(dsaToastType = "info", dsaTokens.colorFeedbackInfo,
-                   dsaToastType = "error", dsaTokens.colorFeedbackError,
-                   dsaToastType = "warning", dsaTokens.colorFeedbackWarning,
-                   dsaToastType = "success", dsaTokens.colorFeedbackSuccess
-                   )
+              dsaTokens.colorNeutral100
               )
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Open Sans'
             Height: =Parent.Height
-            LayoutDirection: =LayoutDirection.Horizontal
-            RadiusBottomLeft: =12
-            RadiusBottomRight: =12
-            RadiusTopLeft: =12
-            RadiusTopRight: =12
-            Visible: =dsaToastShow
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =dsaTokens.fontSmallLabel
+            Text: =dsaBadgeLabel
             Width: =Parent.Width
-          Children:
-            - toastRectangle_3:
-                Control: Rectangle@2.3.0
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Fill: |-
-                    =ColorValue(
-                        If( dsaToastType = "info", dsaTokens.colorFeedbackInfoAccent,
-                         dsaToastType = "error", dsaTokens.colorFeedbackErrorAccent,
-                         dsaToastType = "warning", dsaTokens.colorFeedbackWarningAccent,
-                         dsaToastType = "success", dsaTokens.colorFeedbackSuccessAccent
-                         )
-                    )
-                  Height: =Parent.Height
-                  Width: '=8   '
-            - toastContainer_5:
-                Control: GroupContainer@1.3.0
-                Variant: AutoLayout
-                Properties:
-                  DropShadow: =DropShadow.None
-                  Height: =Parent.Height
-                  LayoutDirection: =LayoutDirection.Vertical
-                  PaddingLeft: =8
-                  PaddingTop: =8
-                  RadiusBottomLeft: =0
-                  RadiusBottomRight: =0
-                  RadiusTopLeft: =0
-                  RadiusTopRight: =0
-                Children:
-                  - titleToast_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =ColorValue(dsaTokens.colorNeutral200)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =16
-                        Text: =dsaToastType
-                        Width: =Parent.Width - 8
-                  - messageToast_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 18, 107, 1)
-                        Color: =ColorValue(dsaTokens.colorContrastLight)
-                        Font: =Font.'Open Sans'
-                        Height: =Parent.Height - titleToast_3.Height
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =14
-                        Text: =dsaToastMessage
-                        Width: =Parent.Width   - 8
-            - Icon1_3:
-                Control: Classic/Icon@2.5.0
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  Color: |-
-                    =ColorValue(
-                    dsaTokens.colorFeedbackErrorAccent
-                    )
-                  Fill: =ColorValue("#ffffff00")
-                  Height: '=44  '
-                  Icon: =Icon.CancelBadge
-                  OnSelect: =Set(dsaToastShow, !dsaToastShow)
-                  PaddingBottom: =8
-                  PaddingLeft: =8
-                  PaddingRight: =8
-                  PaddingTop: =8
-                  Width: '=44  '
-            - timerToast_3:
-                Control: Timer@2.1.0
-                Properties:
-                  BorderColor: =ColorFade(Self.Fill, -15%)
-                  BorderStyle: =BorderStyle.None
-                  Color: =RGBA(255, 255, 255, 1)
-                  DisabledBorderColor: =ColorFade(Self.BorderColor, 70%)
-                  DisabledColor: =ColorFade(Self.Fill, 90%)
-                  DisabledFill: =ColorFade(Self.Fill, 70%)
-                  DisplayMode: =DisplayMode.Disabled
-                  Duration: =5000
-                  Fill: =RGBA(56, 96, 178, 1)
-                  Font: =Font.'Open Sans'
-                  FontWeight: =FontWeight.Lighter
-                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
-                  HoverColor: =RGBA(255, 255, 255, 1)
-                  HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
-                  OnTimerEnd: =Set(dsaToastShow, false)
-                  PaddingBottom: =0
-                  PaddingLeft: =0
-                  PaddingRight: =0
-                  PaddingTop: =0
-                  PressedBorderColor: =Self.Fill
-                  PressedColor: =Self.Fill
-                  PressedFill: =Self.Color
-                  RadiusBottomLeft: =0
-                  RadiusBottomRight: =0
-                  RadiusTopLeft: =0
-                  RadiusTopRight: =0
-                  Size: =8
-                  Start: =dsaToastShow
-                  Visible: =false
-                  Width: =24
-                  X: =636
-                  Y: =288
+            Wrap: =false
+      - BadgeAction:
+          Control: Classic/Button@2.2.0
+          Properties:
+            AutoDisableOnSelect: =false
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =Parent.Height
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =Self.Color
+            OnSelect: =
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =
+            Width: =Parent.Width
 `
 const properties = `
-// settings for nav menu
+// settings for badge
 <pre>
   <code>
   Set(dsaBadgeType, "info");
@@ -162,7 +91,13 @@ const properties = `
     <h6>dsaBadgeType</h6>
     <p>Mude o tipo do Badge ao setar essa variavel para "info", "warning", "success" ou "error" conforme o tipo de mensagem que voce deseja mostrar para o usuario.</p>
   </div>
+    <div class="code-details">
+    <h6>dsaBadgeLabel</h6>
+    <p>Altere o texto manipulando essa variavel com um Set(dsaBadgeLabel, "novo texto") ou utilize o seu texto.</p>
+  </div>
 </section>
+
+Set(dsaBadgeLabel, "Label badge warning")
 `
 
 BadgeDsa.setAttribute('data-code', codeSnippet)

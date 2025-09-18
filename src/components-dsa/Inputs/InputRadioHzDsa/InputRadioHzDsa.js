@@ -8,8 +8,7 @@ const codeSnippet = `- InputRadioHzDsa:
     Variant: AutoLayout
     Properties:
       DropShadow: =DropShadow.None
-      Height: |
-        =80
+      Height: =labelRadio.Height + 44
       LayoutDirection: =LayoutDirection.Vertical
       RadiusBottomLeft: =8
       RadiusBottomRight: =8
@@ -61,6 +60,18 @@ const codeSnippet = `- InputRadioHzDsa:
                     dsaTokens.colorContrastLight
                     )
                   Default: ="Option 1"
+                  DisabledBorderColor: |-
+                    =ColorValue(
+                    "#ffffff00"
+                    )
+                  DisabledColor: |-
+                    =ColorValue(
+                    dsaTokens.colorNeutral400
+                    )
+                  DisabledFill: |-
+                    =ColorValue(
+                    "#ffffff00"
+                    )
                   FillPortions: =1
                   Font: =Font.'Open Sans'
                   Height: =Parent.Height
@@ -95,7 +106,6 @@ const codeSnippet = `- InputRadioHzDsa:
                   Width: =Parent.Width
                   X: =136
                   Y: =364
-
 `
 
 InputRadioHzDsa.setAttribute("data-code", codeSnippet)

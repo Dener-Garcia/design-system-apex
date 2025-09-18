@@ -1,31 +1,24 @@
 const LoaderApex = document.createElement("div")
 
-const codeSnippet = `- loaderApexContainer:
+const codeSnippet = `
+- loaderContainer:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
-      AlignInContainer: =AlignInContainer.Center
-      DropShadow: =DropShadow.None
-      FillPortions: =0
-      Height: =If(App.Width < 768, 140, 200 )
+      Fill: =RGBA(255,255,255, 0.8)
+      Height: =Parent.Height
       LayoutAlignItems: =LayoutAlignItems.Center
       LayoutDirection: =LayoutDirection.Horizontal
       LayoutJustifyContent: =LayoutJustifyContent.Center
-      LayoutMinHeight: =0
-      RadiusBottomLeft: =0
-      RadiusBottomRight: =0
-      RadiusTopLeft: =0
-      RadiusTopRight: =0
-      Width: =If(App.Width < 768, 140, 200 )
-      X: =App.Width /2 - Self.Width /2
-      Y: =App.Height /2 - Self.Height /2
+      Visible: =dsaShowLoader
+      Width: =Parent.Width
     Children:
       - loaderApex:
           Control: Image@2.2.3
           Properties:
+            AlignInContainer: =AlignInContainer.Center
             BorderColor: =RGBA(0, 18, 107, 1)
-            Height: |
-              =Parent.Height
+            Height: =Self.Width
             Image: |-
               ="data:image/svg+xml;utf8, " & EncodeUrl("
               <svg width='157' height='157' viewBox='0 0 157 157' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -282,13 +275,27 @@ const codeSnippet = `- loaderApexContainer:
                   </defs>
               </svg>
               ")
-            Width: =Parent.Width
-            X: '=0   '
-            Y: '=0   '
+            Width: =200
+`
 
+const properties = `
+// settings for loader
+<pre>
+  <code>
+Set(dsaShowLoader, true);
+  </code>
+</pre>
+
+<section class="details">
+  <div class="code-details">
+    <h6>dsaShowLoader</h6>
+    <p>Ao setar para "true" o Loader aparece na tela, utilize essa função em patch por exemplo.</p>
+</section>
 `
 
 LoaderApex.setAttribute("data-code", codeSnippet)
+
+LoaderApex.setAttribute("data-properties", properties)
 
 LoaderApex.innerHTML =
 `

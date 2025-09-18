@@ -266,7 +266,7 @@
                                     PaddingTop: =0
                                     Size: |-
                                       =If(
-                                          App.Width < 768, dsaTokens.fontSmallLabel, dsaTokens.fontTextMedium
+                                          App.Width < 768, dsaTokens.fontSmallCaption, dsaTokens.fontLabel
                                       )
                                     Text: |+
                                       =LookUp(constHeader,true).appName
@@ -471,7 +471,7 @@
                                           PaddingRight: =8
                                           PaddingTop: =8
                                           PressedBorderColor: =Self.Fill
-                                          PressedColor: =Self.Fill
+                                          PressedColor: =ColorValue(dsaTokens.colorAccentPrimaryHover)
                                           PressedFill: =Self.Fill
                                           Size: =dsaTokens.fontLabel
                                           Text: =ThisItem.linkName
@@ -559,13 +559,13 @@
                 Control: GroupContainer@1.3.0
                 Variant: AutoLayout
                 Properties:
-                  LayoutDirection: =LayoutDirection.Vertical
-
+                  LayoutDirection: =If(App.Width < 768, LayoutDirection.Vertical, LayoutDirection.Horizontal)
   `
+
   PageTemplateDsa.setAttribute("data-code", codeSnippet)
 
   const properties = `
-  // settings for nav menu
+  // settings for page template
   <pre>
     <code>
 Set(constCurrentScreen, Home);

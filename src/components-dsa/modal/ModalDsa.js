@@ -3,7 +3,8 @@ import preview from "/assets/components-preview/modal.png"
 
 const ModalDsa = document.createElement("div")
 
-const codeSnippet = `- ModalContainer:
+const codeSnippet = `
+- ModalContainer:
     Control: GroupContainer@1.3.0
     Variant: ManualLayout
     Properties:
@@ -82,7 +83,6 @@ const codeSnippet = `- ModalContainer:
                                )
                           )
                         DisplayMode: =DisplayMode.View
-                        FillPortions: =1
                         Height: =52
                         Icon: |-
                           =Switch(true, 
@@ -91,6 +91,8 @@ const codeSnippet = `- ModalContainer:
                           dsaModalType = "error", Icon.Warning,
                           dsaModalType = "success", Icon.Check
                           )
+                        LayoutMinWidth: =0
+                        Width: =52
             - messageModal:
                 Control: Label@2.5.1
                 Properties:
@@ -104,7 +106,7 @@ const codeSnippet = `- ModalContainer:
                   PaddingLeft: =0
                   PaddingRight: =0
                   PaddingTop: =0
-                  Size: |+
+                  Size: |
                     =dsaTokens.fontLabel
                   Text: =dsaModalMessage
                   Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
@@ -269,10 +271,9 @@ const codeSnippet = `- ModalContainer:
                         RadiusTopLeft: =200
                         RadiusTopRight: =200
                         Size: =dsaTokens.fontText
-                        Text: ="Execute"
+                        Text: ="Main action"
                         X: =42
                         Y: =237
-
 `
 
 const properties = `
@@ -281,7 +282,6 @@ const properties = `
   <code>
 Set(dsaModalShow, true);
 Set(dsaModalType, "success");
-Set(dsaModalIcon, Icon.Add);
 Set(dsaModalMessage, "Your message here!")
   </code>
 </pre>
@@ -294,10 +294,6 @@ Set(dsaModalMessage, "Your message here!")
   <div class="code-details">
     <h6>dsaModalType</h6>
     <p>Mude o tipo do Modal ao setar essa variavel para "info", "warning", "success" ou "error" conforme o tipo de mensagem que voce deseja mostrar para o usuário.</p>
-  </div>
-  <div class="code-details">
-    <h6>dsaModalIcon</h6>
-    <p>Icone personalizavel de acordo com o tipo do model, você pode alterar para outro ícone se desejar.</p>
   </div>
   <div class="code-details">
     <h6>dsaModalMessage</h6>

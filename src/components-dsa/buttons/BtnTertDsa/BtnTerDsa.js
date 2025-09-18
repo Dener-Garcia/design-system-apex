@@ -49,8 +49,8 @@ const codeSnippet = `- BtnTerDsa:
             "#ffffff00"
         )
       PaddingBottom: =8
-      PaddingLeft: =16
-      PaddingRight: =16
+      PaddingLeft: =8
+      PaddingRight: =8
       PaddingTop: =8
       PressedBorderColor: |-
         =ColorValue(
@@ -58,7 +58,7 @@ const codeSnippet = `- BtnTerDsa:
         )
       PressedColor: |-
         =ColorValue(
-        dsaTokens.colorAccentPrimary
+        dsaTokens.colorAccentTertiary
         )
       PressedFill: |-
         =ColorValue(
@@ -72,8 +72,6 @@ const codeSnippet = `- BtnTerDsa:
       Underline: =true
       X: =458
       Y: =237
-
-
 `
 
 BtnTerDsa.setAttribute("data-code", codeSnippet)

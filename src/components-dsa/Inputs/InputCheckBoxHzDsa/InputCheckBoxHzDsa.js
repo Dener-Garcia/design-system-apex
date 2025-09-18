@@ -209,7 +209,6 @@ const codeSnippet = `- InputCheckBoxHzDsa:
                   Text: ="Option 3"
                   Width: =Parent.Width
                   X: =10
-
 `
 
 InputCheckBoxHzDsa.setAttribute("data-code", codeSnippet)

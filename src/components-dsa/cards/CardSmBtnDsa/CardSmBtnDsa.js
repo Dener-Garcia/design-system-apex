@@ -9,23 +9,22 @@ const codeSnippet = `- CardSmBtnDsa:
     Properties:
       DropShadow: =DropShadow.None
       Fill: =ColorValue(dsaTokens.colorBgPrimary)
-      FillPortions: =0
       Height: |
-        = cardSmBtntext.Height + cardBtnAction.Height + cardSmBtnTtitleAccent.Height + Self.PaddingBottom + Self.PaddingTop + Self.LayoutGap
+        = cardSmBtntext.Height + cardBtnAction.Height + cardSmBtnTtitleAccent.Height + Self.PaddingBottom + Self.PaddingTop + Self.LayoutGap * 2
       LayoutDirection: =LayoutDirection.Vertical
       LayoutGap: =8
-      PaddingBottom: =16
-      PaddingLeft: =16
-      PaddingRight: =16
-      PaddingTop: =16
+      PaddingBottom: =8
+      PaddingLeft: =8
+      PaddingRight: =8
+      PaddingTop: =8
       RadiusBottomLeft: =8
       RadiusBottomRight: =8
       RadiusTopLeft: =8
       RadiusTopRight: =8
-      Width: |+
+      Width: |
         =If(App.Width < 768, Parent.Width, 256)
-      X: =428
-      Y: =71
+      X: =306
+      Y: =362
     Children:
       - cardSmBtnTtitleAccent:
           Control: Label@2.5.1
@@ -55,7 +54,7 @@ const codeSnippet = `- CardSmBtnDsa:
             PaddingTop: =0
             Size: =dsaTokens.fontLabel
             Text: |-
-              ="Text description for your long text
+              ="Text description for your long text card or information details
               "
             Width: =Parent.Width - 32
       - cardBtnAction:
@@ -157,12 +156,12 @@ const codeSnippet = `- CardSmBtnDsa:
                               ColorValue(dsaTokens.colorNeutral300),
                               ColorValue(dsaTokens.colorContrastDark)
                           )
+                        DisplayMode: =DisplayMode.View
                         Height: =ButtonIconRight_1.Size
                         Icon: =Icon.Search
                         Width: =ButtonIconRight_1.Size
                         X: = ButtonIconRight_1.Width - Self.Width - 16
                         Y: =ButtonIconRight_1.Height /2 - Self.Height /2
-
 `
 
 cardSmBtnDsa.setAttribute("data-code", codeSnippet)

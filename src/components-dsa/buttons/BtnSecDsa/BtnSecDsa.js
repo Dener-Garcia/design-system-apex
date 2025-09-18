@@ -27,7 +27,7 @@ const codeSnippet = `- BtnSecDsa:
         )
       Fill: |-
         =ColorValue(
-        dsaTokens.colorAccentSecondary
+        "#ffffff00"
         )
       FocusedBorderColor: |-
         =ColorValue(
@@ -43,10 +43,10 @@ const codeSnippet = `- BtnSecDsa:
         =ColorValue(
         dsaTokens.colorContrastLight
         )
-      HoverFill: '=ColorValue(dsaTokens.colorAccentSecondaryHover)   '
+      HoverFill: =ColorValue(dsaTokens.colorAccentSecondaryHover)
       PaddingBottom: =8
-      PaddingLeft: =16
-      PaddingRight: =16
+      PaddingLeft: =8
+      PaddingRight: =8
       PaddingTop: =8
       PressedBorderColor: |-
         =ColorValue(
@@ -67,7 +67,6 @@ const codeSnippet = `- BtnSecDsa:
       Size: =dsaTokens.fontText
       X: =243
       Y: =237
-
 `
 
 BtnSecDsa.setAttribute("data-code", codeSnippet)

@@ -45,8 +45,8 @@ const codeSnippet = `- BtnPriDsa:
         )
       HoverFill: =ColorValue(dsaTokens.colorAccentPrimaryHover)
       PaddingBottom: =8
-      PaddingLeft: =16
-      PaddingRight: =16
+      PaddingLeft: =8
+      PaddingRight: =8
       PaddingTop: =8
       PressedBorderColor: |-
         =ColorValue(
@@ -67,7 +67,6 @@ const codeSnippet = `- BtnPriDsa:
       Size: =dsaTokens.fontText
       X: =42
       Y: =237
-
 `
 
 

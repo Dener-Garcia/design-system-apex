@@ -15,13 +15,35 @@ const codeSnippet = `- BtnIcnSecDsa:
       X: =312
       Y: =422
     Children:
+      - IconSecBtn:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |-
+              =If(
+                  BtnIcnSec.DisplayMode = DisplayMode.Disabled,
+                  ColorValue(dsaTokens.colorNeutral300),
+                  ColorValue(dsaTokens.colorContrastLight)
+              )
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =0
+            Height: =18
+            HoverColor: |-
+              =ColorValue(
+                  dsaTokens.colorNeutral100
+              )
+            Icon: =Icon.AddDocument
+            PressedColor: =ColorFade(Self.Color, -40%)
+            Width: =18
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =BtnIcnSec.Height /2 - Self.Height /2
       - BtnIcnSec:
           Control: Classic/Button@2.2.0
           Properties:
             BorderColor: |-
               =ColorValue(
-                dsaTokens.colorAccentPrimary)
-            BorderThickness: =0
+              dsaTokens.colorAccentPrimary
+              )
             Color: |-
               =ColorValue(
               dsaTokens.colorContrastLight
@@ -37,13 +59,13 @@ const codeSnippet = `- BtnIcnSecDsa:
               )
             Fill: |-
               =ColorValue(
-              dsaTokens.colorAccentSecondary
+              "#ffffff00"
               )
             Font: =Font.'Open Sans'
             Height: =Parent.Height
             HoverBorderColor: |-
               =ColorValue(
-              dsaTokens.colorAccentSecondaryHover
+              dsaTokens.colorAccentPrimary
               )
             HoverColor: |-
               =ColorValue(
@@ -51,7 +73,7 @@ const codeSnippet = `- BtnIcnSecDsa:
               )
             HoverFill: |-
               =ColorValue(
-              dsaTokens.colorAccentSecondaryHover
+              "#ffffff00"
               )
             PaddingBottom: =8
             PaddingLeft: =8
@@ -67,7 +89,7 @@ const codeSnippet = `- BtnIcnSecDsa:
               )
             PressedFill: |-
               =ColorValue(
-              dsaTokens.colorAccentSecondary
+              "#ffffff00"
               )
             RadiusBottomLeft: =200
             RadiusBottomRight: =200
@@ -76,29 +98,7 @@ const codeSnippet = `- BtnIcnSecDsa:
             Size: =16
             Text: =
             Width: =Parent.Width
-            Y: '=0   '
-      - IconSecBtn:
-          Control: Classic/Icon@2.5.0
-          Properties:
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: |-
-              =If(
-                  BtnIcnSec.DisplayMode = DisplayMode.Disabled,
-                  ColorValue(dsaTokens.colorNeutral300),
-                  ColorValue(dsaTokens.colorContrastLight)
-              )
-            FocusedBorderThickness: =0
-            Height: =18
-            HoverColor: |-
-              =ColorValue(
-                  dsaTokens.colorNeutral100
-              )
-            Icon: =Icon.AddDocument
-            PressedColor: =ColorFade(Self.Color, -40%)
-            Width: =18
-            X: =Parent.Width/2 - Self.Width/2
-            Y: =BtnIcnSec.Height /2 - Self.Height /2
-
+            Y: '=0'
 `
 
 BtnIcnSecDsa.setAttribute("data-code", codeSnippet)

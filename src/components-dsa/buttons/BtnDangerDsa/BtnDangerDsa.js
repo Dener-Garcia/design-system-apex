@@ -4,7 +4,7 @@ import "./BtnDangerDsa.css"
 const BtnDangerDsa = document.createElement("div")
 
 const codeSnippet = `- BtnDangerDsa:
-    Control: Classic/Button
+    Control: Classic/Button@2.2.0
     Properties:
       BorderColor: =ColorValue(dsaTokens.colorFeedbackError)
       Color: |-
@@ -32,6 +32,7 @@ const codeSnippet = `- BtnDangerDsa:
         dsaTokens.colorNeutral200
         )
       FocusedBorderThickness: '=2 '
+      Font: =Font.'Open Sans'
       HoverBorderColor: |-
         =ColorValue(
         dsaTokens.colorFeedbackErrorAccent
@@ -42,8 +43,8 @@ const codeSnippet = `- BtnDangerDsa:
         )
       HoverFill: =ColorValue(dsaTokens.colorFeedbackError)
       PaddingBottom: =8
-      PaddingLeft: =16
-      PaddingRight: =16
+      PaddingLeft: =8
+      PaddingRight: =8
       PaddingTop: =8
       PressedBorderColor: |-
         =ColorValue(

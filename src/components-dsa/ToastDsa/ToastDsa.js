@@ -9,7 +9,7 @@ const codeSnippet = `- ToastDsa:
     Variant: ManualLayout
     Properties:
       DropShadow: =DropShadow.None
-      Height: =If(dsaToastShow, 120, 0)
+      Height: =If(dsaToastShow, 80, 0)
       RadiusBottomLeft: =0
       RadiusBottomRight: =0
       RadiusTopLeft: =0
@@ -71,6 +71,7 @@ const codeSnippet = `- ToastDsa:
                   - titleToast_3:
                       Control: Label@2.5.1
                       Properties:
+                        AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =ColorValue(dsaTokens.colorNeutral200)
                         Font: =Font.'Open Sans'
@@ -79,7 +80,7 @@ const codeSnippet = `- ToastDsa:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =16
+                        Size: =dsaTokens.fontSmallCaption
                         Text: =dsaToastType
                         Width: =Parent.Width - 8
                   - messageToast_3:
@@ -89,12 +90,12 @@ const codeSnippet = `- ToastDsa:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Color: =ColorValue(dsaTokens.colorContrastLight)
                         Font: =Font.'Open Sans'
-                        Height: =Parent.Height - titleToast_3.Height
+                        Height: =toastRectangle_3.Height - titleToast_3.Height - 8
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =14
+                        Size: =dsaTokens.fontSmallLabel
                         Text: =dsaToastMessage
                         Width: =Parent.Width   - 8
             - Icon1_3:
@@ -153,7 +154,7 @@ const codeSnippet = `- ToastDsa:
 `
 
 const properties = `
-// settings for nav menu
+// settings for toast
 <pre>
   <code>
 Set(dsaToastShow, true);

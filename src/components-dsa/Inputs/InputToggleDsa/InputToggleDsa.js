@@ -67,7 +67,6 @@ const codeSnippet = `- InputToggleDsa:
             Width: =Parent.Width
             X: =1105
             Y: =359
-
 `
 
 InputToggleDsa.setAttribute("data-code", codeSnippet)

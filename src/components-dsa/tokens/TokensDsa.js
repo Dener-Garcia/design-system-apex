@@ -2,9 +2,8 @@ import "./tokensDsa.css"
 
 const TokensDsa = document.createElement("div")
 
-const codeSnippet = `
-// Design system tokens
-    Set(dsaTokens,
+const codeSnippet = `// Design system tokens
+ Set(dsaTokens,
        {
             colorBgPrimary: "#F3F3F6",
             colorBgSecondary: "#ffffff",
@@ -12,14 +11,14 @@ const codeSnippet = `
             colorAccentPrimaryHover: "#2929A3",
             colorAccentSecondary: "#F8F8FC",
             colorAccentSecondaryHover: "#EAEAF6",
-            colorAccentTertiary: "#BC5AED",
+            colorAccentTertiary: "#5A328A",
             colorFeedbackInfo: "#EEF2FC",
             colorFeedbackInfoAccent: "#A8BDF0",
             colorFeedbackError: "#FDEDF2",
-            colorFeedbackErrorAccent: "#ED5A8B",
-            colorFeedbackWarning: "#F8FAD1",
+            colorFeedbackErrorAccent: "#ED5A7A",
+            colorFeedbackWarning: "#FBFCE3",
             colorFeedbackWarningAccent: "#E9C534",
-            colorFeedbackSuccess: "#BCF0D6",
+            colorFeedbackSuccess: "#DEF8EB",
             colorFeedbackSuccessAccent: "#16CA52",
             colorContrastDark: "#F4F4F6",
             colorContrastLight: "#26262C",
@@ -28,13 +27,13 @@ const codeSnippet = `
             colorNeutral300: "#9C9CAB",
             colorNeutral400: "#D8D8DE",
             colorNeutral500: "#E9E9EC",
-            fontTitleHero: 48,
-            fontSubTitle: 32,
-            fontTextLarge: 24,
-            fontTextMedium: 20,
-            fontText: 16,
-            fontLabel: 14,
-            fontSmallLabel: 12,
+            fontTitleHero: 28,
+            fontSubTitle: 22,
+            fontTextLarge: 18,
+            fontTextMedium: 16,
+            fontText: 14,
+            fontLabel: 12,
+            fontSmallLabel: 10,
             fontSmallCaption: 8,
             Height340: 340
         }
@@ -53,7 +52,7 @@ const codeSnippet = `
 // settings for nav menu
     Set(constCurrentScreen, Home);
     Set(widthMenuOpen, 200);
-    Set(widthMenuClosed, 44);
+    Set(widthMenuClosed, 48);
     ClearCollect(
         constNavMenu,
         {
@@ -74,8 +73,14 @@ const codeSnippet = `
     Set(dsaToastType, "info");
     Set(dsaToastMessage, "Your message here!");
 
+// settings for selector
+Set(selectorRightBgDefault, dsaTokens.colorAccentSecondaryHover);
+Set(selectorLeftBgFocus, dsaTokens.colorAccentPrimaryHover);
+Set(selectorLeftColorText, dsaTokens.colorContrastDark);
+Set(selectorRightColorText, dsaTokens.colorContrastLight);
+
 // settings for Badge
-   Set(dsaBadgeType, "error");
+   Set(dsaBadgeType, "info");
    Set(dsaBadgeLabel, "Label");
 
 // data sample for gallerys

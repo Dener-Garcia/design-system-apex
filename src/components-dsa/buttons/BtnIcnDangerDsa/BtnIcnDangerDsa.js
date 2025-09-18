@@ -15,7 +15,7 @@ const codeSnippet = `- BtnIconDangerDsa:
       X: =1158
       Y: =422
     Children:
-      - btnIconPrimaryButton_1:
+      - btnIconDanger:
           Control: Classic/Button@2.2.0
           Properties:
             BorderColor: |-
@@ -67,7 +67,7 @@ const codeSnippet = `- BtnIconDangerDsa:
               )
             PressedFill: |-
               =ColorValue(
-              dsaTokens.colorFeedbackError
+              "#ffffff00"
               )
             RadiusBottomLeft: =200
             RadiusBottomRight: =200
@@ -78,16 +78,19 @@ const codeSnippet = `- BtnIconDangerDsa:
             Tooltip: =
             Width: =Parent.Width
             Y: '=0   '
-      - btnIconPrimaryIcon_1:
+      - iconDanger:
           Control: Classic/Icon@2.5.0
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: |-
-              =If(
-                  BtnIconDangerDsa.DisplayMode = DisplayMode.Disabled,
-                  ColorValue(dsaTokens.colorNeutral300),
-                  ColorValue(dsaTokens.colorNeutral400)
+              =ColorValue(
+                  If(
+                      btnIconDanger.Pressed,
+                      dsaTokens.colorNeutral100,
+                      dsaTokens.colorContrastDark
+                  )
               )
+            DisplayMode: =DisplayMode.View
             FocusedBorderThickness: =0
             Height: =18
             HoverColor: |-
@@ -105,8 +108,7 @@ const codeSnippet = `- BtnIconDangerDsa:
               )
             Width: =18
             X: =Parent.Width/2 - Self.Width/2
-            Y: =btnIconPrimaryButton_1.Height /2 - Self.Height /2
-
+            Y: =btnIconDanger.Height /2 - Self.Height /2
 `
 
 BtnIcnDangerDsa.setAttribute("data-code", codeSnippet)

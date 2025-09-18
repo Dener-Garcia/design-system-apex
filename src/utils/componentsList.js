@@ -9,6 +9,9 @@ import BtnIcnSecDsa from "../components-dsa/buttons/BtnIcnSecDsa/BtnIcnSecDsa";
 import BtnIcnTerDsa from "../components-dsa/buttons/BtnIcnTerDsa/BtnIcnTerDsa";  
 import BtnIcnDangerDsa from "../components-dsa/buttons/BtnIcnDangerDsa/BtnIcnDangerDsa"; 
 import BtnDangerDsa from "../components-dsa/buttons/BtnDangerDsa/BtnDangerDsa";
+import BtnXlIconDsa from "../components-dsa/buttons/BtnXlIconDsa/BtnXlIconDsa";
+import BtnImgDsa from "../components-dsa/buttons/BtnImgDsa/BtnImgDsa";
+import BtnSelectorDsa from "../components-dsa/buttons/BtnSelectorDsa/BtnSelectorDsa";
 
 // inputs
 import InputTextDsa from "../components-dsa/Inputs/InputTextDsa/InputTextDsa";
@@ -18,9 +21,11 @@ import InputDropdownDsa from "../components-dsa/Inputs/InputDropdownDsa/InputDro
 import InputDataPickerDsa from "../components-dsa/Inputs/InputDataPickerDsa/InputDataPickerDsa";
 import InputToggleDsa from "../components-dsa/Inputs/InputToggleDsa/InputToggleDsa";
 import InputRadioHzDsa from "../components-dsa/Inputs/InputRadioHzDsa/InputRadioHzDsa";
+import InputAttachmentsDsa from "../components-dsa/Inputs/InputAttachmentsDsa/InputAttachmentsDsa";
 
 //cards
 import PageTemplateDsa from "../components-dsa/page-template/PageTemplateDsa";
+
 import CardHzDsa from "../components-dsa/cards/CardHzDsa/CardHzDsa";
 import CardThumbDsa from "../components-dsa/cards/CardThumbDsa/CardThumbDsa";
 import CardSmDsa from "../components-dsa/cards/CardSmDsa/CardSmDsa";
@@ -36,11 +41,21 @@ import LoaderApex from "../components-dsa/loaders/apexLoader/LoaderApex";
 import SplashApex from "../components-dsa/splash-screen-apex/splashScreenApex";
 import BadgeDsa from "../components-dsa/badge/BadgeDsa";
 
+//avatars
+import AvatarTitleDescription from "../components-dsa/Avatars/AvatarTitleDescription/AvatarTitleDescription";
+import GroupTeamAvatar from "../components-dsa/Avatars/GroupTeamAvatar/GroupTeamAvatar";
+
+
 //gallerys
 import GalleryCardHzDsa from "../components-dsa/gallerys/gallery-card-hz/GalleryCardHz";
 import GalleryCardSmDsa from "../components-dsa/gallerys/gallery-card-sm/galleryCardSm";
 import GalleryCardSmBtnDsa from "../components-dsa/gallerys/gallery-card-sm-btn/galleryCardSmBtn";
 import GalleryCardThumbDsa from "../components-dsa/gallerys/gallery-card-thumb/galleryCardThumb";
+import CardTwoCollumnDsa from "../components-dsa/cards/CardTwoCollumnDsa/CardTwoCollumnDsa";
+import CardAvatarDsa from "../components-dsa/cards/CardAvatarDsa/CardAvatarDsa";
+
+
+
 
 export default {
     TokensDsa,
@@ -56,6 +71,9 @@ export default {
     BtnIcnTerDsa,
     BtnIcnDangerDsa,
     BtnDangerDsa,
+    BtnXlIconDsa,
+    BtnImgDsa,
+    BtnSelectorDsa,
 
     //inputs
     InputTextDsa,
@@ -65,16 +83,19 @@ export default {
     InputDataPickerDsa,
     InputRadioHzDsa,
     InputToggleDsa,
+    InputAttachmentsDsa,
 
     //badge
     BadgeDsa,
 
     //cards
     CardHzDsa,
+   CardTwoCollumnDsa,
     CardSmDsa,
     CardThumbDsa,
     cardSmBtnDsa,
-
+    CardAvatarDsa,
+    
     ModalDsa,
 
     ToastDsa,
@@ -86,6 +107,10 @@ export default {
     
     //splash-screen
     SplashApex,
+
+    //avatars
+    AvatarTitleDescription,
+    GroupTeamAvatar,
 
     //Gallery
     GalleryCardHzDsa,

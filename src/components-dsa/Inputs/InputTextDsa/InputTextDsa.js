@@ -99,7 +99,6 @@ const codeSnippet = `- InputTextDsa:
             Width: =Parent.Width
             X: =360
             Y: =462
-
 `
 
 InputTextDsa.setAttribute("data-code", codeSnippet)

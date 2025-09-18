@@ -100,7 +100,6 @@ const codeSnippet = `- DatePickerDsa:
                   PaddingRight: =0
                   Size: =dsaTokens.fontLabel
                   Width: =Parent.Width
-
 `
 
 InputDataPickerDsa.setAttribute("data-code", codeSnippet)
