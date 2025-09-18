@@ -23,9 +23,11 @@ import InputToggleDsa from "../components-dsa/Inputs/InputToggleDsa/InputToggleD
 import InputRadioHzDsa from "../components-dsa/Inputs/InputRadioHzDsa/InputRadioHzDsa";
 import InputAttachmentsDsa from "../components-dsa/Inputs/InputAttachmentsDsa/InputAttachmentsDsa";
 
-//cards
 import PageTemplateDsa from "../components-dsa/page-template/PageTemplateDsa";
 
+//cards
+import CardTwoCollumnDsa from "../components-dsa/cards/CardTwoCollumnDsa/CardTwoCollumnDsa";
+import CardAvatarDsa from "../components-dsa/cards/CardAvatarDsa/CardAvatarDsa";
 import CardHzDsa from "../components-dsa/cards/CardHzDsa/CardHzDsa";
 import CardThumbDsa from "../components-dsa/cards/CardThumbDsa/CardThumbDsa";
 import CardSmDsa from "../components-dsa/cards/CardSmDsa/CardSmDsa";
@@ -51,8 +53,8 @@ import GalleryCardHzDsa from "../components-dsa/gallerys/gallery-card-hz/Gallery
 import GalleryCardSmDsa from "../components-dsa/gallerys/gallery-card-sm/galleryCardSm";
 import GalleryCardSmBtnDsa from "../components-dsa/gallerys/gallery-card-sm-btn/galleryCardSmBtn";
 import GalleryCardThumbDsa from "../components-dsa/gallerys/gallery-card-thumb/galleryCardThumb";
-import CardTwoCollumnDsa from "../components-dsa/cards/CardTwoCollumnDsa/CardTwoCollumnDsa";
-import CardAvatarDsa from "../components-dsa/cards/CardAvatarDsa/CardAvatarDsa";
+import GalleryCardLargeDsa from "../components-dsa/gallerys/gallery-card-two-collumns/galleryCardThumb";
+import GalleryCardAvatarDsa from "../components-dsa/gallerys/gallery-card-avatar/GalleryCardAvatarDsa";
 
 
 
@@ -90,7 +92,7 @@ export default {
 
     //cards
     CardHzDsa,
-   CardTwoCollumnDsa,
+    CardTwoCollumnDsa,
     CardSmDsa,
     CardThumbDsa,
     cardSmBtnDsa,
@@ -114,6 +116,8 @@ export default {
 
     //Gallery
     GalleryCardHzDsa,
+    GalleryCardAvatarDsa,
+    GalleryCardLargeDsa,
     GalleryCardSmDsa,
     GalleryCardSmBtnDsa,
     GalleryCardThumbDsa

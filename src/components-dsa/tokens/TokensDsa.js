@@ -124,21 +124,21 @@ TokensDsa.innerHTML =
 <code class="tokensDsa">
 // Tokens, copy into App.OnStart or OnVissible of home screen
     Set(dsaTokens,
-        {
+       {
             colorBgPrimary: "#F3F3F6",
             colorBgSecondary: "#ffffff",
             colorAccentPrimary: "#2525D0",
             colorAccentPrimaryHover: "#2929A3",
             colorAccentSecondary: "#F8F8FC",
             colorAccentSecondaryHover: "#EAEAF6",
-            colorAccentTertiary: "#BC5AED",
+            colorAccentTertiary: "#5A328A",
             colorFeedbackInfo: "#EEF2FC",
             colorFeedbackInfoAccent: "#A8BDF0",
             colorFeedbackError: "#FDEDF2",
-            colorFeedbackErrorAccent: "#ED5A8B",
-            colorFeedbackWarning: "#F8FAD1",
+            colorFeedbackErrorAccent: "#ED5A7A",
+            colorFeedbackWarning: "#FBFCE3",
             colorFeedbackWarningAccent: "#E9C534",
-            colorFeedbackSuccess: "#BCF0D6",
+            colorFeedbackSuccess: "#DEF8EB",
             colorFeedbackSuccessAccent: "#16CA52",
             colorContrastDark: "#F4F4F6",
             colorContrastLight: "#26262C",
@@ -147,13 +147,15 @@ TokensDsa.innerHTML =
             colorNeutral300: "#9C9CAB",
             colorNeutral400: "#D8D8DE",
             colorNeutral500: "#E9E9EC",
-            fontTitleHero: 48,
-            fontSubTitle: 32,
-            fontTextLarge: 24,
-            fontTextMedium: 20,
-            fontText: 16,
-            fontLabel: 14,
-            fontSmallLabel: 12
+            fontTitleHero: 28,
+            fontSubTitle: 22,
+            fontTextLarge: 18,
+            fontTextMedium: 16,
+            fontText: 14,
+            fontLabel: 12,
+            fontSmallLabel: 10,
+            fontSmallCaption: 8,
+            Height340: 340
         }
     );
     </code>

@@ -1,9 +1,8 @@
-import preview from "/assets/components-preview/galleryCardHzDsa.png"
+import preview from "/assets/components-preview/galleryCardAvatar.png"
 
-const GalleryCardHzDsa = document.createElement("div")
+const GalleryCardAvatarDsa = document.createElement("div")
 
-const codeSnipped = `
-- mainContainer_2:
+const codeSnipped = `- mainContainer_6:
     Control: GroupContainer@1.3.0
     Variant: AutoLayout
     Properties:
@@ -16,7 +15,7 @@ const codeSnipped = `
       RadiusTopRight: =0
       Width: =Parent.Width
     Children:
-      - HeaderDsa_2:
+      - HeaderDsa_6:
           Control: GroupContainer@1.3.0
           Variant: ManualLayout
           Properties:
@@ -29,7 +28,7 @@ const codeSnipped = `
             RadiusTopLeft: =0
             RadiusTopRight: =0
           Children:
-            - HeaderContainer_2:
+            - HeaderContainer_6:
                 Control: GroupContainer@1.3.0
                 Variant: ManualLayout
                 Properties:
@@ -42,7 +41,7 @@ const codeSnipped = `
                   RadiusTopRight: =0
                   Width: =Parent.Width
                 Children:
-                  - headerContent_3:
+                  - headerContent_7:
                       Control: GroupContainer@1.3.0
                       Variant: AutoLayout
                       Properties:
@@ -55,7 +54,7 @@ const codeSnipped = `
                         Y: |
                           =0
                       Children:
-                        - logoContainer_3:
+                        - logoContainer_7:
                             Control: GroupContainer@1.3.0
                             Variant: AutoLayout
                             Properties:
@@ -75,7 +74,7 @@ const codeSnipped = `
                               Width: |
                                 =
                             Children:
-                              - Icon2_2:
+                              - Icon2_6:
                                   Control: Classic/Icon@2.5.0
                                   Properties:
                                     BorderColor: =RGBA(0, 18, 107, 1)
@@ -91,7 +90,7 @@ const codeSnipped = `
                                     PaddingRight: =6
                                     PressedColor: =ColorValue(dsaTokens.colorAccentPrimary)
                                     Width: =40
-                              - apex-logo_2:
+                              - apex-logo_6:
                                   Control: Image@2.2.3
                                   Properties:
                                     BorderColor: =RGBA(0, 18, 107, 1)
@@ -140,7 +139,7 @@ const codeSnipped = `
                                       =If(
                                           App.Width < 500, 32 , 40 
                                       )
-                              - bat-logo_2:
+                              - bat-logo_6:
                                   Control: Image@2.2.3
                                   Properties:
                                     BorderColor: =RGBA(0, 18, 107, 1)
@@ -218,7 +217,7 @@ const codeSnipped = `
                                       =If(
                                           App.Width < 500, 40, 64 
                                       )
-                              - divisor_3:
+                              - divisor_7:
                                   Control: Rectangle@2.3.0
                                   Properties:
                                     AlignInContainer: =AlignInContainer.Center
@@ -227,7 +226,7 @@ const codeSnipped = `
                                     Height: '=Parent.Height - 24  '
                                     Width: '=2   '
                                     Y: '=0   '
-                        - appName_2:
+                        - appName_6:
                             Control: GroupContainer@1.3.0
                             Variant: AutoLayout
                             Properties:
@@ -246,7 +245,7 @@ const codeSnipped = `
                               RadiusTopRight: =0
                               Width: =
                             Children:
-                              - appTitle_3:
+                              - appTitle_7:
                                   Control: Label@2.5.1
                                   Properties:
                                     Align: =Align.Center
@@ -272,7 +271,7 @@ const codeSnipped = `
                                       =LookUp(constHeader,true).appName
 
                                     Width: =Parent.Width
-                        - userContainer_3:
+                        - userContainer_7:
                             Control: GroupContainer@1.3.0
                             Variant: AutoLayout
                             Properties:
@@ -292,7 +291,7 @@ const codeSnipped = `
                               RadiusTopRight: =0
                               Width: =
                             Children:
-                              - userName_3:
+                              - userName_7:
                                   Control: Label@2.5.1
                                   Properties:
                                     Align: =Align.Right
@@ -310,9 +309,9 @@ const codeSnipped = `
                                     Visible: =If(App.Width < 768, false, true)
                                     Width: |-
                                       =
-                                      If(App.Width < 500, 0, Parent.Width - userImage_3.Width - Parent.LayoutGap)
+                                      If(App.Width < 500, 0, Parent.Width - userImage_7.Width - Parent.LayoutGap)
                                     Wrap: =false
-                              - userImage_3:
+                              - userImage_7:
                                   Control: Image@2.2.3
                                   Properties:
                                     BorderColor: =RGBA(0, 18, 107, 1)
@@ -324,7 +323,7 @@ const codeSnipped = `
                                     RadiusTopRight: =Parent.Height /2
                                     Width: '=Parent.Height - 8   '
                                     Y: '=0   '
-      - container_2:
+      - container_6:
           Control: GroupContainer@1.3.0
           Variant: AutoLayout
           Properties:
@@ -335,7 +334,7 @@ const codeSnipped = `
             RadiusTopLeft: =0
             RadiusTopRight: =0
           Children:
-            - navBarDsa_2:
+            - navBarDsa_6:
                 Control: GroupContainer@1.3.0
                 Variant: ManualLayout
                 Properties:
@@ -355,7 +354,7 @@ const codeSnipped = `
                     )
                     )
                 Children:
-                  - navBar_2:
+                  - navBar_6:
                       Control: GroupContainer@1.3.0
                       Variant: AutoLayout
                       Properties:
@@ -368,7 +367,7 @@ const codeSnipped = `
                         RadiusTopRight: =0
                         Width: =Parent.Width
                       Children:
-                        - navLinks_4:
+                        - navLinks_8:
                             Control: GroupContainer@1.3.0
                             Variant: AutoLayout
                             Properties:
@@ -383,7 +382,7 @@ const codeSnipped = `
                               RadiusTopRight: =0
                               Width: =Parent.Width
                             Children:
-                              - appSettings_4:
+                              - appSettings_8:
                                   Control: Gallery@2.15.0
                                   Variant: BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0
                                   Properties:
@@ -393,11 +392,11 @@ const codeSnipped = `
                                     LayoutMinHeight: =0
                                     ShowScrollbar: =If(App.Height < 500, true, false)
                                     TemplateFill: =
-                                    TemplateSize: =link_4.Height
+                                    TemplateSize: =link_14.Height
                                     Transition: =Transition.Pop
                                     Width: =Parent.Width
                                   Children:
-                                    - hoverEffect_4:
+                                    - hoverEffect_8:
                                         Control: GroupContainer@1.3.0
                                         Variant: ManualLayout
                                         Properties:
@@ -410,9 +409,9 @@ const codeSnipped = `
                                             )
                                           Height: =40
                                           RadiusBottomLeft: '=0   '
-                                          RadiusBottomRight: '=link_4.Height '
+                                          RadiusBottomRight: '=link_14.Height '
                                           RadiusTopLeft: '=0   '
-                                          RadiusTopRight: '=link_4.Height '
+                                          RadiusTopRight: '=link_14.Height '
                                           Visible: =If(ThisItem.toScreen = constCurrentScreen, true, false)
                                           Width: |-
                                             =If(
@@ -421,14 +420,14 @@ const codeSnipped = `
                                           X: |-
                                             =
                                             0
-                                    - link_4:
+                                    - link_14:
                                         Control: Classic/Button@2.2.0
                                         Properties:
                                           Align: =Align.Left
                                           BorderColor: =ColorFade(Self.Fill, -15%)
                                           BorderStyle: =BorderStyle.None
                                           Color: |-
-                                            =If(hoverEffect_4.Visible,
+                                            =If(hoverEffect_8.Visible,
                                             ColorValue(dsaTokens.colorAccentPrimaryHover),
                                             ColorValue(dsaTokens.colorContrastLight)
                                             )
@@ -453,13 +452,13 @@ const codeSnipped = `
                                           Size: =dsaTokens.fontLabel
                                           Text: =ThisItem.linkName
                                           Width: =Parent.Width
-                                    - icon_4:
+                                    - icon_8:
                                         Control: Classic/Icon@2.5.0
                                         Properties:
                                           AutoDisableOnSelect: =false
                                           BorderColor: =RGBA(0, 18, 107, 1)
                                           Color: |-
-                                            =If(hoverEffect_4.Visible,
+                                            =If(hoverEffect_8.Visible,
                                             ColorValue(dsaTokens.colorAccentPrimaryHover),
                                             ColorValue(dsaTokens.colorContrastLight)
                                             )
@@ -474,8 +473,8 @@ const codeSnipped = `
                                             12,
                                             Parent.Width/2 - Self.Width/2
                                             )
-                                          Y: =link_4.Height/2 - Self.Height/2
-                        - menuSettings_4:
+                                          Y: =link_14.Height/2 - Self.Height/2
+                        - menuSettings_8:
                             Control: GroupContainer@1.3.0
                             Variant: AutoLayout
                             Properties:
@@ -491,7 +490,7 @@ const codeSnipped = `
                               RadiusTopRight: =0
                               Width: =Parent.Width
                             Children:
-                              - exitContainer_5:
+                              - exitContainer_9:
                                   Control: GroupContainer@1.3.0
                                   Variant: AutoLayout
                                   Properties:
@@ -506,7 +505,7 @@ const codeSnipped = `
                                     RadiusTopRight: =0
                                     Width: =Parent.Width
                                   Children:
-                                    - exitIcon_6:
+                                    - exitIcon_10:
                                         Control: Image@2.2.3
                                         Properties:
                                           BorderColor: =RGBA(0, 18, 107, 1)
@@ -520,7 +519,7 @@ const codeSnipped = `
                                           PaddingTop: =2
                                           Width: '=32  '
                                           Y: '=Parent.Height- Self.Height - 8  '
-                                    - link_7:
+                                    - link_15:
                                         Control: Classic/Button@2.2.0
                                         Properties:
                                           Align: =Align.Left
@@ -554,7 +553,7 @@ const codeSnipped = `
                                           Width: '=32  '
                                           X: '=0   '
                                           Y: =Parent.Height- Self.Height
-            - Container8_2:
+            - Container8_6:
                 Control: GroupContainer@1.3.0
                 Variant: AutoLayout
                 Properties:
@@ -562,11 +561,10 @@ const codeSnipped = `
                   LayoutGap: =16
                   LayoutMinHeight: =0
                 Children:
-                  - headerTitle_1:
+                  - headerTitle_5:
                       Control: GroupContainer@1.3.0
                       Variant: AutoLayout
                       Properties:
-                        AlignInContainer: =AlignInContainer.Start
                         DropShadow: =DropShadow.None
                         FillPortions: =0
                         Height: =40
@@ -577,11 +575,11 @@ const codeSnipped = `
                         PaddingRight: =16
                         Width: =Parent.Width
                       Children:
-                        - BtnIcnTerDsa_6:
+                        - BtnIcnTerDsa_12:
                             Control: GroupContainer@1.3.0
                             Variant: ManualLayout
                             Properties:
-                              AlignInContainer: =AlignInContainer.SetByContainer
+                              AlignInContainer: =AlignInContainer.Center
                               DropShadow: =DropShadow.None
                               FillPortions: =0
                               Height: =40
@@ -593,7 +591,7 @@ const codeSnipped = `
                               X: =527
                               Y: =422
                             Children:
-                              - BtnTerSec_6:
+                              - BtnTerSec_12:
                                   Control: Classic/Button@2.2.0
                                   Properties:
                                     BorderColor: =ColorValue("#ffffff00")
@@ -649,13 +647,13 @@ const codeSnipped = `
                                     Size: =16
                                     Text: =
                                     Width: =Parent.Width
-                              - IconTerBtn_6:
+                              - IconTerBtn_12:
                                   Control: Classic/Icon@2.5.0
                                   Properties:
                                     BorderColor: =RGBA(0, 18, 107, 1)
                                     Color: |-
                                       =If(
-                                          BtnTerSec_6.DisplayMode = DisplayMode.Disabled,
+                                          BtnTerSec_12.DisplayMode = DisplayMode.Disabled,
                                           ColorValue(dsaTokens.colorNeutral300),
                                           ColorValue(dsaTokens.colorAccentPrimary)
                                       )
@@ -676,8 +674,8 @@ const codeSnipped = `
                                       )
                                     Width: =18
                                     X: =Parent.Width/2 - Self.Width/2
-                                    Y: =BtnTerSec_6.Height /2 - Self.Height /2
-                        - Label2_26:
+                                    Y: =BtnTerSec_12.Height /2 - Self.Height /2
+                        - Label2_30:
                             Control: Label@2.5.1
                             Properties:
                               AutoHeight: =true
@@ -693,571 +691,198 @@ const codeSnipped = `
                               Width: =310
                               X: =42
                               Y: =46
-                  - GalleryCardHz:
+                  - GalleryCardAvatar:
                       Control: Gallery@2.15.0
                       Variant: Vertical
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         Items: =StarWarsCharacters
-                        LayoutMinHeight: =CardHzDsa_1.Height + 8
-                        TemplateSize: =CardHzDsa_1.Height + 16
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        TemplateSize: =CardAvatarDsa_1.Height + 16
                         Width: =Parent.Width
+                        WrapCount: |
+                          =Switch(true,
+                          App.Width < 768, 1,
+                          App.Width < 1080, 2,
+                          App.Width < 1921, 4,
+                          6
+                          )
                       Children:
-                        - CardHzDsa_1:
+                        - CardAvatarDsa_1:
                             Control: GroupContainer@1.3.0
                             Variant: AutoLayout
                             Properties:
                               DropShadow: =DropShadow.None
-                              Height: =Title_1.Height + Text_1.Height + cardHorizontalDivisor_1.Height + 44
+                              Fill: =ColorValue(dsaTokens.colorBgSecondary)
+                              Height: =avatarContianer_1.Height + cardThumbTitle_9.Height + cardThumbText_9.Height + BtnTerDsa_10.Height + cardAvatarContent_1.PaddingBottom + cardAvatarContent_1.PaddingBottom + Self.PaddingTop + Self.LayoutGap * 2
                               LayoutDirection: =LayoutDirection.Vertical
                               LayoutGap: =8
-                              RadiusBottomLeft: =0
-                              RadiusBottomRight: =0
-                              RadiusTopLeft: =0
-                              RadiusTopRight: =0
-                              Width: =Parent.Width - 16
+                              PaddingBottom: =8
+                              PaddingTop: =8
+                              RadiusBottomLeft: =16
+                              RadiusBottomRight: =16
+                              RadiusTopLeft: =16
+                              RadiusTopRight: =16
+                              Width: =If(Parent.Width < 768, Parent.Width, 224)
+                              X: |+
+                                =0
                             Children:
-                              - TitleBadge_1:
+                              - avatarContianer_1:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: ManualLayout
+                                  Properties:
+                                    AlignInContainer: =AlignInContainer.Start
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Self.Width
+                                    LayoutMinHeight: =0
+                                    LayoutMinWidth: =0
+                                    PaddingBottom: =16
+                                    PaddingLeft: =16
+                                    PaddingRight: =16
+                                    PaddingTop: =16
+                                    RadiusBottomLeft: =9999
+                                    RadiusBottomRight: =9999
+                                    RadiusTopLeft: =9999
+                                    RadiusTopRight: =9999
+                                    Width: =If(App.Width < 768, 60, 80)
+                                  Children:
+                                    - thumb_10:
+                                        Control: Image@2.2.3
+                                        Properties:
+                                          DisplayMode: =DisplayMode.View
+                                          Height: =Parent.Height
+                                          ImagePosition: =ImagePosition.Fill
+                                          Width: =Parent.Width
+                              - cardAvatarContent_1:
                                   Control: GroupContainer@1.3.0
                                   Variant: AutoLayout
                                   Properties:
                                     DropShadow: =DropShadow.None
-                                    FillPortions: =0
-                                    Height: =Title_1.Height + 4
-                                    LayoutAlignItems: =LayoutAlignItems.Center
-                                    LayoutDirection: =LayoutDirection.Horizontal
-                                    PaddingRight: =2
+                                    Fill: =ColorValue(dsaTokens.colorBgSecondary)
+                                    Height: '=0   '
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =4
+                                    LayoutMinWidth: =0
+                                    PaddingBottom: =4
+                                    PaddingLeft: =8
+                                    PaddingRight: =4
+                                    PaddingTop: =8
                                     RadiusBottomLeft: =0
                                     RadiusBottomRight: =0
                                     RadiusTopLeft: =0
                                     RadiusTopRight: =0
+                                    Width: =Parent.Width
+                                    X: =300
+                                    Y: =468
                                   Children:
-                                    - Title_1:
+                                    - cardThumbTitle_10:
                                         Control: Label@2.5.1
                                         Properties:
                                           AutoHeight: =true
-                                          BorderColor: =RGBA(0, 18, 107, 1)
-                                          Color: =ColorValue(dsaTokens.colorAccentPrimaryHover)
-                                          FillPortions: =1
-                                          Font: =Font.'Open Sans'
+                                          Color: =ColorValue(dsaTokens.colorNeutral100)
                                           FontWeight: =FontWeight.Semibold
-                                          LayoutMinWidth: =0
                                           PaddingBottom: =0
                                           PaddingLeft: =0
                                           PaddingRight: =0
                                           PaddingTop: =0
                                           Size: =dsaTokens.fontText
-                                          Text: ="Main Title"
-                                          Width: =Parent.Width
-                                          Wrap: =false
-                                    - BadgeDsa_3:
-                                        Control: GroupContainer@1.3.0
-                                        Variant: AutoLayout
+                                          Text: ="Title"
+                                          Width: =Parent.Width - 32
+                                    - cardThumbText_10:
+                                        Control: Label@2.5.1
                                         Properties:
-                                          AlignInContainer: =AlignInContainer.Center
+                                          AutoHeight: =true
+                                          Color: =ColorValue(dsaTokens.colorNeutral200)
+                                          PaddingBottom: =0
+                                          PaddingLeft: =0
+                                          PaddingRight: =0
+                                          PaddingTop: =0
+                                          Size: =dsaTokens.fontLabel
+                                          Text: |-
+                                            ="Text description for your long text.
+                                            "
+                                          Width: =Parent.Width - 32
+                                    - BtnTerDsa_11:
+                                        Control: Classic/Button@2.2.0
+                                        Properties:
+                                          Align: =Align.Right
+                                          AlignInContainer: =AlignInContainer.End
                                           BorderColor: |-
                                             =ColorValue(
-                                                If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfoAccent,
-                                                 dsaBadgeType = "error", dsaTokens.colorFeedbackErrorAccent,
-                                                 dsaBadgeType = "warning", dsaTokens.colorFeedbackWarningAccent,
-                                                 dsaBadgeType = "success", dsaTokens.colorFeedbackSuccessAccent
-                                                 )
+                                                "#ffffff00"
                                             )
-                                          BorderThickness: =2
-                                          DropShadow: =DropShadow.None
+                                          BorderStyle: =BorderStyle.None
+                                          Color: |-
+                                            =ColorValue(
+                                            dsaTokens.colorAccentPrimary
+                                            )
+                                          DisabledBorderColor: |-
+                                            =ColorValue(
+                                                "#ffffff00"
+                                            )
+                                          DisabledColor: |-
+                                            =ColorValue(
+                                             dsaTokens.colorNeutral300
+                                            )
+                                          DisabledFill: |-
+                                            =ColorValue(
+                                                "#ffffff00"
+                                            )
                                           Fill: |-
                                             =ColorValue(
-                                                If( dsaBadgeType = "info", dsaTokens.colorFeedbackInfo,
-                                                 dsaBadgeType = "error", dsaTokens.colorFeedbackError,
-                                                 dsaBadgeType = "warning", dsaTokens.colorFeedbackWarning,
-                                                 dsaBadgeType = "success", dsaTokens.colorFeedbackSuccess
-                                                 )
+                                                "#ffffff00"
                                             )
-                                          FillPortions: =0
-                                          Height: =26
-                                          LayoutAlignItems: =LayoutAlignItems.Center
-                                          LayoutDirection: =LayoutDirection.Horizontal
-                                          LayoutJustifyContent: =LayoutJustifyContent.Center
-                                          LayoutMinHeight: =0
-                                          LayoutMinWidth: =180
-                                          RadiusBottomLeft: =8
-                                          RadiusBottomRight: =8
-                                          RadiusTopLeft: =8
-                                          RadiusTopRight: =8
-                                          Width: =actionCardHzContainer_1.Width
-                                          X: =583
-                                          Y: =344
-                                        Children:
-                                          - LabelBadge_4:
-                                              Control: Label@2.5.1
-                                              Properties:
-                                                Align: =Align.Center
-                                                BorderColor: =RGBA(0, 18, 107, 1)
-                                                Color: |-
-                                                  =ColorValue(
-                                                  dsaTokens.colorNeutral100
-                                                  )
-                                                DisplayMode: =DisplayMode.View
-                                                Font: =Font.'Open Sans'
-                                                Height: =Parent.Height
-                                                PaddingBottom: =0
-                                                PaddingLeft: =0
-                                                PaddingRight: =0
-                                                PaddingTop: =0
-                                                Size: =dsaTokens.fontSmallLabel
-                                                Text: =dsaBadgeLabel
-                                                Width: =Parent.Width
-                                                Wrap: =false
-                              - content-container_1:
-                                  Control: GroupContainer@1.3.0
-                                  Variant: AutoLayout
-                                  Properties:
-                                    DropShadow: =DropShadow.None
-                                    Height: |+
-                                      =200
-
-
-                                    LayoutDirection: =LayoutDirection.Horizontal
-                                    LayoutMinHeight: =0
-                                    LayoutMinWidth: =0
-                                    RadiusBottomLeft: =0
-                                    RadiusBottomRight: =0
-                                    RadiusTopLeft: =0
-                                    RadiusTopRight: =0
-                                  Children:
-                                    - content_1:
-                                        Control: GroupContainer@1.3.0
-                                        Variant: AutoLayout
-                                        Properties:
-                                          AlignInContainer: =AlignInContainer.Start
-                                          DropShadow: =DropShadow.None
-                                          Height: =Parent.Height
-                                          LayoutDirection: =LayoutDirection.Horizontal
-                                          LayoutMinHeight: =0
-                                          LayoutMinWidth: =0
-                                          RadiusBottomLeft: =0
-                                          RadiusBottomRight: =0
-                                          RadiusTopLeft: =0
-                                          RadiusTopRight: =0
-                                          Visible: =If(App.Width < 578, false, true)
-                                          Width: =Parent.Width
-                                        Children:
-                                          - SubTitle_1:
-                                              Control: Label@2.5.1
-                                              Properties:
-                                                AlignInContainer: =AlignInContainer.Start
-                                                BorderColor: =RGBA(0, 18, 107, 1)
-                                                FillPortions: =1
-                                                Font: =Font.'Open Sans'
-                                                Height: =Parent.Height
-                                                LayoutMinWidth: =0
-                                                PaddingBottom: =0
-                                                PaddingLeft: =0
-                                                PaddingRight: =8
-                                                PaddingTop: =0
-                                                Size: =dsaTokens.fontLabel
-                                                Text: ="Sub Title"
-                                                VerticalAlign: =VerticalAlign.Top
-                                                Width: =Parent.Width
-                                          - cardDivisor_1:
-                                              Control: Rectangle@2.3.0
-                                              Properties:
-                                                AlignInContainer: =AlignInContainer.Center
-                                                BorderColor: =RGBA(0, 18, 107, 1)
-                                                DisplayMode: =DisplayMode.View
-                                                Fill: =RGBA(56, 96, 178, 1)
-                                                Height: =16
-                                                Width: '=2   '
-                                          - Text_1:
-                                              Control: Label@2.5.1
-                                              Properties:
-                                                AlignInContainer: =AlignInContainer.Start
-                                                AutoHeight: =true
-                                                BorderColor: =RGBA(0, 18, 107, 1)
-                                                FillPortions: =1
-                                                Font: =Font.'Open Sans'
-                                                Height: =Parent.Height
-                                                LayoutMinWidth: =0
-                                                PaddingBottom: =0
-                                                PaddingLeft: =16
-                                                PaddingRight: =8
-                                                PaddingTop: =0
-                                                Size: =dsaTokens.fontSmallLabel
-                                                Text: ="Text description for your long textText description for your long."
-                                                Width: =Parent.Width
-                                    - action_1:
-                                        Control: GroupContainer@1.3.0
-                                        Variant: AutoLayout
-                                        Properties:
-                                          DropShadow: =DropShadow.None
-                                          FillPortions: =0
-                                          Height: =Parent.Height
-                                          LayoutAlignItems: =LayoutAlignItems.End
-                                          LayoutDirection: =LayoutDirection.Horizontal
-                                          LayoutJustifyContent: =LayoutJustifyContent.End
-                                          LayoutMinHeight: =0
-                                          LayoutMinWidth: =0
-                                          RadiusBottomLeft: =0
-                                          RadiusBottomRight: =0
-                                          RadiusTopLeft: =0
-                                          RadiusTopRight: =0
-                                          Width: =BtnIcnPriDsa_5.Width + BtnIcnSecDsa_5.Width + BtnIcnTerDsa_7.Width + actionCardHzContainer_1.LayoutGap * 2
-                                        Children:
-                                          - actionCardHzContainer_1:
-                                              Control: GroupContainer@1.3.0
-                                              Variant: AutoLayout
-                                              Properties:
-                                                AlignInContainer: =AlignInContainer.Start
-                                                DropShadow: =DropShadow.None
-                                                FillPortions: =0
-                                                Height: =40
-                                                LayoutAlignItems: =LayoutAlignItems.Center
-                                                LayoutDirection: =LayoutDirection.Horizontal
-                                                LayoutGap: =16
-                                                LayoutJustifyContent: =LayoutJustifyContent.End
-                                                LayoutMinHeight: =0
-                                                LayoutMinWidth: =0
-                                                RadiusBottomLeft: =0
-                                                RadiusBottomRight: =0
-                                                RadiusTopLeft: =0
-                                                RadiusTopRight: =0
-                                                Width: =Parent.Width
-                                                X: =300
-                                                Y: =468
-                                              Children:
-                                                - BtnIcnTerDsa_7:
-                                                    Control: GroupContainer@1.3.0
-                                                    Variant: ManualLayout
-                                                    Properties:
-                                                      AlignInContainer: =AlignInContainer.Center
-                                                      DropShadow: =DropShadow.None
-                                                      FillPortions: =0
-                                                      Height: =40
-                                                      RadiusBottomLeft: =200
-                                                      RadiusBottomRight: =200
-                                                      RadiusTopLeft: =200
-                                                      RadiusTopRight: =200
-                                                      Width: =40
-                                                      X: =416
-                                                      Y: =422
-                                                    Children:
-                                                      - IconTerBtn_7:
-                                                          Control: Classic/Icon@2.5.0
-                                                          Properties:
-                                                            BorderColor: =RGBA(0, 18, 107, 1)
-                                                            Color: |-
-                                                              =If(
-                                                                  BtnTerSec_7.DisplayMode = DisplayMode.Disabled,
-                                                                  ColorValue(dsaTokens.colorNeutral300),
-                                                                  ColorValue(dsaTokens.colorAccentPrimary)
-                                                              )
-                                                            FocusedBorderThickness: =0
-                                                            Height: =18
-                                                            HoverColor: |-
-                                                              =ColorValue(
-                                                                  dsaTokens.colorAccentPrimaryHover
-                                                              )
-                                                            HoverFill: |-
-                                                              =   ColorValue(
-                                                                  "#ffffff00"
-                                                                 )
-                                                            Icon: =Icon.AddDocument
-                                                            PressedColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimaryHover
-                                                              )
-                                                            Width: =18
-                                                            X: =Parent.Width/2 - Self.Width/2
-                                                            Y: =BtnTerSec_7.Height /2 - Self.Height /2
-                                                      - BtnTerSec_7:
-                                                          Control: Classic/Button@2.2.0
-                                                          Properties:
-                                                            BorderColor: =ColorValue("#ffffff00")
-                                                            BorderThickness: =0
-                                                            Color: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimary
-                                                              )
-                                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                                            DisabledColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorNeutral200
-                                                              )
-                                                            DisabledFill: |-
-                                                              =ColorValue(
-                                                                 "#ffffff00"
-                                                              )
-                                                            Fill: |-
-                                                              =ColorValue(
-                                                                 "#ffffff00"
-                                                              )
-                                                            Font: =Font.'Open Sans'
-                                                            Height: =Parent.Height
-                                                            HoverBorderColor: =ColorValue("#ffffff00")
-                                                            HoverColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorContrastDark
-                                                              )
-                                                            HoverFill: |-
-                                                              =ColorValue(
-                                                                 "#ffffff00"
-                                                              )
-                                                            PaddingBottom: =8
-                                                            PaddingLeft: =8
-                                                            PaddingRight: =8
-                                                            PaddingTop: =8
-                                                            PressedBorderColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentSecondaryHover
-                                                              )
-                                                            PressedColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorContrastDark
-                                                              )
-                                                            PressedFill: |-
-                                                              =ColorValue(
-                                                                 "#ffffff00"
-                                                              )
-                                                            RadiusBottomLeft: =200
-                                                            RadiusBottomRight: =200
-                                                            RadiusTopLeft: =200
-                                                            RadiusTopRight: =200
-                                                            Size: =16
-                                                            Text: =
-                                                            Width: =Parent.Width
-                                                            Y: '=0   '
-                                                - BtnIcnSecDsa_5:
-                                                    Control: GroupContainer@1.3.0
-                                                    Variant: ManualLayout
-                                                    Properties:
-                                                      AlignInContainer: =AlignInContainer.Center
-                                                      DropShadow: =DropShadow.None
-                                                      FillPortions: =0
-                                                      Height: =40
-                                                      RadiusBottomLeft: =200
-                                                      RadiusBottomRight: =200
-                                                      RadiusTopLeft: =200
-                                                      RadiusTopRight: =200
-                                                      Width: =40
-                                                      X: =201
-                                                      Y: =422
-                                                    Children:
-                                                      - IconSecBtn_5:
-                                                          Control: Classic/Icon@2.5.0
-                                                          Properties:
-                                                            BorderColor: =RGBA(0, 18, 107, 1)
-                                                            Color: |-
-                                                              =If(
-                                                                  BtnIcnSec_5.DisplayMode = DisplayMode.Disabled,
-                                                                  ColorValue(dsaTokens.colorNeutral300),
-                                                                  ColorValue(dsaTokens.colorContrastLight)
-                                                              )
-                                                            DisplayMode: =DisplayMode.View
-                                                            FocusedBorderThickness: =0
-                                                            Height: =18
-                                                            HoverColor: |-
-                                                              =ColorValue(
-                                                                  dsaTokens.colorNeutral100
-                                                              )
-                                                            Icon: =Icon.AddDocument
-                                                            PressedColor: =ColorFade(Self.Color, -40%)
-                                                            Width: =18
-                                                            X: =Parent.Width/2 - Self.Width/2
-                                                            Y: =BtnIcnSec_5.Height /2 - Self.Height /2
-                                                      - BtnIcnSec_5:
-                                                          Control: Classic/Button@2.2.0
-                                                          Properties:
-                                                            BorderColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimary
-                                                              )
-                                                            Color: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorContrastLight
-                                                              )
-                                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                                            DisabledColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorNeutral200
-                                                              )
-                                                            DisabledFill: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorNeutral400
-                                                              )
-                                                            Fill: |-
-                                                              =ColorValue(
-                                                              "#ffffff00"
-                                                              )
-                                                            Font: =Font.'Open Sans'
-                                                            Height: =Parent.Height
-                                                            HoverBorderColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimary
-                                                              )
-                                                            HoverColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorContrastDark
-                                                              )
-                                                            HoverFill: |-
-                                                              =ColorValue(
-                                                              "#ffffff00"
-                                                              )
-                                                            PaddingBottom: =8
-                                                            PaddingLeft: =8
-                                                            PaddingRight: =8
-                                                            PaddingTop: =8
-                                                            PressedBorderColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentSecondaryHover
-                                                              )
-                                                            PressedColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorContrastDark
-                                                              )
-                                                            PressedFill: |-
-                                                              =ColorValue(
-                                                              "#ffffff00"
-                                                              )
-                                                            RadiusBottomLeft: =200
-                                                            RadiusBottomRight: =200
-                                                            RadiusTopLeft: =200
-                                                            RadiusTopRight: =200
-                                                            Size: =16
-                                                            Text: =
-                                                            Width: =Parent.Width
-                                                            Y: '=0   '
-                                                - BtnIcnPriDsa_5:
-                                                    Control: GroupContainer@1.3.0
-                                                    Variant: ManualLayout
-                                                    Properties:
-                                                      AlignInContainer: =AlignInContainer.Center
-                                                      DropShadow: =DropShadow.None
-                                                      FillPortions: =0
-                                                      Height: =40
-                                                      RadiusBottomLeft: =200
-                                                      RadiusBottomRight: =200
-                                                      RadiusTopLeft: =200
-                                                      RadiusTopRight: =200
-                                                      Width: =40
-                                                      X: =111
-                                                      Y: =422
-                                                    Children:
-                                                      - BtnIcnPri_5:
-                                                          Control: Classic/Button@2.2.0
-                                                          Properties:
-                                                            BorderColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimary)
-                                                            BorderThickness: =0
-                                                            Color: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorContrastDark
-                                                              )
-                                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                                            DisabledColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorNeutral300
-                                                              )
-                                                            DisabledFill: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorNeutral400
-                                                              )
-                                                            Fill: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimary
-                                                              )
-                                                            Font: =Font.'Open Sans'
-                                                            Height: =Parent.Height
-                                                            HoverBorderColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimaryHover
-                                                              )
-                                                            HoverColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorContrastDark
-                                                              )
-                                                            HoverFill: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimaryHover
-                                                              )
-                                                            PaddingBottom: =8
-                                                            PaddingLeft: =8
-                                                            PaddingRight: =8
-                                                            PaddingTop: =8
-                                                            PressedBorderColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentSecondaryHover
-                                                              )
-                                                            PressedColor: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorContrastDark
-                                                              )
-                                                            PressedFill: |-
-                                                              =ColorValue(
-                                                              dsaTokens.colorAccentPrimaryHover
-                                                              )
-                                                            RadiusBottomLeft: =200
-                                                            RadiusBottomRight: =200
-                                                            RadiusTopLeft: =200
-                                                            RadiusTopRight: =200
-                                                            Size: =16
-                                                            Text: =
-                                                            Tooltip: =
-                                                            Width: =Parent.Width
-                                                            Y: '=0   '
-                                                      - iconPriBtn_5:
-                                                          Control: Classic/Icon@2.5.0
-                                                          Properties:
-                                                            BorderColor: =RGBA(0, 18, 107, 1)
-                                                            Color: |-
-                                                              =If(
-                                                                  BtnIcnPri_5.DisplayMode = DisplayMode.Disabled,
-                                                                  ColorValue(dsaTokens.colorNeutral300),
-                                                                  ColorValue(dsaTokens.colorContrastDark)
-                                                              )
-                                                            DisplayMode: =DisplayMode.View
-                                                            FocusedBorderThickness: =0
-                                                            Height: =18
-                                                            HoverColor: |-
-                                                              =ColorValue(
-                                                                  dsaTokens.colorContrastDark
-                                                              )
-                                                            Icon: =Icon.AddDocument
-                                                            Width: =18
-                                                            X: =Parent.Width/2 - Self.Width/2
-                                                            Y: =BtnIcnPri_5.Height /2 - Self.Height /2
-                              - cardHorizontalDivisor_1:
-                                  Control: Rectangle@2.3.0
-                                  Properties:
-                                    BorderColor: =RGBA(0, 18, 107, 1)
-                                    Fill: =ColorValue(dsaTokens.colorNeutral400)
-                                    Height: =2
-                                    Width: =Parent.Width
+                                          FocusedBorderColor: |-
+                                            =ColorValue(
+                                            dsaTokens.colorNeutral200
+                                            )
+                                          FocusedBorderThickness: '=2 '
+                                          HoverBorderColor: |-
+                                            =ColorValue(
+                                                "#ffffff00"
+                                            )
+                                          HoverColor: |-
+                                            =ColorValue(
+                                             dsaTokens.colorAccentPrimaryHover
+                                            )
+                                          HoverFill: |-
+                                            =ColorValue(
+                                                "#ffffff00"
+                                            )
+                                          PaddingBottom: =8
+                                          PaddingLeft: =16
+                                          PaddingRight: =16
+                                          PaddingTop: =8
+                                          PressedBorderColor: |-
+                                            =ColorValue(
+                                                "#ffffff00"
+                                            )
+                                          PressedColor: |-
+                                            =ColorValue(
+                                            dsaTokens.colorAccentPrimary
+                                            )
+                                          PressedFill: |-
+                                            =ColorValue(
+                                                "#ffffff00"
+                                            )
+                                          RadiusBottomLeft: =200
+                                          RadiusBottomRight: =200
+                                          RadiusTopLeft: =200
+                                          RadiusTopRight: =200
+                                          Size: =16
+                                          Text: ="More ..."
+                                          Underline: =true
+                                          X: =519
+                                          Y: =150
 `
 
-const properties = `
-// responsive cards in gallery
-<section class="details">
-  <div class="code-details">
-    <h6>Cards responsivos</h6>
-    <p>Garanta que o card chamado "CardHzDsa_X" dentro da galeria na sua propriedade "Height" tenha a seguinte formula:</p>
-    <pre>
-  <code>
-Title_X.Height + Text_X.Height + cardHorizontalDivisor_X.Height + 44
-  </code>
-</pre>
-    <p>Altere o X pelo número que o Power Apps criou</p>
-  </div>
-  
-</section>
-`
 
-GalleryCardHzDsa.setAttribute("data-properties", properties)
-GalleryCardHzDsa.setAttribute('data-code', codeSnipped)
+GalleryCardAvatarDsa.setAttribute('data-code', codeSnipped)
 
-
-GalleryCardHzDsa.innerHTML = `
+GalleryCardAvatarDsa.innerHTML = `
 <img style="width: 100%" src=${preview} alt="Galeria com cards horozintal design system">
 `
 
-export default GalleryCardHzDsa
+export default GalleryCardAvatarDsa

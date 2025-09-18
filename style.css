@@ -74,7 +74,7 @@ body {
   background-color: var(--colorAccentHover);
 }
 
-.btn-accent:focus {
+.btn-accent:active {
   background-color: var(--colorAccent);
 }
 
@@ -467,10 +467,12 @@ ul li.active {
   align-items: center;
   gap: 1rem;
   text-wrap: nowrap;
+ 
 }
 
-.wiki-dsa .components-container .copy-components .get-code:focus {
+.wiki-dsa .components-container .copy-components .get-code:active {
   background-color: var(--colorAccent);
+   transform: scale(0.8);
 }
 
 
